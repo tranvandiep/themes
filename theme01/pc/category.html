@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" /><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/>    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#041B12",
+            "primary-container": "#08281B",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#93c5a8",
+            "forest-deep": "#0C3826",
+            "emerald-accent": "#10B981",
+            "secondary": "#2A5B42",
+            "secondary-container": "#D7EFE2",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#1E4B34",
+            "copper-gold": "#C59B3F",
+            "copper-gold-light": "#FDF8EE",
+            "tertiary": "#8C6514",
+            "tertiary-container": "#FEF3C7",
+            "tertiary-fixed": "#FDE68A",
+            "tertiary-fixed-dim": "#ECC15A",
+            "surface": "#FFFFFF",
+            "surface-bright": "#FFFFFF",
+            "surface-dim": "#E5EBE7",
+            "background": "#F8FAF9",
+            "on-background": "#0F172A",
+            "on-surface": "#0F172A",
+            "on-surface-variant": "#475569",
+            "surface-container-lowest": "#FFFFFF",
+            "surface-container-low": "#F7FAF8",
+            "surface-container": "#EEF4F1",
+            "surface-container-high": "#E5EFEA",
+            "surface-container-highest": "#DCE9E2",
+            "sage-surface": "#F0F6F2",
+            "charcoal-ink": "#0F172A",
+            "outline": "#94A3B8",
+            "outline-variant": "#E2E8F0",
+            "error": "#DC2626",
+            "error-red": "#EF4444",
+            "error-container": "#FEE2E2",
+            "on-error": "#ffffff",
+            "on-error-container": "#991B1B",
+            "inverse-surface": "#1E293B",
+            "inverse-on-surface": "#F8FAFC",
+            "inverse-primary": "#6EE7B7",
+            "primary-fixed": "#D1FAE5",
+            "primary-fixed-dim": "#A7F3D0",
+            "on-primary-fixed": "#041B12",
+            "on-primary-fixed-variant": "#064E3B",
+            "secondary-fixed": "#D7EFE2",
+            "secondary-fixed-dim": "#BCE3CE",
+            "on-secondary-fixed": "#041B12",
+            "on-secondary-fixed-variant": "#144A2F",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#78350F",
+            "on-tertiary-fixed": "#451A03",
+            "on-tertiary-fixed-variant": "#78350F",
+            "surface-tint": "#2A5B42",
+            "surface-variant": "#EEF4F1"
+          },
+          borderRadius: {
+            "none": "0px",
+            "xs": "0.375rem",
+            "sm": "0.5rem",
+            "DEFAULT": "0.75rem",
+            "md": "0.875rem",
+            "lg": "1rem",
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "3rem",
+            "space-lg": "1.75rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "sans": ["Be Vietnam Pro", "-apple-system", "sans-serif"],
+            "heading": ["Plus Jakarta Sans", "Be Vietnam Pro", "sans-serif"],
+            "display": ["Plus Jakarta Sans", "Be Vietnam Pro", "sans-serif"],
+            "space": ["Space Grotesk", "sans-serif"],
+            "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Be Vietnam Pro", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Be Vietnam Pro", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Be Vietnam Pro", "sans-serif"]
+          },
+          fontSize: {
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "600" }]
+          },
+          boxShadow: {
+            "xs": "0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+            "sm": "0 2px 8px -1px rgba(6, 37, 24, 0.05), 0 1px 3px -1px rgba(6, 37, 24, 0.03)",
+            "DEFAULT": "0 4px 16px -2px rgba(6, 37, 24, 0.06)",
+            "md": "0 8px 24px -4px rgba(6, 37, 24, 0.08), 0 4px 8px -2px rgba(6, 37, 24, 0.03)",
+            "lg": "0 16px 36px -6px rgba(6, 37, 24, 0.10), 0 8px 16px -4px rgba(6, 37, 24, 0.04)",
+            "xl": "0 24px 48px -10px rgba(6, 37, 24, 0.12)",
+            "2xl": "0 32px 64px -12px rgba(6, 37, 24, 0.16)",
+            "glow-emerald": "0 0 25px rgba(16, 185, 129, 0.25)",
+            "glow-gold": "0 8px 25px -4px rgba(197, 155, 63, 0.3)",
+            "card": "0 2px 8px rgba(0,0,0,0.02), 0 12px 28px -6px rgba(6, 37, 24, 0.06)"
+          }
+        }
+      }
+    };</script><style>
+@layer base {
+  html, body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAF9;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
+    letter-spacing: -0.02em;
+  }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+
+/* Modern Refined Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+::selection { background: #D7EFE2; color: #041B12; }
+
+/* Micro-interaction & Modern Polish Utilities */
+.card-hover {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -6px rgba(6, 37, 24, 0.10);
+}
+.glass-header {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06) !important;
+}
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ECC15A 0%, #C59B3F 50%, #997322 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style></head><body class="bg-background font-sans font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary py-2 px-margin text-center font-body-sm text-body-sm"><div class="max-w-[1380px] mx-auto flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider"><div class="flex items-center gap-6"><span><span class="text-copper-gold font-bold mr-1">HOTLINE VIP:</span> 1900 8899</span><span class="text-on-primary-container">|</span><span>Showroom: Hà Nội • Đà Nẵng • TP.HCM</span></div><div class="flex items-center gap-6"><span>Cam kết 100% Đức &amp; Tây Ban Nha</span><span class="text-on-primary-container">|</span><span class="text-emerald-accent font-semibold">Miễn phí khảo sát &amp; cắt đá tại nhà</span></div></div></div><div class="h-20 max-w-[1380px] mx-auto px-margin flex items-center justify-between gap-gutter"><a class="flex items-center gap-3 shrink-0" data-path="trang-chu" href="home.html"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-emerald-accent shadow-sm"><span class="material-symbols-outlined text-[24px]">autorenew</span></div><div><div class="font-headline-md text-headline-sm tracking-tight text-primary-container font-semibold leading-none">EcoCook</div><div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest mt-1">Smart Kitchen Europe</div></div></a><div class="flex-1 max-w-xl mx-auto"><div class="relative flex items-center"><div class="absolute left-3 z-10 flex items-center border-r border-outline-variant pr-2"><select class="bg-transparent font-label-md text-label-md text-on-surface-variant focus:outline-none cursor-pointer pr-1"><option>Tất cả</option><option>Bếp từ Đức</option><option>Bếp từ đôi</option><option>Phụ kiện</option></select></div><input class="w-full bg-surface-container-lowest pl-28 pr-12 py-2.5 rounded-lg border border-outline-variant focus:border-primary-container focus:outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm transition-all" placeholder="Tìm kiếm dòng bếp, công nghệ inverter, mặt kính..." type="text"/><button class="absolute right-2 w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center hover:bg-forest-deep transition-colors"><span class="material-symbols-outlined text-[18px]">search</span></button></div><div class="flex items-center gap-3 mt-1.5 px-1 font-label-sm text-label-sm text-on-surface-variant"><span class="text-outline">Phổ biến:</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Mặt kính Schott Ceran</a><span>•</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Inverter 3.0</a><span>•</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Bếp đôi Đức</a></div></div><div class="flex items-center gap-5 shrink-0"><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary-container font-label-md text-label-md transition-colors" data-path="lien-he-showroom" href="contact.html"><span class="material-symbols-outlined text-[20px] text-copper-gold">location_on</span><span>Showrooms</span></a><a class="relative p-2 text-on-surface-variant hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center">2</span></a><a class="relative p-2 text-on-surface-variant hover:text-primary-container transition-colors" data-path="gio-hang" href="cart.html"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low"><div class="max-w-[1380px] mx-auto px-margin"><nav class="flex items-center gap-8 font-label-lg text-label-lg" data-active-classes="text-primary-container font-semibold border-b-2 border-primary-container"><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="trang-chu" href="home.html">Trang chủ</a><a aria-current="page" class="py-3 transition-colors text-primary-container font-semibold border-b-2 border-primary-container" data-path="san-pham-bep" href="category.html">Sản phẩm bếp</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="cong-nghe-xuat-xu" href="category.html">Công nghệ &amp; Xuất xứ</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Cẩm nang &amp; Tin tức</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="dat-lich-khao-sat-da" href="contact.html">Đặt lịch khảo sát đá</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="lien-he-showroom" href="contact.html">Liên hệ &amp; Showroom</a></nav></div></div></header><main class="w-full pt-44 bg-surface"><div class="flex flex-col w-full">
+<!-- BREADCRUMB & METADATA BAR -->
+<div class="w-full bg-surface-container-low py-4">
+<div class="max-w-[1380px] mx-auto px-margin flex items-center justify-between">
+<nav class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary-container transition-colors" href="home.html">Trang chủ</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary-container transition-colors" href="category.html">Thiết bị bếp</a>
+<span class="text-outline">/</span>
+<span class="text-primary-container font-semibold">Bếp từ cao cấp Châu Âu</span>
+</nav>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-3 py-1.5 rounded shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-accent animate-pulse"></span>
+<span class="font-medium text-on-surface">28 sản phẩm sẵn sàng lắp đặt 24h</span>
+</div>
+</div>
+</div>
+<!-- MAIN CATALOG VIEWPORT -->
+<div class="w-full py-8">
+<div class="max-w-[1380px] mx-auto px-margin">
+<div class="grid grid-cols-12 gap-8 items-start">
+<!-- LEFT FILTER SIDEBAR (280px / 3 cols desktop) -->
+<aside class="col-span-12 lg:col-span-3 sticky top-48">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm space-y-6">
+<div class="flex items-center justify-between pb-4 border-b-0">
+<div class="flex items-center gap-2 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Bộ lọc tinh tuyển</span>
+</div>
+<button class="font-label-sm text-label-sm text-error hover:underline transition-all">Thiết lập lại</button>
+</div>
+<!-- Xuất Xứ -->
+<div class="space-y-3">
+<span class="font-label-lg text-label-lg text-primary-container block tracking-wide">QUỐC GIA SẢN XUẤT</span>
+<div class="space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center justify-between p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded text-primary-container accent-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-on-surface font-medium">CHLB Đức</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline-variant px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">12</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-on-surface">Tây Ban Nha</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline-variant px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">08</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-on-surface">Malaysia (Nhập khẩu)</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline-variant px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">06</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container focus:ring-0" type="checkbox"/>
+<span class="text-on-surface">Italy</span>
+</span>
+<span class="font-label-sm text-label-sm text-outline-variant px-1.5 py-0.5 rounded bg-surface-container-low text-on-surface-variant">02</span>
+</label>
+</div>
+</div>
+<!-- Loại Vùng Nấu -->
+<div class="space-y-3 pt-3">
+<span class="font-label-lg text-label-lg text-primary-container block tracking-wide">CẤU TRÚC VÙNG NẤU</span>
+<div class="space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">Bếp đôi (2 vùng cảm ứng)</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">Bếp 3 vùng nấu Master</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">4 Vùng FlexiZone đồng bộ</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">Kết hợp (1 Từ + 1 Hồng ngoại)</span>
+</label>
+</div>
+</div>
+<!-- Mặt Kính & Bo Mạch -->
+<div class="space-y-3 pt-3">
+<span class="font-label-lg text-label-lg text-primary-container block tracking-wide">VẬT LIỆU MẶT KÍNH &amp; LINH KIỆN</span>
+<div class="space-y-2 font-body-sm text-body-sm">
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface font-medium">Schott Ceran (Đức)</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">EuroKera - K+ (Pháp)</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">Mâm từ E.G.O Hilight</span>
+</label>
+<label class="flex items-center gap-2.5 p-2 rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span class="text-on-surface">Inverter IGBT Half-Bridge 3.0</span>
+</label>
+</div>
+</div>
+<!-- Kích thước khoét đá -->
+<div class="space-y-3 pt-3">
+<span class="font-label-lg text-label-lg text-primary-container block tracking-wide">KÍCH THƯỚC KHOÉT ĐÁ (MM)</span>
+<div class="grid grid-cols-2 gap-2 font-label-sm text-label-sm">
+<button class="px-2.5 py-2 bg-primary-container text-on-primary rounded text-center font-medium shadow-sm">680 × 380</button>
+<button class="px-2.5 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded text-center transition-colors">710 × 410</button>
+<button class="px-2.5 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded text-center transition-colors">560 × 490</button>
+<button class="px-2.5 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high rounded text-center transition-colors">Tùy biến</button>
+</div>
+</div>
+<!-- Khoảng Giá -->
+<div class="space-y-3 pt-3">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary-container tracking-wide">MỨC NGÂN SÁCH</span>
+<span class="font-label-sm text-label-sm text-copper-gold font-bold">10 - 25 Triệu</span>
+</div>
+<input class="w-full accent-primary-container h-1 bg-surface-container-highest rounded cursor-pointer" max="40" min="1" type="range" value="22"/>
+<div class="space-y-2 font-body-sm text-body-sm pt-1">
+<label class="flex items-center gap-2 text-on-surface-variant">
+<input class="accent-primary-container" name="price" type="radio"/> Dưới 10.000.000₫
+                </label>
+<label class="flex items-center gap-2 text-primary-container font-semibold">
+<input checked="" class="accent-primary-container" name="price" type="radio"/> 10.000.000₫ - 18.000.000₫
+                </label>
+<label class="flex items-center gap-2 text-on-surface-variant">
+<input class="accent-primary-container" name="price" type="radio"/> 18.000.000₫ - 25.000.000₫
+                </label>
+<label class="flex items-center gap-2 text-on-surface-variant">
+<input class="accent-primary-container" name="price" type="radio"/> Phân khúc Flagship (&gt; 25 Triệu)
+                </label>
+</div>
+</div>
+<div class="pt-4 space-y-2">
+<button class="w-full py-3 bg-primary-container hover:bg-forest-deep text-on-primary font-label-lg text-label-lg rounded transition-all shadow-md flex items-center justify-center gap-2">
+<span>Áp dụng bộ lọc</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant">
+                Hỗ trợ tư vấn khoét đá trực tiếp: <span class="text-copper-gold font-bold">1900 8899</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- RIGHT PRODUCT GRID & CONTROL (9 cols desktop) -->
+<main class="col-span-12 lg:col-span-9 space-y-6">
+<!-- TOP PROMO STRIP -->
+<div class="bg-gradient-to-r from-primary-container via-forest-deep to-primary-container text-on-primary p-4 rounded-lg flex items-center justify-between shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-emerald-accent/20 flex items-center justify-center text-emerald-accent shrink-0">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold tracking-wide flex items-center gap-2">
+<span>ĐẶC QUYỀN ECOCOOK ARCHITECTURE</span>
+<span class="bg-copper-gold text-charcoal-ink font-label-sm text-label-sm px-2 py-0.5 rounded font-bold uppercase">Miễn phí 100%</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-primary-container">
+                  Khảo sát thực tế, mở rộng hoặc thu nhỏ lỗ đá chuẩn xác mm tại HN, Đà Nẵng &amp; TP.HCM.
+                </div>
+</div>
+</div>
+<a class="shrink-0 px-4 py-2 bg-on-primary text-primary-container font-label-md text-label-md rounded font-semibold hover:bg-surface-container-low transition-all" href="contact.html">
+              Đặt lịch khảo sát
+            </a>
+</div>
+<!-- CONTROL BAR & ACTIVE CHIPS -->
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary-container font-semibold tracking-tight">Bếp Từ Cao Cấp Châu Âu</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hiển thị <span class="font-semibold text-on-surface">1 - 6</span> trong <span class="font-semibold text-on-surface">28</span> mẫu mã kiểm định CO/CQ</p>
+</div>
+<!-- SORT CONTROLS -->
+<div class="flex items-center gap-3 shrink-0">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Sắp xếp:</span>
+<select class="bg-surface-container-low text-primary-container font-label-md text-label-md py-2 px-3 rounded focus:outline-none cursor-pointer font-medium">
+<option>Bán chạy nhất (Châu Âu)</option>
+<option>Giá: Từ thấp đến cao</option>
+<option>Giá: Từ cao xuống thấp</option>
+<option>Mới ra mắt 2024</option>
+<option>Đánh giá chuyên gia (5★)</option>
+</select>
+</div>
+</div>
+<!-- APPLIED FILTER TAGS -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Bộ lọc đang bật:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">
+                Xuất xứ: CHLB Đức
+                <button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">
+                Mặt kính: Schott Ceran
+                <button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-medium">
+                Công nghệ: Inverter 3.0
+                <button class="hover:text-error transition-colors"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="font-label-sm text-label-sm text-error underline ml-2">Xóa toàn bộ</button>
+</div>
+</div>
+<!-- PRODUCT LISTING GRID (3 COLUMNS) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- PRODUCT 1 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="EcoCook Pro Series 8 premium double induction hob mounted flush on modern quartz stone island, matte black glass with micro gold perimeter edge, dramatic warm kitchen ambient lighting, architectural interior style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhj7FEaMTDhVxlfIGs9_cRRsePi7EXym5vFpLilDvxqZTNBD-Bv8tU6K-CtXkpY-Jz3Ry2AF4k6GYPOEdz1Ng-nmQI4RfvNcCsp01QOej5FxfNtDe212gLSHPsrsNOqd4kgMQX3gj1TP2G8wqAy1_5oDU53r_cc0zA_Z8il3Q3a1sbZlLscetOZSF0bugT25Vn8Pz_MB08xwLRjuRd50KzufAJ-UW9XuTLv1AeFXlni2vQCMD1FE"/>
+</div>
+<!-- Origin Chip -->
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent"></span> Đức - Made in Germany
+                  </span>
+<span class="bg-copper-gold text-charcoal-ink font-label-sm text-label-sm px-2 py-0.5 rounded font-bold shadow-sm">
+                    Inverter 3.0 Tiết kiệm 38%
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(86 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Từ Đôi Pro Series 8 EGO Inverter</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Mặt kính Schott Ceran vát 4 cạnh</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Công suất: 4400W (Booster 3700W)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Khoét đá: 680 × 380 mm</span>
+</div>
+</div>
+</div>
+<!-- Gift tag -->
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Tặng Chảo từ Berndes Đức 2.450.000₫</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        14.890.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        18.900.000₫ (-21%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PRODUCT 2 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="EcoCook Duo Hybrid induction and radiant cooktop on clean white minimalist kitchen counter, polished chamfered bevels, precision digital touch controls glow red, European design standard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU66yiXMRkzgTlfdn8AEMXoQzoqet3cXgREyeo-PJY_zeKimxW7seBZOoX2-vqZrAk27Bfv3kTxZlSQxrwpX-j-88Md3shGzH43zrfi1QJIvWiPOXuSNElW6G0PiqTzCJ3ld9xSwirVMDwL-mQNepvwXcZhV9rCKHyE0Ri3myb1oZpXccPuFbVLhQ5xBw6Uxgh0Hv_H8BtRUXRNOPKhTl4YFkASFRztZHhIjegL3jP3jmgsW_KkbI"/>
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent"></span> Malaysia Authentic
+                  </span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">
+                    Hybrid 1 Từ + 1 Hồng Ngoại
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.8</span>
+<span class="font-body-sm text-body-sm text-outline">(64 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Điện Từ Kết Hợp EcoCook Duo Hybrid H-22</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Mặt kính EuroKera K+ chống trầy xước</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Công suất: 4200W (Không kén nồi nấu)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Khoét đá: 680 × 380 mm</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Tặng Bộ dao chặt thớt kháng khuẩn</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        11.450.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        14.200.000₫ (-19%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PRODUCT 3 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Grand Luxe 3 zone induction cooktop in sleek Spanish style, installed in dark granite kitchen with polished copper saucepans, ultra modern clean look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtoQgFacx5XtLhxFaah3TW6lj3LkUtVxhbXYQfGSkT5Ds2sGtpezZYLgLYk76AZFi-yRCUXe6Nyjuhc9rytD_mVeSCIrpZm-ieZE3beyKhmA0FkmFC28I8GxRJlAnR5M83BSg3g5BbN3kr0_aKmvIdR_h_KGZSUFf4cbR6Oq5_a5O3T9vAcF9pTiVd_6_cnWAkWSGNQ1wRzhTx0gvR23TEg75zSYQV5utfd-8TcC7qBubIvHi3PA4"/>
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-copper-gold"></span> Tây Ban Nha - Spain
+                  </span>
+<span class="bg-copper-gold text-charcoal-ink font-label-sm text-label-sm px-2 py-0.5 rounded font-bold shadow-sm">
+                    3 Vùng Nấu Triple Zone
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">5.0</span>
+<span class="font-body-sm text-body-sm text-outline">(112 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Từ 3 Vùng Nấu Grand Luxe ES-300</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Mặt kính Schott Ceran bo viền nhôm Anodized</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Tổng công suất 6800W cực đại</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Khoét đá: 560 × 490 mm</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Tặng Bộ 5 nồi inox Fissler Đức 5.900.000₫</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        19.990.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        24.500.000₫ (-18%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PRODUCT 4 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High precision German induction cooktop MasterLine G-8800 with metallic border bevel, installed in concrete industrial kitchen countertop, studio shot sharp details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyjVJRZrtCtFVtTox3KvzbnIzEFCu-YZ7mNQrr1KxpYiXYDX879rnRCPOIdRuovd-5Fnk3UMHcgxYrImlrCLcx0O8ZgXVb2npenJMd5fo3AdWdnYLn_SsfIs1hQDTG1E7ELdSR0XgMjnDKYCQSdtaLHlqsSeL58RQ9bi57tiRLdtU6yfz68o1GuVyHrLYF9vXFQhHM4Tk6HbODv7su1hPvgNaR8HI_-QnM5eoG_B9X7t5Z66XJNmk"/>
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent"></span> Đức - Made in Germany
+                  </span>
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">
+                    Viền kim loại chống va đập
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(52 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Từ Đôi MasterLine G-8800 Slim</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Schott Ceran PureBlack thế hệ mới</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Slider độc lập 9 cấp độ nhiệt + Giữ ấm 65°C</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Khoét đá: 710 × 410 mm</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Tặng voucher 1.000.000₫ hút mùi EcoCook</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        19.600.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        23.000.000₫ (-15%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PRODUCT 5 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="EcoCook SmartSlim two burner cooktop minimalist aesthetics on bright oak wooden kitchen setup, soft natural morning sunshine, neat Scandinavian style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYK3REhfhr5FA3wcuKmw93nhAfmV9hWDZHHDnftdWrOAFML4p2Jt3ZBmXH0Aj1OfrleYRigLhTnUGuFKFKddWkmFBm94ZZMZ4OKmFJsGPha1JlkR3g-k-qqdQKbp3gHMcmPdMuU2RzWIn1lxxz5nBUq1E66sep2p_TbRCt6ciIkN1FsUUvX2LiJIWNZ70-p3HKBIz373gb0aCX2urGi87K2A2PCCmPkZFuKT7ovQyNZL2D0Ou28hU"/>
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent"></span> Malaysia Tiêu Chuẩn EU
+                  </span>
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">
+                    Tiết kiệm điện 4.0
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 0.5;">star_half</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.7</span>
+<span class="font-body-sm text-body-sm text-outline">(145 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Từ Đôi EcoCook SmartSlim SL-20</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Mặt kính Kanger Ceramic chịu sốc nhiệt 750°C</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Tổng công suất 4000W - Chống tràn tự ngắt</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Khoét đá: 680 × 380 mm</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Miễn phí công cắt đá &amp; aptomat chống giật</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        8.900.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        11.500.000₫ (-22%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- PRODUCT 6 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="relative">
+<div class="aspect-[4/3] w-full bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portable single induction hob Solo Booster 2200W placed on stylish marble dining table ready for premium hotpot feast, modern lifestyle scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd2TDFq6ZrwLDTK2nhEzqx09Cmt3b_f_qYL55rB0fCpeoTMLLSEqQEW9mt1wFWvMzobR5wmsQQPKprZ-xqVSqS_pcK55NtiHbx2Ikyu5f-RVbXjzKJLzRDPjwV0c31Je6FL8_N5D8YjB4qBmLivgtx46cljAQmeUbXFdGJPXjqHbgBLRyfdcWsXvOJsaoJ4qntYL6foJXlgDOERoa76alWwWOa-NFCwj1utlfOdHin-9lpa_Ulsbs"/>
+</div>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent"></span> Bếp Từ Đơn Di Động
+                  </span>
+<span class="bg-copper-gold text-charcoal-ink font-label-sm text-label-sm px-2 py-0.5 rounded font-bold shadow-sm">
+                    Booster 2200W
+                  </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded bg-surface/80 backdrop-blur-md text-on-surface-variant flex items-center justify-center hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between space-y-4">
+<div>
+<div class="flex items-center gap-1.5 mb-1 text-copper-gold">
+<div class="flex">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9</span>
+<span class="font-body-sm text-body-sm text-outline">(210 đánh giá)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold line-clamp-2 leading-snug"><a href="detail.html" class="hover:text-copper-gold transition-colors">Bếp Từ Đơn Cao Cấp Solo Booster 2200W</a></h3>
+<div class="mt-2.5 space-y-1 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Kính Ceramic đúc nguyên khối siêu mỏng 4.2cm</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Tự nhận diện nồi nấu, quạt tản nhiệt turbo siêu êm</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">crop_free</span>
+<span>Đặt dương bàn ăn / Dã ngoại</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded flex items-center gap-2 text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">card_giftcard</span>
+<span class="truncate">Tặng nồi lẩu Inox 304 nắp kính chịu lực</span>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline justify-between mb-3">
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary-container font-label-lg tracking-tight">
+                        1.850.000₫
+                      </div>
+<div class="font-label-sm text-label-sm text-outline line-through">
+                        2.400.000₫ (-23%)
+                      </div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-accent bg-primary-container/10 px-2 py-0.5 rounded font-semibold">Sẵn hàng</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 px-3 bg-surface-container hover:bg-surface-container-high text-primary-container rounded font-label-md text-label-md text-center transition-colors">
+                      Xem chi tiết
+                    </button>
+<button class="py-2.5 px-3 bg-primary-container hover:bg-forest-deep text-on-primary rounded font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+<span>Đặt mua</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- DESKTOP PAGINATION -->
+<div class="pt-8 pb-4 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Trang <strong class="text-on-surface">1</strong> trên <strong class="text-on-surface">5</strong> (28 mẫu bếp)
+            </span>
+<div class="flex items-center gap-2 font-label-md text-label-md">
+<button class="w-10 h-10 rounded bg-surface-container text-outline flex items-center justify-center cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded bg-primary-container text-on-primary font-bold flex items-center justify-center shadow-sm">1</button>
+<button class="w-10 h-10 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors">2</button>
+<button class="w-10 h-10 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors">3</button>
+<button class="w-10 h-10 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors">4</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-10 h-10 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors">5</button>
+<button class="w-10 h-10 rounded bg-surface-container-lowest hover:bg-surface-container text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+<!-- BOTTOM SPECIALIZED COUNTERTOP & STONE-CUTTING CONSULTATION SECTION -->
+<section class="w-full bg-sage-surface py-14 mt-12">
+<div class="max-w-[1380px] mx-auto px-margin">
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-7 space-y-4">
+<div class="flex items-center gap-2 text-copper-gold font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Quy trình tiêu chuẩn kỹ thuật EcoCook</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container font-semibold tracking-tight">
+            Nỗi Lo Về Kích Thước Khoét Đá &amp; Nguồn Điện Khi Đổi Bếp?
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Đội ngũ kỹ thuật viên của EcoCook trang bị máy hút bụi cắt đá không bụi, máy đo laser 3D đo đạc kích thước khoét đá cũ (bếp ga, bếp từ size cổ). Chúng tôi hỗ trợ gia công khung nẹp Inox chịu lực hoặc cắt nới đá hoa cương tự nhiên mà không làm bẩn không gian sống.
+          </p>
+<div class="grid grid-cols-3 gap-4 pt-3">
+<div class="bg-surface-container-lowest p-4 rounded shadow-sm">
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-1">0%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bụi bẩn với máy hút công suất lớn chuyên dụng</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded shadow-sm">
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-1">± 1mm</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Độ chuẩn xác khoét đá bằng tia laser hồng ngoại</div>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded shadow-sm">
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-1">5 Năm</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bảo hành linh kiện &amp; dịch vụ tận nhà miễn phí</div>
+</div>
+</div>
+</div>
+<!-- Consultation Form Box -->
+<div class="col-span-12 lg:col-span-5">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-md space-y-4">
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold">
+              Đăng Ký Tư Vấn Khoét Đá Miễn Phí
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Kỹ sư kết cấu sẽ liên hệ ngay trong 15 phút để đối chiếu thông số tủ bếp gia đình bạn.
+            </p>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Họ và tên</label>
+<input class="w-full bg-surface-container-low px-3.5 py-2.5 rounded border-0 text-on-surface focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Ví dụ: Anh Hoàng Nam" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Số điện thoại tiếp nhận</label>
+<input class="w-full bg-surface-container-low px-3.5 py-2.5 rounded border-0 text-on-surface focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="090x xxx xxx" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Tình trạng mặt đá hiện tại</label>
+<select class="w-full bg-surface-container-low px-3.5 py-2.5 rounded border-0 text-on-surface focus:outline-none focus:ring-1 focus:ring-primary-container cursor-pointer">
+<option>Đang dùng bếp ga âm (cần nới rộng hoặc nẹp thu nhỏ)</option>
+<option>Lắp mới hoàn toàn (nhà đang hoàn thiện)</option>
+<option>Thay thế bếp từ cũ cùng kích thước</option>
+<option>Mặt đá nhân tạo Solid Surface / Thạch anh</option>
+</select>
+</div>
+<button class="w-full py-3 bg-primary-container hover:bg-forest-deep text-on-primary font-label-lg text-label-lg rounded font-semibold transition-all shadow-md mt-2">
+                Gửi yêu cầu khảo sát tại nhà
+              </button>
+</div>
+<div class="text-center font-label-sm text-label-sm text-outline">
+              * Áp dụng khảo sát miễn phí cho các quận nội thành Hà Nội, Đà Nẵng, TP.HCM
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface pt-16 pb-8"><div class="max-w-[1380px] mx-auto px-margin"><div class="grid grid-cols-12 gap-gutter mb-16"><div class="col-span-4 pr-6"><div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-emerald-accent"><span class="material-symbols-outlined text-[24px]">autorenew</span></div><div><div class="font-headline-sm text-headline-sm tracking-tight text-primary-container font-semibold">EcoCook</div><div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest">Smart Kitchen Europe</div></div></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Tiên phong giải pháp bếp từ và thiết bị bếp công nghệ bán dẫn nhập khẩu nguyên chiếc từ CHLB Đức và Tây Ban Nha. Trực tiếp khảo sát, thi công chuẩn kỹ thuật kiến trúc.</p><div class="flex items-center gap-3"><div class="px-3 py-1.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary-container uppercase">CO/CQ Authentic</div><div class="px-3 py-1.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary-container uppercase">Partner E.G.O &amp; Schott</div></div></div><div class="col-span-3"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Hệ thống Showroom</h4><ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant"><li><strong class="text-on-surface font-semibold block">Hà Nội:</strong> 88 Thụy Khuê, Tây Hồ • Hotline: 024 3822 8899</li><li><strong class="text-on-surface font-semibold block">Đà Nẵng:</strong> 124 Nguyễn Văn Linh, Hải Châu • Hotline: 0236 388 9988</li><li><strong class="text-on-surface font-semibold block">TP. Hồ Chí Minh:</strong> 246 Nguyễn Đình Chiểu, Q.3 • Hotline: 028 3922 9900</li></ul></div><div class="col-span-2"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Chăm sóc &amp; Dịch vụ</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Bảo hành chính hãng 5 năm</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">1 đổi 1 trong 30 ngày</a></li><li><a class="hover:text-primary-container transition-colors" data-path="dat-lich-khao-sat-da" href="contact.html">Quy trình cắt đá chuẩn mm</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Hướng dẫn trả góp 0%</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Bảng tra cứu mã lỗi E</a></li></ul></div><div class="col-span-3"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Đăng ký Báo giá &amp; Ưu đãi</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Nhận catalog thiết bị bếp châu Âu mới nhất và voucher giảm 10% chi phí cắt đá.</p><div class="flex gap-2"><input class="w-full bg-surface-container-lowest px-3 py-2.5 rounded-lg border border-outline-variant font-body-sm text-body-sm focus:border-primary-container focus:outline-none" placeholder="Nhập email của bạn..." type="email"/><button class="px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-forest-deep transition-all shrink-0">Gửi</button></div></div></div><div class="pt-8 border-t border-outline-variant flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><div>© 2024 EcoCook Smart Kitchen Việt Nam. Bảo lưu mọi quyền.</div><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-primary-container transition-colors" href="#">Điều khoản dịch vụ</a><a class="hover:text-primary-container transition-colors" href="#">Chính sách bảo mật</a><a class="hover:text-primary-container transition-colors" href="#">Chứng nhận xuất xứ CO/CQ</a></div></div></div></footer></body></html>

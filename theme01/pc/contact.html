@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" /><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/>    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#041B12",
+            "primary-container": "#08281B",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#93c5a8",
+            "forest-deep": "#0C3826",
+            "emerald-accent": "#10B981",
+            "secondary": "#2A5B42",
+            "secondary-container": "#D7EFE2",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#1E4B34",
+            "copper-gold": "#C59B3F",
+            "copper-gold-light": "#FDF8EE",
+            "tertiary": "#8C6514",
+            "tertiary-container": "#FEF3C7",
+            "tertiary-fixed": "#FDE68A",
+            "tertiary-fixed-dim": "#ECC15A",
+            "surface": "#FFFFFF",
+            "surface-bright": "#FFFFFF",
+            "surface-dim": "#E5EBE7",
+            "background": "#F8FAF9",
+            "on-background": "#0F172A",
+            "on-surface": "#0F172A",
+            "on-surface-variant": "#475569",
+            "surface-container-lowest": "#FFFFFF",
+            "surface-container-low": "#F7FAF8",
+            "surface-container": "#EEF4F1",
+            "surface-container-high": "#E5EFEA",
+            "surface-container-highest": "#DCE9E2",
+            "sage-surface": "#F0F6F2",
+            "charcoal-ink": "#0F172A",
+            "outline": "#94A3B8",
+            "outline-variant": "#E2E8F0",
+            "error": "#DC2626",
+            "error-red": "#EF4444",
+            "error-container": "#FEE2E2",
+            "on-error": "#ffffff",
+            "on-error-container": "#991B1B",
+            "inverse-surface": "#1E293B",
+            "inverse-on-surface": "#F8FAFC",
+            "inverse-primary": "#6EE7B7",
+            "primary-fixed": "#D1FAE5",
+            "primary-fixed-dim": "#A7F3D0",
+            "on-primary-fixed": "#041B12",
+            "on-primary-fixed-variant": "#064E3B",
+            "secondary-fixed": "#D7EFE2",
+            "secondary-fixed-dim": "#BCE3CE",
+            "on-secondary-fixed": "#041B12",
+            "on-secondary-fixed-variant": "#144A2F",
+            "on-tertiary": "#ffffff",
+            "on-tertiary-container": "#78350F",
+            "on-tertiary-fixed": "#451A03",
+            "on-tertiary-fixed-variant": "#78350F",
+            "surface-tint": "#2A5B42",
+            "surface-variant": "#EEF4F1"
+          },
+          borderRadius: {
+            "none": "0px",
+            "xs": "0.375rem",
+            "sm": "0.5rem",
+            "DEFAULT": "0.75rem",
+            "md": "0.875rem",
+            "lg": "1rem",
+            "xl": "1.25rem",
+            "2xl": "1.5rem",
+            "3xl": "2rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "3rem",
+            "space-lg": "1.75rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "sans": ["Be Vietnam Pro", "-apple-system", "sans-serif"],
+            "heading": ["Plus Jakarta Sans", "Be Vietnam Pro", "sans-serif"],
+            "display": ["Plus Jakarta Sans", "Be Vietnam Pro", "sans-serif"],
+            "space": ["Space Grotesk", "sans-serif"],
+            "display-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl-mobile": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-lg": ["Be Vietnam Pro", "sans-serif"],
+            "display-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Be Vietnam Pro", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Be Vietnam Pro", "sans-serif"]
+          },
+          fontSize: {
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "600" }]
+          },
+          boxShadow: {
+            "xs": "0 1px 2px 0 rgba(0, 0, 0, 0.03)",
+            "sm": "0 2px 8px -1px rgba(6, 37, 24, 0.05), 0 1px 3px -1px rgba(6, 37, 24, 0.03)",
+            "DEFAULT": "0 4px 16px -2px rgba(6, 37, 24, 0.06)",
+            "md": "0 8px 24px -4px rgba(6, 37, 24, 0.08), 0 4px 8px -2px rgba(6, 37, 24, 0.03)",
+            "lg": "0 16px 36px -6px rgba(6, 37, 24, 0.10), 0 8px 16px -4px rgba(6, 37, 24, 0.04)",
+            "xl": "0 24px 48px -10px rgba(6, 37, 24, 0.12)",
+            "2xl": "0 32px 64px -12px rgba(6, 37, 24, 0.16)",
+            "glow-emerald": "0 0 25px rgba(16, 185, 129, 0.25)",
+            "glow-gold": "0 8px 25px -4px rgba(197, 155, 63, 0.3)",
+            "card": "0 2px 8px rgba(0,0,0,0.02), 0 12px 28px -6px rgba(6, 37, 24, 0.06)"
+          }
+        }
+      }
+    };</script><style>
+@layer base {
+  html, body {
+    font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAF9;
+    color: #0F172A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
+    letter-spacing: -0.02em;
+  }
+  main > :first-child { margin-top: 0 !important; }
+  main > :last-child { margin-bottom: 0 !important; }
+}
+
+/* Modern Refined Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+::selection { background: #D7EFE2; color: #041B12; }
+
+/* Micro-interaction & Modern Polish Utilities */
+.card-hover {
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px -6px rgba(6, 37, 24, 0.10);
+}
+.glass-header {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06) !important;
+}
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ECC15A 0%, #C59B3F 50%, #997322 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style></head><body class="bg-background font-sans font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary py-2 px-margin text-center font-body-sm text-body-sm"><div class="max-w-[1380px] mx-auto flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider"><div class="flex items-center gap-6"><span><span class="text-copper-gold font-bold mr-1">HOTLINE VIP:</span> 1900 8899</span><span class="text-on-primary-container">|</span><span>Showroom: Hà Nội • Đà Nẵng • TP.HCM</span></div><div class="flex items-center gap-6"><span>Cam kết 100% Đức &amp; Tây Ban Nha</span><span class="text-on-primary-container">|</span><span class="text-emerald-accent font-semibold">Miễn phí khảo sát &amp; cắt đá tại nhà</span></div></div></div><div class="h-20 max-w-[1380px] mx-auto px-margin flex items-center justify-between gap-gutter"><a class="flex items-center gap-3 shrink-0" data-path="trang-chu" href="home.html"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-emerald-accent shadow-sm"><span class="material-symbols-outlined text-[24px]">autorenew</span></div><div><div class="font-headline-md text-headline-sm tracking-tight text-primary-container font-semibold leading-none">EcoCook</div><div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest mt-1">Smart Kitchen Europe</div></div></a><div class="flex-1 max-w-xl mx-auto"><div class="relative flex items-center"><div class="absolute left-3 z-10 flex items-center border-r border-outline-variant pr-2"><select class="bg-transparent font-label-md text-label-md text-on-surface-variant focus:outline-none cursor-pointer pr-1"><option>Tất cả</option><option>Bếp từ Đức</option><option>Bếp từ đôi</option><option>Phụ kiện</option></select></div><input class="w-full bg-surface-container-lowest pl-28 pr-12 py-2.5 rounded-lg border border-outline-variant focus:border-primary-container focus:outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm transition-all" placeholder="Tìm kiếm dòng bếp, công nghệ inverter, mặt kính..." type="text"/><button class="absolute right-2 w-8 h-8 rounded bg-primary-container text-on-primary flex items-center justify-center hover:bg-forest-deep transition-colors"><span class="material-symbols-outlined text-[18px]">search</span></button></div><div class="flex items-center gap-3 mt-1.5 px-1 font-label-sm text-label-sm text-on-surface-variant"><span class="text-outline">Phổ biến:</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Mặt kính Schott Ceran</a><span>•</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Inverter 3.0</a><span>•</span><a class="hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Bếp đôi Đức</a></div></div><div class="flex items-center gap-5 shrink-0"><a class="flex items-center gap-1.5 text-on-surface-variant hover:text-primary-container font-label-md text-label-md transition-colors" data-path="lien-he-showroom" href="contact.html"><span class="material-symbols-outlined text-[20px] text-copper-gold">location_on</span><span>Showrooms</span></a><a class="relative p-2 text-on-surface-variant hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center">2</span></a><a class="relative p-2 text-on-surface-variant hover:text-primary-container transition-colors" data-path="gio-hang" href="cart.html"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low"><div class="max-w-[1380px] mx-auto px-margin"><nav class="flex items-center gap-8 font-label-lg text-label-lg" data-active-classes="text-primary-container font-semibold border-b-2 border-primary-container"><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="trang-chu" href="home.html">Trang chủ</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="san-pham-bep" href="category.html">Sản phẩm bếp</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="cong-nghe-xuat-xu" href="category.html">Công nghệ &amp; Xuất xứ</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Cẩm nang &amp; Tin tức</a><a class="py-3 text-on-surface-variant hover:text-primary-container transition-colors" data-path="dat-lich-khao-sat-da" href="contact.html">Đặt lịch khảo sát đá</a><a aria-current="page" class="py-3 transition-colors text-primary-container font-semibold border-b-2 border-primary-container" data-path="lien-he-showroom" href="contact.html">Liên hệ &amp; Showroom</a></nav></div></div></header><main class="w-full pt-44 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow -->
+<div class="relative w-full overflow-hidden bg-surface-container-low pb-12 pt-6">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[340px] bg-secondary-container/30 blur-[110px] pointer-events-none rounded-full"></div>
+<div class="max-w-[1380px] mx-auto px-margin relative z-10">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-6">
+<a class="hover:text-primary-container transition-colors flex items-center gap-1.5" href="home.html">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Trang chủ
+        </a>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-primary-container font-semibold">Liên hệ &amp; Showroom</span>
+</nav>
+<!-- Section Title & Narrative -->
+<div class="grid grid-cols-12 gap-gutter items-end">
+<div class="col-span-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary-container/50 text-primary-container font-label-sm text-label-sm uppercase tracking-wider mb-3">
+<span class="material-symbols-outlined text-[14px] text-emerald-accent" style="font-variation-settings: 'FILL' 1;">verified</span>
+            Trung Tâm Trải Nghiệm Chuẩn Châu Âu 2024
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-primary-container leading-tight tracking-tight">
+            Hệ Thống Showroom Trải Nghiệm &amp; <br/>Trung Tâm Kỹ Thuật EcoCook
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-3xl leading-relaxed">
+            Trực tiếp trải nghiệm không gian bếp thông minh chuẩn Châu Âu, thử nghiệm tận tay bề mặt kính ceramic <strong class="text-on-surface font-semibold">Schott Ceran® Miradur</strong> chống trầy, bộ mạch bán dẫn <strong class="text-on-surface font-semibold">E.G.O Đức</strong> và đăng ký đội ngũ kiến trúc sư - thợ máy chuyên nghiệp khảo sát, cắt đá không bụi miễn phí.
+          </p>
+</div>
+<div class="col-span-4 flex justify-end gap-3 pb-1">
+<a class="px-6 py-3.5 rounded bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-forest-deep transition-all flex items-center gap-2" href="#booking-form">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+            Đặt hẹn khảo sát đá
+          </a>
+<a class="px-5 py-3.5 rounded bg-surface-container-lowest text-primary-container font-label-lg text-label-lg shadow-sm hover:bg-sage-surface transition-all flex items-center gap-2" href="tel:19008899">
+<span class="material-symbols-outlined text-[18px] text-copper-gold">call</span>
+            1900 8899
+          </a>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: 4 FAST CONTACT CARDS -->
+<section class="max-w-[1380px] mx-auto px-margin -mt-8 relative z-20 w-full mb-16">
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Card 1 -->
+<div class="col-span-3 bg-surface-container-lowest p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-sage-surface flex items-center justify-center text-primary-container mb-4 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">support_agent</span>
+</div>
+<div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-wider mb-1">Hỗ trợ kỹ thuật 24/7</div>
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">1900 8899</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Đường dây nóng VIP giải quyết sự cố, tiếp nhận bảo hành tận nhà và điều phối kỹ thuật viên trong 30 phút.
+        </p>
+</div>
+<!-- Card 2 -->
+<div class="col-span-3 bg-surface-container-lowest p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 flex items-center justify-center text-primary-container mb-4 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<div class="font-label-sm text-label-sm text-emerald-accent uppercase tracking-wider mb-1">Tư vấn mặt đá siêu tốc</div>
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">Zalo OA Doanh Nghiệp</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Gửi ảnh kích thước lỗ khoét bàn bếp hiện hữu hoặc mặt bằng thô, kỹ sư tư vấn mã bếp tương thích trong 5 phút.
+        </p>
+</div>
+<!-- Card 3 -->
+<div class="col-span-3 bg-surface-container-lowest p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-4 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Trung tâm nghiên cứu R&amp;D</div>
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">Trụ Sở &amp; Phòng Lab</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          88 Thụy Khuê, Tây Hồ, Hà Nội. Nơi kiểm định linh kiện mâm từ, mặt kính và cấp chứng thư kiểm định công suất.
+        </p>
+</div>
+<!-- Card 4 -->
+<div class="col-span-3 bg-surface-container-lowest p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 group">
+<div class="w-12 h-12 rounded-lg bg-sage-surface flex items-center justify-center text-primary-container mb-4 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">storefront</span>
+</div>
+<div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-wider mb-1">Tiện nghi tiếp đón</div>
+<div class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">08:00 – 21:30</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Đón khách trọn vẹn 7 ngày/tuần (kể cả lễ tết). Có bãi đỗ ô tô riêng biệt rộng rãi, nhân viên bảo vệ hỗ trợ chu đáo.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SHOWROOM LOCATIONS SYSTEM WITH TABS & MAP -->
+<section class="max-w-[1380px] mx-auto px-margin w-full mb-24">
+<!-- Header with City Tabs -->
+<div class="flex items-end justify-between mb-8 pb-4">
+<div>
+<div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest mb-1">Trải nghiệm thực tế</div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container font-semibold">
+          Không Gian Trưng Bày Bếp &amp; Thiết Bị Châu Âu
+        </h2>
+</div>
+<!-- City Switcher Tabs -->
+<div class="flex items-center gap-2 p-1.5 rounded-lg bg-surface-container">
+<button class="city-tab-btn active px-6 py-2.5 rounded font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" id="tab-btn-hn" onclick="switchCity('hn')">
+          Hà Nội (2 Cơ sở)
+        </button>
+<button class="city-tab-btn px-6 py-2.5 rounded font-label-md text-label-md transition-all text-on-surface-variant hover:text-primary-container" id="tab-btn-dn" onclick="switchCity('dn')">
+          Đà Nẵng (1 Cơ sở)
+        </button>
+<button class="city-tab-btn px-6 py-2.5 rounded font-label-md text-label-md transition-all text-on-surface-variant hover:text-primary-container" id="tab-btn-hcm" onclick="switchCity('hcm')">
+          TP. Hồ Chí Minh (1 Cơ sở)
+        </button>
+</div>
+</div>
+<!-- Main Content Area: 2 Columns (Cards Left, Sticky Interactive Map Right) -->
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Left Column: Showroom Cards List (Controlled by tabs) -->
+<div class="col-span-7 flex flex-col gap-6">
+<!-- TAB CONTENT: HÀ NỘI -->
+<div class="city-content flex flex-col gap-6" id="city-group-hn">
+<!-- Showroom HN 1 (Flagship) -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+<div class="grid grid-cols-12 gap-5">
+<div class="col-span-5 relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full min-h-[220px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern ultra-luxurious kitchen appliance showroom in Hanoi with deep green marble kitchen island, sleek built-in induction hobs, brushed copper accents, and minimalist pendant lighting, showcasing European elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2dw5-VA84uNypcDgOLDNbSbjFDLURvTC9Ju17mb7k2fPa-jBjYJGxDBpd4cqZPlNCWZpHI8cZ6w9aMOHp2kVd0w8vOryR5IPLhSfTcHDHOijjBPiJ0WHDlPjkR8KU-Mi3Yo0s2uxjiaApcHj_191WwjoEmFjAy4q_ld_YAVN9dqSPsPFXmvAtltTM3OMpN08XUvFv5lmYwLRfVlv9XCD8WxlG_IySERMKlAOtk4JhdpmHT8U7wdg"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[10px] tracking-wide uppercase backdrop-blur-sm">
+                  Flagship Showroom
+                </span>
+</div>
+<div class="col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-copper-gold font-semibold uppercase">Tây Hồ • Hà Nội</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-sage-surface text-secondary">Quy mô: 200m²</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">
+                    EcoCook Flagship Thụy Khuê
+                  </h3>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span>Số 88 Phố Thụy Khuê, Phường Thụy Khuê, Quận Tây Hồ, Hà Nội</span>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-emerald-accent">directions_car</span>
+                      Bãi đỗ ô tô riêng
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-copper-gold">skillet</span>
+                      Live Cooking Test
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary-container">square_foot</span>
+                      Tư vấn cắt đá tại chỗ
+                    </span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="font-label-md text-label-md text-primary-container flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-copper-gold">phone_in_talk</span>
+                    024 3822 8899
+                  </div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded bg-surface-container text-primary-container hover:bg-sage-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="updateMapLocation('88 Thụy Khuê, Tây Hồ, Hà Nội', 'EcoCook Flagship Thụy Khuê', '024 3822 8899')">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+                      Xem trên bản đồ
+                    </button>
+<a class="px-4 py-2 rounded bg-primary-container text-on-primary hover:bg-forest-deep font-label-md text-label-md transition-colors flex items-center gap-1" href="#booking-form">
+                      Đặt lịch hẹn
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Showroom HN 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+<div class="grid grid-cols-12 gap-5">
+<div class="col-span-5 relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full min-h-[220px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Contemporary kitchen technology studio in Cau Giay Hanoi featuring built-in flush induction cooktops, ambient warm downlighting, clean cabinetry, and marble countertops with European culinary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97NAN8v98USjewlRPVQz8v8K94s9ZX48UwKO_WkdeejRC7LhKQn7axVvQ-ua37Z3A2sXx_-JqyxDmZeHJ3K1piXvRZP9WOE5Nor2sa2kC3UOL-aDJpYxT9Q8RANT_9LA-aKZT2dHy7BnIOLIDkQ_kgRwZh4cqYYCPT1FwY9HQHVuRY48eTPtE2Ne4hkigATZ8eIwr9P2uyVhsaSXliRoLJ76S_VueANqjkFZ5xO4vsecjJrIMlYk"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-surface-container-lowest/90 text-primary-container font-label-sm text-[10px] tracking-wide uppercase backdrop-blur-sm">
+                  Experience Center
+                </span>
+</div>
+<div class="col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-copper-gold font-semibold uppercase">Cầu Giấy • Hà Nội</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-sage-surface text-secondary">Quy mô: 140m²</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">
+                    EcoCook Studio Cầu Giấy
+                  </h3>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span>Số 186 Cầu Giấy, Phường Quan Hoa, Quận Cầu Giấy, Hà Nội</span>
+</div>
+<!-- Amenities -->
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-emerald-accent">directions_car</span>
+                      Hầm để xe miễn phí
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-copper-gold">electric_bolt</span>
+                      Thử nghiệm Inverter 3.0
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary-container">shield</span>
+                      Trạm tiếp nhận bảo hành
+                    </span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="font-label-md text-label-md text-primary-container flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-copper-gold">phone_in_talk</span>
+                    024 3792 6688
+                  </div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded bg-surface-container text-primary-container hover:bg-sage-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="updateMapLocation('186 Cầu Giấy, Cầu Giấy, Hà Nội', 'EcoCook Studio Cầu Giấy', '024 3792 6688')">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+                      Xem trên bản đồ
+                    </button>
+<a class="px-4 py-2 rounded bg-primary-container text-on-primary hover:bg-forest-deep font-label-md text-label-md transition-colors flex items-center gap-1" href="#booking-form">
+                      Đặt lịch hẹn
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT: ĐÀ NẴNG -->
+<div class="city-content hidden flex flex-col gap-6" id="city-group-dn">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+<div class="grid grid-cols-12 gap-5">
+<div class="col-span-5 relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full min-h-[220px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end showroom for smart induction stoves in Da Nang, bright architectural lighting, custom kitchen islands with integrated glass ceramic cooktops and smart range hoods, premium showroom experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ2gAS6s-w3XC1ZC-NTXaX5Sfmso8TAB_6xoO6s-aaByqeLNndLFfevZKTOIdfz9OKXzJ4wSvxXo7-2kdaBxw7Bgmjli4iWf6gBMipn7FSNAUU6B9tXgzFTFAoIv6ZamS2NevpeDtU8jBqjJ7P7qNLtaXWkfc0nP4kzGJaYqA8_QP1FVO0CjZCUUziv5z1k_lFrEhuyp30B2jbeq9XSn8kouVcxtQKNQnGXn6lXSOXyJESC8JhxjE"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[10px] tracking-wide uppercase backdrop-blur-sm">
+                  Showroom Miền Trung
+                </span>
+</div>
+<div class="col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-copper-gold font-semibold uppercase">Hải Châu • Đà Nẵng</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-sage-surface text-secondary">Quy mô: 160m²</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">
+                    EcoCook Trung Tâm Đà Nẵng
+                  </h3>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span>124 Nguyễn Văn Linh, Phường Nam Dương, Quận Hải Châu, Đà Nẵng</span>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-emerald-accent">directions_car</span>
+                      Sân trước đậu xe 4 chỗ &amp; 7 chỗ
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-copper-gold">local_cafe</span>
+                      Khu thử đồ gia vị &amp; nấu mẫu
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary-container">support</span>
+                      Kho bảo hành miền Trung
+                    </span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="font-label-md text-label-md text-primary-container flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-copper-gold">phone_in_talk</span>
+                    0236 388 9988
+                  </div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded bg-surface-container text-primary-container hover:bg-sage-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="updateMapLocation('124 Nguyễn Văn Linh, Hải Châu, Đà Nẵng', 'EcoCook Trung Tâm Đà Nẵng', '0236 388 9988')">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+                      Xem trên bản đồ
+                    </button>
+<a class="px-4 py-2 rounded bg-primary-container text-on-primary hover:bg-forest-deep font-label-md text-label-md transition-colors flex items-center gap-1" href="#booking-form">
+                      Đặt lịch hẹn
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB CONTENT: TP. HỒ CHÍ MINH -->
+<div class="city-content hidden flex flex-col gap-6" id="city-group-hcm">
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-md transition-all group">
+<div class="grid grid-cols-12 gap-5">
+<div class="col-span-5 relative rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full min-h-[220px] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spacious luxury smart kitchen gallery in District 3 Ho Chi Minh City, matte black and natural wood aesthetics, flush mounted German induction stovetops, glowing LED accent lighting and architect consultation desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRK4dhZLOTKrW3VPEzEVscpURi9_-jNVr6sh1Li7hCDuTgall7C1U0oFPWyH8NzldRxxBt1C0FMnLyr8epIzoO3ZScYx6mpaNkWew_piloSzWEay34HLebmyqoI8pzDRoOuUfeWxCXtEVibBUdsfmajlpzxrZK8Btc7xSITc_D0OarqMhPXA7RE-zGNyQC_T-im4Ncf6fVl-Sjy9weXWIN7BsBPV_gJWBsnPnpEwmmEROlhdSj-u8"/>
+<span class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded bg-primary-container/90 text-on-primary font-label-sm text-[10px] tracking-wide uppercase backdrop-blur-sm">
+                  Showroom Flagship Nam Bộ
+                </span>
+</div>
+<div class="col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-copper-gold font-semibold uppercase">Quận 3 • TP. Hồ Chí Minh</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-sage-surface text-secondary">Quy mô: 190m²</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-semibold mb-2">
+                    EcoCook Flagship Võ Thị Sáu
+                  </h3>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+<span>246 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3, TP. Hồ Chí Minh</span>
+</div>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-emerald-accent">directions_car</span>
+                      Bãi đỗ xe ô tô có mái che
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-copper-gold">architecture</span>
+                      Phòng mẫu thiết kế kiến trúc
+                    </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary-container">speed</span>
+                      Test đun sôi 2.5 lít trong 90s
+                    </span>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<div class="font-label-md text-label-md text-primary-container flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[16px] text-copper-gold">phone_in_talk</span>
+                    028 3922 9900
+                  </div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2 rounded bg-surface-container text-primary-container hover:bg-sage-surface font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="updateMapLocation('246 Nguyễn Đình Chiểu, Quận 3, TP.HCM', 'EcoCook Flagship Võ Thị Sáu', '028 3922 9900')">
+<span class="material-symbols-outlined text-[16px]">navigation</span>
+                      Xem trên bản đồ
+                    </button>
+<a class="px-4 py-2 rounded bg-primary-container text-on-primary hover:bg-forest-deep font-label-md text-label-md transition-colors flex items-center gap-1" href="#booking-form">
+                      Đặt lịch hẹn
+                    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Map Component (Sticky) -->
+<div class="col-span-5">
+<div class="sticky top-48 bg-surface-container-lowest rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between mb-3 px-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-copper-gold text-[20px]">explore</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-semibold" id="map-name">EcoCook Flagship Thụy Khuê</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-emerald-accent/10 text-emerald-accent font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-accent animate-pulse"></span>
+              Đang mở cửa
+            </span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm px-1 mb-4 flex items-center justify-between">
+<span class="truncate max-w-[320px]" id="map-address">88 Thụy Khuê, Tây Hồ, Hà Nội</span>
+<span class="font-semibold text-primary-container shrink-0" id="map-phone">024 3822 8899</span>
+</div>
+<!-- Google Maps Container with data-location -->
+<div class="relative rounded-lg overflow-hidden h-[380px] bg-surface-container" id="map-wrapper">
+<div class="w-full h-full bg-cover bg-center transition-all duration-300" data-location="88 Thụy Khuê, Tây Hồ, Hà Nội" id="map-display" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPl6XzJgj7ORQC2MT91_yQwd_AnhSCGhwAVFRuSfuqB8ZgWpnFrXw9TspUqlOFgchpTsM8r4wSN6DpEe1jVoI0QO_HRtGn7KWRhSbVyWQ6bBkQrHoDEJ6hCS5dwc9EQAZSCCK-_w8DQvom_6ltNjrY3DFHWfl1qvgtovoSAbkwyjeAW0zbf2Ji1mLDckoqhi9xCMyua-vhdK6QIAzWFxzXOgVE2m5UInkxUxCYt27m3C0m-jCFDk8')">
+<!-- Overlay Pin Visual for Map Ambience -->
+<div class="absolute inset-0 bg-primary-container/5 pointer-events-none flex items-center justify-center">
+<div class="relative flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xl animate-bounce">
+<span class="material-symbols-outlined text-[20px] text-copper-gold">storefront</span>
+</div>
+<div class="px-3 py-1 rounded bg-charcoal-ink text-on-primary font-label-sm text-label-sm shadow-md mt-1">
+                    Cơ sở đang chọn
+                  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons on Map Card -->
+<div class="grid grid-cols-2 gap-2 mt-4">
+<a class="py-2.5 rounded bg-surface-container text-primary-container hover:bg-sage-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" href="https://maps.google.com/?q=88+Thuy+Khue+Tay+Ho+Ha+Noi" id="gmaps-link" target="_blank">
+<span class="material-symbols-outlined text-[16px]">near_me</span>
+              Mở chỉ đường Google Maps
+            </a>
+<a class="py-2.5 rounded bg-primary-container text-on-primary hover:bg-forest-deep font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" href="tel:19008899">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              Gọi trực tiếp cơ sở
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: IN-HOME SURVEY & QUOTATION BOOKING FORM (2 COLUMNS) -->
+<section class="w-full bg-sage-surface py-20 relative overflow-hidden" id="booking-form">
+<!-- Subtle Pattern Accent -->
+<div class="absolute right-0 bottom-0 w-96 h-96 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-[1380px] mx-auto px-margin relative z-10">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="px-3 py-1 rounded bg-surface-container-lowest text-copper-gold font-label-sm text-label-sm uppercase tracking-widest inline-block mb-3">
+          Dịch vụ kỹ thuật chuyên sâu
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container font-semibold">
+          Đăng Ký Khảo Sát &amp; Báo Giá Thi Công Tận Nhà
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Kỹ thuật viên EcoCook mang máy đo laser và catalogue thực tế tới công trình. Hoàn toàn miễn phí, không phát sinh chi phí nếu không lắp đặt.
+        </p>
+</div>
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- Left Column: The Comprehensive Form (7 Cols) -->
+<div class="col-span-7 bg-surface-container-lowest p-8 rounded-xl shadow-lg">
+<form class="space-y-5" onsubmit="handleFormSubmit(event)">
+<!-- Row 1: Name & Phone -->
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Họ và tên khách hàng <span class="text-error font-bold">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest px-4 py-3 rounded-lg border-0 bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container transition-all" placeholder="Nguyễn Văn A" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-outline text-[18px]">person</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Số điện thoại liên hệ <span class="text-error font-bold">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest px-4 py-3 rounded-lg border-0 bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container transition-all" placeholder="09xx xxx xxx" required="" type="tel"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-outline text-[18px]">call</span>
+</div>
+</div>
+</div>
+<!-- Row 2: City & Product Interest -->
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Khu vực / Tỉnh thành <span class="text-error font-bold">*</span>
+</label>
+<select class="w-full bg-surface-container-low px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container cursor-pointer transition-all">
+<option value="hn">Hà Nội &amp; các quận huyện</option>
+<option value="hcm">TP. Hồ Chí Minh &amp; vùng ven</option>
+<option value="dn">Đà Nẵng &amp; Quảng Nam</option>
+<option value="other">Tỉnh thành khác (Gửi mẫu qua Bưu điện)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Dòng sản phẩm quan tâm
+                </label>
+<select class="w-full bg-surface-container-low px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container cursor-pointer transition-all">
+<option value="bep-doi">Bếp từ đôi CHLB Đức (Schott Ceran)</option>
+<option value="bep-3-flex">Bếp từ 3 vùng nấu đa điểm FlexZone</option>
+<option value="bep-dien-tu">Bếp điện từ kết hợp (Hồng ngoại + Từ)</option>
+<option value="tron-bo">Trọn bộ thiết bị bếp (Bếp + Hút mùi + Lò nướng)</option>
+</select>
+</div>
+</div>
+<!-- Row 3: Stone Condition Radio Group -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                Hiện trạng mặt đá bếp hiện hữu
+              </label>
+<div class="grid grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 accent-primary-container" name="stone_status" type="radio" value="new"/>
+<span class="font-body-sm text-body-sm text-on-surface">Nhà mới hoàn thiện / Đá nguyên bản</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="w-4 h-4 accent-primary-container" name="stone_status" type="radio" value="replace"/>
+<span class="font-body-sm text-body-sm text-on-surface">Thay bếp ga cũ / Cần khoét vá đá</span>
+</label>
+</div>
+</div>
+<!-- Row 4: Preferred Date / Time for Surveyor -->
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Thời gian thợ qua đo đạc
+                </label>
+<select class="w-full bg-surface-container-low px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container cursor-pointer transition-all">
+<option>Hôm nay (Trong 2 - 4 tiếng)</option>
+<option>Ngày mai (Sáng 09:00 - 11:30)</option>
+<option>Ngày mai (Chiều 14:00 - 17:30)</option>
+<option>Cuối tuần (Thứ 7 hoặc Chủ Nhật)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                  Địa chỉ công trình cụ thể
+                </label>
+<input class="w-full bg-surface-container-low px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container transition-all" placeholder="Số nhà, tên ngõ, tòa căn hộ..." type="text"/>
+</div>
+</div>
+<!-- Row 5: Technical Notes -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">
+                Ghi chú kỹ thuật chi tiết (Tùy chọn)
+              </label>
+<textarea class="w-full bg-surface-container-low px-4 py-3 rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary-container transition-all resize-none" placeholder="Ví dụ: Căn hộ tầng 18 chung cư, đường điện 2.5mm² sẵn có, cần thợ kiểm tra aptomat riêng..." rows="3"></textarea>
+</div>
+<!-- Submit Button & Disclaimer -->
+<div class="pt-2">
+<button class="w-full py-4 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:bg-forest-deep transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[22px] text-copper-gold">check_circle</span>
+                GỬI YÊU CẦU KHẢO SÁT &amp; BÁO GIÁ MIỄN PHÍ
+              </button>
+<div class="flex items-center justify-center gap-4 text-outline font-label-sm text-label-sm mt-3">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span>Bảo mật thông tin 100%</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">speed</span>Phản hồi xác nhận sau 5 phút</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">money_off</span>Không ràng buộc mua hàng</span>
+</div>
+</div>
+</form>
+</div>
+<!-- Right Column: 4 Golden Guarantees (5 Cols) -->
+<div class="col-span-5 flex flex-col gap-4">
+<div class="p-6 rounded-xl bg-primary-container text-on-primary shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-2 text-copper-gold font-label-sm text-label-sm uppercase tracking-widest mb-1">
+              Tiêu chuẩn kỹ nghệ EcoCook
+            </div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary">
+              4 Cam Kết Vàng Khi Khảo Sát &amp; Lắp Đặt
+            </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-2">
+              Chúng tôi bảo vệ sự hoàn mỹ của căn bếp gia đình bạn với quy chuẩn thi công Đức nghiêm ngặt nhất.
+            </p>
+</div>
+<!-- Guarantee Item 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-sage-surface text-primary-container shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cleaning_services</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-emerald-accent/15 text-forest-deep font-semibold">Cam kết 01</span>
+<h4 class="font-headline-sm text-body-lg text-primary-container font-semibold">Miễn Phí 100% Cắt Đá Không Bụi</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Trang bị hệ thống máy cắt tích hợp chụp hút bụi áp lực cao và bọc phủ màng nilon bảo vệ phòng khách, bàn ăn nguyên vẹn sạch bóng.
+              </p>
+</div>
+</div>
+<!-- Guarantee Item 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-sage-surface text-primary-container shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-copper-gold">verified_user</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-copper-gold/15 text-tertiary-container font-semibold">Cam kết 02</span>
+<h4 class="font-headline-sm text-body-lg text-primary-container font-semibold">100% CO/CQ Hải Quan Châu Âu</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Đầy đủ tờ khai thông quan nguyên chiếc từ CHLB Đức và Vương Quốc Tây Ban Nha. Khách hàng quét mã QR xác thực xuất xứ tại chỗ.
+              </p>
+</div>
+</div>
+<!-- Guarantee Item 3 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-sage-surface text-primary-container shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">home_repair_service</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-emerald-accent/15 text-forest-deep font-semibold">Cam kết 03</span>
+<h4 class="font-headline-sm text-body-lg text-primary-container font-semibold">Bảo Hành 5 Năm Tại Nhà 24/7</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Chính sách bảo hành mâm từ E.G.O và mặt kính dài nhất phân khúc. Hỗ trợ cho mượn bếp thay thế tạm thời trong lúc bảo dưỡng.
+              </p>
+</div>
+</div>
+<!-- Guarantee Item 4 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-sage-surface text-primary-container shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-error">workspace_premium</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-error-container text-on-error-container font-semibold">Cam kết 04</span>
+<h4 class="font-headline-sm text-body-lg text-primary-container font-semibold">Hoàn Tiền 200% Nếu Sai Xuất Xứ</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Đảm bảo tuyệt đối về đạo đức kinh doanh. Phát hiện bất kỳ linh kiện nào tráo đổi hay hàng nhái, EcoCook đền gấp 2 lần giá trị hợp đồng.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: FAQ & ACCREDITATION STRIP -->
+<section class="max-w-[1380px] mx-auto px-margin py-16 w-full">
+<div class="grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-5">
+<span class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest block mb-2">Thắc mắc thường gặp</span>
+<h3 class="font-headline-md text-headline-md text-primary-container font-semibold mb-3">
+          Những Lưu Ý Trước Khi Nhận Đo Mặt Đá Bếp
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+          Kỹ thuật viên của EcoCook đều có chứng chỉ thi công điện gia dụng châu Âu và được trang bị công cụ hút bụi Festool chuyên dụng.
+        </p>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm ring-2 ring-surface-container-lowest">HN</div>
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm ring-2 ring-surface-container-lowest">ĐN</div>
+<div class="w-10 h-10 rounded-full bg-forest-deep text-on-primary flex items-center justify-center font-label-sm text-label-sm ring-2 ring-surface-container-lowest">HCM</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hơn <strong class="text-on-surface font-semibold">2,800+</strong> gia đình đã khảo sát lắp đặt an toàn trong năm nay</span>
+</div>
+</div>
+<div class="col-span-7 grid grid-cols-2 gap-4">
+<div class="p-5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary-container font-headline-sm text-body-lg font-semibold mb-2">
+<span class="material-symbols-outlined text-copper-gold text-[20px]">help</span>
+            Cắt đá có gây bụi bẩn trong nhà?
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hoàn toàn không. Máy cắt đá chuyên dụng của chúng tôi có vòi phun sương ngưng tụ và máy hút bụi lọc HEPA hút ngay tại đường cắt.
+          </p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary-container font-headline-sm text-body-lg font-semibold mb-2">
+<span class="material-symbols-outlined text-copper-gold text-[20px]">help</span>
+            Dây điện nhà cũ có dùng được?
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Kỹ thuật viên sẽ đo tải ampe thực tế. Bếp đôi inverter chỉ yêu cầu dây tối thiểu 2.5mm² và aptomat 20A riêng biệt an toàn.
+          </p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary-container font-headline-sm text-body-lg font-semibold mb-2">
+<span class="material-symbols-outlined text-copper-gold text-[20px]">help</span>
+            Nếu không mua sau khảo sát?
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Khách hàng hoàn toàn không phải trả bất kỳ chi phí đi lại hay tư vấn nào. Khảo sát là quyền lợi phục vụ 100% miễn phí.
+          </p>
+</div>
+<div class="p-5 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary-container font-headline-sm text-body-lg font-semibold mb-2">
+<span class="material-symbols-outlined text-copper-gold text-[20px]">help</span>
+            Thời gian hoàn thiện bao lâu?
+          </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Quy trình khoét đá, gia cố khung chịu lực và đấu nối điện hoàn thiện chỉ mất từ 45 đến 75 phút cho mỗi bộ bếp.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Notification Toast Modal (Hidden by default) -->
+<div class="fixed bottom-8 right-8 z-50 bg-primary-container text-on-primary px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3 translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notify">
+<span class="material-symbols-outlined text-emerald-accent text-[26px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-primary">Gửi yêu cầu thành công!</div>
+<div class="font-body-sm text-body-sm text-on-primary-container">Chuyên viên kỹ thuật EcoCook sẽ gọi xác nhận trong 5 phút.</div>
+</div>
+</div>
+</div>
+<script>
+  // Showroom Tab Switching Logic
+  function switchCity(city) {
+    // Buttons reset
+    document.querySelectorAll('.city-tab-btn').forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('text-on-surface-variant');
+    });
+
+    // Active button
+    const activeBtn = document.getElementById('tab-btn-' + city);
+    if (activeBtn) {
+      activeBtn.classList.remove('text-on-surface-variant');
+      activeBtn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    }
+
+    // Hide all contents
+    document.querySelectorAll('.city-content').forEach(el => {
+      el.classList.add('hidden');
+    });
+
+    // Show current
+    const targetGroup = document.getElementById('city-group-' + city);
+    if (targetGroup) {
+      targetGroup.classList.remove('hidden');
+    }
+
+    // Auto-update map to first location of city
+    if (city === 'hn') {
+      updateMapLocation('88 Thụy Khuê, Tây Hồ, Hà Nội', 'EcoCook Flagship Thụy Khuê', '024 3822 8899');
+    } else if (city === 'dn') {
+      updateMapLocation('124 Nguyễn Văn Linh, Hải Châu, Đà Nẵng', 'EcoCook Trung Tâm Đà Nẵng', '0236 388 9988');
+    } else if (city === 'hcm') {
+      updateMapLocation('246 Nguyễn Đình Chiểu, Quận 3, TP.HCM', 'EcoCook Flagship Võ Thị Sáu', '028 3922 9900');
+    }
+  }
+
+  // Update Map Function
+  function updateMapLocation(address, name, phone) {
+    const mapDisplay = document.getElementById('map-display');
+    const mapName = document.getElementById('map-name');
+    const mapAddress = document.getElementById('map-address');
+    const mapPhone = document.getElementById('map-phone');
+    const gmapsLink = document.getElementById('gmaps-link');
+
+    if (mapDisplay) {
+      mapDisplay.setAttribute('data-location', address);
+    }
+    if (mapName) mapName.textContent = name;
+    if (mapAddress) mapAddress.textContent = address;
+    if (mapPhone) mapPhone.textContent = phone;
+    if (gmapsLink) {
+      gmapsLink.href = 'https://maps.google.com/?q=' + encodeURIComponent(address);
+    }
+  }
+
+  // Form Submission Micro-Interaction
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const toast = document.getElementById('toast-notify');
+    if (toast) {
+      toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }, 4500);
+    }
+    e.target.reset();
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface pt-16 pb-8"><div class="max-w-[1380px] mx-auto px-margin"><div class="grid grid-cols-12 gap-gutter mb-16"><div class="col-span-4 pr-6"><div class="flex items-center gap-3 mb-4"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-emerald-accent"><span class="material-symbols-outlined text-[24px]">autorenew</span></div><div><div class="font-headline-sm text-headline-sm tracking-tight text-primary-container font-semibold">EcoCook</div><div class="font-label-sm text-label-sm text-copper-gold uppercase tracking-widest">Smart Kitchen Europe</div></div></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Tiên phong giải pháp bếp từ và thiết bị bếp công nghệ bán dẫn nhập khẩu nguyên chiếc từ CHLB Đức và Tây Ban Nha. Trực tiếp khảo sát, thi công chuẩn kỹ thuật kiến trúc.</p><div class="flex items-center gap-3"><div class="px-3 py-1.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary-container uppercase">CO/CQ Authentic</div><div class="px-3 py-1.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary-container uppercase">Partner E.G.O &amp; Schott</div></div></div><div class="col-span-3"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Hệ thống Showroom</h4><ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant"><li><strong class="text-on-surface font-semibold block">Hà Nội:</strong> 88 Thụy Khuê, Tây Hồ • Hotline: 024 3822 8899</li><li><strong class="text-on-surface font-semibold block">Đà Nẵng:</strong> 124 Nguyễn Văn Linh, Hải Châu • Hotline: 0236 388 9988</li><li><strong class="text-on-surface font-semibold block">TP. Hồ Chí Minh:</strong> 246 Nguyễn Đình Chiểu, Q.3 • Hotline: 028 3922 9900</li></ul></div><div class="col-span-2"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Chăm sóc &amp; Dịch vụ</h4><ul class="space-y-2.5 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Bảo hành chính hãng 5 năm</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">1 đổi 1 trong 30 ngày</a></li><li><a class="hover:text-primary-container transition-colors" data-path="dat-lich-khao-sat-da" href="contact.html">Quy trình cắt đá chuẩn mm</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Hướng dẫn trả góp 0%</a></li><li><a class="hover:text-primary-container transition-colors" data-path="cam-nang-tin-tuc" href="news.html">Bảng tra cứu mã lỗi E</a></li></ul></div><div class="col-span-3"><h4 class="font-headline-sm text-headline-sm text-primary-container mb-4">Đăng ký Báo giá &amp; Ưu đãi</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Nhận catalog thiết bị bếp châu Âu mới nhất và voucher giảm 10% chi phí cắt đá.</p><div class="flex gap-2"><input class="w-full bg-surface-container-lowest px-3 py-2.5 rounded-lg border border-outline-variant font-body-sm text-body-sm focus:border-primary-container focus:outline-none" placeholder="Nhập email của bạn..." type="email"/><button class="px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-forest-deep transition-all shrink-0">Gửi</button></div></div></div><div class="pt-8 border-t border-outline-variant flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><div>© 2024 EcoCook Smart Kitchen Việt Nam. Bảo lưu mọi quyền.</div><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-primary-container transition-colors" href="#">Điều khoản dịch vụ</a><a class="hover:text-primary-container transition-colors" href="#">Chính sách bảo mật</a><a class="hover:text-primary-container transition-colors" href="#">Chứng nhận xuất xứ CO/CQ</a></div></div></div></footer></body></html>

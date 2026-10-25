@@ -1,0 +1,3236 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kho Giao Diện Website Chuyên Nghiệp Gozic - Đẹp, Hiện Đại, Chuẩn SEO 2026</title>
+  <meta name="description" content="Khám phá kho theme website cao cấp từ Gozic. Đa dạng ngành nghề: Bán hàng, Mỹ phẩm, Spa, Nhà hàng, Bất động sản, Doanh nghiệp. Tích hợp sẵn POS & Quản lý kho." />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons & Material Symbols -->
+  <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    /* ==========================================================================
+       GOZIC DESIGN SYSTEM TOKENS (Dark / Light Mode)
+       ========================================================================== */
+    :root,
+    [data-theme="dark"] {
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: 'Outfit', sans-serif;
+
+      --bg-base: #0b0f19;
+      --bg-surface: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #24344d;
+      --bg-glass: rgba(15, 23, 42, 0.85);
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-medium: rgba(255, 255, 255, 0.16);
+      --border-focus: #10b981;
+
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --text-inverse: #0b0f19;
+
+      --accent: #10b981;
+      --accent-light: #34d399;
+      --accent-hover: #059669;
+      --accent-glow: rgba(16, 185, 129, 0.25);
+      --accent-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+
+      --primary: #10b981;
+      --primary-glow: rgba(16, 185, 129, 0.25);
+      --secondary: #059669;
+
+      --badge-hot-bg: rgba(239, 68, 68, 0.15);
+      --badge-hot-border: rgba(239, 68, 68, 0.35);
+      --badge-hot-text: #f87171;
+
+      --badge-ready-bg: rgba(16, 185, 129, 0.15);
+      --badge-ready-border: rgba(16, 185, 129, 0.35);
+      --badge-ready-text: #34d399;
+
+      --badge-soon-bg: rgba(245, 158, 11, 0.15);
+      --badge-soon-border: rgba(245, 158, 11, 0.35);
+      --badge-soon-text: #fbbf24;
+
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    [data-theme="light"] {
+      --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: 'Outfit', sans-serif;
+
+      --bg-base: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: #ffffff;
+      --bg-card-hover: #f1f5f9;
+      --bg-glass: rgba(255, 255, 255, 0.92);
+
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-medium: rgba(0, 0, 0, 0.14);
+      --border-focus: #10b981;
+
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --text-inverse: #ffffff;
+
+      --accent: #10b981;
+      --accent-light: #34d399;
+      --accent-hover: #059669;
+      --accent-glow: rgba(16, 185, 129, 0.2);
+      --accent-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+
+      --primary: #10b981;
+      --primary-glow: rgba(16, 185, 129, 0.15);
+      --secondary: #059669;
+
+      --badge-hot-bg: rgba(239, 68, 68, 0.1);
+      --badge-hot-border: rgba(239, 68, 68, 0.25);
+      --badge-hot-text: #dc2626;
+
+      --badge-ready-bg: rgba(16, 185, 129, 0.1);
+      --badge-ready-border: rgba(16, 185, 129, 0.25);
+      --badge-ready-text: #059669;
+
+      --badge-soon-bg: rgba(245, 158, 11, 0.1);
+      --badge-soon-border: rgba(245, 158, 11, 0.25);
+      --badge-soon-text: #d97706;
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6, .brand-font {
+      font-family: var(--font-heading);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Ambient animated blobs */
+    .ambient-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.35;
+      animation: floatBlob 20s infinite alternate ease-in-out;
+    }
+
+    .blob-1 {
+      width: 500px;
+      height: 500px;
+      background: rgba(16, 185, 129, 0.25);
+      top: -100px;
+      left: -100px;
+    }
+
+    .blob-2 {
+      width: 450px;
+      height: 450px;
+      background: rgba(59, 130, 246, 0.2);
+      bottom: 10%;
+      right: -100px;
+      animation-delay: -5s;
+    }
+
+    .blob-3 {
+      width: 350px;
+      height: 350px;
+      background: rgba(139, 92, 246, 0.15);
+      top: 40%;
+      left: 30%;
+      animation-delay: -10s;
+    }
+
+    @keyframes floatBlob {
+      0% { transform: translateY(0) scale(1); }
+      100% { transform: translateY(40px) scale(1.08); }
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 24px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      user-select: none;
+      flex-shrink: 0;
+    }
+
+    /* Gozic Wordmark Logo (Chuẩn Gozic: G Vàng Amber, ozic Trắng/Đen) */
+    .gozic-logo {
+      display: inline-flex;
+      align-items: baseline;
+      font-family: var(--font-heading);
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+
+    .gozic-logo .logo-g {
+      color: #f59e0b; /* Amber Gold chuẩn */
+      font-size: 31px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+
+    .gozic-logo .logo-ozic {
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+
+    [data-theme="light"] .gozic-logo .logo-ozic {
+      color: #0f172a;
+    }
+
+    .brand-details {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.2;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-tag {
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 6px;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      line-height: 1.4;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .brand-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.2;
+    }
+
+    /* Navigation Menu (Đơn giản, thanh lịch & thoáng đãng) */
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--text-primary);
+    }
+
+    .dropdown-toggle .bi-chevron-down {
+      font-size: 10px;
+      transition: transform 0.25s ease;
+      opacity: 0.7;
+    }
+
+    .nav-item.has-dropdown:hover .dropdown-toggle .bi-chevron-down {
+      transform: rotate(180deg);
+      opacity: 1;
+    }
+
+    /* Dropdown Menu Container */
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(12px);
+      min-width: 290px;
+      background: var(--bg-surface);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-medium);
+      border-radius: 14px;
+      padding: 8px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    [data-theme="light"] .dropdown-menu {
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+      height: 12px;
+    }
+
+    .nav-item.has-dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(4px);
+    }
+
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.15s ease;
+      cursor: pointer;
+    }
+
+    .dropdown-item:hover {
+      background: rgba(16, 185, 129, 0.08);
+      transform: translateX(2px);
+    }
+
+    .dropdown-icon-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    [data-theme="light"] .dropdown-icon-box {
+      background: rgba(0, 0, 0, 0.03);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .dropdown-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .dropdown-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* Header Actions (Tròn tối giản tinh tế theo chuẩn Ảnh 1) */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-theme-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border-medium);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.25s ease;
+      outline: none;
+    }
+
+    [data-theme="light"] .btn-theme-circle {
+      background: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #0f172a;
+    }
+
+    .btn-theme-circle:hover {
+      background: rgba(245, 158, 11, 0.12);
+      border-color: #f59e0b;
+      color: #f59e0b;
+      transform: rotate(20deg);
+    }
+
+    .btn-mobile-toggle {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      border: 1px solid var(--border-medium);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-primary);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 20px;
+      outline: none;
+    }
+
+    [data-theme="light"] .btn-mobile-toggle {
+      background: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #0f172a;
+    }
+
+    /* Footer Social Icons */
+    .btn-theme-toggle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border-medium);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-theme-toggle:hover {
+      background: var(--bg-card);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: var(--accent-gradient);
+      color: #ffffff !important;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 16px var(--accent-glow);
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px var(--accent-glow);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: 10px;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid var(--border-medium);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--bg-card);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       HERO BANNER
+       ========================================================================== */
+    .hero {
+      padding: 70px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #10b981 20%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 720px;
+      margin: 0 auto 32px;
+      line-height: 1.65;
+    }
+
+    /* Search & Stats Box */
+    .search-filter-wrapper {
+      max-width: 820px;
+      margin: 0 auto 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: 16px;
+      padding: 8px 12px 8px 20px;
+      box-shadow: var(--shadow-card);
+      transition: all 0.25s ease;
+    }
+
+    .search-bar:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-glow);
+    }
+
+    .search-bar i {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin-right: 12px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text-primary);
+      font-size: 15px;
+      font-family: inherit;
+    }
+
+    .search-bar input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-count-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* Fast metrics bar */
+    .metrics-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-top: 10px;
+    }
+
+    .metric-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+
+    .metric-item i {
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    .metric-item strong {
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       THEME STORE: LEFT SIDEBAR MENU + SHOWCASE LAYOUT
+       ========================================================================== */
+    .themes-showcase-section {
+      padding: 10px 0 80px;
+    }
+
+    .showcase-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+    }
+
+    /* Left Sidebar Menu (Kiểu Left Menu Đẹp, Gọn & Dễ Nhìn) */
+    .showcase-sidebar {
+      width: 280px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 88px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 10;
+    }
+
+    .sidebar-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: 20px;
+      padding: 18px 14px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-theme="light"] .sidebar-block {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+
+    .sidebar-header {
+      font-family: var(--font-heading);
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 0 8px 10px;
+      border-bottom: 1px solid var(--border-subtle);
+      letter-spacing: -0.2px;
+    }
+
+    .sidebar-header i {
+      font-size: 15px;
+      color: var(--accent);
+    }
+
+    /* Category Left Menu List */
+    .category-menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .category-menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 9.5px 12px;
+      border-radius: 12px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      font-size: 13.5px;
+      font-weight: 500;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .category-menu-item .item-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .category-menu-item .item-left i {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .category-menu-item:hover {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      transform: translateX(3px);
+    }
+
+    .category-menu-item:hover .item-left i {
+      color: var(--accent);
+    }
+
+    .category-menu-item.active {
+      background: var(--accent-gradient);
+      color: #ffffff !important;
+      font-weight: 600;
+      box-shadow: 0 4px 16px var(--accent-glow);
+      transform: translateX(3px);
+    }
+
+    .category-menu-item.active .item-left i {
+      color: #ffffff;
+    }
+
+    .category-menu-item .tab-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-left: 8px;
+    }
+
+    [data-theme="light"] .category-menu-item .tab-count {
+      background: rgba(0, 0, 0, 0.06);
+      color: var(--text-secondary);
+    }
+
+    .category-menu-item.active .tab-count {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    /* Status Left Menu List */
+    .status-menu-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .status-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 9px 12px;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 500;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .status-menu-item:hover {
+      background: var(--bg-card);
+      color: var(--text-primary);
+    }
+
+    .status-menu-item.active {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      border-color: rgba(16, 185, 129, 0.25);
+      font-weight: 600;
+    }
+
+    .status-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .status-indicator.all {
+      background: #94a3b8;
+    }
+
+    .status-indicator.ready {
+      background: #10b981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+
+    .status-indicator.soon {
+      background: #f59e0b;
+      box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+    }
+
+    /* Sidebar Help Card */
+    .sidebar-help-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(14, 165, 233, 0.08) 100%);
+      border: 1px dashed rgba(16, 185, 129, 0.3);
+      border-radius: 18px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .sidebar-help-card i {
+      font-size: 22px;
+      color: var(--accent);
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .sidebar-help-card .help-title {
+      font-family: var(--font-heading);
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .sidebar-help-card .help-desc {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .sidebar-help-card .help-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      color: var(--text-primary);
+      font-size: 12.5px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-help-card .help-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    /* Right Main Content */
+    .showcase-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* Content Topbar */
+    .showcase-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-medium);
+      border-radius: 16px;
+      padding: 10px 18px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    [data-theme="light"] .showcase-topbar {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+    }
+
+    .topbar-search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .topbar-search i {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .topbar-search input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 13.5px;
+      color: var(--text-primary);
+      font-family: var(--font-family);
+    }
+
+    .topbar-search input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .topbar-meta {
+      flex-shrink: 0;
+    }
+
+    .search-count-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       THEME GRID & CARDS
+       ========================================================================== */
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+      padding-bottom: 60px;
+    }
+
+    .theme-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .theme-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.35);
+      border-color: rgba(16, 185, 129, 0.4);
+    }
+
+    /* Thumbnail mockup window */
+    .card-preview {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      background: #060911;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .theme-card:hover .card-preview img {
+      transform: scale(1.05);
+    }
+
+    /* Badges over preview */
+    .preview-badges {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      display: flex;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .badge-status {
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .badge-status.ready {
+      background: var(--badge-ready-bg);
+      border: 1px solid var(--badge-ready-border);
+      color: var(--badge-ready-text);
+    }
+
+    .badge-status.soon {
+      background: var(--badge-soon-bg);
+      border: 1px solid var(--badge-soon-border);
+      color: var(--badge-soon-text);
+    }
+
+    .badge-status.hot {
+      background: var(--badge-hot-bg);
+      border: 1px solid var(--badge-hot-border);
+      color: var(--badge-hot-text);
+    }
+
+    .preview-device-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      z-index: 2;
+    }
+
+    /* Hover action overlay */
+    .preview-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 15, 25, 0.75);
+      backdrop-filter: blur(4px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 3;
+    }
+
+    .theme-card:hover .preview-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .btn-preview-action {
+      padding: 10px 22px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-preview-action.primary {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      box-shadow: 0 4px 16px var(--accent-glow);
+    }
+
+    .btn-preview-action.secondary {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-preview-action:hover {
+      transform: scale(1.04);
+    }
+
+    /* Card content */
+    .card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card-category {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .card-version {
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+
+    .card-desc {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    /* Tags */
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .tag-item {
+      font-size: 11.5px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Card footer */
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: auto;
+    }
+
+    .card-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-link-sm {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border-medium);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
+    }
+
+    .btn-link-sm:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-launch-demo {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: var(--accent-gradient);
+      color: #ffffff;
+      box-shadow: 0 4px 12px var(--accent-glow);
+      transition: all 0.2s ease;
+    }
+
+    .btn-launch-demo:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px var(--accent-glow);
+    }
+
+    .btn-launch-soon {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: var(--bg-surface);
+      color: var(--text-muted);
+      border: 1px dashed var(--border-medium);
+      cursor: default;
+    }
+
+    /* ==========================================================================
+       HIGHLIGHT FEATURE BANNER (Why Gozic Web Platform)
+       ========================================================================== */
+    .features-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 54px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .section-desc {
+      font-size: 15.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .feature-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+
+    .feature-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ====================        ========================================================================== */
+    .footer {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: 60px 0 32px;
+      margin-top: auto;
+    }
+
+    /* Footer CTA Banner (Gradient Xanh Lục sang Xanh Dương chuẩn mẫu) */
+    .footer-cta-card {
+      background: linear-gradient(90deg, #059669 0%, #10b981 30%, #0d9488 65%, #0284c7 100%);
+      border-radius: 24px;
+      padding: 42px 48px;
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+      box-shadow: 0 16px 40px rgba(5, 150, 105, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-cta-content {
+      max-width: 780px;
+    }
+
+    .footer-cta-badge {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(255, 255, 255, 0.95);
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .footer-cta-title {
+      font-family: var(--font-heading);
+      font-size: clamp(24px, 2.8vw, 32px);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .footer-cta-desc {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .footer-cta-action {
+      flex-shrink: 0;
+    }
+
+    .btn-cta-dashboard {
+      background: #ffffff;
+      color: #0f172a !important;
+      font-family: var(--font-heading);
+      font-size: 14.5px;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+
+    .btn-cta-dashboard:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+      color: #059669 !important;
+    }
+
+    .btn-cta-dashboard i {
+      font-size: 16px;
+      color: #0f172a;
+    }
+
+    .btn-cta-dashboard:hover i {
+      color: #059669;
+    }
+
+    /* Footer 4 Columns Grid */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr 1.5fr 1.5fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand-subtitle {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-top: 6px;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand-text p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand-text strong {
+      color: var(--text-primary);
+    }
+
+    .footer-platform-badge {
+      font-family: var(--font-heading);
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-top: 14px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-heading);
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      letter-spacing: -0.2px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-links a {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      transition: color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .footer-contact-list li i {
+      font-size: 15px;
+      color: var(--accent);
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .footer-contact-list li a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-contact-list li a:hover {
+      color: var(--accent);
+    }
+
+    .footer-contact-list li.address-item i {
+      color: #ef4444;
+    }
+
+    .footer-payment-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .payment-badges-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .payment-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .payment-badge.vietqr {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .payment-badge.vnpay {
+      background: rgba(37, 99, 235, 0.18);
+      color: #60a5fa;
+      border: 1px solid rgba(37, 99, 235, 0.3);
+    }
+
+    .payment-badge.card {
+      background: rgba(245, 158, 11, 0.18);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .payment-badge.cash {
+      background: rgba(139, 92, 246, 0.18);
+      color: #c084fc;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+
+    /* Footer Bottom Bar */
+    .footer-bottom {
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-bottom strong {
+      color: var(--text-primary);
+    }
+
+    @media (max-width: 991px) {
+      .showcase-layout {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .showcase-sidebar {
+        width: 100%;
+        position: static;
+        top: 0;
+      }
+      .sidebar-help-card {
+        display: none;
+      }
+      .category-menu-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 6px;
+      }
+      .status-menu-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .status-menu-item {
+        width: auto;
+      }
+      .footer-cta-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 32px 24px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+      .btn-mobile-toggle {
+        display: flex;
+      }
+      .nav-wrapper {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: var(--bg-surface);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-bottom: 1px solid var(--border-medium);
+        padding: 16px 20px 24px;
+        display: none;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        max-height: calc(100vh - 68px);
+        overflow-y: auto;
+        z-index: 99;
+      }
+      .nav-wrapper.mobile-open {
+        display: block;
+      }
+      .nav-menu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+      .nav-link {
+        font-size: 15px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav-link:hover, .nav-link.active {
+        background: rgba(16, 185, 129, 0.1);
+      }
+      .dropdown-menu {
+        position: static;
+        transform: none !important;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.15);
+        border: 1px solid var(--border-subtle);
+        margin: 4px 0 8px 12px;
+        padding: 6px;
+        min-width: 0;
+      }
+      [data-theme="light"] .dropdown-menu {
+        background: rgba(0, 0, 0, 0.04);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       MODAL QUICK PREVIEW
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-medium);
+      border-radius: 24px;
+      max-width: 900px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7);
+      animation: modalSlide 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    @keyframes modalSlide {
+      from { transform: translateY(30px) scale(0.97); }
+      to { transform: translateY(0) scale(1); }
+    }
+
+    .modal-header {
+      padding: 24px 28px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-title-group h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .modal-title-group p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .btn-modal-close {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-modal-close:hover {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+
+    .modal-content {
+      padding: 28px;
+    }
+
+    .modal-device-toggles {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .device-btn {
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 600;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .device-btn.active, .device-btn:hover {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+    }
+
+    .modal-preview-screen {
+      width: 100%;
+      height: 480px;
+      border-radius: 16px;
+      border: 1px solid var(--border-medium);
+      overflow: hidden;
+      background: #000000;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-preview-screen iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .modal-feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .modal-feat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+    }
+
+    .modal-feat-item i {
+      color: var(--accent);
+      font-size: 16px;
+      margin-top: 2px;
+    }
+
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 14px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ambient Blobs Background -->
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Top Navigation Bar (Chuẩn Thiết Kế Gozic Đơn Giản & Tinh Tế) -->
+  <header class="navbar" id="top">
+    <div class="container navbar-inner">
+      <!-- Gozic Brand Logo (Dark & Light Mode) -->
+      <a href="index.html" class="brand-logo" title="Gozic Theme Store">
+        <div class="gozic-logo">
+          <span class="logo-g">G</span><span class="logo-ozic">ozic</span>
+        </div>
+        <div class="brand-details">
+          <div class="brand-title-wrap">
+            <span class="brand-title">Gozic Theme Store</span>
+            <span class="brand-tag">Bảo mật</span>
+          </div>
+          <div class="brand-desc">Nền tảng POS WEB - Bán lẻ</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Thanh lịch, phân cấp gọn gàng) -->
+      <nav class="nav-wrapper" id="navWrapper">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Trang Chủ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#themes" class="nav-link">Kho Theme</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#categories" class="nav-link dropdown-toggle">
+              <span>Ngành Nghề</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('ecommerce')">
+                <div class="dropdown-icon-box"><i class="bi bi-bag-check"></i></div>
+                <div>
+                  <div class="dropdown-title">Bán Hàng & E-Commerce</div>
+                  <div class="dropdown-desc">Shop thời trang, Bách hóa, Điện máy</div>
+                </div>
+              </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('cosmetics')">
+                <div class="dropdown-icon-box"><i class="bi bi-gem"></i></div>
+                <div>
+                  <div class="dropdown-title">Mỹ Phẩm & Làm Đẹp</div>
+                  <div class="dropdown-desc">Thẩm mỹ viện, Clinic, Mỹ phẩm</div>
+                </div>
+              </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('spa')">
+                <div class="dropdown-icon-box"><i class="bi bi-heart-pulse"></i></div>
+                <div>
+                  <div class="dropdown-title">Spa & Thẩm Mỹ Viện</div>
+                  <div class="dropdown-desc">Đặt lịch hẹn, Dịch vụ chăm sóc sắc đẹp</div>
+                </div>
+              </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('fnb')">
+                <div class="dropdown-icon-box"><i class="bi bi-cup-hot"></i></div>
+                <div>
+                  <div class="dropdown-title">Nhà Hàng & F&B</div>
+                  <div class="dropdown-desc">Quán cafe, Trà sữa, Ẩm thực ăn uống</div>
+                </div>
+              </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('corporate')">
+                <div class="dropdown-icon-box"><i class="bi bi-buildings"></i></div>
+                <div>
+                  <div class="dropdown-title">Doanh Nghiệp & Dịch Vụ</div>
+                  <div class="dropdown-desc">Công ty tư vấn, Thiết bị công nghiệp</div>
+                </div>
+              </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('education')">
+                <div class="dropdown-icon-box"><i class="bi bi-mortarboard"></i></div>
+                <div>
+                  <div class="dropdown-title">Khóa Học & Giáo Dục</div>
+                  <div class="dropdown-desc">Đào tạo trực tuyến, Thi trắc nghiệm</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#features" class="nav-link dropdown-toggle">
+              <span>Tính Năng</span>
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#features" class="dropdown-item">
+                <div class="dropdown-icon-box"><i class="bi bi-cash-stack"></i></div>
+                <div>
+                  <div class="dropdown-title">POS & Quản Lý Kho Bán Lẻ</div>
+                  <div class="dropdown-desc">Đồng bộ đa chi nhánh, sổ quỹ, tồn kho</div>
+                </div>
+              </a>
+              <a href="#features" class="dropdown-item">
+                <div class="dropdown-icon-box"><i class="bi bi-palette"></i></div>
+                <div>
+                  <div class="dropdown-title">Live Theme Editor</div>
+                  <div class="dropdown-desc">Chỉnh sửa trực tiếp tại giao diện web</div>
+                </div>
+              </a>
+              <a href="#features" class="dropdown-item">
+                <div class="dropdown-icon-box"><i class="bi bi-speedometer2"></i></div>
+                <div>
+                  <div class="dropdown-title">Chuẩn SEO & Tốc Độ 2026</div>
+                  <div class="dropdown-desc">Core Web Vitals xanh, load cực nhanh</div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="https://gozic.vn" target="_blank" class="nav-link">Hệ Sinh Thái</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://gozic.vn/lien-he" target="_blank" class="nav-link">Liên Hệ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Action (Nút tròn chuyển theme tối giản chuẩn Ảnh 1) -->
+      <div class="header-actions">
+        <button type="button" class="btn-theme-circle" id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối">
+          <i class="bi bi-sun" id="themeToggleIcon"></i>
+        </button>
+        <button type="button" class="btn-mobile-toggle" id="mobileMenuBtn" aria-label="Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <i class="bi bi-lightning-charge-fill"></i>
+        <span>Nền Tảng Giao Diện Website Thế Hệ Mới - Tối Ưu Tốc Độ & Chuyển Đổi</span>
+      </div>
+
+      <h1 class="hero-title">
+        Kho Giao Diện Website <span>Đẹp, Hiện Đại</span> & Chuẩn Thương Mại Điện Tử
+      </h1>
+
+      <p class="hero-desc">
+        Tuyển tập các mẫu website chuyên nghiệp được thiết kế theo xu hướng UI/UX 2026. Tích hợp sẵn hệ thống quản lý bán hàng POS, quản lý kho đa chi nhánh, và công cụ chỉnh sửa Live Editor trực quan.
+      </p>
+
+      <!-- Metrics Bar -->
+      <div class="metrics-bar" style="margin-top: 32px;">
+        <div class="metric-item">
+          <i class="bi bi-check-circle-fill"></i>
+          <span>Google PageSpeed: <strong>95+ Điểm</strong></span>
+        </div>
+        <div class="metric-item">
+          <i class="bi bi-shield-lock-fill"></i>
+          <span>Bảo mật: <strong>SSL Certbot Miễn Phí</strong></span>
+        </div>
+        <div class="metric-item">
+          <i class="bi bi-phone-fill"></i>
+          <span>Chuẩn: <strong>Mobile-First 100%</strong></span>
+        </div>
+        <div class="metric-item">
+          <i class="bi bi-arrow-repeat"></i>
+          <span>Đồng bộ: <strong>POS Bán Hàng & Kho</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Theme Store Showcase: Left Menu & Grid Layout -->
+  <section class="themes-showcase-section" id="themes">
+    <div class="container showcase-layout">
+      <!-- Left Sidebar Menu -->
+      <aside class="showcase-sidebar" id="categories">
+        <!-- Block 1: Danh Mục Ngành Nghề -->
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            <i class="bi bi-grid-fill"></i>
+            <span>Ngành Nghề Website</span>
+          </div>
+          <div class="category-menu-list" id="categoryTabs">
+            <button type="button" class="category-menu-item tab-btn active" data-category="all">
+              <span class="item-left">
+                <i class="bi bi-grid-fill"></i>
+                <span>Tất Cả Giao Diện</span>
+              </span>
+              <span class="tab-count">9</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="ecommerce">
+              <span class="item-left">
+                <i class="bi bi-bag-check-fill"></i>
+                <span>Bán Hàng & E-Commerce</span>
+              </span>
+              <span class="tab-count">2</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="cosmetics">
+              <span class="item-left">
+                <i class="bi bi-flower1"></i>
+                <span>Mỹ Phẩm & Làm Đẹp</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="spa">
+              <span class="item-left">
+                <i class="bi bi-heart-pulse-fill"></i>
+                <span>Spa, Thẩm Mỹ & Clinic</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="fnb">
+              <span class="item-left">
+                <i class="bi bi-cup-hot-fill"></i>
+                <span>Nhà Hàng, Cafe & F&B</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="realestate">
+              <span class="item-left">
+                <i class="bi bi-buildings-fill"></i>
+                <span>Bất Động Sản & Dự Án</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="corporate">
+              <span class="item-left">
+                <i class="bi bi-briefcase-fill"></i>
+                <span>Doanh Nghiệp & Dịch Vụ</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="education">
+              <span class="item-left">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span>Khóa Học & Giáo Dục</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="medical">
+              <span class="item-left">
+                <i class="bi bi-hospital-fill"></i>
+                <span>Y Tế & Nha Khoa</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Block 2: Trạng Thái Phát Hành -->
+        <div class="sidebar-block">
+          <div class="sidebar-header">
+            <i class="bi bi-funnel-fill"></i>
+            <span>Trạng Thái Phát Hành</span>
+          </div>
+          <div class="status-menu-list status-filters">
+            <button type="button" class="status-menu-item status-btn active" data-status="all">
+              <span class="status-indicator all"></span>
+              <span>Tất Cả Trạng Thái</span>
+            </button>
+            <button type="button" class="status-menu-item status-btn" data-status="ready">
+              <span class="status-indicator ready"></span>
+              <span>Sẵn Sàng Trải Nghiệm</span>
+            </button>
+            <button type="button" class="status-menu-item status-btn" data-status="soon">
+              <span class="status-indicator soon"></span>
+              <span>Sắp Ra Mắt</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Block 3: Help / Custom Request Card -->
+        <div class="sidebar-help-card">
+          <i class="bi bi-palette2"></i>
+          <div class="help-title">Cần Thiết Kế Riêng?</div>
+          <p class="help-desc">Gozic nhận may đo giao diện độc quyền theo nhận diện thương hiệu của doanh nghiệp bạn.</p>
+          <a href="https://zalo.me/0979823445" target="_blank" rel="noopener noreferrer" class="help-btn">
+            <i class="bi bi-chat-dots-fill"></i> Tư Vấn Miễn Phí
+          </a>
+        </div>
+      </aside>
+
+      <!-- Right Main Content: Topbar & Theme Cards Grid -->
+      <main class="showcase-content">
+        <!-- Content Topbar: Search & Counter -->
+        <div class="showcase-topbar">
+          <div class="topbar-search">
+            <i class="bi bi-search"></i>
+            <input type="text" id="themeSearchInput" placeholder="Tìm kiếm nhanh theo tên, ngành nghề (Bếp, Mỹ phẩm, Spa, Cafe...)..." />
+          </div>
+          <div class="topbar-meta">
+            <div class="search-count-badge" id="themeCounter">Hiển thị 9 / 9 giao diện</div>
+          </div>
+        </div>
+
+        <!-- Themes Grid -->
+        <div class="themes-grid" id="themesGrid">
+
+      <!-- THEME 01: EcoCook Smart Kitchen (ACTIVE / READY) -->
+      <article class="theme-card" data-id="theme01" data-category="ecommerce" data-status="ready" data-title="EcoCook Smart Kitchen - Thiết Bị Bếp & Gia Dụng Thông Minh">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="EcoCook Smart Kitchen Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status ready"><i class="bi bi-check-circle-fill"></i> Sẵn Sàng Trải Nghiệm</span>
+            <span class="badge-status hot"><i class="bi bi-fire"></i> Best Seller 2026</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-display"></i> PC &amp; Mobile
+          </div>
+
+          <div class="preview-overlay">
+            <a href="theme01/index.html" class="btn-preview-action primary">
+              <i class="bi bi-eye-fill"></i> Xem Trọn Bộ Demo
+            </a>
+            <button type="button" class="btn-preview-action secondary" onclick="openPreviewModal('theme01')">
+              <i class="bi bi-laptop"></i> Xem Thử Nhanh
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Bán Hàng &amp; E-Commerce</span>
+            <span class="card-version"><i class="bi bi-shield-check"></i> v2.5 Chuẩn SEO</span>
+          </div>
+
+          <h2 class="card-title">EcoCook Smart Kitchen</h2>
+          <p class="card-desc">
+            Bộ giao diện cao cấp dành cho chuỗi showroom thiết bị nhà bếp, đồ gia dụng điện tử thông minh. Thiết kế tối ưu chuyển đổi với trải nghiệm mượt mà trên cả PC và Mobile.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Gia dụng thông minh</span>
+            <span class="tag-item">Showroom bếp</span>
+            <span class="tag-item">Bộ đôi PC &amp; Mobile</span>
+            <span class="tag-item">Tích hợp POS</span>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-links">
+              <a href="theme01/pc/home.html" target="_blank" class="btn-link-sm" title="Khám phá bản PC">
+                <i class="bi bi-laptop"></i> PC Demo
+              </a>
+              <a href="theme01/mobile/home.html" target="_blank" class="btn-link-sm" title="Khám phá bản Mobile">
+                <i class="bi bi-phone"></i> Mobile Demo
+              </a>
+            </div>
+
+            <a href="theme01/index.html" class="btn-launch-demo">
+              <span>Trải Nghiệm</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 02: Aura Pure Cosmetics -->
+      <article class="theme-card" data-id="theme02" data-category="cosmetics" data-status="soon" data-title="Aura Cosmetics - Mỹ Phẩm & Chăm Sóc Sắc Đẹp">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Aura Cosmetics Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-phone"></i> Mobile First
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme02')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Mỹ Phẩm &amp; Skincare</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Aura Pure Cosmetics</h2>
+          <p class="card-desc">
+            Phong cách tối giản, tinh tế chuẩn Hàn Quốc dành cho thương hiệu son môi, skincare hữu cơ và dược mỹ phẩm. Tích hợp bộ lọc thành phần da liễu và đánh giá bằng ảnh/video thật.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Mỹ phẩm Organic</span>
+            <span class="tag-item">Chăm sóc da</span>
+            <span class="tag-item">Mua kèm combo</span>
+            <span class="tag-item">Story Feed</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Thiết kế độc quyền</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Aura Pure Cosmetics')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 03: Serene Luxury Spa & Wellness -->
+      <article class="theme-card" data-id="theme03" data-category="spa" data-status="soon" data-title="Serene Spa & Wellness - Thẩm Mỹ Viện & Thư Giãn">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Serene Spa Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-calendar-check"></i> Đặt Lịch Online
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme03')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Spa, Thẩm Mỹ &amp; Clinic</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Serene Luxury Spa &amp; Wellness</h2>
+          <p class="card-desc">
+            Không gian thư giãn đẳng cấp với tone màu xanh ngọc và vàng champagne. Hệ thống form đặt lịch trị liệu thông minh, chọn kỹ thuật viên và hiển thị bảng giá liệu trình chi tiết.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Thẩm mỹ viện</span>
+            <span class="tag-item">Massage trị liệu</span>
+            <span class="tag-item">Booking thông minh</span>
+            <span class="tag-item">Feedback Before/After</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Hệ thống Booking</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Serene Luxury Spa')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 04: Gourmet Bistro & Cafe Lounge -->
+      <article class="theme-card" data-id="theme04" data-category="fnb" data-status="soon" data-title="Gourmet Bistro - Nhà Hàng, Quán Cafe & F&B">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Gourmet Bistro Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-qr-code-scan"></i> Menu QR &amp; Đặt Bàn
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme04')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Nhà Hàng, Cafe &amp; F&B</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Gourmet Bistro &amp; Cafe</h2>
+          <p class="card-desc">
+            Giao diện ẩm thực quyến rũ với menu điện tử trực quan, đặt bàn trực tuyến, xem ảnh món ăn chất lượng cao, tích hợp tính năng quét mã QR gọi món tại bàn tiện lợi.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Menu điện tử</span>
+            <span class="tag-item">Quán Cà Phê</span>
+            <span class="tag-item">Đặt bàn Online</span>
+            <span class="tag-item">Chuỗi F&amp;B</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Đồng bộ F&amp;B POS</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Gourmet Bistro')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 05: Grand Landmark Real Estate -->
+      <article class="theme-card" data-id="theme05" data-category="realestate" data-status="soon" data-title="Grand Landmark - Bất Động Sản, Đô Thị & Kiến Trúc">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Grand Landmark Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-calculator"></i> Tính Lãi Suất Vay
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme05')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Bất Động Sản &amp; Kiến Trúc</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Grand Landmark Real Estate</h2>
+          <p class="card-desc">
+            Trình diễn dự án căn hộ, biệt thự và đất nền với bản đồ vệ tinh, mặt bằng 3D phân lô tương tác, công cụ tính bảng thanh toán tiến độ ngân hàng và tải hồ sơ pháp lý.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Dự án đô thị</span>
+            <span class="tag-item">Biệt thự nghỉ dưỡng</span>
+            <span class="tag-item">Tính lãi vay</span>
+            <span class="tag-item">Mặt bằng 3D</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Tối ưu Lead BĐS</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Grand Landmark')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 06: Nexus Cloud Enterprise & SaaS -->
+      <article class="theme-card" data-id="theme06" data-category="corporate" data-status="soon" data-title="Nexus Enterprise - Doanh Nghiệp Công Nghệ & Khởi Nghiệp">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Nexus Enterprise Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-shield-check"></i> B2B Enterprise
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme06')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Doanh Nghiệp &amp; Dịch Vụ B2B</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Nexus Cloud Enterprise</h2>
+          <p class="card-desc">
+            Mẫu website doanh nghiệp công nghệ, dịch vụ luật, logistics và tài chính. Bảng so sánh tính năng gói sản phẩm, trình diễn đối tác khách hàng và case study thành công.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">SaaS &amp; Tech</span>
+            <span class="tag-item">Doanh nghiệp B2B</span>
+            <span class="tag-item">Bảng so sánh giá</span>
+            <span class="tag-item">Bảo mật cao</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Chuẩn Brand Identity</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Nexus Cloud Enterprise')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 07: EduVibe E-Learning & Masterclass -->
+      <article class="theme-card" data-id="theme07" data-category="education" data-status="soon" data-title="EduVibe - Giáo Dục, Đào Tạo & Khóa Học Online">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80" alt="EduVibe Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-play-circle"></i> Video &amp; Quiz
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme07')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Giáo Dục &amp; Khóa Học</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">EduVibe Masterclass</h2>
+          <p class="card-desc">
+            Giao diện trung tâm đào tạo, học viện online và bán khóa học kỹ năng. Tích hợp sẵn lộ trình học tập theo chương, xem video demo, làm bài trắc nghiệm quiz và cấp chứng nhận.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">E-Learning LMS</span>
+            <span class="tag-item">Bán khóa học</span>
+            <span class="tag-item">Bài thi trắc nghiệm</span>
+            <span class="tag-item">Lộ trình học</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Tích hợp Quizzes</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('EduVibe Masterclass')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 08: DentalCare Pro Clinic -->
+      <article class="theme-card" data-id="theme08" data-category="medical" data-status="soon" data-title="DentalCare Pro - Nha Khoa & Phòng Khám Chuyên Khoa">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="DentalCare Pro Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-heart-pulse"></i> Y Tế Tiêu Chuẩn
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme08')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Y Tế &amp; Nha Khoa</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">DentalCare Pro Clinic</h2>
+          <p class="card-desc">
+            Thiết kế y tế sáng tạo, tạo dựng niềm tin tuyệt đối cho phòng khám nha khoa thẩm mỹ, tai mũi họng hoặc đa khoa. Hồ sơ đội ngũ bác sĩ, danh mục dịch vụ và form tư vấn tức thì.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Nha khoa thẩm mỹ</span>
+            <span class="tag-item">Phòng khám chuyên khoa</span>
+            <span class="tag-item">Đội ngũ bác sĩ</span>
+            <span class="tag-item">Đặt lịch tư vấn</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Chuẩn Y Tế</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('DentalCare Pro Clinic')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- THEME 09: Haute Moda Luxe Fashion -->
+      <article class="theme-card" data-id="theme09" data-category="ecommerce" data-status="soon" data-title="Haute Moda - Thời Trang & Phụ Kiện Hàng Hiệu">
+        <div class="card-preview">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Haute Moda Theme" loading="lazy" />
+          
+          <div class="preview-badges">
+            <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+          </div>
+
+          <div class="preview-device-badge">
+            <i class="bi bi-handbag"></i> Fashion Lookbook
+          </div>
+
+          <div class="preview-overlay">
+            <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme09')">
+              <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+            </button>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="card-category">Bán Hàng &amp; E-Commerce</span>
+            <span class="card-version">Sắp phát hành</span>
+          </div>
+
+          <h2 class="card-title">Haute Moda Luxe Fashion</h2>
+          <p class="card-desc">
+            Đậm chất tạp chí thời trang quốc tế dành cho boutique cao cấp, thời trang thiết kế, phụ kiện túi xách. Gallery ảnh chất lượng siêu nét, bảng tư vấn chọn size theo số đo chuẩn.
+          </p>
+
+          <div class="card-tags">
+            <span class="tag-item">Thời trang thiết kế</span>
+            <span class="tag-item">Phụ kiện hàng hiệu</span>
+            <span class="tag-item">Lookbook tương tác</span>
+            <span class="tag-item">Chọn size thông minh</span>
+          </div>
+
+          <div class="card-footer">
+            <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Chuẩn E-Commerce</span>
+            <button type="button" class="btn-launch-soon" onclick="notifySoon('Haute Moda Luxe Fashion')">
+              <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
+            </button>
+          </div>
+        </div>
+      </article>
+
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Platform Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Hệ Thống Công Nghệ Đột Phá</div>
+        <h2 class="section-title">Tại Sao Nên Sử Dụng Theme Tại Gozic Platform?</h2>
+        <p class="section-desc">
+          Mỗi giao diện trong kho theme Gozic không chỉ là bản vẽ đồ họa, mà là một giải pháp kinh doanh số toàn diện đã được đóng gói sẵn công nghệ quản trị hàng đầu.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+          <h3 class="feature-title">Tốc Độ Bứt Phá & Chuẩn SEO</h3>
+          <p class="feature-desc">
+            Điểm Google PageSpeed 95+, cấu trúc HTML5 ngữ nghĩa, thẻ OpenGraph, Schema.org tự động giúp website lên top Google nhanh chóng.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+          <h3 class="feature-title">Đồng Bộ POS & Kho Realtime</h3>
+          <p class="feature-desc">
+            Mọi đơn hàng, khách hàng, số lượng tồn kho trên web đồng bộ tức thì với phần mềm bán hàng POS Gozic trên máy tính và app di động.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-phone"></i>
+          </div>
+          <h3 class="feature-title">Mobile-First Thích Ứng</h3>
+          <p class="feature-desc">
+            Hơn 80% khách hàng mua sắm qua điện thoại. Mọi theme đều được thiết kế tỉ mỉ cho màn hình cảm ứng, vuốt chạm mượt mà không độ trễ.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-sliders"></i>
+          </div>
+          <h3 class="feature-title">Live Theme Editor</h3>
+          <p class="feature-desc">
+            Dễ dàng đổi logo, banner, màu sắc, font chữ và các biến văn bản ngay trên giao diện trực tiếp mà không cần biết viết code.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h3 class="feature-title">Cloud Server & SSL Miễn Phí</h3>
+          <p class="feature-desc">
+            Vận hành trên hạ tầng Cloud Server hiệu năng cao, chứng chỉ SSL Let's Encrypt Certbot tự động gia hạn an toàn tuyệt đối.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <i class="bi bi-headset"></i>
+          </div>
+          <h3 class="feature-title">Hỗ Trợ Kỹ Thuật 24/7</h3>
+          <p class="feature-desc">
+            Đội ngũ kỹ thuật viên giàu kinh nghiệm đồng hành setup tên miền, hướng dẫn vận hành và bảo hành bảo trì trọn đời hệ thống.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Chuẩn Mẫu Gozic & POS WEB Platform) -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Footer CTA Banner -->
+      <div class="footer-cta-card">
+        <div class="footer-cta-content">
+          <span class="footer-cta-badge">BẮT ĐẦU NGAY HÔM NAY</span>
+          <h2 class="footer-cta-title">Sẵn Sàng Nâng Tầm Quản Trị Bán Hàng Của Bạn?</h2>
+          <p class="footer-cta-desc">
+            Khám phá quầy thu ngân bán hàng POS chuyên nghiệp, tạo website bán hàng riêng biệt và bảo mật dữ liệu an toàn trên Google Drive cá nhân.
+          </p>
+        </div>
+        <div class="footer-cta-action">
+          <a href="https://pos.gozic.vn" target="_blank" class="btn-cta-dashboard">
+            <i class="bi bi-speedometer2"></i>
+            <span>Vào Bảng Điều Khiển</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer 4 Columns Grid -->
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col">
+          <div class="gozic-logo" style="margin-bottom: 8px;">
+            <span class="logo-g">G</span><span class="logo-ozic">ozic</span>
+          </div>
+          <div class="footer-brand-subtitle">Nền tảng POS WEB - Bán lẻ</div>
+          <div class="footer-brand-text">
+            <p><strong>Gozic – Giải pháp công nghệ & AI cho doanh nghiệp</strong></p>
+            <p>Gozic cung cấp dịch vụ chuyển đổi số, tư vấn và triển khai AI, tự động hóa quy trình và phát triển công cụ phần mềm theo nhu cầu doanh nghiệp.</p>
+            <p>Chúng tôi đồng hành từ tư vấn – thử nghiệm POC – triển khai – đào tạo – vận hành, giúp doanh nghiệp ứng dụng công nghệ thực tế, tối ưu chi phí và nâng cao hiệu quả công việc.</p>
+            <div class="footer-platform-badge">POS WEB Platform</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Liên Kết Nhanh -->
+        <div class="footer-col">
+          <h4>Liên Kết Nhanh</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="#themes">Kho Web</a></li>
+            <li><a href="https://gozic.vn" target="_blank">Giải Pháp AI</a></li>
+            <li><a href="https://gozic.vn/tin-tuc" target="_blank">Blog</a></li>
+            <li><a href="https://gozic.vn" target="_blank">Kiến Thức</a></li>
+            <li><a href="https://gozic.vn/lien-he" target="_blank">Liên Hệ</a></li>
+            <li><a href="https://pos.gozic.vn/login" target="_blank">Đăng Nhập Quản Trị</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Thông Tin Liên Hệ -->
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="bi bi-telephone"></i>
+              <a href="tel:0967025996">Hotline: 0967025996</a>
+            </li>
+            <li>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:hotro@gozic.vn">hotro@gozic.vn</a>
+            </li>
+            <li>
+              <i class="bi bi-globe"></i>
+              <a href="https://gozic.vn" target="_blank">https://gozic.vn</a>
+            </li>
+            <li class="address-item">
+              <i class="bi bi-geo-alt-fill text-danger"></i>
+              <span>Tầng 2 toà nhà Detech, số 8 Tôn Thất Thuyết, Mỹ Đình 2, Nam Từ Liêm, Hà Nội</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Thông Tin Thanh Toán -->
+        <div class="footer-col">
+          <h4>Thông Tin Thanh Toán</h4>
+          <p class="footer-payment-desc">
+            Hỗ trợ thanh toán tiền mặt, thẻ ngân hàng và cổng thanh toán tự động (VietQR, VNPAY...) tại quầy thu ngân.
+          </p>
+          <div class="payment-badges-row">
+            <span class="payment-badge vietqr">VietQR</span>
+            <span class="payment-badge vnpay">VNPAY</span>
+            <span class="payment-badge card">Thẻ ATM/Visa</span>
+          </div>
+          <div class="payment-badges-row" style="margin-top: 8px;">
+            <span class="payment-badge cash">Tiền mặt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>Bản quyền © 2026 thuộc về <strong>POS WEB Platform</strong>. Tất cả các quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Preview -->
+  <div class="modal-backdrop" id="previewModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="modalTitle">EcoCook Smart Kitchen</h3>
+          <p id="modalCategory">Giao diện E-Commerce Thiết Bị Bếp Cao Cấp</p>
+        </div>
+        <button type="button" class="btn-modal-close" onclick="closePreviewModal()"><i class="bi bi-x-lg"></i></button>
+      </div>
+
+      <div class="modal-content">
+        <div class="modal-device-toggles" id="modalDeviceGroup">
+          <button type="button" class="device-btn active" id="btnModePc" onclick="switchDeviceMode('pc')">
+            <i class="bi bi-laptop"></i> Giao Diện PC
+          </button>
+          <button type="button" class="device-btn" id="btnModeMobile" onclick="switchDeviceMode('mobile')">
+            <i class="bi bi-phone"></i> Giao Diện Mobile
+          </button>
+        </div>
+
+        <div class="modal-preview-screen" id="modalPreviewScreen">
+          <iframe id="modalIframe" src="about:blank" title="Theme Preview"></iframe>
+        </div>
+
+        <div class="modal-feature-list" id="modalFeatureList">
+          <div class="modal-feat-item"><i class="bi bi-check-circle-fill"></i> Tối ưu tốc độ tải trang 0.3s</div>
+          <div class="modal-feat-item"><i class="bi bi-check-circle-fill"></i> Giỏ hàng thông minh &amp; Quickview</div>
+          <div class="modal-feat-item"><i class="bi bi-check-circle-fill"></i> Bộ lọc đa tiêu chí linh hoạt</div>
+          <div class="modal-feat-item"><i class="bi bi-check-circle-fill"></i> Đồng bộ POS Bán hàng &amp; Kho</div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-outline" onclick="closePreviewModal()">Đóng</button>
+          <a href="theme01/index.html" id="modalLaunchBtn" class="btn-primary">
+            <i class="bi bi-box-arrow-up-right"></i> Mở Bản Full Màn Hình
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Logic -->
+  <script>
+    // Theme data registry
+    const THEMES_DATA = {
+      theme01: {
+        title: 'EcoCook Smart Kitchen - Thiết Bị Bếp & Gia Dụng Thông Minh',
+        category: 'Bán Hàng & E-Commerce',
+        pcUrl: 'theme01/pc/home.html',
+        mobileUrl: 'theme01/mobile/home.html',
+        fullUrl: 'theme01/index.html',
+        status: 'ready',
+        features: [
+          'Giao diện bộ đôi hoàn chỉnh PC & Mobile',
+          'Giỏ hàng thông minh, Quickview xem nhanh sản phẩm',
+          'Bộ lọc danh mục, giá bán và thương hiệu chuẩn xác',
+          'Tích hợp sẵn POS Gozic & Quản lý kho đa chi nhánh',
+          'Chuẩn SEO On-page 100%, Google Lighthouse 95+'
+        ]
+      },
+      theme02: {
+        title: 'Aura Pure Cosmetics - Mỹ Phẩm & Chăm Sóc Sắc Đẹp',
+        category: 'Mỹ Phẩm & Skincare',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Phong cách tối giản Hàn Quốc cực kỳ sang trọng',
+          'Bộ lọc loại da & thành phần mỹ phẩm chuyên sâu',
+          'Story Feed review từ khách hàng & beauty blogger',
+          'Bán hàng theo Combo & Upsell thông minh'
+        ]
+      },
+      theme03: {
+        title: 'Serene Luxury Spa & Wellness - Thẩm Mỹ Viện & Thư Giãn',
+        category: 'Spa, Thẩm Mỹ & Clinic',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Hệ thống đặt lịch hẹn dịch vụ spa thông minh',
+          'Chọn kỹ thuật viên & khung giờ rảnh theo thời gian thực',
+          'Trình diễn kết quả Before / After dạng thanh trượt',
+          'Bảng giá liệu trình rõ ràng, minh bạch'
+        ]
+      },
+      theme04: {
+        title: 'Gourmet Bistro & Cafe - Nhà Hàng, Quán Cafe & F&B',
+        category: 'Nhà Hàng, Cafe & F&B',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Menu điện tử trực quan kèm hình ảnh và video món ăn',
+          'Quét mã QR gọi món tại bàn không chạm',
+          'Hệ thống đặt bàn giữ chỗ online tiện lợi',
+          'Đồng bộ đơn hàng với bếp & quầy bar POS'
+        ]
+      },
+      theme05: {
+        title: 'Grand Landmark - Bất Động Sản & Dự Án Đô Thị',
+        category: 'Bất Động Sản & Kiến Trúc',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Trình chiếu dự án với bản đồ phân lô và mặt bằng 3D',
+          'Công cụ tính lịch trả góp ngân hàng thông minh',
+          'Thu thập lead khách hàng tiềm năng tốc độ cao',
+          'Tải tài liệu pháp lý và bảng giá tự động'
+        ]
+      },
+      theme06: {
+        title: 'Nexus Cloud Enterprise - Doanh Nghiệp Công Nghệ & Khởi Nghiệp',
+        category: 'Doanh Nghiệp & Dịch Vụ B2B',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Giao diện chuyên nghiệp cho công ty công nghệ & SaaS',
+          'Bảng so sánh gói dịch vụ & tính năng tương tác',
+          'Sơ đồ quy trình và giải pháp khách hàng B2B',
+          'Tích hợp form yêu cầu báo giá chuyên sâu'
+        ]
+      },
+      theme07: {
+        title: 'EduVibe Masterclass - Giáo Dục & Khóa Học Online',
+        category: 'Giáo Dục & Khóa Học',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Trình bày lộ trình đào tạo theo từng bài giảng video',
+          'Hệ thống thi trắc nghiệm quiz đánh giá kết quả',
+          'Tích hợp thanh toán khóa học tự động',
+          'Cấp chứng chỉ tốt nghiệp điện tử'
+        ]
+      },
+      theme08: {
+        title: 'DentalCare Pro Clinic - Nha Khoa & Phòng Khám',
+        category: 'Y Tế & Nha Khoa',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Giao diện tiêu chuẩn y tế quốc tế, uy tín và chuẩn mực',
+          'Hồ sơ đội ngũ y bác sĩ & chứng chỉ chuyên khoa',
+          'Đặt lịch khám bệnh online giảm thời gian chờ đợi',
+          'Bảng giá thủ thuật và bảo hành răng sứ'
+        ]
+      },
+      theme09: {
+        title: 'Haute Moda Luxe - Thời Trang & Phụ Kiện Hàng Hiệu',
+        category: 'Bán Hàng & E-Commerce',
+        fullUrl: '#',
+        status: 'soon',
+        features: [
+          'Phong cách Lookbook dạng tạp chí thời trang quốc tế',
+          'Bộ lọc chọn size thông minh theo chiều cao cân nặng',
+          'Xem ảnh sản phẩm 360 độ và video người mẫu',
+          'Tối ưu tỷ lệ bỏ giỏ hàng cho ngành thời trang'
+        ]
+      }
+    };
+
+    // Dark / Light Theme Toggle
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeToggleIcon = document.getElementById('themeToggleIcon');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('gozic_theme', theme);
+      if (theme === 'light') {
+        themeToggleIcon.className = 'bi bi-moon-fill';
+      } else {
+        themeToggleIcon.className = 'bi bi-sun';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('gozic_theme') || 'dark';
+    applyTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    // Category Tabs & Status Filter Logic
+    const categoryTabs = document.querySelectorAll('.tab-btn');
+    const statusBtns = document.querySelectorAll('.status-btn');
+    const themeCards = document.querySelectorAll('.theme-card');
+    const searchInput = document.getElementById('themeSearchInput');
+    const themeCounter = document.getElementById('themeCounter');
+
+    let currentCategory = 'all';
+    let currentStatus = 'all';
+    let searchQuery = '';
+
+    function filterThemes() {
+      let visibleCount = 0;
+
+      themeCards.forEach((card) => {
+        const cardCat = card.getAttribute('data-category');
+        const cardStatus = card.getAttribute('data-status');
+        const cardTitle = (card.getAttribute('data-title') || '').toLowerCase();
+        const cardText = card.innerText.toLowerCase();
+
+        const matchCat = currentCategory === 'all' || cardCat === currentCategory;
+        const matchStatus = currentStatus === 'all' || cardStatus === currentStatus;
+        const matchSearch = !searchQuery || cardTitle.includes(searchQuery) || cardText.includes(searchQuery);
+
+        if (matchCat && matchStatus && matchSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      themeCounter.textContent = `Hiển thị ${visibleCount} / ${themeCards.length} giao diện`;
+    }
+
+    categoryTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        categoryTabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+        currentCategory = tab.getAttribute('data-category');
+        filterThemes();
+      });
+    });
+
+    statusBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        statusBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentStatus = btn.getAttribute('data-status');
+        filterThemes();
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      filterThemes();
+    });
+
+    // Helper: Lọc theme theo danh mục từ Header Dropdown
+    window.filterByCategory = function(category) {
+      currentCategory = category;
+      categoryTabs.forEach((tab) => {
+        if (tab.getAttribute('data-category') === category) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      filterThemes();
+
+      const themesSection = document.getElementById('themes');
+      if (themesSection) {
+        themesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Đóng menu mobile nếu đang mở
+      const navWrapper = document.getElementById('navWrapper');
+      if (navWrapper) {
+        navWrapper.classList.remove('mobile-open');
+      }
+    };
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navWrapper = document.getElementById('navWrapper');
+    if (mobileMenuBtn && navWrapper) {
+      mobileMenuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navWrapper.classList.toggle('mobile-open');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navWrapper.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+          navWrapper.classList.remove('mobile-open');
+        }
+      });
+    }
+
+    // Modal Quick View Logic
+    const previewModal = document.getElementById('previewModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalIframe = document.getElementById('modalIframe');
+    const modalLaunchBtn = document.getElementById('modalLaunchBtn');
+    const modalDeviceGroup = document.getElementById('modalDeviceGroup');
+    const modalFeatureList = document.getElementById('modalFeatureList');
+    const btnModePc = document.getElementById('btnModePc');
+    const btnModeMobile = document.getElementById('btnModeMobile');
+
+    let activeThemeKey = null;
+
+    function openPreviewModal(themeKey) {
+      const data = THEMES_DATA[themeKey];
+      if (!data) return;
+
+      activeThemeKey = themeKey;
+      modalTitle.textContent = data.title;
+      modalCategory.textContent = data.category;
+
+      // Populate features
+      modalFeatureList.innerHTML = data.features
+        .map((f) => `<div class="modal-feat-item"><i class="bi bi-check-circle-fill"></i> ${f}</div>`)
+        .join('');
+
+      const screenBox = document.getElementById('modalPreviewScreen');
+      if (data.status === 'ready' && data.pcUrl) {
+        modalDeviceGroup.style.display = 'flex';
+        btnModePc.classList.add('active');
+        btnModeMobile.classList.remove('active');
+        screenBox.style.maxWidth = '100%';
+        screenBox.style.borderRadius = '16px';
+        screenBox.style.border = '1px solid var(--border-medium)';
+        screenBox.innerHTML = `<iframe id="modalIframe" src="${data.pcUrl}" title="Theme Preview"></iframe>`;
+        modalLaunchBtn.href = data.fullUrl;
+        modalLaunchBtn.style.display = 'inline-flex';
+        modalLaunchBtn.innerHTML = '<i class="bi bi-box-arrow-up-right"></i> Mở Bản Full Màn Hình';
+      } else {
+        modalDeviceGroup.style.display = 'none';
+        screenBox.style.maxWidth = '100%';
+        screenBox.style.borderRadius = '16px';
+        screenBox.style.border = '1px solid var(--border-medium)';
+        screenBox.innerHTML = `
+          <div style="padding: 40px; text-align: center; color: var(--text-secondary);">
+            <i class="bi bi-hourglass-split" style="font-size: 48px; color: var(--accent); margin-bottom: 16px; display: inline-block;"></i>
+            <h4 style="font-size: 20px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Theme ${data.title}</h4>
+            <p style="max-width: 500px; margin: 0 auto 20px; font-size: 14px; line-height: 1.6;">
+              Giao diện đang trong giai đoạn hoàn thiện đóng gói. Đội ngũ kỹ sư Gozic sẽ sớm mở bản Live Demo trong ít ngày tới.
+            </p>
+            <a href="https://gozic.vn/lien-he" target="_blank" class="btn-primary" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+              <i class="bi bi-bell-fill"></i> Đăng Ký Nhận Thông Báo Khi Ra Mắt
+            </a>
+          </div>
+        `;
+        modalLaunchBtn.style.display = 'none';
+      }
+
+      previewModal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function switchDeviceMode(mode) {
+      if (!activeThemeKey || !THEMES_DATA[activeThemeKey]) return;
+      const data = THEMES_DATA[activeThemeKey];
+
+      const screenBox = document.getElementById('modalPreviewScreen');
+      const currentIframe = document.getElementById('modalIframe');
+      if (!currentIframe) return;
+
+      if (mode === 'mobile') {
+        btnModeMobile.classList.add('active');
+        btnModePc.classList.remove('active');
+        currentIframe.src = data.mobileUrl;
+        screenBox.style.maxWidth = '390px';
+        screenBox.style.margin = '0 auto 24px';
+        screenBox.style.borderRadius = '32px';
+        screenBox.style.border = '4px solid var(--border-medium)';
+      } else {
+        btnModePc.classList.add('active');
+        btnModeMobile.classList.remove('active');
+        currentIframe.src = data.pcUrl;
+        screenBox.style.maxWidth = '100%';
+        screenBox.style.borderRadius = '16px';
+        screenBox.style.border = '1px solid var(--border-medium)';
+      }
+    }
+
+    function closePreviewModal() {
+      previewModal.classList.remove('show');
+      document.body.style.overflow = '';
+      const currentIframe = document.getElementById('modalIframe');
+      if (currentIframe) {
+        currentIframe.src = 'about:blank';
+      }
+    }
+
+    previewModal.addEventListener('click', (e) => {
+      if (e.target === previewModal) {
+        closePreviewModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closePreviewModal();
+      }
+    });
+
+    function notifySoon(themeName) {
+      window.open('https://gozic.vn/lien-he', '_blank');
+    }
+  </script>
+</body>
+</html>

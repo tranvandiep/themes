@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoCook Smart Kitchen - Cổng Truy Cập Giao Diện Mobile & PC</title>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-container': '#08281B',
+            'forest-deep': '#0C3826',
+            'copper-gold': '#C59B3F',
+            'emerald-accent': '#10B981',
+            'sage-surface': '#F0F6F2',
+            'charcoal-ink': '#0F172A',
+            'surface-dark': '#061D13',
+            'card-dark': '#0C261B',
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'Be Vietnam Pro', 'sans-serif'],
+            space: ['Space Grotesk', 'sans-serif'],
+            sans: ['Be Vietnam Pro', '-apple-system', 'sans-serif'],
+          },
+          borderRadius: {
+            'DEFAULT': '0.75rem',
+            'xl': '1.25rem',
+            '2xl': '1.5rem',
+            'full': '9999px',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @layer base {
+      html, body {
+        font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Plus Jakarta Sans', 'Be Vietnam Pro', sans-serif;
+        letter-spacing: -0.02em;
+      }
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(8, 40, 27, 0.08);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -10px rgba(8, 40, 27, 0.12);
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+    .glass-dark {
+      background: rgba(8, 40, 27, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-[#f5f8f6] font-sans text-charcoal-ink antialiased min-h-screen flex flex-col selection:bg-emerald-accent selection:text-white">
+
+  <!-- Header -->
+  <header class="bg-primary-container text-white py-4 px-6 md:px-12 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-emerald-accent text-white flex items-center justify-center shadow-lg shadow-emerald-900/40">
+          <span class="material-symbols-outlined text-2xl">table_restaurant</span>
+        </div>
+        <div>
+          <div class="font-space font-bold text-xl tracking-tight text-white flex items-center gap-2">
+            EcoCook <span class="text-xs px-2 py-0.5 rounded-full bg-copper-gold/20 text-copper-gold font-medium uppercase tracking-wider border border-copper-gold/30">Architecture 2025</span>
+          </div>
+          <p class="text-xs text-emerald-200/80">Bộ Giao Diện E-Commerce Thiết Bị Bếp Cao Cấp (Mobile &amp; PC)</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="pc/home.html" class="px-4 py-2 rounded-lg bg-emerald-accent hover:bg-emerald-600 text-white font-space font-semibold text-sm transition-all shadow-md flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">desktop_windows</span>
+          <span class="hidden sm:inline">Khám phá PC</span>
+        </a>
+        <a href="mobile/home.html" class="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-space font-semibold text-sm transition-all flex items-center gap-2 border border-white/10">
+          <span class="material-symbols-outlined text-lg">smartphone</span>
+          <span class="hidden sm:inline">Khám phá Mobile</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-primary-container via-[#113a27] to-[#15462f] text-white py-16 px-6 md:px-12">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00af4f_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto relative z-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-accent/20 text-emerald-300 text-xs font-semibold uppercase tracking-widest mb-4 border border-emerald-500/30">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Đã Tạo Thành Công 2 Thư Mục: Mobile &amp; PC (14 Trang Đầy Đủ)
+        </div>
+        <h1 class="font-space text-3xl sm:text-5xl font-bold tracking-tight leading-tight text-white mb-4">
+          Hệ Thống Giao Diện <br /><span class="text-copper-gold">EcoCook Smart Kitchen</span>
+        </h1>
+        <p class="text-emerald-100/80 text-base sm:text-lg leading-relaxed mb-6">
+          Gồm 7 trang tiêu chuẩn trên 2 nền tảng <strong class="text-white">Mobile</strong> và <strong class="text-white">PC</strong>, thiết kế sang trọng, tối ưu tỷ lệ chuyển đổi, kết nối đa tầng và tích hợp công nghệ tương tác trực tiếp.
+        </p>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-space text-emerald-200">
+          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="material-symbols-outlined text-copper-gold text-base">verified</span>
+            <span>Chuẩn Material 3 &amp; Tailwind CSS</span>
+          </div>
+          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="material-symbols-outlined text-copper-gold text-base">link</span>
+            <span>Liên kết điều hướng 100% thông suốt</span>
+          </div>
+          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10">
+            <span class="material-symbols-outlined text-copper-gold text-base">shopping_cart</span>
+            <span>Giỏ hàng &amp; Thanh toán tương tác</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Platform Switcher Card -->
+      <div class="w-full md:w-96 glass-dark rounded-2xl p-6 shadow-2xl border border-white/10 text-left">
+        <h3 class="font-space text-lg font-bold text-white mb-4 flex items-center justify-between">
+          <span>Truy Cập Nhanh</span>
+          <span class="text-xs text-copper-gold font-normal">7 trang / nền tảng</span>
+        </h3>
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <a href="pc/home.html" class="p-3.5 rounded-xl bg-white/10 hover:bg-emerald-600 transition-all text-center group border border-white/10">
+            <span class="material-symbols-outlined text-3xl text-emerald-400 group-hover:text-white transition-colors block mb-1">laptop_chromebook</span>
+            <span class="font-space font-semibold text-sm text-white block">PC Desktop</span>
+            <span class="text-[11px] text-emerald-200/70">Màn hình rộng</span>
+          </a>
+          <a href="mobile/home.html" class="p-3.5 rounded-xl bg-white/10 hover:bg-emerald-600 transition-all text-center group border border-white/10">
+            <span class="material-symbols-outlined text-3xl text-emerald-400 group-hover:text-white transition-colors block mb-1">smartphone</span>
+            <span class="font-space font-semibold text-sm text-white block">Mobile App</span>
+            <span class="text-[11px] text-emerald-200/70">Màn hình cảm ứng</span>
+          </a>
+        </div>
+        <div class="text-xs text-emerald-200/60 text-center">
+          Nhấp vào nền tảng bạn muốn kiểm tra hoặc duyệt bảng chi tiết bên dưới.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Matrix Table Section -->
+  <main class="max-w-7xl mx-auto px-6 md:px-12 py-12 flex-1 w-full">
+    <div class="flex items-center justify-between mb-8">
+      <div>
+        <h2 class="font-space text-2xl md:text-3xl font-bold text-primary-container">
+          Danh Mục Các Trang Đã Tạo
+        </h2>
+        <p class="text-sm text-gray-600 mt-1">Đầy đủ 7 trang theo yêu cầu trong 2 thư mục <code class="text-primary-container bg-sage-surface px-2 py-0.5 rounded font-mono font-bold">mobile/</code> và <code class="text-primary-container bg-sage-surface px-2 py-0.5 rounded font-mono font-bold">pc/</code></p>
+      </div>
+    </div>
+
+    <!-- Grid of Pages -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+      <!-- 1. Home -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">01</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">home</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Trang Chủ (Home)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>home.html</code> • Hero banner, danh mục nổi bật, công nghệ Inverter 3.0, sản phẩm bán chạy, cam kết CO/CQ.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/home.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/home.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Category -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">02</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">grid_view</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Danh Mục (Category)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>category.html</code> • Bộ lọc thông minh (xuất xứ Đức/TBN, kích thước khoét đá mm, mâm từ EGO, mặt kính Schott Ceran).</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/category.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/category.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Detail -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">03</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">microwave</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Chi Tiết Sản Phẩm (Detail)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>detail.html</code> • Model Pro Series 8, thư viện ảnh vát cạnh, chọn quà tặng thông minh, thông số kỹ thuật chuẩn kiến trúc.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/detail.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/detail.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. News -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">04</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">newspaper</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Cẩm Nang &amp; Tin Tức (News)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>news.html</code> • Tạp chí kiến thức bếp thông minh, kinh nghiệm chọn bếp từ Đức, hướng dẫn vệ sinh kính Schott Ceran.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/news.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/news.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. Post -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">05</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">article</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Chi Tiết Bài Viết (Post)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>post.html</code> • Phân tích chuyên sâu bếp đôi vs bếp kết hợp, tiến độ đọc thời gian thực, bảng so sánh kỹ thuật nhiệt học.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/post.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/post.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. Contact -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">06</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">store</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Liên Hệ &amp; Showroom (Contact)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>contact.html</code> • Hệ thống showroom Hà Nội, Đà Nẵng, TP.HCM, form đặt hẹn kỹ thuật viên khảo sát đá tận nhà.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/contact.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/contact.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- 7. Cart -->
+      <div class="glass-card rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-900/10 flex flex-col justify-between group">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-10 h-10 rounded-xl bg-sage-surface text-primary-container flex items-center justify-center font-bold text-lg">07</span>
+            <span class="material-symbols-outlined text-2xl text-copper-gold">shopping_cart</span>
+          </div>
+          <h3 class="font-space font-bold text-lg text-primary-container group-hover:text-emerald-600 transition-colors">Giỏ Hàng (Cart)</h3>
+          <p class="text-xs text-gray-500 mt-1 mb-4"><code>cart.html</code> • Chuẩn thương mại điện tử 3 bước, tính tổng tiền tự động, mã giảm giá ECOCOOK2025, tùy chọn bảo hành &amp; lắp đặt.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 pt-4 border-t border-gray-100">
+          <a href="pc/cart.html" class="py-2 px-3 rounded-lg bg-primary-container hover:bg-forest-deep text-white text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">desktop_windows</span> PC
+          </a>
+          <a href="mobile/cart.html" class="py-2 px-3 rounded-lg bg-sage-surface hover:bg-emerald-100 text-primary-container text-xs font-semibold text-center transition-all flex items-center justify-center gap-1">
+            <span class="material-symbols-outlined text-sm">smartphone</span> Mobile
+          </a>
+        </div>
+      </div>
+
+      <!-- Architecture Card -->
+      <div class="rounded-2xl p-6 bg-gradient-to-br from-primary-container to-[#1a442e] text-white flex flex-col justify-between shadow-lg">
+        <div>
+          <div class="flex items-center gap-2 text-copper-gold text-xs font-bold uppercase tracking-wider mb-2">
+            <span class="material-symbols-outlined text-base">folder_open</span>
+            Cấu Trúc Thư Mục
+          </div>
+          <div class="font-mono text-xs text-emerald-200/90 space-y-1 bg-black/20 p-3 rounded-xl">
+            <div>📁 mobile/</div>
+            <div class="pl-4">├── home.html</div>
+            <div class="pl-4">├── category.html</div>
+            <div class="pl-4">├── detail.html</div>
+            <div class="pl-4">├── news.html</div>
+            <div class="pl-4">├── post.html</div>
+            <div class="pl-4">├── contact.html</div>
+            <div class="pl-4">└── cart.html</div>
+            <div class="mt-2">📁 pc/</div>
+            <div class="pl-4">├── (tương tự 7 trang)</div>
+          </div>
+        </div>
+        <div class="pt-4 text-xs text-emerald-100/70">
+          Tất cả file HTML độc lập, chạy trực tiếp trên bất kỳ trình duyệt nào.
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-6 px-6 text-center text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>© 2025 EcoCook Smart Kitchen. Giao diện E-Commerce chuẩn Châu Âu.</div>
+      <div class="flex items-center gap-4 text-primary-container font-medium">
+        <a href="pc/home.html" class="hover:underline">Bản Desktop (PC)</a>
+        <span>•</span>
+        <a href="mobile/home.html" class="hover:underline">Bản Di Động (Mobile)</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
