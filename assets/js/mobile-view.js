@@ -2,6 +2,7 @@
  * Gozic Mobile Theme Viewer & Standard Topbar (Thanh Chuẩn Mobile)
  * Tự động mô phỏng giao diện điện thoại (Smartphone Simulator) khi người dùng mở trang Mobile trên PC Desktop.
  * - Tự động phát hiện màn hình PC (>= 768px) để đóng khung thiết bị kèm thanh điều khiển chuẩn.
+ * - Tự động co giãn (auto-scale) để vừa vặn trọn vẹn 100% màn hình laptop/PC, không bị cắt đáy.
  * - Khi mở trên thiết bị di động thật (< 768px): Hiển thị 100% full-screen tự nhiên, không khung.
  * - Mọi theme mới chỉ cần nhúng 1 dòng: <script src="../../assets/js/mobile-view.js" defer></script>
  */
@@ -45,32 +46,32 @@
       ? currentUrl.substring(0, currentUrl.indexOf('/themes/') + 8) + 'index.html'
       : '../../index.html';
 
-    // Tên trang & Tên Theme
-    var pageTitle = document.title || 'Mobile Theme Preview';
-    var themeMatch = currentUrl.match(/theme[0-9]+/i);
-    var themeName = themeMatch ? themeMatch[0].toUpperCase() : 'Gozic Theme';
+    // Tên trang & Rút gọn tên Theme (tránh dài quá gây vỡ header)
+    var rawTitle = document.title || 'Mobile Theme Preview';
+    var cleanTitle = rawTitle.split(/[-:|–]/)[0].trim();
+    if (!cleanTitle || cleanTitle.length < 3) cleanTitle = 'Gozic Theme';
 
     // Tên file hiện tại (ví dụ: home.html, category.html,...)
     var currentFile = window.location.pathname.split('/').pop() || 'home.html';
 
     // Danh sách các trang chuẩn của theme
     var pages = [
-      { name: 'Trang Chủ', file: 'home.html', icon: 'bi-house' },
-      { name: 'Danh Mục Sản Phẩm', file: 'category.html', icon: 'bi-grid' },
-      { name: 'Chi Tiết Sản Phẩm', file: 'detail.html', icon: 'bi-box-seam' },
-      { name: 'Giỏ Hàng', file: 'cart.html', icon: 'bi-bag' },
-      { name: 'Liên Hệ & Cửa Hàng', file: 'contact.html', icon: 'bi-geo-alt' },
-      { name: 'Tin Tức / Blog', file: 'news.html', icon: 'bi-newspaper' },
-      { name: 'Chi Tiết Bài Viết', file: 'post.html', icon: 'bi-file-text' }
+      { name: 'Trang Chủ', file: 'home.html' },
+      { name: 'Danh Mục Sản Phẩm', file: 'category.html' },
+      { name: 'Chi Tiết Sản Phẩm', file: 'detail.html' },
+      { name: 'Giỏ Hàng', file: 'cart.html' },
+      { name: 'Liên Hệ & Showroom', file: 'contact.html' },
+      { name: 'Tin Tức / Blog', file: 'news.html' },
+      { name: 'Chi Tiết Bài Viết', file: 'post.html' }
     ];
 
-    // Thay thế toàn bộ HTML hiện tại bằng khung Simulator chuẩn
-    document.title = pageTitle + ' - [Mobile View]';
+    document.title = cleanTitle + ' - [Mobile View]';
 
     var simulatorHTML = `
       <div id="mvRoot">
         <!-- THANH CHUẨN (STANDARD TOPBAR) -->
         <header id="mvHeader">
+          <!-- Cột Trái: Logo & Điều hướng về kho -->
           <div class="mv-left">
             <a href="${backUrl}" class="mv-btn mv-btn-back" title="Quay lại Kho Theme Gozic">
               <i class="bi bi-arrow-left"></i>
@@ -79,29 +80,28 @@
             <div class="mv-brand-group">
               <span class="mv-brand-logo"><span class="logo-g">G</span><span class="logo-ozic">ozic</span></span>
               <span class="mv-sep">/</span>
-              <span class="mv-theme-name">${pageTitle}</span>
-              <span class="mv-badge-mobile"><i class="bi bi-phone"></i> Mobile Mode</span>
+              <span class="mv-theme-name" title="${rawTitle}">${cleanTitle}</span>
             </div>
           </div>
 
-          <!-- BỘ ĐIỀU KHIỂN THIẾT BỊ (DEVICE CONTROLLER) -->
+          <!-- Cột Giữa: Bộ chọn thiết bị & Xoay màn hình -->
           <div class="mv-center">
             <div class="mv-segmented-group">
-              <button type="button" class="mv-seg-btn active" data-w="393" data-h="852" data-radius="50" data-name="iPhone 16 Pro" title="iPhone 16 Pro (393x852)">
+              <button type="button" class="mv-seg-btn active" data-w="393" data-h="852" data-radius="50" data-name="iPhone" title="iPhone 16 Pro (393 × 852 px)">
                 <i class="bi bi-phone"></i>
-                <span>iPhone (393px)</span>
+                <span>iPhone</span>
               </button>
-              <button type="button" class="mv-seg-btn" data-w="430" data-h="932" data-radius="54" data-name="iPhone 16 Pro Max" title="iPhone 16 Pro Max (430x932)">
+              <button type="button" class="mv-seg-btn" data-w="430" data-h="932" data-radius="54" data-name="iPhone Plus" title="iPhone 16 Plus / Pro Max (430 × 932 px)">
                 <i class="bi bi-phone-fill"></i>
-                <span>Plus / Max (430px)</span>
+                <span>Plus</span>
               </button>
-              <button type="button" class="mv-seg-btn" data-w="412" data-h="915" data-radius="42" data-name="Samsung Galaxy" title="Samsung Galaxy S24 (412x915)">
+              <button type="button" class="mv-seg-btn" data-w="412" data-h="915" data-radius="42" data-name="Galaxy" title="Android / Galaxy (412 × 915 px)">
                 <i class="bi bi-android2"></i>
-                <span>Galaxy (412px)</span>
+                <span>Galaxy</span>
               </button>
-              <button type="button" class="mv-seg-btn" data-w="768" data-h="1024" data-radius="36" data-name="iPad Mini" title="iPad Mini Tablet (768x1024)">
+              <button type="button" class="mv-seg-btn" data-w="768" data-h="1024" data-radius="36" data-name="iPad" title="Tablet / iPad (768 × 1024 px)">
                 <i class="bi bi-tablet"></i>
-                <span>Tablet (768px)</span>
+                <span>Tablet</span>
               </button>
             </div>
 
@@ -111,17 +111,18 @@
             </button>
           </div>
 
-          <!-- CÁC TÁC VỤ BÊN PHẢI -->
+          <!-- Cột Phải: Bộ chọn trang, Xem PC, Quét QR, Fullscreen & CTA -->
           <div class="mv-right">
-            <!-- Bộ chọn trang nhanh -->
+            <!-- Dropdown chọn trang nhanh (Dark Styled) -->
             <div class="mv-page-picker">
-              <i class="bi bi-compass"></i>
-              <select id="mvPageSelect" title="Chọn trang mẫu để xem nhanh">
+              <i class="bi bi-compass mv-picker-icon"></i>
+              <select id="mvPageSelect" class="mv-select" title="Chọn trang mẫu để xem nhanh">
                 ${pages.map(function (p) {
                   var isSelected = currentFile.toLowerCase() === p.file.toLowerCase() ? 'selected' : '';
                   return '<option value="' + p.file + '" ' + isSelected + '>' + p.name + '</option>';
                 }).join('')}
               </select>
+              <i class="bi bi-chevron-down mv-picker-arrow"></i>
             </div>
 
             <!-- Nút chuyển sang bản PC (nếu có) -->
@@ -135,18 +136,18 @@
             <!-- Nút Quét mã QR xem trên điện thoại thật -->
             <button type="button" class="mv-btn mv-btn-qr" id="mvQrOpenBtn" title="Quét mã QR để mở trực tiếp trên điện thoại">
               <i class="bi bi-qr-code-scan"></i>
-              <span>Quét QR</span>
+              <span class="mv-btn-label">Quét QR</span>
             </button>
 
             <!-- Nút Xem toàn màn hình (Tắt khung giả lập) -->
-            <a href="${currentUrl}${currentUrl.includes('?') ? '&' : '?'}raw=1" class="mv-icon-btn" title="Mở full toàn màn hình không khung">
+            <a href="${currentUrl}${currentUrl.includes('?') ? '&' : '?'}raw=1" class="mv-icon-btn" title="Toàn màn hình (không khung)">
               <i class="bi bi-arrows-fullscreen"></i>
             </a>
 
             <!-- Nút Liên Hệ Tư Vấn -->
             <a href="https://gozic.vn/lien-he" class="mv-btn mv-btn-cta" target="_self" title="Liên hệ chuyên gia Gozic tư vấn">
               <i class="bi bi-chat-dots-fill"></i>
-              <span>Tư Vấn Theme</span>
+              <span>Tư Vấn</span>
             </a>
           </div>
         </header>
@@ -180,7 +181,7 @@
             <!-- Badge kích thước thiết bị -->
             <div id="mvDimensionBadge">
               <i class="bi bi-aspect-ratio"></i>
-              <span id="mvDimensionText">393 × 852 px (iPhone 16 Pro)</span>
+              <span id="mvDimensionText">393 × 852 px (iPhone)</span>
             </div>
           </div>
         </main>
@@ -212,11 +213,14 @@
       </div>
     `;
 
-    // CSS Styling chuẩn hóa cao cấp
+    // CSS Styling chuẩn hóa cao cấp, chống tràn, hỗ trợ mọi kích cỡ màn hình
     var simulatorCSS = `
-      /* Reset & Fonts */
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap');
       @import url('https://fastly.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+      *, *::before, *::after {
+        box-sizing: border-box !important;
+      }
 
       html, body {
         margin: 0 !important;
@@ -239,27 +243,28 @@
       }
 
       /* ==========================================================================
-         THANH CHUẨN (STANDARD TOPBAR)
+         THANH CHUẨN (STANDARD TOPBAR) - GỌN GÀNG, SANG TRỌNG
          ========================================================================== */
       #mvHeader {
-        height: 56px;
-        background: rgba(11, 15, 25, 0.95);
+        height: 52px;
+        background: rgba(10, 14, 23, 0.96);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 18px;
+        padding: 0 16px;
         z-index: 1000;
         flex-shrink: 0;
-        gap: 16px;
+        gap: 12px;
       }
 
       .mv-left, .mv-center, .mv-right {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
+        flex-shrink: 0;
       }
 
       /* Logo & Brand */
@@ -272,7 +277,7 @@
       .mv-brand-logo {
         font-family: 'Outfit', sans-serif;
         font-weight: 800;
-        font-size: 19px;
+        font-size: 18px;
         letter-spacing: -0.5px;
         display: flex;
         align-items: center;
@@ -281,8 +286,9 @@
       .mv-brand-logo .logo-ozic { color: #ffffff; }
 
       .mv-sep {
-        color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.25);
         font-weight: 300;
+        font-size: 13px;
       }
 
       .mv-theme-name {
@@ -290,23 +296,9 @@
         font-weight: 600;
         color: #e2e8f0;
         white-space: nowrap;
-        max-width: 260px;
+        max-width: 220px;
         overflow: hidden;
         text-overflow: ellipsis;
-      }
-
-      .mv-badge-mobile {
-        font-size: 11px;
-        font-weight: 700;
-        background: rgba(16, 185, 129, 0.15);
-        color: #10b981;
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        padding: 2px 8px;
-        border-radius: 999px;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        white-space: nowrap;
       }
 
       /* Buttons Common */
@@ -314,8 +306,8 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        padding: 7px 13px;
-        border-radius: 10px;
+        padding: 6px 12px;
+        border-radius: 9px;
         font-size: 12.5px;
         font-weight: 600;
         text-decoration: none;
@@ -325,12 +317,12 @@
         background: rgba(255, 255, 255, 0.05);
         color: #e2e8f0;
         white-space: nowrap;
+        height: 32px;
       }
 
       .mv-btn:hover {
         background: rgba(255, 255, 255, 0.1);
         color: #ffffff;
-        transform: translateY(-1px);
       }
 
       .mv-btn-back {
@@ -366,15 +358,15 @@
         background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         border: none;
         color: #ffffff !important;
-        box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
       }
       .mv-btn-cta:hover {
-        box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5);
+        box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5);
       }
 
       .mv-icon-btn {
-        width: 34px;
-        height: 34px;
+        width: 32px;
+        height: 32px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -385,36 +377,37 @@
         cursor: pointer;
         transition: all 0.2s ease;
         text-decoration: none;
+        font-size: 13.5px;
       }
       .mv-icon-btn:hover {
         background: rgba(255, 255, 255, 0.12);
         color: #ffffff;
-        transform: translateY(-1px);
       }
 
       /* Segmented Device Controls */
       .mv-segmented-group {
         display: flex;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 0, 0, 0.45);
         padding: 3px;
-        border-radius: 12px;
+        border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       .mv-seg-btn {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
-        padding: 5px 12px;
-        border-radius: 9px;
+        gap: 5px;
+        padding: 4px 10px;
+        border-radius: 7px;
         border: none;
         background: transparent;
         color: #94a3b8;
-        font-size: 12px;
+        font-size: 11.5px;
         font-weight: 600;
         cursor: pointer;
         transition: all 0.2s ease;
         white-space: nowrap;
+        height: 26px;
       }
 
       .mv-seg-btn:hover {
@@ -424,36 +417,81 @@
       .mv-seg-btn.active {
         background: #1e293b;
         color: #10b981;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
       }
 
-      /* Page Picker Select */
+      /* Custom Page Picker Dropdown (Khắc phục triệt để lỗi nền trắng native) */
       .mv-page-picker {
         position: relative;
         display: flex;
         align-items: center;
       }
-      .mv-page-picker i {
+      .mv-picker-icon {
         position: absolute;
         left: 10px;
         font-size: 13px;
         color: #10b981;
         pointer-events: none;
+        z-index: 2;
+      }
+      .mv-picker-arrow {
+        position: absolute;
+        right: 10px;
+        font-size: 10px;
+        color: #94a3b8;
+        pointer-events: none;
+        z-index: 2;
       }
       .mv-select {
-        background: #131b2e;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        color: #e2e8f0;
-        font-size: 12.5px;
-        font-weight: 500;
-        padding: 7px 12px 7px 30px;
-        border-radius: 10px;
-        outline: none;
-        cursor: pointer;
-        transition: border 0.2s ease;
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+        background: #151d30 !important;
+        border: 1px solid rgba(255, 255, 255, 0.14) !important;
+        color: #f8fafc !important;
+        font-family: 'Inter', sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        padding: 5px 28px 5px 30px !important;
+        border-radius: 9px !important;
+        outline: none !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease !important;
+        height: 32px !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+      }
+      .mv-select:hover {
+        border-color: rgba(16, 185, 129, 0.5) !important;
+        background: #1a233a !important;
       }
       .mv-select:focus {
-        border-color: #10b981;
+        border-color: #10b981 !important;
+        box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2) !important;
+      }
+      .mv-select option {
+        background: #0f172a !important;
+        color: #f8fafc !important;
+        padding: 8px !important;
+      }
+
+      /* Responsive Header Breakpoints (Chống tràn khi màn hình nhỏ) */
+      @media (max-width: 1320px) {
+        .mv-theme-name {
+          max-width: 140px;
+        }
+        .mv-btn-label {
+          display: none;
+        }
+      }
+      @media (max-width: 1150px) {
+        .mv-theme-name, .mv-sep {
+          display: none;
+        }
+      }
+      @media (max-width: 950px) {
+        .mv-btn-pc {
+          display: none;
+        }
       }
 
       /* ==========================================================================
@@ -466,10 +504,10 @@
         align-items: center;
         justify-content: center;
         background: #070a12;
-        background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px);
+        background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1.2px, transparent 1.2px);
         background-size: 24px 24px;
-        overflow: auto;
-        padding: 24px 16px 36px;
+        overflow: hidden;
+        padding: 12px;
         position: relative;
       }
 
@@ -477,25 +515,27 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
+        gap: 10px;
         margin: auto;
+        transition: transform 0.2s ease, margin 0.2s ease;
       }
 
       .mv-phone-body {
         position: relative;
         width: 393px;
         height: 852px;
-        background: #151a26;
-        border: 11px solid #1c2436;
+        background: #141a27;
+        border: 11px solid #1a2233;
         border-radius: 50px;
         box-shadow: 
           0 0 0 1px rgba(255, 255, 255, 0.12),
-          0 30px 80px -15px rgba(0, 0, 0, 0.9),
-          0 10px 30px rgba(0, 0, 0, 0.5);
+          0 25px 70px -15px rgba(0, 0, 0, 0.9),
+          0 10px 25px rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: column;
         overflow: hidden;
-        transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1), height 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.35s ease;
+        transform-origin: center center;
+        transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.3s ease;
       }
 
       /* Hardware Buttons (Nút âm lượng & Nút nguồn) */
@@ -538,11 +578,11 @@
       /* Dynamic Island */
       .mv-notch {
         position: absolute;
-        top: 10px;
+        top: 9px;
         left: 50%;
         transform: translateX(-50%);
         width: 115px;
-        height: 28px;
+        height: 27px;
         background: #000000;
         border-radius: 20px;
         z-index: 10;
@@ -555,8 +595,8 @@
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
       }
       .mv-notch-camera {
-        width: 10px;
-        height: 10px;
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
         background: #0f172a;
         border: 1px solid #1e293b;
@@ -580,10 +620,10 @@
       /* Home Indicator */
       .mv-home-indicator {
         position: absolute;
-        bottom: 8px;
+        bottom: 7px;
         left: 50%;
         transform: translateX(-50%);
-        width: 135px;
+        width: 130px;
         height: 4.5px;
         background: rgba(0, 0, 0, 0.25);
         border-radius: 10px;
@@ -596,12 +636,12 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        font-size: 11.5px;
+        font-size: 11px;
         font-weight: 600;
         color: #94a3b8;
         background: rgba(15, 23, 42, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.08);
-        padding: 4px 12px;
+        padding: 3px 10px;
         border-radius: 999px;
       }
 
@@ -739,8 +779,9 @@
       hideStyle.parentNode.removeChild(hideStyle);
     }
 
-    // 4. Bắt các sự kiện tương tác trên Thanh Chuẩn
+    // 4. Bắt các sự kiện tương tác trên Thanh Chuẩn & Tự Động Co Giãn (Auto-scale)
     var phoneBody = document.getElementById('mvPhoneBody');
+    var deviceContainer = document.getElementById('mvDeviceContainer');
     var iframe = document.getElementById('mvIframe');
     var segButtons = document.querySelectorAll('.mv-seg-btn');
     var dimensionText = document.getElementById('mvDimensionText');
@@ -755,8 +796,38 @@
     var currentW = 393;
     var currentH = 852;
     var currentRadius = 50;
-    var currentName = 'iPhone 16 Pro';
+    var currentName = 'iPhone';
     var isLandscape = false;
+
+    // Tự động tính toán scale để điện thoại luôn vừa vặn 100% trong khung nhìn máy tính
+    function updateScale() {
+      var stage = document.getElementById('mvStage');
+      if (!stage || !phoneBody) return;
+
+      var availH = stage.clientHeight - 40; // trừ phần padding và badge
+      var availW = stage.clientWidth - 40;
+      var targetW = (isLandscape ? currentH : currentW) + 22; // cộng viền bezel
+      var targetH = (isLandscape ? currentW : currentH) + 22;
+
+      var scaleH = availH / targetH;
+      var scaleW = availW / targetW;
+      var scale = Math.min(1, scaleH, scaleW);
+
+      if (scale < 1) {
+        phoneBody.style.transform = 'scale(' + scale.toFixed(3) + ')';
+        var heightDiff = (targetH * (1 - scale)) / 2;
+        if (deviceContainer) {
+          deviceContainer.style.marginTop = '-' + Math.round(heightDiff * 0.8) + 'px';
+          deviceContainer.style.marginBottom = '-' + Math.round(heightDiff * 0.8) + 'px';
+        }
+      } else {
+        phoneBody.style.transform = 'none';
+        if (deviceContainer) {
+          deviceContainer.style.marginTop = '0';
+          deviceContainer.style.marginBottom = '0';
+        }
+      }
+    }
 
     function applyDimensions() {
       var w = isLandscape ? currentH : currentW;
@@ -765,6 +836,7 @@
       phoneBody.style.height = h + 'px';
       phoneBody.style.borderRadius = currentRadius + 'px';
       dimensionText.textContent = w + ' × ' + h + ' px (' + currentName + (isLandscape ? ' - Ngang' : '') + ')';
+      updateScale();
     }
 
     // Chuyển đổi thiết bị (iPhone, Plus, Galaxy, Tablet)
@@ -785,6 +857,9 @@
       isLandscape = !isLandscape;
       applyDimensions();
     });
+
+    // Lắng nghe resize cửa sổ để luôn vừa vặn
+    window.addEventListener('resize', updateScale);
 
     // Chuyển trang nhanh từ Dropdown
     pageSelect.addEventListener('change', function () {
@@ -821,6 +896,9 @@
         }, 2000);
       });
     });
+
+    // Khởi tạo scale ngay lần đầu
+    setTimeout(updateScale, 50);
   }
 
   // Khởi động khi DOM ready
