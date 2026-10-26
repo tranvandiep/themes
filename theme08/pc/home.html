@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'clinic-blue': '#0284C7',
+            'clinic-dark': '#0369A1',
+            'clinic-teal': '#0EA5E9',
+            'clinic-sky': '#F0F9FF',
+            'clinic-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-light': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="DentalCare Pro Clinic" defer></script>
+
+  <title>DentalCare Pro Clinic - Nha Khoa Thẩm Mỹ & Cấy Ghép Implant Châu Âu</title>
+</head>
+<body class="bg-surface-light text-text-main font-sans antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-clinic-dark text-white text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">schedule</span> Giờ mở cửa: 8:00 - 20:00 (Cả Thứ 7 & Chủ Nhật)</span>
+        <span class="hidden sm:inline">&bull;</span>
+        <span class="hidden sm:inline">Khám tổng quát & Chụp phim CT Cone Beam 3D Miễn Phí</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="tel:19001899" class="hover:text-cyan-200 flex items-center gap-1 font-mono font-bold">
+          <span class="material-symbols-outlined text-sm">call</span>
+          <span>Hotline: 1900 1899</span>
+        </a>
+        <a href="contact.html" class="hover:text-cyan-200 font-medium">Đặt lịch hẹn khám</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="home.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-clinic-blue to-teal-400 flex items-center justify-center text-white shadow-md shadow-clinic-blue/20">
+            <span class="material-symbols-outlined text-2xl">dentistry</span>
+          </div>
+          <div>
+            <span class="font-extrabold text-2xl tracking-tight text-text-main font-heading">DENTAL<span class="text-clinic-blue">CARE</span></span>
+            <span class="block text-[10px] uppercase tracking-widest text-text-muted font-bold">International Clinic</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8 font-heading">
+          <a href="home.html" class="text-sm font-bold text-clinic-blue hover:text-clinic-blue transition-colors">Trang Chủ</a>
+          <a href="category.html" class="text-sm font-semibold text-text-main hover:text-clinic-blue transition-colors">Dịch Vụ Điều Trị</a>
+          <a href="detail.html" class="text-sm font-semibold text-text-main hover:text-clinic-blue transition-colors">Niềng Răng Invisalign</a>
+          <a href="news.html" class="text-sm font-semibold text-text-main hover:text-clinic-blue transition-colors">Cẩm Nang Răng Miệng</a>
+          <a href="contact.html" class="text-sm font-semibold text-text-main hover:text-clinic-blue transition-colors">Đặt Hẹn & Bác Sĩ</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="flex items-center gap-4">
+          <a href="cart.html" class="relative p-2 text-text-main hover:text-clinic-blue transition-colors rounded-lg hover:bg-surface-light">
+            <span class="material-symbols-outlined text-2xl">loyalty</span>
+            <span class="absolute top-1 right-1 w-5 h-5 bg-clinic-blue text-white text-[10px] font-bold rounded-full flex items-center justify-center">1</span>
+          </a>
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-clinic-blue text-white font-bold text-sm hover:bg-clinic-dark transition-all shadow-md shadow-clinic-blue/20 font-heading">
+            <span>Đặt Lịch Hẹn Khám</span>
+            <span class="material-symbols-outlined text-base">calendar_month</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-clinic-dark via-clinic-blue to-teal-600 text-white overflow-hidden py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-cyan-200 text-xs font-bold font-heading">
+            <span class="material-symbols-outlined text-sm">health_and_safety</span>
+            TIÊU CHUẨN NHA KHOA KỸ THUẬT SỐ CHÂU ÂU
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight font-heading">
+            Kiến Tạo Nụ Cười Hoàn Hảo & <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-200 via-white to-teal-100">Bảo Tồn Răng Thật Tối Đa</span>
+          </h1>
+          <p class="text-lg text-cyan-50 leading-relaxed max-w-2xl">
+            Ứng dụng công nghệ quét hàm 3D iTero 5D và máy chụp phim CT Cone Beam giúp lập phác đồ điều trị chính xác, an toàn, không đau và bảo hành dài lâu.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="contact.html" class="px-8 py-4 rounded-xl bg-white text-clinic-dark font-bold hover:bg-cyan-50 transition-all shadow-lg flex items-center gap-2 font-heading">
+              <span>Đặt Lịch Khám & Chụp Phim Miễn Phí</span>
+              <span class="material-symbols-outlined text-lg">calendar_month</span>
+            </a>
+            <a href="category.html" class="px-8 py-4 rounded-xl bg-clinic-dark/40 hover:bg-clinic-dark/60 text-white font-semibold transition-all border border-white/20 backdrop-blur-md">
+              Xem Bảng Giá Dịch Vụ
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-lg">
+            <div>
+              <div class="text-3xl font-extrabold font-heading text-white">25.000+</div>
+              <div class="text-xs text-cyan-100 mt-1">Nụ cười rạng rỡ</div>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold font-heading text-white">100%</div>
+              <div class="text-xs text-cyan-100 mt-1">Bác sĩ Răng Hàm Mặt</div>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold font-heading text-white">10 Năm</div>
+              <div class="text-xs text-cyan-100 mt-1">Bảo hành chính hãng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl p-2 bg-white/10 backdrop-blur-md">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80" alt="Modern Dental Clinic" class="w-full h-96 object-cover rounded-xl" />
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/85 backdrop-blur-md border border-white/15 text-white flex items-center justify-between">
+              <div>
+                <p class="text-xs text-teal-300 font-heading font-bold">Ưu Đãi Đặc Quyền Tháng Này</p>
+                <p class="text-sm font-bold text-white mt-0.5">Giảm 30% Niềng Răng Invisalign & Răng Sứ</p>
+              </div>
+              <a href="detail.html" class="px-3.5 py-1.5 rounded-lg bg-clinic-blue text-xs font-bold hover:bg-clinic-dark font-heading">Xem Ngay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services -->
+  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-xs font-bold text-clinic-blue uppercase tracking-widest font-heading">DỊCH VỤ ĐIỀU TRỊ CHUYÊN KHOA</span>
+        <h2 class="text-3xl font-extrabold text-text-main font-heading mt-2">Dịch Vụ Nha Khoa Kỹ Thuật Số Hàng Đầu</h2>
+      </div>
+      <a href="category.html" class="text-sm font-bold text-clinic-blue hover:text-clinic-dark flex items-center gap-1 mt-4 md:mt-0 font-heading">
+        <span>Xem toàn bộ dịch vụ</span>
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-border-slate hover:shadow-xl transition-all group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Niềng Răng Invisalign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-clinic-blue text-white text-xs font-bold font-heading">CÔNG NGHỆ MỸ</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-text-main font-heading group-hover:text-clinic-blue transition-colors">
+              <a href="detail.html">Niềng Răng Trong Suốt Invisalign Hoa Kỳ</a>
+            </h3>
+            <p class="text-sm text-text-muted line-clamp-2">
+              Khay niềng trong suốt gần như vô hình, tháo lắp linh hoạt khi ăn uống và thấy trước kết quả dịch chuyển răng 3D ClinCheck.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-border-slate/60 mt-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-text-muted">Chi phí chỉ từ</span>
+            <div class="text-2xl font-extrabold text-clinic-blue font-heading">35.000.000₫</div>
+          </div>
+          <a href="detail.html" class="px-4 py-2 bg-clinic-blue text-white rounded-xl text-sm font-bold hover:bg-clinic-dark transition-colors font-heading">Chi Tiết</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-border-slate hover:shadow-xl transition-all group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Răng Sứ Thẩm Mỹ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-teal-600 text-white text-xs font-bold font-heading">BẢO HÀNH 10 NĂM</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-text-main font-heading group-hover:text-clinic-blue transition-colors">
+              <a href="detail.html">Dán Sứ Veneer & Bọc Răng Sứ Toàn Phần</a>
+            </h3>
+            <p class="text-sm text-text-muted line-clamp-2">
+              Phôi sứ Đức chính hãng Cercon, Emax độ thấu quang tự nhiên, không đen viền nướu và bảo tồn tối đa răng thật.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-border-slate/60 mt-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-text-muted">Chi phí chỉ từ</span>
+            <div class="text-2xl font-extrabold text-clinic-blue font-heading">2.500.000₫</div>
+          </div>
+          <a href="detail.html" class="px-4 py-2 bg-clinic-blue text-white rounded-xl text-sm font-bold hover:bg-clinic-dark transition-colors font-heading">Chi Tiết</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white rounded-2xl overflow-hidden border border-border-slate hover:shadow-xl transition-all group flex flex-col justify-between">
+        <div>
+          <div class="relative overflow-hidden h-48">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="Cấy Ghép Implant" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-indigo-600 text-white text-xs font-bold font-heading">TRỤ THỤY SĨ</span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="text-xl font-bold text-text-main font-heading group-hover:text-clinic-blue transition-colors">
+              <a href="detail.html">Cấy Ghép Trụ Implant Phục Hồi Răng Mất</a>
+            </h3>
+            <p class="text-sm text-text-muted line-clamp-2">
+              Khôi phục khả năng ăn nhai 100% như răng thật, ngăn ngừa tiêu xương hàm và độ bền trọn đời với trụ Implant chính hãng.
+            </p>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-border-slate/60 mt-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs text-text-muted">Chi phí chỉ từ</span>
+            <div class="text-2xl font-extrabold text-clinic-blue font-heading">14.000.000₫</div>
+          </div>
+          <a href="detail.html" class="px-4 py-2 bg-clinic-blue text-white rounded-xl text-sm font-bold hover:bg-clinic-dark transition-colors font-heading">Chi Tiết</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-clinic-blue to-teal-400 flex items-center justify-center text-white">
+              <span class="material-symbols-outlined text-2xl">dentistry</span>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-white font-heading">DENTAL<span class="text-teal-400">CARE</span></span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Hệ thống nha khoa kỹ thuật số tiêu chuẩn Châu Âu. Đội ngũ bác sĩ chuyên khoa Răng Hàm Mặt hơn 15 năm kinh nghiệm điều trị.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-clinic-blue transition-all"><span class="material-symbols-outlined text-lg">medical_services</span></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-clinic-blue transition-all"><span class="material-symbols-outlined text-lg">forum</span></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-clinic-blue transition-all"><span class="material-symbols-outlined text-lg">health_and_safety</span></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Dịch Vụ Điều Trị</h4>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="category.html" class="hover:text-teal-300 transition-colors">Niềng Răng Trong Suốt Invisalign</a></li>
+            <li><a href="category.html" class="hover:text-teal-300 transition-colors">Bọc Răng Sứ Thẩm Mỹ Nano</a></li>
+            <li><a href="category.html" class="hover:text-teal-300 transition-colors">Cấy Ghép Implant Thụy Sĩ</a></li>
+            <li><a href="category.html" class="hover:text-teal-300 transition-colors">Tẩy Trắng Răng Laser Whitening</a></li>
+            <li><a href="category.html" class="hover:text-teal-300 transition-colors">Nhổ Răng Khôn Piezotome Không Đau</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Khách Hàng & Chính Sách</h4>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="news.html" class="hover:text-teal-300 transition-colors">Quy Trình Khám Vô Trùng Khép Kín</a></li>
+            <li><a href="post.html" class="hover:text-teal-300 transition-colors">Chính Sách Bảo Hành Răng Sứ 10 Năm</a></li>
+            <li><a href="detail.html" class="hover:text-teal-300 transition-colors">Bảng Giá Dịch Vụ Niêm Yết</a></li>
+            <li><a href="contact.html" class="hover:text-teal-300 transition-colors">Hỗ Trợ Trả Góp 0% Lãi Suất</a></li>
+            <li><a href="contact.html" class="hover:text-teal-300 transition-colors">Chăm Sóc Sau Điều Trị Tận Tâm</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Hệ Thống Phòng Khám</h4>
+          <p class="text-sm text-slate-400 mb-2 flex items-start gap-2">
+            <span class="material-symbols-outlined text-teal-400 text-base mt-0.5">location_on</span>
+            <span>Cơ sở 1: 128 Nguyễn Đình Chiểu, Phường 6, Quận 3, TP. Hồ Chí Minh</span>
+          </p>
+          <p class="text-sm text-slate-400 mb-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-teal-400 text-base">call</span>
+            <span class="font-mono">1900 1899 &bull; (028) 7300 1899</span>
+          </p>
+          <p class="text-sm text-slate-400 flex items-center gap-2">
+            <span class="material-symbols-outlined text-teal-400 text-base">mail</span>
+            <span class="font-mono">clinic@dentalcare.example.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+        <p>&copy; 2026 DentalCare Pro Clinic International. Giấy phép hoạt động Sở Y Tế cấp.</p>
+        <div class="flex items-center gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-slate-400">Giấy phép y tế</a>
+          <a href="#" class="hover:text-slate-400">Cam kết bảo mật thông tin bệnh án</a>
+          <a href="#" class="hover:text-slate-400">Chính sách bảo hành</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

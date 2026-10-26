@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-purple': '#7C3AED',
+            'edu-amber': '#F59E0B',
+            'edu-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-warm': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="EduVibe Masterclass" defer></script>
+
+  <title>Giỏ Hàng - EduVibe Mobile</title>
+</head>
+<body class="bg-surface-warm text-text-main font-sans antialiased pb-24">
+
+  <!-- Mobile Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate px-4 py-3">
+    <div class="flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-edu-indigo text-white flex items-center justify-center font-bold">
+          <span class="material-symbols-outlined text-xl">school</span>
+        </div>
+        <span class="font-extrabold text-base tracking-tight text-text-main font-heading">EDUVIBE<span class="text-edu-indigo">.</span></span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="cart.html" class="relative p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+          <span class="absolute top-1 right-1 w-4 h-4 bg-edu-amber text-white text-[9px] font-bold rounded-full flex items-center justify-center">1</span>
+        </a>
+        <a href="contact.html" class="p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">help</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="p-4 bg-white border-b border-border-slate">
+    <h1 class="text-lg font-extrabold text-text-main font-heading">Đăng Ký Khóa Học</h1>
+    <p class="text-xs text-text-muted mt-0.5">1 khóa học trong giỏ</p>
+  </div>
+
+  <main class="p-4 space-y-3">
+    <div class="bg-white p-4 rounded-xl border border-border-slate space-y-2">
+      <div class="flex justify-between items-start">
+        <div>
+          <h2 class="font-bold text-xs text-text-main font-heading">Fullstack Web & AI Masterclass</h2>
+          <span class="text-[10px] text-text-muted">Lớp K28 &bull; 6 Tháng Thực Chiến</span>
+        </div>
+        <span class="font-bold text-xs text-edu-indigo font-heading">7.990.000₫</span>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 rounded-xl border border-border-slate space-y-2 text-xs">
+      <div class="flex justify-between text-text-muted">
+        <span>Học phí gốc:</span>
+        <span class="font-mono line-through">12.000.000₫</span>
+      </div>
+      <div class="flex justify-between text-green-600 font-semibold">
+        <span>Ưu đãi sớm:</span>
+        <span class="font-mono">- 4.010.000₫</span>
+      </div>
+      <div class="flex justify-between font-bold text-text-main pt-2 border-t border-border-slate text-sm font-heading">
+        <span>Học phí còn lại:</span>
+        <span class="text-edu-indigo">7.990.000₫</span>
+      </div>
+    </div>
+  </main>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border-slate p-3 shadow-lg">
+    <a href="contact.html" class="block w-full py-3 bg-edu-indigo text-white font-bold text-center rounded-xl text-xs shadow-md font-heading">
+      Xác Nhận Giữ Chỗ Ngay
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#8C4A26',
+            'primary-hover': '#72381B',
+            'primary-container': '#1C120C',
+            'amber-gold': '#D98A3D',
+            'warm-ivory': '#FAF6F0',
+            'surface': '#FFFFFF',
+            'charcoal': '#1F1A17',
+            'charcoal-muted': '#6B5F57',
+            'border-subtle': '#EDE5DD'
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Plus Jakarta Sans', 'serif'],
+            sans: ['Be Vietnam Pro', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="Gourmet Bistro &amp; Cafe" defer></script>
+
+  <title>Menu Điện Tử - Gourmet Bistro &amp; Cafe</title>
+</head>
+<body class="bg-surface font-sans text-charcoal antialiased">
+  
+    <div class="bg-primary-container text-white text-xs py-2 px-6">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-6">
+          <span><strong class="text-amber-gold">HOTLINE ĐẶT BÀN:</strong> 1900 7878</span>
+          <span class="hidden md:inline">|</span>
+          <span class="hidden md:inline">Địa chỉ: 18 Tràng Tiền, Hoàn Kiếm, Hà Nội</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <span>Giảm 10% khi đặt bàn trước 17:00 các ngày trong tuần</span>
+          <span class="hidden md:inline">|</span>
+          <span class="text-amber-gold font-semibold">Live Music Acoustic 20h00 Thứ 6 &amp; Thứ 7</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border-subtle shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <a href="home.html" class="flex items-center gap-3 shrink-0">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-md">
+            <span class="material-symbols-outlined text-2xl">restaurant</span>
+          </div>
+          <div>
+            <div class="font-heading text-2xl font-bold tracking-tight text-primary leading-none">Gourmet Bistro</div>
+            <div class="text-[10px] tracking-widest text-amber-gold uppercase font-medium mt-1">Restaurant &amp; Wine Lounge</div>
+          </div>
+        </a>
+
+        <div class="flex-1 max-w-lg hidden md:block">
+          <div class="relative flex items-center">
+            <input type="text" placeholder="Tìm kiếm món ăn, steak bò Wagyu, pasta tôm hùm, vang đỏ..." 
+                   class="w-full bg-warm-ivory pl-11 pr-4 py-2.5 rounded-full border border-border-subtle focus:border-primary focus:outline-none text-sm placeholder:text-gray-400 shadow-inner" />
+            <span class="material-symbols-outlined absolute left-3.5 text-gray-400 text-xl pointer-events-none">search</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5 shrink-0">
+          <a href="contact.html" class="px-5 py-2.5 rounded-full bg-primary hover:bg-primary-hover text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">table_restaurant</span>
+            <span>Đặt Bàn Online</span>
+          </a>
+          <a href="cart.html" class="relative p-2 text-charcoal hover:text-primary transition-colors" title="Món ăn giao tận nơi">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-amber-gold text-white text-[10px] flex items-center justify-center font-bold">2</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-border-subtle/60 bg-warm-ivory/50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center gap-8">
+          <a href="home.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Trang Chủ</a>
+<a href="category.html" class="py-2.5 text-sm transition-colors text-primary font-bold border-b-2 border-primary">Menu Ẩm Thực</a>
+<a href="category.html?type=drinks" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Rượu Vang &amp; Cocktail</a>
+<a href="news.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Cẩm Nang Ẩm Thực</a>
+<a href="contact.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Đặt Bàn Trực Tuyến</a>
+
+        </div>
+      </div>
+    </header>
+    
+  <div class="bg-warm-ivory border-b border-border-subtle py-3 px-6 text-xs text-charcoal-muted">
+    <div class="max-w-7xl mx-auto"><a href="home.html" class="hover:text-primary">Trang chủ</a> / <span class="font-semibold text-charcoal">Menu ẩm thực</span></div>
+  </div>
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <div class="text-center max-w-xl mx-auto mb-10">
+      <h1 class="font-heading text-3xl font-bold text-primary-container">Menu Ẩm Thực Châu Âu Đương Đại</h1>
+      <p class="text-xs text-charcoal-muted mt-2">Nguyên liệu nhập khẩu tươi ngon được chế biến bởi bếp trưởng 5 sao</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-white border border-border-subtle shadow-sm flex flex-col justify-between">
+        <div>
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Steak" class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h3 class="font-heading text-lg font-bold text-primary">Bò Wagyu Úc Nướng Đá Muối</h3>
+          <p class="text-xs text-charcoal-muted mt-2">Vân mỡ Marble 8+, ăn kèm sốt tiêu đen thượng hạng.</p>
+        </div>
+        <div class="pt-4 border-t border-border-subtle mt-4 flex items-center justify-between">
+          <span class="font-bold text-primary text-base">890.000 đ</span>
+          <a href="detail.html" class="px-4 py-2 bg-primary text-white text-xs font-semibold rounded-lg">Chi tiết</a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white border border-border-subtle shadow-sm flex flex-col justify-between">
+        <div>
+          <img src="https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=800&q=80" alt="Pasta" class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h3 class="font-heading text-lg font-bold text-primary">Mỳ Ý Tôm Hùm Sốt Truffle</h3>
+          <p class="text-xs text-charcoal-muted mt-2">Mỳ tươi thủ công, tôm hùm Canada và nấm Truffle đen.</p>
+        </div>
+        <div class="pt-4 border-t border-border-subtle mt-4 flex items-center justify-between">
+          <span class="font-bold text-primary text-base">550.000 đ</span>
+          <a href="detail.html" class="px-4 py-2 bg-primary text-white text-xs font-semibold rounded-lg">Chi tiết</a>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white border border-border-subtle shadow-sm flex flex-col justify-between">
+        <div>
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Dessert" class="w-full h-48 object-cover rounded-xl mb-4" />
+          <h3 class="font-heading text-lg font-bold text-primary">Bánh Tiramisu Truyền Thống Ý</h3>
+          <p class="text-xs text-charcoal-muted mt-2">Bánh mềm mịn đượm vị cà phê Espresso và phô mai Mascarpone.</p>
+        </div>
+        <div class="pt-4 border-t border-border-subtle mt-4 flex items-center justify-between">
+          <span class="font-bold text-primary text-base">145.000 đ</span>
+          <a href="detail.html" class="px-4 py-2 bg-primary text-white text-xs font-semibold rounded-lg">Chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+    <footer class="bg-primary-container text-white pt-16 pb-10 border-t border-primary/40 mt-16">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shadow-lg font-bold">
+              <span class="material-symbols-outlined text-2xl">restaurant</span>
+            </div>
+            <div>
+              <div class="font-heading text-2xl font-bold tracking-tight text-white">Gourmet Bistro &amp; Cafe</div>
+              <div class="text-[10px] tracking-widest text-amber-gold uppercase font-medium">Fine Dining &amp; Wine Lounge</div>
+            </div>
+          </div>
+          <p class="text-xs text-white/70 leading-relaxed max-w-sm mb-6">
+            Nhà hàng phong cách Bistro Châu Âu hiện đại với nguyên liệu thượng hạng nhập khẩu trực tiếp từ Pháp, Úc và Nhật Bản. Không gian ấm cúng, tinh tế cho bữa tiệc sum vầy.
+          </p>
+          <div class="text-xs text-white/80 space-y-2">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-amber-gold text-base">call</span> Hotline đặt bàn: 1900 7878 (9:00 - 23:00)</div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-amber-gold text-base">mail</span> Email: reservation@gourmetbistro.vn</div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-amber-gold text-base">pin_drop</span> Địa chỉ: 18 Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-amber-gold mb-4">Thực Đơn Nổi Bật</h4>
+          <ul class="space-y-2.5 text-xs text-white/75">
+            <li><a href="category.html" class="hover:text-white transition-colors">Bò Wagyu Nướng Đá Muối Himalaya</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Mỳ Ý Tôm Hùm Sốt Kem Truffle</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Cá Hồi Áp Chảo Sốt Bơ Chanh Pháp</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Bánh Tiramisu Truyền Thống Ý</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Bộ Sưu Tập Rượu Vang Bordeaux</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-amber-gold mb-4">Dịch Vụ &amp; Sự Kiện</h4>
+          <ul class="space-y-2.5 text-xs text-white/75">
+            <li><a href="contact.html" class="hover:text-white transition-colors">Đặt Bàn Tiệc Sinh Nhật &amp; Hẹn Hò</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Phòng VIP Riêng Tư 10 - 25 Khách</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Dịch Vụ Tiệc Finger Food Công Ty</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Thực Đơn Set Menu Theo Mùa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-amber-gold mb-4">Đăng Ký Thành Viên VIP</h4>
+          <p class="text-xs text-white/70 mb-3">Tặng 01 ly <strong>Cocktail Signature</strong> khi ghé thăm lần đầu.</p>
+          <div class="flex flex-col gap-2">
+            <input type="tel" placeholder="Nhập số điện thoại..." class="px-3.5 py-2 rounded-lg bg-white/10 text-xs text-white placeholder:text-white/40 border border-white/20 focus:outline-none focus:border-amber-gold" />
+            <button class="px-4 py-2 bg-amber-gold text-primary-container font-bold rounded-lg text-xs transition-all shadow-md">Đăng Ký Ngay</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+        <div>© 2025 Gourmet Bistro &amp; Cafe. Giao diện F&amp;B và Nhà hàng cao cấp.</div>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="hover:underline">Trang chủ</a>
+          <span>•</span>
+          <a href="category.html" class="hover:underline">Menu</a>
+          <span>•</span>
+          <a href="news.html" class="hover:underline">Cẩm nang</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:underline">Đặt bàn</a>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>

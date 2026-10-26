@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-purple': '#7C3AED',
+            'edu-amber': '#F59E0B',
+            'edu-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-warm': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="EduVibe Masterclass" defer></script>
+
+  <title>Danh Sách Khóa Học & Lộ Trình Đào Tạo - EduVibe Masterclass</title>
+</head>
+<body class="bg-surface-warm text-text-main font-sans antialiased">
+
+  <!-- Top Bar -->
+  <div class="bg-edu-indigo-dark text-white text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <span>🎉 Học kỳ mới 2026: Nhận ngay học bổng 2.000.000₫ cho 50 học viên đăng ký sớm nhất!</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="tel:19008899" class="hover:text-edu-amber flex items-center gap-1 font-mono">
+          <span class="material-symbols-outlined text-sm">call</span>
+          <span>Hotline: 1900 8899</span>
+        </a>
+        <a href="contact.html" class="hover:text-edu-amber">Đăng ký kiểm tra trình độ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="home.html" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-edu-indigo to-edu-purple flex items-center justify-center text-white shadow-md shadow-edu-indigo/20">
+            <span class="material-symbols-outlined text-2xl">school</span>
+          </div>
+          <div>
+            <span class="font-extrabold text-2xl tracking-tight text-text-main font-heading">EDUVIBE<span class="text-edu-indigo">.</span></span>
+            <span class="block text-[10px] uppercase tracking-widest text-text-muted font-bold">Masterclass Academy</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center gap-8 font-heading">
+          <a href="home.html" class="text-sm font-bold text-edu-indigo hover:text-edu-indigo transition-colors">Trang Chủ</a>
+          <a href="category.html" class="text-sm font-semibold text-text-main hover:text-edu-indigo transition-colors">Khóa Học & Lộ Trình</a>
+          <a href="detail.html" class="text-sm font-semibold text-text-main hover:text-edu-indigo transition-colors">Khóa Nổi Bật</a>
+          <a href="news.html" class="text-sm font-semibold text-text-main hover:text-edu-indigo transition-colors">Kinh Nghiệm & Hướng Nghiệp</a>
+          <a href="contact.html" class="text-sm font-semibold text-text-main hover:text-edu-indigo transition-colors">Tư Vấn Học Tập</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="flex items-center gap-4">
+          <a href="cart.html" class="relative p-2 text-text-main hover:text-edu-indigo transition-colors rounded-lg hover:bg-surface-warm">
+            <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+            <span class="absolute top-1 right-1 w-5 h-5 bg-edu-amber text-white text-[10px] font-bold rounded-full flex items-center justify-center">1</span>
+          </a>
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-edu-indigo text-white font-bold text-sm hover:bg-edu-indigo-dark transition-all shadow-md shadow-edu-indigo/20">
+            <span>Đăng Ký Tư Vấn</span>
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Header -->
+  <div class="bg-white border-b border-border-slate py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-xs text-text-muted mb-2 font-mono">
+        <a href="home.html" class="hover:text-edu-indigo">Trang Chủ</a>
+        <span>/</span>
+        <span class="text-edu-indigo">Danh Mục Khóa Học</span>
+      </nav>
+      <h1 class="text-3xl font-extrabold text-text-main font-heading">Tất Cả Khóa Học Nghề Thực Chiến</h1>
+      <p class="text-sm text-text-muted mt-2">Lựa chọn lộ trình phù hợp với mục tiêu nghề nghiệp và trình độ hiện tại của bạn.</p>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <!-- Filter Sidebar -->
+      <aside class="space-y-6">
+        <div class="bg-white p-6 rounded-2xl border border-border-slate shadow-sm">
+          <h3 class="font-bold text-text-main text-base mb-4 font-heading flex items-center justify-between">
+            <span>Chuyên Ngành Đào Tạo</span>
+            <span class="material-symbols-outlined text-sm text-text-muted">tune</span>
+          </h3>
+          <div class="space-y-2.5 text-sm">
+            <label class="flex items-center gap-2 cursor-pointer font-bold text-edu-indigo">
+              <input type="checkbox" checked class="rounded text-edu-indigo focus:ring-0" />
+              <span>Tất cả chuyên ngành (24)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-text-muted hover:text-text-main">
+              <input type="checkbox" class="rounded text-edu-indigo focus:ring-0" />
+              <span>Lập Trình Web & App (8)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-text-muted hover:text-text-main">
+              <input type="checkbox" class="rounded text-edu-indigo focus:ring-0" />
+              <span>UI/UX Design (5)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-text-muted hover:text-text-main">
+              <input type="checkbox" class="rounded text-edu-indigo focus:ring-0" />
+              <span>Data Analytics & AI (6)</span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer text-text-muted hover:text-text-main">
+              <input type="checkbox" class="rounded text-edu-indigo focus:ring-0" />
+              <span>Digital Marketing (5)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-border-slate shadow-sm">
+          <h3 class="font-bold text-text-main text-base mb-4 font-heading">Trình Độ Bắt Đầu</h3>
+          <div class="space-y-2 text-sm text-text-muted">
+            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="level" checked /> <span>Người mới bắt đầu (Beginner)</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="level" /> <span>Đã có nền tảng cơ bản</span></label>
+            <label class="flex items-center gap-2 cursor-pointer"><input type="radio" name="level" /> <span>Nâng cao (Advanced / Senior)</span></label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Listing Cards -->
+      <div class="lg:col-span-3 space-y-6">
+        <!-- Item 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-border-slate hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-center">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Fullstack Master" class="w-full md:w-52 h-40 object-cover rounded-xl" />
+          <div class="flex-1 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-indigo-50 text-edu-indigo text-xs font-bold font-heading">FULLSTACK ENGINEERING</span>
+            <h3 class="text-xl font-bold text-text-main font-heading"><a href="detail.html" class="hover:text-edu-indigo">Fullstack Web & AI Masterclass 2026</a></h3>
+            <p class="text-sm text-text-muted">React 19, Next.js 15, Node.js Microservices, Docker, CI/CD và kết nối Gemini AI Agent.</p>
+            <div class="flex items-center gap-4 text-xs text-text-muted pt-1">
+              <span>&bull; Thời lượng: 6 tháng</span>
+              <span>&bull; Cam kết việc làm</span>
+              <span>&bull; Đánh giá: 4.9/5</span>
+            </div>
+          </div>
+          <div class="text-right md:border-l md:border-border-slate md:pl-6 min-w-[160px] w-full md:w-auto">
+            <div class="text-xs text-text-muted line-through">12.000.000₫</div>
+            <div class="text-2xl font-bold text-edu-indigo font-heading">7.990.000₫</div>
+            <div class="text-xs text-text-muted mb-3">Trọn gói lộ trình</div>
+            <a href="detail.html" class="block w-full text-center px-4 py-2 bg-edu-indigo text-white rounded-xl text-sm font-bold hover:bg-edu-indigo-dark transition-colors font-heading">Xem Chi Tiết</a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-border-slate hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-center">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="UI UX Design" class="w-full md:w-52 h-40 object-cover rounded-xl" />
+          <div class="flex-1 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-purple-50 text-edu-purple text-xs font-bold font-heading">PRODUCT DESIGN</span>
+            <h3 class="text-xl font-bold text-text-main font-heading"><a href="detail.html" class="hover:text-edu-indigo">UI/UX Product Design Master</a></h3>
+            <p class="text-sm text-text-muted">Làm chủ Figma nâng cao, Auto Layout 5.0, xây dựng hệ thống Design System và nghiên cứu tâm lý học người dùng.</p>
+            <div class="flex items-center gap-4 text-xs text-text-muted pt-1">
+              <span>&bull; Thời lượng: 4 tháng</span>
+              <span>&bull; Portfolio 3 dự án</span>
+              <span>&bull; Đánh giá: 4.95/5</span>
+            </div>
+          </div>
+          <div class="text-right md:border-l md:border-border-slate md:pl-6 min-w-[160px] w-full md:w-auto">
+            <div class="text-xs text-text-muted line-through">9.500.000₫</div>
+            <div class="text-2xl font-bold text-edu-indigo font-heading">5.990.000₫</div>
+            <div class="text-xs text-text-muted mb-3">Trọn gói lộ trình</div>
+            <a href="detail.html" class="block w-full text-center px-4 py-2 bg-edu-indigo text-white rounded-xl text-sm font-bold hover:bg-edu-indigo-dark transition-colors font-heading">Xem Chi Tiết</a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-border-slate hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-center">
+          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Power BI Analytics" class="w-full md:w-52 h-40 object-cover rounded-xl" />
+          <div class="flex-1 space-y-2">
+            <span class="px-2.5 py-1 rounded bg-emerald-50 text-edu-emerald text-xs font-bold font-heading">DATA ANALYTICS</span>
+            <h3 class="text-xl font-bold text-text-main font-heading"><a href="detail.html" class="hover:text-edu-indigo">Data Analytics & Power BI Thực Chiến</a></h3>
+            <p class="text-sm text-text-muted">Khai thác dữ liệu lớn với SQL, Python Data Science và trực quan hóa Dashboard chuyên nghiệp cho ban giám đốc.</p>
+            <div class="flex items-center gap-4 text-xs text-text-muted pt-1">
+              <span>&bull; Thời lượng: 3.5 tháng</span>
+              <span>&bull; Chứng chỉ quốc tế</span>
+              <span>&bull; Đánh giá: 4.88/5</span>
+            </div>
+          </div>
+          <div class="text-right md:border-l md:border-border-slate md:pl-6 min-w-[160px] w-full md:w-auto">
+            <div class="text-xs text-text-muted line-through">8.000.000₫</div>
+            <div class="text-2xl font-bold text-edu-indigo font-heading">4.990.000₫</div>
+            <div class="text-xs text-text-muted mb-3">Trọn gói lộ trình</div>
+            <a href="detail.html" class="block w-full text-center px-4 py-2 bg-edu-indigo text-white rounded-xl text-sm font-bold hover:bg-edu-indigo-dark transition-colors font-heading">Xem Chi Tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-edu-indigo to-edu-purple flex items-center justify-center text-white">
+              <span class="material-symbols-outlined text-2xl">school</span>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-white font-heading">EDUVIBE<span class="text-edu-amber">.</span></span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Học viện đào tạo công nghệ, thiết kế và trí tuệ nhân tạo thực chiến hàng đầu với cam kết hỗ trợ việc làm 100% sau tốt nghiệp.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-edu-indigo transition-all"><span class="material-symbols-outlined text-lg">play_circle</span></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-edu-indigo transition-all"><span class="material-symbols-outlined text-lg">forum</span></a>
+            <a href="#" class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-edu-indigo transition-all"><span class="material-symbols-outlined text-lg">workspace_premium</span></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Chương Trình Đào Tạo</h4>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="category.html" class="hover:text-edu-amber transition-colors">Lập Trình Web Fullstack & AI</a></li>
+            <li><a href="category.html" class="hover:text-edu-amber transition-colors">Thiết Kế UI/UX Product Design</a></li>
+            <li><a href="category.html" class="hover:text-edu-amber transition-colors">Khoa Học Dữ Liệu & Data Analytics</a></li>
+            <li><a href="category.html" class="hover:text-edu-amber transition-colors">Digital Marketing Thực Chiến</a></li>
+            <li><a href="category.html" class="hover:text-edu-amber transition-colors">Khóa Học AI Prompt Engineering</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Hỗ Trợ Học Viên</h4>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="news.html" class="hover:text-edu-amber transition-colors">Cộng Đồng Học Tập Discord/Zalo</a></li>
+            <li><a href="post.html" class="hover:text-edu-amber transition-colors">Chính Sách Hoàn Học Phí 100%</a></li>
+            <li><a href="contact.html" class="hover:text-edu-amber transition-colors">Tra Cứu Chứng Chỉ Tốt Nghiệp</a></li>
+            <li><a href="contact.html" class="hover:text-edu-amber transition-colors">Liên Hệ Đặt Lịch Mentoring 1-1</a></li>
+            <li><a href="detail.html" class="hover:text-edu-amber transition-colors">Học Thử Miễn Phí 7 Ngày</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 font-heading">Trụ Sở Đào Tạo</h4>
+          <p class="text-sm text-slate-400 mb-2 flex items-start gap-2">
+            <span class="material-symbols-outlined text-edu-amber text-base mt-0.5">location_on</span>
+            <span>Học viện EduVibe, Phố Sách & Công Nghệ, Quận 1, TP. Hồ Chí Minh</span>
+          </p>
+          <p class="text-sm text-slate-400 mb-2 flex items-center gap-2">
+            <span class="material-symbols-outlined text-edu-amber text-base">call</span>
+            <span class="font-mono">1900 8899 &bull; 0903 888 999</span>
+          </p>
+          <p class="text-sm text-slate-400 flex items-center gap-2">
+            <span class="material-symbols-outlined text-edu-amber text-base">mail</span>
+            <span class="font-mono">tuyensinh@eduvibe.example.com</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
+        <p>&copy; 2026 EduVibe Masterclass Academy. Nền tảng EdTech chuẩn quốc tế.</p>
+        <div class="flex items-center gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-slate-400">Điều khoản sử dụng</a>
+          <a href="#" class="hover:text-slate-400">Chính sách bảo mật học viên</a>
+          <a href="#" class="hover:text-slate-400">Quy chế đào tạo trực tuyến</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

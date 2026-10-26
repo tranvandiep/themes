@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#8E3E50',
+            'primary-hover': '#753040',
+            'primary-container': '#471622',
+            'rose-gold': '#D9826C',
+            'rose-light': '#FDF4F2',
+            'champagne': '#C9A86A',
+            'champagne-light': '#FAF5EB',
+            'surface': '#FFFFFF',
+            'surface-warm': '#FAF7F5',
+            'charcoal': '#1E191B',
+            'charcoal-muted': '#6B5E62',
+            'border-subtle': '#EFE6E1',
+            'border-accent': '#E5C9C1'
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'Plus Jakarta Sans', 'serif'],
+            sans: ['Be Vietnam Pro', '-apple-system', 'sans-serif'],
+            display: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="Aura Pure Cosmetics" defer></script>
+
+  <title>Aura Pure Cosmetics - Mỹ Phẩm Thuần Chay &amp; Skincare Khoa Học</title>
+</head>
+<body class="bg-surface font-sans text-charcoal antialiased">
+  
+    <!-- Top Announcement -->
+    <div class="bg-primary text-white text-xs py-2 px-6">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-6">
+          <span><strong class="text-champagne-light">HOTLINE:</strong> 1900 6868</span>
+          <span class="hidden md:inline">|</span>
+          <span class="hidden md:inline">Hệ thống Showroom: Hà Nội • Đà Nẵng • TP.HCM</span>
+        </div>
+        <div class="flex items-center gap-6">
+          <span>Miễn phí giao hàng toàn quốc từ 499.000 đ</span>
+          <span class="hidden md:inline">|</span>
+          <span class="text-champagne-light font-semibold">100% Thuần Chay • Chuẩn Da Liễu</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border-subtle shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
+        <a href="home.html" class="flex items-center gap-3 shrink-0">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white shadow-md">
+            <span class="material-symbols-outlined text-2xl">spa</span>
+          </div>
+          <div>
+            <div class="font-heading text-2xl font-bold tracking-tight text-primary leading-none">Aura Pure</div>
+            <div class="text-[10px] tracking-widest text-champagne uppercase font-medium mt-1">Cosmetics &amp; Skincare</div>
+          </div>
+        </a>
+
+        <div class="flex-1 max-w-lg hidden md:block">
+          <div class="relative flex items-center">
+            <input type="text" placeholder="Tìm kiếm serum B5, kem dưỡng phục hồi, kem chống nắng..." 
+                   class="w-full bg-surface-warm pl-11 pr-4 py-2.5 rounded-full border border-border-subtle focus:border-primary focus:outline-none text-sm placeholder:text-gray-400 shadow-inner" />
+            <span class="material-symbols-outlined absolute left-3.5 text-gray-400 text-xl pointer-events-none">search</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5 shrink-0">
+          <a href="contact.html" class="hidden lg:flex items-center gap-1.5 text-sm text-charcoal-muted hover:text-primary transition-colors">
+            <span class="material-symbols-outlined text-rose-gold text-xl">location_on</span>
+            <span>Showrooms</span>
+          </a>
+          <a href="category.html" class="relative p-2 text-charcoal hover:text-primary transition-colors" title="Yêu thích">
+            <span class="material-symbols-outlined text-2xl">favorite</span>
+            <span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-rose-gold text-white text-[10px] flex items-center justify-center font-bold">2</span>
+          </a>
+          <a href="cart.html" class="relative p-2 text-charcoal hover:text-primary transition-colors" title="Giỏ hàng">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span class="absolute top-1 right-0 w-4 h-4 rounded-full bg-primary text-white text-[10px] flex items-center justify-center font-bold">3</span>
+          </a>
+          <div class="w-9 h-9 rounded-full bg-surface-warm border border-border-subtle flex items-center justify-center text-charcoal cursor-pointer hover:border-primary transition-colors">
+            <span class="material-symbols-outlined text-xl">person</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-border-subtle/60 bg-surface-warm/50">
+        <div class="max-w-7xl mx-auto px-6 flex items-center gap-8">
+          <a href="home.html" class="py-2.5 text-sm transition-colors text-primary font-semibold border-b-2 border-primary">Trang Chủ</a>
+<a href="category.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Sản Phẩm Skincare</a>
+<a href="category.html?type=organic" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Thuần Chay Organic</a>
+<a href="news.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Cẩm Nang Làm Đẹp</a>
+<a href="contact.html" class="py-2.5 text-sm transition-colors text-charcoal hover:text-primary">Soi Da & Showroom</a>
+
+        </div>
+      </div>
+    </header>
+    
+
+  <!-- Hero Banner -->
+  <section class="relative bg-gradient-to-r from-rose-light via-surface-warm to-champagne-light py-20 px-6 overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-6">
+          <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Bộ Sưu Tập Skincare Khoa Học Mới 2025
+        </div>
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-container leading-tight mb-6">
+          Đánh Thức Làn Da <br /><span class="italic font-normal text-primary">Thuần Khiết &amp; Rạng Rỡ</span>
+        </h1>
+        <p class="text-base sm:text-lg text-charcoal-muted leading-relaxed mb-8 max-w-lg">
+          Sự hòa quyện giữa thảo mộc hữu cơ Đông phương và phức hợp hoạt chất sinh học tiên tiến. Cấp ẩm tầng sâu, tái sinh màng tế bào da an lành.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="category.html" class="px-8 py-3.5 rounded-full bg-primary hover:bg-primary-hover text-white font-semibold text-sm transition-all shadow-lg shadow-primary/20 flex items-center gap-2">
+            <span>Khám Phá Sản Phẩm</span>
+            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </a>
+          <a href="contact.html" class="px-8 py-3.5 rounded-full bg-white hover:bg-rose-light text-primary border border-border-accent font-semibold text-sm transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">event_available</span>
+            <span>Đặt Lịch Soi Da</span>
+          </a>
+        </div>
+        <div class="grid grid-cols-3 gap-6 pt-10 mt-10 border-t border-border-subtle text-charcoal">
+          <div>
+            <div class="font-heading text-2xl font-bold text-primary">100%</div>
+            <div class="text-xs text-charcoal-muted mt-0.5">Thuần chay organic</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl font-bold text-primary">98.5%</div>
+            <div class="text-xs text-charcoal-muted mt-0.5">Hài lòng cải thiện da</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl font-bold text-primary">50.000+</div>
+            <div class="text-xs text-charcoal-muted mt-0.5">Phụ nữ tin dùng</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative mx-auto max-w-md lg:max-w-none">
+          <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Aura Pure Serum" class="rounded-3xl shadow-2xl object-cover w-full h-[500px] border-8 border-white" />
+          <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-border-subtle max-w-xs">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="w-8 h-8 rounded-full bg-rose-light text-primary flex items-center justify-center font-bold">★</span>
+              <div>
+                <div class="text-xs font-bold text-charcoal">Serum B5 Hydra Glow</div>
+                <div class="text-[11px] text-gray-500">Được bình chọn Best Serum 2025</div>
+              </div>
+            </div>
+            <div class="text-xs font-semibold text-primary">485.000 đ <span class="text-gray-400 line-through text-[11px] font-normal">650.000 đ</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Propositions -->
+  <section class="py-12 bg-white border-b border-border-subtle">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-rose-light text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-2xl">verified</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-charcoal">100% Chính Hãng</h4>
+          <p class="text-xs text-charcoal-muted mt-0.5">Cam kết nguồn gốc xuất xứ rõ ràng</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-champagne-light text-champagne flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-2xl">local_shipping</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-charcoal">Freeship Toàn Quốc</h4>
+          <p class="text-xs text-charcoal-muted mt-0.5">Đơn hàng từ 499.000 đ</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-rose-light text-rose-gold flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-2xl">published_with_changes</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-charcoal">Đổi Trả 14 Ngày</h4>
+          <p class="text-xs text-charcoal-muted mt-0.5">Bảo hành nếu kích ứng dị ứng</p>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-surface-warm text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined text-2xl">support_agent</span>
+        </div>
+        <div>
+          <h4 class="font-bold text-sm text-charcoal">Bác Sĩ Tư Vấn 1:1</h4>
+          <p class="text-xs text-charcoal-muted mt-0.5">Chuyên viên da liễu theo sát routine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-16 bg-surface-warm">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-xs font-semibold text-rose-gold tracking-widest uppercase">Danh Mục Tuyển Chọn</span>
+        <h2 class="font-heading text-3xl font-bold text-primary-container mt-2">Chăm Sóc Toàn Diện Theo Nhu Cầu Da</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Serum" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Serum &amp; Tinh Chất</h3>
+          <p class="text-[11px] text-gray-500 mt-1">12 sản phẩm</p>
+        </a>
+
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1608248597359-0a273b7e7354?auto=format&fit=crop&w=800&q=80" alt="Kem dưỡng" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Kem Dưỡng Ẩm</h3>
+          <p class="text-[11px] text-gray-500 mt-1">8 sản phẩm</p>
+        </a>
+
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Toner" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Nước Cân Bằng</h3>
+          <p class="text-[11px] text-gray-500 mt-1">6 sản phẩm</p>
+        </a>
+
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" alt="Sữa rửa mặt" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Làm Sạch Dịu Nhẹ</h3>
+          <p class="text-[11px] text-gray-500 mt-1">5 sản phẩm</p>
+        </a>
+
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80" alt="Chống nắng" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Chống Nắng Phổ Rộng</h3>
+          <p class="text-[11px] text-gray-500 mt-1">7 sản phẩm</p>
+        </a>
+
+        <a href="category.html" class="p-5 rounded-2xl bg-white text-center hover:shadow-xl transition-all border border-border-subtle group">
+          <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden bg-rose-light flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80" alt="Combo" class="w-full h-full object-cover group-hover:scale-110 transition-transform" />
+          </div>
+          <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors">Combo Routine</h3>
+          <p class="text-[11px] text-gray-500 mt-1">4 bộ sản phẩm</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products with Flash Deal -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-semibold text-rose-gold tracking-widest uppercase">Khuyến Mãi Đặc Biệt</span>
+          <h2 class="font-heading text-3xl font-bold text-primary-container mt-1">Sản Phẩm Bán Chạy Trong Tuần</h2>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-medium bg-rose-light text-primary px-4 py-2 rounded-full border border-border-accent">
+          <span class="material-symbols-outlined text-base">timer</span>
+          <span>Ưu đãi kết thúc sau: <strong>14:32:08</strong></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-surface rounded-2xl border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+          <div class="relative bg-surface-warm p-6 flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">-25% OFF</span>
+            <span class="absolute top-3 right-3 bg-white text-charcoal text-xs p-1.5 rounded-full shadow-sm hover:text-primary cursor-pointer"><span class="material-symbols-outlined text-base block">favorite</span></span>
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Serum B5" class="h-56 object-contain group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-rose-gold font-semibold uppercase tracking-wider mb-1">Cấp Nước • Phục Hồi</div>
+              <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors line-clamp-2">
+                <a href="detail.html">Serum Tái Tạo Da Chuyên Sâu Aura Glow Multi-Active B5 + HA 50ml</a>
+              </h3>
+              <div class="flex items-center gap-1.5 text-xs text-amber-500 my-2">
+                <span>★★★★★</span>
+                <span class="text-gray-400 text-[11px]">(1.420 đánh giá)</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-border-subtle flex items-center justify-between mt-3">
+              <div>
+                <span class="text-base font-bold text-primary">485.000 đ</span>
+                <span class="text-xs text-gray-400 line-through block">650.000 đ</span>
+              </div>
+              <a href="detail.html" class="p-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white transition-colors" title="Thêm vào giỏ">
+                <span class="material-symbols-outlined text-lg block">add_shopping_cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-surface rounded-2xl border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+          <div class="relative bg-surface-warm p-6 flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-champagne text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">BEST SELLER</span>
+            <span class="absolute top-3 right-3 bg-white text-charcoal text-xs p-1.5 rounded-full shadow-sm hover:text-primary cursor-pointer"><span class="material-symbols-outlined text-base block">favorite</span></span>
+            <img src="https://images.unsplash.com/photo-1608248597359-0a273b7e7354?auto=format&fit=crop&w=800&q=80" alt="Kem dưỡng" class="h-56 object-contain group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-rose-gold font-semibold uppercase tracking-wider mb-1">Khóa Ẩm 72 Giờ</div>
+              <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors line-clamp-2">
+                <a href="detail.html">Kem Dưỡng Ẩm Làm Dịu Phục Hồi Ceramide Barrier Cream 50g</a>
+              </h3>
+              <div class="flex items-center gap-1.5 text-xs text-amber-500 my-2">
+                <span>★★★★★</span>
+                <span class="text-gray-400 text-[11px]">(980 đánh giá)</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-border-subtle flex items-center justify-between mt-3">
+              <div>
+                <span class="text-base font-bold text-primary">420.000 đ</span>
+                <span class="text-xs text-gray-400 line-through block">520.000 đ</span>
+              </div>
+              <a href="detail.html" class="p-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white transition-colors">
+                <span class="material-symbols-outlined text-lg block">add_shopping_cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-surface rounded-2xl border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+          <div class="relative bg-surface-warm p-6 flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-rose-gold text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">-15% OFF</span>
+            <span class="absolute top-3 right-3 bg-white text-charcoal text-xs p-1.5 rounded-full shadow-sm hover:text-primary cursor-pointer"><span class="material-symbols-outlined text-base block">favorite</span></span>
+            <img src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80" alt="Kem chống nắng" class="h-56 object-contain group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-rose-gold font-semibold uppercase tracking-wider mb-1">Chống Nắng • Nâng Tông</div>
+              <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors line-clamp-2">
+                <a href="detail.html">Kem Chống Nắng Phổ Rộng Aura Pure Sun Screen SPF 50+ PA++++ 60ml</a>
+              </h3>
+              <div class="flex items-center gap-1.5 text-xs text-amber-500 my-2">
+                <span>★★★★★</span>
+                <span class="text-gray-400 text-[11px]">(2.150 đánh giá)</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-border-subtle flex items-center justify-between mt-3">
+              <div>
+                <span class="text-base font-bold text-primary">365.000 đ</span>
+                <span class="text-xs text-gray-400 line-through block">430.000 đ</span>
+              </div>
+              <a href="detail.html" class="p-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white transition-colors">
+                <span class="material-symbols-outlined text-lg block">add_shopping_cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-surface rounded-2xl border border-border-subtle hover:border-primary/40 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden">
+          <div class="relative bg-surface-warm p-6 flex items-center justify-center overflow-hidden">
+            <span class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase">-20% OFF</span>
+            <span class="absolute top-3 right-3 bg-white text-charcoal text-xs p-1.5 rounded-full shadow-sm hover:text-primary cursor-pointer"><span class="material-symbols-outlined text-base block">favorite</span></span>
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Toner" class="h-56 object-contain group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-rose-gold font-semibold uppercase tracking-wider mb-1">Cân Bằng • Dịu Da</div>
+              <h3 class="font-bold text-sm text-charcoal group-hover:text-primary transition-colors line-clamp-2">
+                <a href="detail.html">Nước Cân Bằng Cánh Hoa Cúc La Mã Chiết Xuất Hữu Cơ 200ml</a>
+              </h3>
+              <div class="flex items-center gap-1.5 text-xs text-amber-500 my-2">
+                <span>★★★★★</span>
+                <span class="text-gray-400 text-[11px]">(810 đánh giá)</span>
+              </div>
+            </div>
+            <div class="pt-3 border-t border-border-subtle flex items-center justify-between mt-3">
+              <div>
+                <span class="text-base font-bold text-primary">310.000 đ</span>
+                <span class="text-xs text-gray-400 line-through block">390.000 đ</span>
+              </div>
+              <a href="detail.html" class="p-2.5 rounded-xl bg-primary hover:bg-primary-hover text-white transition-colors">
+                <span class="material-symbols-outlined text-lg block">add_shopping_cart</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Routine Banner -->
+  <section class="py-16 bg-primary-container text-white px-6">
+    <div class="max-w-7xl mx-auto rounded-3xl bg-gradient-to-r from-[#5a1b2a] to-primary p-8 md:p-14 flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl">
+      <div class="max-w-xl">
+        <span class="text-xs font-semibold text-champagne uppercase tracking-widest">Kiểm Tra Làn Da Của Bạn</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mt-2 mb-4 leading-tight">
+          Xác Định Routine Chuẩn Liệu Trình Chỉ Trong 60 Giây
+        </h2>
+        <p class="text-sm text-white/80 leading-relaxed mb-6">
+          Trả lời 4 câu hỏi trắc nghiệm ngắn để bác sĩ da liễu Aura Cosmetics đề xuất quy trình chăm sóc cá nhân hóa phù hợp nhất với loại da của bạn.
+        </p>
+        <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-champagne hover:bg-champagne-light text-charcoal font-bold text-sm transition-all shadow-md">
+          <span>Bắt Đầu Kiểm Tra Da Ngay</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+      </div>
+      <div class="w-full md:w-auto shrink-0 flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=80" alt="Routine Skincare" class="w-72 h-72 object-cover rounded-2xl shadow-xl border-4 border-white/20" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Beauty Tips / Blog -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-10">
+        <div>
+          <span class="text-xs font-semibold text-rose-gold tracking-widest uppercase">Cẩm Nang Làm Đẹp</span>
+          <h2 class="font-heading text-3xl font-bold text-primary-container mt-1">Kiến Thức Skincare Khoa Học</h2>
+        </div>
+        <a href="news.html" class="text-sm font-semibold text-primary hover:underline flex items-center gap-1">
+          <span>Xem tất cả bài viết</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-surface-warm rounded-2xl overflow-hidden border border-border-subtle group hover:shadow-xl transition-all">
+          <a href="post.html" class="block overflow-hidden h-52">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Skincare 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </a>
+          <div class="p-6">
+            <div class="text-[11px] font-semibold text-primary uppercase tracking-wider mb-2">Hoạt Chất Chuyên Sâu</div>
+            <h3 class="font-heading text-lg font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">
+              <a href="post.html">Cách Kết Hợp Retinol Và Niacinamide Hiệu Quả Không Gây Kích Ứng Cho Da Nhạy Cảm</a>
+            </h3>
+            <p class="text-xs text-charcoal-muted line-clamp-2 leading-relaxed mb-4">
+              Bí quyết phân tầng dưỡng chất khoa học giúp da sáng mịn, đều màu mà vẫn duy trì hàng rào ẩm tự nhiên vững chắc.
+            </p>
+            <div class="text-[11px] text-gray-400 flex items-center justify-between pt-3 border-t border-border-subtle">
+              <span>Bác sĩ Da Liễu Kim Oanh</span>
+              <span>18/10/2025 • 6 phút đọc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-warm rounded-2xl overflow-hidden border border-border-subtle group hover:shadow-xl transition-all">
+          <a href="post.html" class="block overflow-hidden h-52">
+            <img src="https://images.unsplash.com/photo-1512290900672-1f414e8248bc?auto=format&fit=crop&w=800&q=80" alt="Skincare 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </a>
+          <div class="p-6">
+            <div class="text-[11px] font-semibold text-primary uppercase tracking-wider mb-2">Chăm Sóc Hàng Ngày</div>
+            <h3 class="font-heading text-lg font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">
+              <a href="post.html">5 Sai Lầm Khi Thoa Kem Chống Nắng Khiến Da Nổi Mụn Ẩn Và Nhanh Đổ Dầu</a>
+            </h3>
+            <p class="text-xs text-charcoal-muted line-clamp-2 leading-relaxed mb-4">
+              Tại sao đã dùng kem chống nắng đắt tiền nhưng da vẫn sạm đen và bí tắc? Tìm hiểu lượng dùng chuẩn và cách làm sạch đúng.
+            </p>
+            <div class="text-[11px] text-gray-400 flex items-center justify-between pt-3 border-t border-border-subtle">
+              <span>Chuyên Viên Thảo Nhi</span>
+              <span>15/10/2025 • 5 phút đọc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-warm rounded-2xl overflow-hidden border border-border-subtle group hover:shadow-xl transition-all">
+          <a href="post.html" class="block overflow-hidden h-52">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Skincare 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </a>
+          <div class="p-6">
+            <div class="text-[11px] font-semibold text-primary uppercase tracking-wider mb-2">Xu Hướng Thuần Chay</div>
+            <h3 class="font-heading text-lg font-bold text-charcoal group-hover:text-primary transition-colors line-clamp-2 mb-2">
+              <a href="post.html">Vì Sao Mỹ Phẩm Thuần Chay (Vegan Skincare) Trở Thành Tiêu Chuẩn Toàn Cầu?</a>
+            </h3>
+            <p class="text-xs text-charcoal-muted line-clamp-2 leading-relaxed mb-4">
+              Không chỉ bảo vệ môi trường, thành phần thực vật tự nhiên lên men còn mang lại khả năng thẩm thấu bất ngờ cho da.
+            </p>
+            <div class="text-[11px] text-gray-400 flex items-center justify-between pt-3 border-t border-border-subtle">
+              <span>Aura Beauty Lab</span>
+              <span>12/10/2025 • 4 phút đọc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    <footer class="bg-primary-container text-white pt-16 pb-10 border-t border-primary/40 mt-16">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center shadow-lg font-bold">
+              <span class="material-symbols-outlined text-2xl">spa</span>
+            </div>
+            <div>
+              <div class="font-heading text-2xl font-bold tracking-tight text-white">Aura Pure Cosmetics</div>
+              <div class="text-[10px] tracking-widest text-champagne uppercase font-medium">Thuần Chay • Khoa Học • Tinh Khiết</div>
+            </div>
+          </div>
+          <p class="text-xs text-white/70 leading-relaxed max-w-sm mb-6">
+            Thương hiệu dược mỹ phẩm tiên phong kết hợp thảo dược hữu cơ phương Đông và hoạt chất sinh học chuẩn da liễu Hàn Quốc. An toàn lành tính cho mọi làn da.
+          </p>
+          <div class="text-xs text-white/80 space-y-2">
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-champagne text-base">call</span> Hotline tư vấn: 1900 6868 (8:00 - 21:30)</div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-champagne text-base">mail</span> Email: tuvan@auracosmetics.vn</div>
+            <div class="flex items-center gap-2"><span class="material-symbols-outlined text-champagne text-base">pin_drop</span> Showroom Flagship: 88 Phố Huế, Hoàn Kiếm, Hà Nội</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-champagne mb-4">Danh Mục Sản Phẩm</h4>
+          <ul class="space-y-2.5 text-xs text-white/75">
+            <li><a href="category.html" class="hover:text-white transition-colors">Serum Cấp Nước &amp; Phục Hồi B5</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Kem Dưỡng Khóa Ẩm Chuyên Sâu</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Nước Cân Bằng Cánh Hoa Hồng</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Sữa Rửa Mặt Tạo Bọt Dịu Nhẹ</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Kem Chống Nắng Phổ Rộng SPF 50+</a></li>
+            <li><a href="category.html" class="hover:text-white transition-colors">Combo Routine Chăm Sóc Da Toàn Diện</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-champagne mb-4">Hỗ Trợ Khách Hàng</h4>
+          <ul class="space-y-2.5 text-xs text-white/75">
+            <li><a href="contact.html" class="hover:text-white transition-colors">Đặt Lịch Soi Da Miễn Phí</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Chính Sách Đổi Trả 14 Ngày</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Chính Sách Giao Hàng Toàn Quốc</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Hướng Dẫn Kiểm Tra Đơn Hàng</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Bảo Mật Thông Tin Khách Hàng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading text-base font-bold text-champagne mb-4">Đăng Ký Nhận Ưu Đãi</h4>
+          <p class="text-xs text-white/70 mb-3">Nhận ngay voucher <strong>giảm 50.000 đ</strong> cho đơn hàng đầu tiên.</p>
+          <div class="flex flex-col gap-2">
+            <input type="email" placeholder="Nhập email của bạn..." class="px-3.5 py-2 rounded-lg bg-white/10 text-xs text-white placeholder:text-white/40 border border-white/20 focus:outline-none focus:border-champagne" />
+            <button class="px-4 py-2 bg-primary hover:bg-primary-hover text-white rounded-lg text-xs font-semibold transition-all shadow-md">Đăng Ký Ngay</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+        <div>© 2025 Aura Pure Cosmetics. Bản quyền thuộc về thương hiệu mẫu Aura Cosmetics.</div>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="hover:underline">Trang chủ</a>
+          <span>•</span>
+          <a href="category.html" class="hover:underline">Sản phẩm</a>
+          <span>•</span>
+          <a href="news.html" class="hover:underline">Cẩm nang</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:underline">Liên hệ</a>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>

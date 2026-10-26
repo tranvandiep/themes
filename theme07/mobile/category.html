@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-purple': '#7C3AED',
+            'edu-amber': '#F59E0B',
+            'edu-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-warm': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="EduVibe Masterclass" defer></script>
+
+  <title>Khóa Học & Lộ Trình - EduVibe Mobile</title>
+</head>
+<body class="bg-surface-warm text-text-main font-sans antialiased pb-20">
+
+  <!-- Mobile Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate px-4 py-3">
+    <div class="flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-edu-indigo text-white flex items-center justify-center font-bold">
+          <span class="material-symbols-outlined text-xl">school</span>
+        </div>
+        <span class="font-extrabold text-base tracking-tight text-text-main font-heading">EDUVIBE<span class="text-edu-indigo">.</span></span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="cart.html" class="relative p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+          <span class="absolute top-1 right-1 w-4 h-4 bg-edu-amber text-white text-[9px] font-bold rounded-full flex items-center justify-center">1</span>
+        </a>
+        <a href="contact.html" class="p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">help</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="p-4 bg-white border-b border-border-slate">
+    <h1 class="text-lg font-extrabold text-text-main font-heading">Danh Sách Khóa Học</h1>
+    <p class="text-xs text-text-muted mt-0.5">Cam kết việc làm & Mentoring 1-1</p>
+  </div>
+
+  <main class="p-4 space-y-3">
+    <a href="detail.html" class="block bg-white p-4 rounded-xl border border-border-slate space-y-2">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Fullstack" class="w-full h-32 object-cover rounded-lg" />
+      <span class="px-2 py-0.5 bg-indigo-50 text-edu-indigo text-[10px] font-bold rounded font-heading">FULLSTACK AI</span>
+      <h2 class="font-bold text-sm text-text-main font-heading">Fullstack Web & AI Masterclass</h2>
+      <p class="text-xs text-text-muted">React, Node.js, Next.js, Docker và tích hợp Gemini API.</p>
+      <div class="flex items-center justify-between pt-2 border-t border-border-slate">
+        <span class="font-bold text-edu-indigo text-sm font-heading">7.990.000₫</span>
+        <span class="px-3 py-1 bg-edu-indigo text-white text-xs font-bold rounded-lg font-heading">Xem Lộ Trình</span>
+      </div>
+    </a>
+
+    <a href="detail.html" class="block bg-white p-4 rounded-xl border border-border-slate space-y-2">
+      <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="UI UX" class="w-full h-32 object-cover rounded-lg" />
+      <span class="px-2 py-0.5 bg-purple-50 text-edu-purple text-[10px] font-bold rounded font-heading">PRODUCT DESIGN</span>
+      <h2 class="font-bold text-sm text-text-main font-heading">UI/UX Product Design Master</h2>
+      <p class="text-xs text-text-muted">Figma Design System, User Journey Map và Prototype nâng cao.</p>
+      <div class="flex items-center justify-between pt-2 border-t border-border-slate">
+        <span class="font-bold text-edu-indigo text-sm font-heading">5.990.000₫</span>
+        <span class="px-3 py-1 bg-edu-indigo text-white text-xs font-bold rounded-lg font-heading">Xem Lộ Trình</span>
+      </div>
+    </a>
+  </main>
+
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-border-slate py-2 px-4 flex items-center justify-around shadow-lg">
+    <a href="home.html" class="flex flex-col items-center gap-1 text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">home</span>
+      <span class="text-[10px] font-bold">Trang Chủ</span>
+    </a>
+    <a href="category.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">menu_book</span>
+      <span class="text-[10px] font-medium">Khóa Học</span>
+    </a>
+    <a href="detail.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">local_fire_department</span>
+      <span class="text-[10px] font-medium">Khóa Hot</span>
+    </a>
+    <a href="news.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">article</span>
+      <span class="text-[10px] font-medium">Góc Học Tập</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">support_agent</span>
+      <span class="text-[10px] font-medium">Tư Vấn</span>
+    </a>
+  </nav>
+
+</body>
+</html>

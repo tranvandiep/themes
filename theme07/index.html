@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduVibe Masterclass - Portal Demo Theme 07</title>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-amber': '#F59E0B',
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-lg">arrow_back</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-edu-indigo to-purple-600 flex items-center justify-center text-white">
+          <span class="material-symbols-outlined text-lg">school</span>
+        </span>
+        <span class="font-bold text-lg tracking-tight font-heading">EduVibe Masterclass <span class="text-xs font-mono font-normal text-amber-400 px-2 py-0.5 rounded bg-amber-950/60 border border-amber-800/40">THEME 07</span></span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="pc/home.html" class="px-4 py-2 rounded-lg bg-edu-indigo text-white text-xs font-bold hover:bg-indigo-600 transition-colors flex items-center gap-1.5 shadow-md font-heading">
+        <span class="material-symbols-outlined text-sm">desktop_windows</span>
+        <span>Xem Bản PC</span>
+      </a>
+      <a href="mobile/home.html" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 text-xs font-bold hover:bg-slate-700 transition-colors flex items-center gap-1.5 border border-slate-700 font-heading">
+        <span class="material-symbols-outlined text-sm">smartphone</span>
+        <span>Xem Bản Mobile</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Showcase -->
+  <main class="flex-1 max-w-6xl mx-auto px-6 py-12 flex flex-col justify-center">
+    <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+      <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest">EdTech & Online Academy Theme</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white font-heading">Trải Nghiệm Theme EduVibe Masterclass</h1>
+      <p class="text-slate-400 text-sm">Giao diện chuyên nghiệp dành cho trường học, học viện đào tạo, trung tâm ngoại ngữ, khóa học online và mentor cá nhân.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full">
+      <!-- PC Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-edu-indigo transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">desktop_windows</span>
+          </div>
+          <h2 class="text-xl font-bold text-white font-heading">Giao Diện Máy Tính (PC View)</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Màn hình rộng chuẩn 1280px - 1440px. Bố cục hiện đại, giáo trình học trực quan theo từng giai đoạn, video preview và giỏ hàng giữ chỗ khóa học.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">home.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">category.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">detail.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">news.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">post.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">contact.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">cart.html</span>
+          </div>
+        </div>
+        <a href="pc/home.html" class="mt-8 block w-full py-3 bg-edu-indigo text-white font-bold text-center rounded-xl hover:bg-indigo-600 transition-colors text-sm shadow-lg font-heading">
+          Khởi Chạy Bản PC Demo
+        </a>
+      </div>
+
+      <!-- Mobile Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-amber-400 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">smartphone</span>
+          </div>
+          <h2 class="text-xl font-bold text-white font-heading">Giao Diện Di Động (Mobile View)</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Thiết kế tối ưu cho màn hình cảm ứng di động, bottom navigation bar cố định thông minh, dễ dàng đăng ký học và xem giáo trình trên smartphone.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">home.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">category.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">detail.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">news.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">post.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">contact.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">cart.html</span>
+          </div>
+        </div>
+        <a href="mobile/home.html" class="mt-8 block w-full py-3 bg-slate-800 text-amber-400 font-bold text-center rounded-xl hover:bg-slate-700 transition-colors text-sm border border-amber-800/50 font-heading">
+          Khởi Chạy Bản Mobile Demo
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500 font-mono">
+    EduVibe Masterclass Demo Platform &bull; Antigravity Suite
+  </footer>
+</body>
+</html>

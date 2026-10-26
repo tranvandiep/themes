@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-purple': '#7C3AED',
+            'edu-amber': '#F59E0B',
+            'edu-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-warm': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="EduVibe Masterclass" defer></script>
+
+  <title>Fullstack Web & AI Masterclass - EduVibe Mobile</title>
+</head>
+<body class="bg-surface-warm text-text-main font-sans antialiased pb-24">
+
+  <!-- Mobile Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate px-4 py-3">
+    <div class="flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-edu-indigo text-white flex items-center justify-center font-bold">
+          <span class="material-symbols-outlined text-xl">school</span>
+        </div>
+        <span class="font-extrabold text-base tracking-tight text-text-main font-heading">EDUVIBE<span class="text-edu-indigo">.</span></span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="cart.html" class="relative p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+          <span class="absolute top-1 right-1 w-4 h-4 bg-edu-amber text-white text-[9px] font-bold rounded-full flex items-center justify-center">1</span>
+        </a>
+        <a href="contact.html" class="p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">help</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="p-4 space-y-4">
+    <div class="rounded-xl overflow-hidden border border-border-slate bg-white">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Fullstack AI" class="w-full h-44 object-cover" />
+    </div>
+
+    <div class="bg-white p-4 rounded-xl border border-border-slate space-y-3">
+      <span class="px-2 py-0.5 bg-indigo-50 text-edu-indigo text-[10px] font-bold rounded font-heading">KHÓA HỌC HOT NHẤT</span>
+      <h1 class="text-lg font-bold text-text-main font-heading">Fullstack Web & AI Masterclass</h1>
+      <p class="text-xs text-text-muted">Lộ trình 6 tháng &bull; Cam kết việc làm &bull; Mentor 1-1</p>
+      <div class="p-3 bg-slate-50 rounded-lg flex justify-between items-center">
+        <span class="text-xs text-text-muted">Học phí ưu đãi:</span>
+        <span class="font-bold text-edu-indigo text-base font-heading">7.990.000₫</span>
+      </div>
+    </div>
+
+    <div class="bg-white p-4 rounded-xl border border-border-slate space-y-2">
+      <h2 class="font-bold text-xs text-text-main uppercase font-heading">Kỹ Năng Đạt Được</h2>
+      <ul class="text-xs text-text-muted space-y-1.5">
+        <li>&bull; React 19, TypeScript, Next.js 15</li>
+        <li>&bull; Node.js RESTful API, PostgreSQL, Docker</li>
+        <li>&bull; Tích hợp Gemini & OpenAI API thực tế</li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-border-slate p-3 flex gap-3 shadow-lg">
+    <a href="cart.html" class="flex-1 py-3 bg-edu-indigo text-white font-bold text-center rounded-xl text-xs shadow-md font-heading">
+      Đăng Ký Giữ Chỗ
+    </a>
+    <a href="contact.html" class="px-4 py-3 bg-surface-warm text-text-main font-semibold text-center rounded-xl text-xs border border-border-slate font-heading">
+      Học Thử 7 Ngày
+    </a>
+  </div>
+</body>
+</html>

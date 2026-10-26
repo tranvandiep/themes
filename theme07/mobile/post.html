@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="canonical" href="https://gozic.vn" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'edu-indigo': '#4F46E5',
+            'edu-indigo-dark': '#3730A3',
+            'edu-purple': '#7C3AED',
+            'edu-amber': '#F59E0B',
+            'edu-emerald': '#10B981',
+            'surface': '#FFFFFF',
+            'surface-warm': '#F8FAFC',
+            'border-slate': '#E2E8F0',
+            'text-main': '#0F172A',
+            'text-muted': '#64748B'
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="EduVibe Masterclass" defer></script>
+
+  <title>Chi Tiết Bài Viết - EduVibe Mobile</title>
+</head>
+<body class="bg-surface-warm text-text-main font-sans antialiased pb-20">
+
+  <!-- Mobile Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-border-slate px-4 py-3">
+    <div class="flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-edu-indigo text-white flex items-center justify-center font-bold">
+          <span class="material-symbols-outlined text-xl">school</span>
+        </div>
+        <span class="font-extrabold text-base tracking-tight text-text-main font-heading">EDUVIBE<span class="text-edu-indigo">.</span></span>
+      </a>
+
+      <div class="flex items-center gap-2">
+        <a href="cart.html" class="relative p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+          <span class="absolute top-1 right-1 w-4 h-4 bg-edu-amber text-white text-[9px] font-bold rounded-full flex items-center justify-center">1</span>
+        </a>
+        <a href="contact.html" class="p-2 text-text-main">
+          <span class="material-symbols-outlined text-2xl">help</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <article class="p-4 space-y-4">
+    <span class="text-[10px] font-bold text-edu-indigo font-heading">CAREER ROADMAP</span>
+    <h1 class="text-xl font-extrabold text-text-main leading-tight font-heading">
+      Lộ Trình Trở Thành Lập Trình Viên Fullstack AI Cho Người Mới Bắt Đầu
+    </h1>
+    <div class="text-[10px] text-text-muted font-mono pb-2 border-b border-border-slate">
+      Tác giả: Trần Quốc Bảo &bull; 26/10/2026
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Roadmap" class="w-full h-44 object-cover rounded-xl" />
+
+    <div class="text-xs text-text-main leading-relaxed space-y-3">
+      <p>
+        Một lập trình viên Fullstack hiện nay không chỉ dừng lại ở việc biết cắt HTML/CSS hay viết vài câu lệnh API đơn giản, mà đòi hỏi khả năng làm chủ các công cụ hỗ trợ AI để tăng tốc độ phát triển phần mềm.
+      </p>
+      <h2 class="font-bold text-sm text-text-main font-heading pt-2">1. Vững Vàng Nền Tảng Cốt Lõi</h2>
+      <p class="text-text-muted">
+        Nắm vững JavaScript bản chất (Async/Await, Scope, Closures) trước khi tiếp cận React hay Node.js.
+      </p>
+    </div>
+  </article>
+
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-border-slate py-2 px-4 flex items-center justify-around shadow-lg">
+    <a href="home.html" class="flex flex-col items-center gap-1 text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">home</span>
+      <span class="text-[10px] font-bold">Trang Chủ</span>
+    </a>
+    <a href="category.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">menu_book</span>
+      <span class="text-[10px] font-medium">Khóa Học</span>
+    </a>
+    <a href="detail.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">local_fire_department</span>
+      <span class="text-[10px] font-medium">Khóa Hot</span>
+    </a>
+    <a href="news.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">article</span>
+      <span class="text-[10px] font-medium">Góc Học Tập</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center gap-1 text-text-muted hover:text-edu-indigo">
+      <span class="material-symbols-outlined text-2xl">support_agent</span>
+      <span class="text-[10px] font-medium">Tư Vấn</span>
+    </a>
+  </nav>
+
+</body>
+</html>

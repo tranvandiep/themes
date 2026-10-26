@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentalCare Pro Clinic - Portal Demo Theme 08</title>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'clinic-blue': '#0284C7',
+            'clinic-dark': '#0369A1',
+            'clinic-teal': '#0EA5E9',
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors">
+        <span class="material-symbols-outlined text-lg">arrow_back</span>
+      </a>
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-clinic-blue to-teal-400 flex items-center justify-center text-white">
+          <span class="material-symbols-outlined text-lg">dentistry</span>
+        </span>
+        <span class="font-bold text-lg tracking-tight font-heading">DentalCare Pro Clinic <span class="text-xs font-mono font-normal text-cyan-300 px-2 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/40">THEME 08</span></span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="pc/home.html" class="px-4 py-2 rounded-lg bg-clinic-blue text-white text-xs font-bold hover:bg-sky-600 transition-colors flex items-center gap-1.5 shadow-md font-heading">
+        <span class="material-symbols-outlined text-sm">desktop_windows</span>
+        <span>Xem Bản PC</span>
+      </a>
+      <a href="mobile/home.html" class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 text-xs font-bold hover:bg-slate-700 transition-colors flex items-center gap-1.5 border border-slate-700 font-heading">
+        <span class="material-symbols-outlined text-sm">smartphone</span>
+        <span>Xem Bản Mobile</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Showcase -->
+  <main class="flex-1 max-w-6xl mx-auto px-6 py-12 flex flex-col justify-center">
+    <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+      <span class="text-xs font-mono font-bold text-cyan-300 uppercase tracking-widest">Medical & Clinic Theme</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white font-heading">Trải Nghiệm Theme DentalCare Pro Clinic</h1>
+      <p class="text-slate-400 text-sm">Giao diện đạt chuẩn y khoa quốc tế dành cho phòng khám nha khoa, trung tâm thẩm mỹ răng hàm mặt, phòng khám đa khoa và bác sĩ chuyên khoa.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto w-full">
+      <!-- PC Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-clinic-blue transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-cyan-300 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">desktop_windows</span>
+          </div>
+          <h2 class="text-xl font-bold text-white font-heading">Giao Diện Máy Tính (PC View)</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Màn hình rộng chuẩn 1280px - 1440px. Bố cục chuyên nghiệp, form đặt lịch khám chi tiết, bảng giá niêm yết và giỏ hàng đặt cọc dịch vụ.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">home.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">category.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">detail.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">news.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">post.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">contact.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">cart.html</span>
+          </div>
+        </div>
+        <a href="pc/home.html" class="mt-8 block w-full py-3 bg-clinic-blue text-white font-bold text-center rounded-xl hover:bg-sky-600 transition-colors text-sm shadow-lg font-heading">
+          Khởi Chạy Bản PC Demo
+        </a>
+      </div>
+
+      <!-- Mobile Card -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-teal-400 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-3xl">smartphone</span>
+          </div>
+          <h2 class="text-xl font-bold text-white font-heading">Giao Diện Di Động (Mobile View)</h2>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Thiết kế tối ưu cho điện thoại, đặt hẹn khám nhanh chóng, thanh điều hướng dưới đáy màn hình và nút gọi khẩn cấp tiện lợi.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">home.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">category.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">detail.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">news.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">post.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">contact.html</span>
+            <span class="text-[11px] font-mono px-2 py-1 rounded bg-slate-800 text-slate-300">cart.html</span>
+          </div>
+        </div>
+        <a href="mobile/home.html" class="mt-8 block w-full py-3 bg-slate-800 text-teal-300 font-bold text-center rounded-xl hover:bg-slate-700 transition-colors text-sm border border-teal-800/50 font-heading">
+          Khởi Chạy Bản Mobile Demo
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500 font-mono">
+    DentalCare Pro Clinic Demo Platform &bull; Antigravity Suite
+  </footer>
+</body>
+</html>
