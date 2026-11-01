@@ -2157,7 +2157,7 @@
                 <i class="bi bi-bag-check-fill"></i>
                 <span>Bán Hàng & E-Commerce</span>
               </span>
-              <span class="tab-count">2</span>
+              <span class="tab-count">1</span>
             </button>
 
             <button type="button" class="category-menu-item tab-btn" data-category="cosmetics">
@@ -2165,7 +2165,7 @@
                 <i class="bi bi-flower1"></i>
                 <span>Mỹ Phẩm & Làm Đẹp</span>
               </span>
-              <span class="tab-count">1</span>
+              <span class="tab-count">2</span>
             </button>
 
             <button type="button" class="category-menu-item tab-btn" data-category="spa">
@@ -2766,52 +2766,64 @@
             </div>
           </article>
 
-          <!-- THEME 09: Haute Moda Luxe Fashion -->
-          <article class="theme-card" data-id="theme09" data-category="ecommerce" data-status="soon"
-            data-title="Haute Moda - Thời Trang & Phụ Kiện Hàng Hiệu">
+          <!-- THEME 09: LÀM CHỦ SPA (Ron International) -->
+          <article class="theme-card" data-id="theme09" data-category="cosmetics" data-status="ready"
+            data-title="Làm Chủ Spa - Đào Tạo, Tư Vấn & Chuyển Giao Công Nghệ Spa">
             <div class="card-preview">
-              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
-                alt="Haute Moda Theme" loading="lazy" />
+              <img src="theme09/assets/images/banner_mockup.jpg"
+                alt="Làm Chủ Spa - Ron International Theme" loading="lazy" />
 
               <div class="preview-badges">
-                <span class="badge-status soon"><i class="bi bi-hourglass-split"></i> Đang Phát Hành</span>
+                <span class="badge-status ready"><i class="bi bi-check-circle-fill"></i> Sẵn Sàng Trải Nghiệm</span>
+                <span class="badge-status hot"><i class="bi bi-stars"></i> Học Viện &amp; B2B Spa</span>
               </div>
 
               <div class="preview-device-badge">
-                <i class="bi bi-handbag"></i> Fashion Lookbook
+                <i class="bi bi-display"></i> PC &amp; Mobile
               </div>
 
               <div class="preview-overlay">
-                <button type="button" class="btn-preview-action primary" onclick="openPreviewModal('theme09')">
-                  <i class="bi bi-info-circle"></i> Xem Cấu Trúc Giao Diện
+                <a href="theme09/index.html" class="btn-preview-action primary">
+                  <i class="bi bi-eye-fill"></i> Xem Trọn Bộ Demo
+                </a>
+                <button type="button" class="btn-preview-action secondary" onclick="openPreviewModal('theme09')">
+                  <i class="bi bi-laptop"></i> Xem Thử Nhanh
                 </button>
               </div>
             </div>
 
             <div class="card-body">
               <div class="card-meta">
-                <span class="card-category">Bán Hàng &amp; E-Commerce</span>
-                <span class="card-version">Sắp phát hành</span>
+                <span class="card-category">Mỹ Phẩm, Spa &amp; Đào Tạo</span>
+                <span class="card-version"><i class="bi bi-shield-check"></i> v2.5 Chuẩn SEO</span>
               </div>
 
-              <h2 class="card-title">Haute Moda Luxe Fashion</h2>
+              <h2 class="card-title">Làm Chủ Spa - Ron International</h2>
               <p class="card-desc">
-                Đậm chất tạp chí thời trang quốc tế dành cho boutique cao cấp, thời trang thiết kế, phụ kiện túi xách.
-                Gallery ảnh chất lượng siêu nét, bảng tư vấn chọn size theo số đo chuẩn.
+                Giao diện Học viện đào tạo chủ Spa, tư vấn vận hành và chuyển giao công nghệ dược mỹ phẩm tế bào gốc. Tích hợp phễu đăng ký hội thảo, 5 danh mục sản phẩm chủ lực và tuyển đại lý toàn quốc.
               </p>
 
               <div class="card-tags">
-                <span class="tag-item">Thời trang thiết kế</span>
-                <span class="tag-item">Phụ kiện hàng hiệu</span>
-                <span class="tag-item">Lookbook tương tác</span>
-                <span class="tag-item">Chọn size thông minh</span>
+                <span class="tag-item">Đào tạo Chủ Spa</span>
+                <span class="tag-item">Dược mỹ phẩm B2B</span>
+                <span class="tag-item">Chuyển giao công nghệ</span>
+                <span class="tag-item">Tuyển đại lý</span>
               </div>
 
               <div class="card-footer">
-                <span class="card-category" style="color: var(--text-muted); font-size: 13px;">Chuẩn E-Commerce</span>
-                <button type="button" class="btn-launch-soon" onclick="notifySoon('Haute Moda Luxe Fashion')">
-                  <i class="bi bi-bell"></i> Đăng Ký Nhận Sớm
-                </button>
+                <div class="card-links">
+                  <a href="theme09/pc/home.html" target="_self" class="btn-link-sm" title="Khám phá bản PC">
+                    <i class="bi bi-laptop"></i> PC Demo
+                  </a>
+                  <a href="theme09/mobile/home.html" target="_self" class="btn-link-sm" title="Khám phá bản Mobile">
+                    <i class="bi bi-phone"></i> Mobile Demo
+                  </a>
+                </div>
+
+                <a href="theme09/index.html" class="btn-launch-demo">
+                  <span>Trải Nghiệm</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </article>
@@ -3170,15 +3182,18 @@
         ]
       },
       theme09: {
-        title: 'Haute Moda Luxe - Thời Trang & Phụ Kiện Hàng Hiệu',
-        category: 'Bán Hàng & E-Commerce',
-        fullUrl: '#',
-        status: 'soon',
+        title: 'LÀM CHỦ SPA - Đào Tạo, Tư Vấn & Chuyển Giao Công Nghệ Spa',
+        category: 'Mỹ Phẩm, Spa & Đào Tạo',
+        pcUrl: 'theme09/pc/home.html',
+        mobileUrl: 'theme09/mobile/home.html',
+        fullUrl: 'theme09/index.html',
+        status: 'ready',
         features: [
-          'Phong cách Lookbook dạng tạp chí thời trang quốc tế',
-          'Bộ lọc chọn size thông minh theo chiều cao cân nặng',
-          'Xem ảnh sản phẩm 360 độ và video người mẫu',
-          'Tối ưu tỷ lệ bỏ giỏ hàng cho ngành thời trang'
+          'Landing Page kết hợp E-Commerce B2B chuyên sâu cho Học viện & Chủ Spa',
+          'Phễu đăng ký hội thảo & nhận 5 quy trình vận hành Spa độc quyền',
+          'Danh mục 5 nhóm khóa học thực chiến & dược mỹ phẩm tế bào gốc',
+          'Hồ sơ đội ngũ chuyên gia, sự kiện chuyển giao và đăng ký đại lý',
+          'Giao diện bộ đôi hoàn chỉnh PC & Mobile (14 trang chuẩn SEO)'
         ]
       }
     };
