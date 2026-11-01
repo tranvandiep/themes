@@ -1,243 +1,1088 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theme Mỹ Phẩm - Khách Hàng A • THEME09 (MOBILE)</title>
+  <title>Danh Sách Sản Phẩm & Khóa Học Đào Tạo • LÀM CHỦ SPA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME09 - Mỹ Phẩm, Viện Thẩm Mỹ & Đào Tạo Spa" defer></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="LÀM CHỦ SPA - Đào Tạo, Tư Vấn & Chuyển Giao Công Nghệ Spa" defer></script>
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .bg-theme-primary { background-color: #16a34a; }
-    .text-theme-primary { color: #16a34a; }
-    .border-theme-primary { border-color: #16a34a; }
-    .bg-theme-accent { background-color: #15803d; }
-    .text-theme-accent { color: #15803d; }
+    .font-script { font-family: 'Dancing Script', cursive; }
+    .bg-spa-green { background-color: #48a828; }
+    .bg-spa-dark { background-color: #2e7d18; }
+    .text-spa-green { color: #48a828; }
+    .border-spa-green { border-color: #48a828; }
+    .hover-bg-spa-dark:hover { background-color: #388e1c; }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
-  <!-- Topbar -->
-  <div class="bg-gray-900 text-gray-300 text-xs py-2 px-4 border-b border-gray-800">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-4">
-        <span><i class="fa-solid fa-phone text-emerald-400 mr-1.5"></i>Hotline tư vấn: <strong class="text-white">1900 6868</strong></span>
-        <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-emerald-400 mr-1.5"></i>Showroom & Viện Đào Tạo Toàn Quốc</span>
+
+  <!-- TOPBAR -->
+  <div class="bg-gray-50 text-gray-600 text-xs py-2 px-4 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="font-medium text-gray-700 flex items-center gap-2">
+        <i class="fa-solid fa-leaf text-[#48a828]"></i>
+        <span>Công thức khai mở con đường thành công cho chủ Spa</span>
       </div>
-      <div class="flex items-center gap-3">
-        <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-bolt mr-1"></i>Hỗ trợ tư vấn 24/7 & Chuyển giao công nghệ</span>
+      <div class="flex flex-wrap items-center gap-5 text-gray-600">
+        <span><i class="fa-solid fa-location-dot text-[#48a828] mr-1.5"></i>Học viện Khởi nghiệp Startup Pro Academy</span>
+        <span class="hidden sm:inline"><i class="fa-solid fa-envelope text-[#48a828] mr-1.5"></i>startupprovn@gmail.com</span>
+        <a href="tel:0888116618" class="font-bold text-gray-800 hover:text-[#48a828] transition-colors">
+          <i class="fa-solid fa-phone-volume text-[#48a828] mr-1.5"></i>0888.11.66.18
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Header -->
-  <header class="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-40 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 h-18 flex items-center justify-between gap-4 py-3">
-      <!-- Logo -->
-      <a href="home.html" class="flex items-center gap-2.5">
-        <div class="w-10 h-10 rounded-xl bg-theme-primary text-white font-black text-xl flex items-center justify-center shadow-md">
-          <i class="fa-solid fa-spa text-lg"></i>
-        </div>
-        <div>
-          <span class="font-extrabold text-lg text-gray-900 tracking-tight">THEME09</span>
-          <span class="block text-[11px] text-gray-400 uppercase tracking-widest font-semibold">Mỹ Phẩm, Viện Thẩm Mỹ </span>
+  <!-- HEADER (Sticky) -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between gap-4">
+      <!-- Brand Logo: RON - LÀM CHỦ SPA -->
+      <a href="home.html" class="flex items-center gap-3 group">
+        <div class="flex flex-col items-center leading-none">
+          <div class="flex items-center tracking-tighter font-black text-4xl text-[#48a828]">
+            <span>r</span>
+            <span class="relative inline-flex flex-col items-center">
+              <i class="fa-solid fa-seedling text-xs text-[#48a828] -mb-1.5"></i>
+              <span>o</span>
+            </span>
+            <span>n</span>
+          </div>
+          <span class="text-[11px] font-extrabold text-[#48a828] tracking-widest uppercase mt-0.5">LÀM CHỦ SPA</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden items-center gap-7 text-sm font-semibold text-gray-600">
-        
-          <a href="home.html" class="hover:text-emerald-600 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-house text-xs"></i>
-            <span>Trang Chủ</span>
-          </a>
-          <a href="category.html" class="text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1 flex items-center gap-1.5">
-            <i class="fa-solid fa-graduation-cap text-xs"></i>
-            <span>Sản Phẩm & Khóa Học</span>
-          </a>
-          <a href="news.html" class="hover:text-emerald-600 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-newspaper text-xs"></i>
-            <span>Tin Tức & Kiến Thức</span>
-          </a>
-          <a href="contact.html" class="hover:text-emerald-600 transition-colors flex items-center gap-1.5">
-            <i class="fa-solid fa-envelope text-xs"></i>
-            <span>Liên Hệ & Tư Vấn</span>
-          </a>
+      <!-- Main Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-7 text-[13px] font-bold uppercase tracking-wide text-gray-700">
+        <a href="home.html" class="hover:text-[#48a828] transition-colors py-1">Trang Chủ</a>
+        <a href="home.html#giang-vien" class="hover:text-[#48a828] transition-colors py-1">Giảng Viên</a>
+        <a href="news.html" class="hover:text-[#48a828] transition-colors py-1">Tin Tức</a>
+        <a href="category.html" class="text-[#48a828] border-b-2 border-[#48a828] py-1">Sản Phẩm</a>
+        <a href="home.html#dang-ky-dai-ly" class="hover:text-[#48a828] transition-colors py-1">Đăng Ký Đại Lý</a>
+        <a href="contact.html" class="hover:text-[#48a828] transition-colors py-1">Liên Hệ</a>
       </nav>
 
-      <!-- Cart & Actions -->
+      <!-- Search & Action Tools -->
       <div class="flex items-center gap-3">
-        <a href="cart.html" class="relative flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-800 text-xs font-bold transition-all">
-          <i class="fa-solid fa-cart-shopping text-emerald-600"></i>
-          <span>Giỏ Hàng</span>
-          <span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-[11px] flex items-center justify-center font-bold">2</span>
+        <div class="relative hidden sm:block">
+          <input type="text" id="headerSearchInput" oninput="filterProductsByKeyword(this.value)" placeholder="Tìm khóa học, sản phẩm..." class="w-48 xl:w-56 pl-3.5 pr-9 py-2 rounded-full bg-gray-100 border border-transparent focus:border-[#48a828] focus:bg-white text-xs outline-none transition-all">
+          <button type="button" aria-label="Tìm kiếm" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-[#48a828]">
+            <i class="fa-solid fa-magnifying-glass text-xs"></i>
+          </button>
+        </div>
+        <a href="cart.html" class="relative flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-emerald-50 hover:bg-emerald-100 text-[#48a828] text-xs font-bold transition-all" title="Giỏ hàng">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="hidden md:inline">Giỏ hàng</span>
+          <span class="w-4 h-4 rounded-full bg-[#48a828] text-white text-[10px] flex items-center justify-center font-bold">3</span>
         </a>
+        <a href="contact.html" class="hidden sm:inline-flex px-4 py-2.5 rounded-full bg-[#48a828] hover:bg-[#388e1c] text-white text-xs font-extrabold uppercase tracking-wider shadow-md shadow-green-600/20 transition-all">
+          Đăng Ký Ngay
+        </a>
+        <!-- Mobile Hamburger Button -->
+        <button type="button" onclick="toggleMobileMenu()" aria-label="Mở menu" class="lg:hidden w-10 h-10 rounded-xl bg-emerald-50 text-[#48a828] flex items-center justify-center hover:bg-[#48a828] hover:text-white transition-colors">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars text-base"></i>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-5 shadow-xl">
+      <div class="relative mb-3">
+        <input type="text" oninput="filterProductsByKeyword(this.value)" placeholder="Tìm khóa học, sản phẩm..." class="w-full pl-3.5 pr-9 py-2.5 rounded-xl bg-gray-100 border border-transparent focus:border-[#48a828] focus:bg-white text-xs outline-none">
+        <button type="button" aria-label="Tìm kiếm" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col divide-y divide-gray-100 text-xs font-bold uppercase tracking-wide text-gray-700">
+        <a href="home.html" class="py-3 hover:text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-house mr-2 text-[#48a828]"></i>Trang Chủ</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+        <a href="home.html#giang-vien" class="py-3 hover:text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-user-tie mr-2 text-[#48a828]"></i>Giảng Viên</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+        <a href="news.html" class="py-3 hover:text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-newspaper mr-2 text-[#48a828]"></i>Tin Tức</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+        <a href="category.html" class="py-3 text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-spa mr-2"></i>Sản Phẩm &amp; Khóa Học</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+        <a href="home.html#dang-ky-dai-ly" class="py-3 hover:text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-handshake mr-2 text-[#48a828]"></i>Đăng Ký Đại Lý</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+        <a href="contact.html" class="py-3 hover:text-[#48a828] flex items-center justify-between"><span><i class="fa-solid fa-location-dot mr-2 text-[#48a828]"></i>Liên Hệ</span><i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+      </nav>
+      <a href="contact.html" class="mt-3 w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-[#48a828] text-white text-xs font-extrabold uppercase tracking-wider shadow-md">
+        <i class="fa-solid fa-paper-plane"></i> Đăng Ký Tư Vấn Ngay
+      </a>
     </div>
   </header>
 
-  <!-- Main Content Body -->
   <main class="flex-1">
-    
-        <div class="max-w-7xl mx-auto px-4 py-8">
-          <nav class="text-xs text-gray-400 mb-6">
-            <a href="home.html" class="hover:text-gray-700">Trang Chủ</a> / <span class="text-gray-800 font-semibold">Danh Sách Sản Phẩm</span>
+    <!-- PAGE HERO BANNER & BREADCRUMB -->
+    <section class="bg-gradient-to-r from-[#2e7d18] via-[#48a828] to-[#388e1c] text-white py-10 px-4 relative overflow-hidden">
+      <div class="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-white/10"></div>
+      <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <nav class="text-xs text-white/80 mb-2 flex items-center gap-2">
+            <a href="home.html" class="hover:text-white"><i class="fa-solid fa-house mr-1"></i>Trang Chủ</a>
+            <span>/</span>
+            <span class="text-yellow-300 font-bold">Danh Sách Sản Phẩm &amp; Khóa Học</span>
           </nav>
-
-          <h1 class="text-3xl font-black text-gray-900 mb-2">Mỹ Phẩm, Viện Thẩm Mỹ & Đào Tạo Spa</h1>
-          <p class="text-xs text-gray-500 mb-8">Hiển thị danh sách các sản phẩm và giải pháp chính hãng</p>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop&q=80" alt="Khóa Học Chuyển Giao Công Nghệ Làm Chủ Spa" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Khóa Học Chuyển Giao Công Nghệ Làm Chủ Spa #1</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">15.000.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1608248597359-573523d463d6?w=600&auto=format&fit=crop&q=80" alt="Bộ Serum Phục Hồi Da Đa Tầng Bio Skin" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Bộ Serum Phục Hồi Da Đa Tầng Bio Skin #2</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">1.250.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1512290900672-1f400f89d38c?w=600&auto=format&fit=crop&q=80" alt="Liệu Trình Trẻ Hóa Da Căng Bóng Nano Collagen" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Liệu Trình Trẻ Hóa Da Căng Bóng Nano Collagen #3</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">3.500.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80" alt="Kem Chống Nắng Phổ Rộng Tế Bào Gốc SPF50+" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Kem Chống Nắng Phổ Rộng Tế Bào Gốc SPF50+ #4</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">680.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&auto=format&fit=crop&q=80" alt="Khóa Học Chuyển Giao Công Nghệ Làm Chủ Spa" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Khóa Học Chuyển Giao Công Nghệ Làm Chủ Spa #5</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">15.000.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1608248597359-573523d463d6?w=600&auto=format&fit=crop&q=80" alt="Bộ Serum Phục Hồi Da Đa Tầng Bio Skin" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Bộ Serum Phục Hồi Da Đa Tầng Bio Skin #6</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">1.250.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1512290900672-1f400f89d38c?w=600&auto=format&fit=crop&q=80" alt="Liệu Trình Trẻ Hóa Da Căng Bóng Nano Collagen" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Liệu Trình Trẻ Hóa Da Căng Bóng Nano Collagen #7</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">3.500.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
-            <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all">
-              <a href="detail.html" class="block aspect-square rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&auto=format&fit=crop&q=80" alt="Kem Chống Nắng Phổ Rộng Tế Bào Gốc SPF50+" class="w-full h-full object-cover">
-              </a>
-              <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-2">
-                <a href="detail.html">Kem Chống Nắng Phổ Rộng Tế Bào Gốc SPF50+ #8</a>
-              </h3>
-              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-100">
-                <span class="text-base font-black text-emerald-600">680.000 đ</span>
-                <a href="detail.html" class="px-3 py-1.5 bg-gray-900 text-white rounded-lg text-xs font-semibold hover:bg-emerald-600">Xem Ngay</a>
-              </div>
-            </div>
+          <h1 class="text-2xl md:text-4xl font-black uppercase tracking-tight">
+            SẢN PHẨM NGÔI SAO &amp; KHÓA HỌC LÀM CHỦ SPA
+          </h1>
+          <p class="text-xs md:text-sm text-white/90 mt-1.5 max-w-2xl">
+            Hệ sinh thái đào tạo thực chiến, dược mỹ phẩm sinh học Ron International – Candy Love và thiết bị công nghệ cao chuẩn Y khoa dành riêng cho chủ Spa &amp; Thẩm mỹ viện.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 bg-white/15 backdrop-blur-sm border border-white/25 rounded-2xl p-4 shrink-0">
+          <div class="w-12 h-12 rounded-xl bg-white text-[#48a828] flex items-center justify-center text-xl font-black shadow">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase font-bold text-yellow-200">Cam kết chính hãng 100%</div>
+            <div class="text-sm font-extrabold">Chuyển giao phác đồ Y khoa độc quyền</div>
+            <div class="text-[11px] text-white/85">Hotline đại lý: 0888.11.66.18</div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- MAIN 2-COLUMN CONTENT: LEFT MENU (CATEGORIES + 6 LATEST NEWS) & PRODUCT GRID -->
+    <section class="py-10 px-4">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+        <!-- =============================================================== -->
+        <!-- LEFT SIDEBAR MENU: DANH MỤC SẢN PHẨM + BỘ LỌC + 6 TIN TỨC MỚI    -->
+        <!-- =============================================================== -->
+        <aside class="lg:col-span-3 space-y-6 lg:sticky lg:top-24">
+
+          <!-- 1. KHỐI DANH MỤC SẢN PHẨM & KHÓA HỌC -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-[#48a828] text-white px-5 py-3.5 flex items-center justify-between">
+              <h2 class="font-extrabold text-xs md:text-sm uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-list-ul"></i>
+                <span>Danh Mục Sản Phẩm</span>
+              </h2>
+              <span class="text-[11px] bg-white/20 px-2 py-0.5 rounded-full font-bold">18 mục</span>
+            </div>
+            <ul id="categoryMenu" class="divide-y divide-gray-100 text-xs font-semibold text-gray-700">
+              <li>
+                <button type="button" onclick="filterByCategory('all', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between bg-emerald-50 text-[#48a828] font-extrabold transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-layer-group text-[#48a828] w-4"></i>Tất Cả Sản Phẩm &amp; Khóa Học</span>
+                  <span class="px-2 py-0.5 rounded-full bg-[#48a828] text-white text-[10px]">18</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" onclick="filterByCategory('khoa-hoc', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between hover:bg-emerald-50/60 hover:text-[#48a828] transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-graduation-cap text-[#48a828] w-4"></i>Khóa Học Làm Chủ Spa</span>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[10px]">4</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" onclick="filterByCategory('duoc-my-pham', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between hover:bg-emerald-50/60 hover:text-[#48a828] transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-flask-vial text-[#48a828] w-4"></i>Dược Mỹ Phẩm Điều Trị Da</span>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[10px]">4</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" onclick="filterByCategory('serum-te-bao-goc', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between hover:bg-emerald-50/60 hover:text-[#48a828] transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-droplet text-[#48a828] w-4"></i>Serum &amp; Tế Bào Gốc Candy Love</span>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[10px]">4</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" onclick="filterByCategory('lieu-trinh-spa', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between hover:bg-emerald-50/60 hover:text-[#48a828] transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-spa text-[#48a828] w-4"></i>Bộ Liệu Trình Trẻ Hóa &amp; Đông Y</span>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[10px]">3</span>
+                </button>
+              </li>
+              <li>
+                <button type="button" onclick="filterByCategory('thiet-bi-spa', this)" class="cat-btn w-full px-4 py-3 flex items-center justify-between hover:bg-emerald-50/60 hover:text-[#48a828] transition-colors text-left">
+                  <span class="flex items-center gap-2.5"><i class="fa-solid fa-microchip text-[#48a828] w-4"></i>Thiết Bị Thẩm Mỹ Công Nghệ Cao</span>
+                  <span class="px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-[10px]">3</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 2. KHỐI LỌC THEO KHOẢNG GIÁ & QUYỀN LỢI -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+            <h3 class="font-extrabold text-xs uppercase tracking-wider text-gray-900 mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-sliders text-[#48a828]"></i>
+              <span>Lọc Theo Mức Giá</span>
+            </h3>
+            <div class="space-y-2.5 text-xs text-gray-600">
+              <label class="flex items-center gap-2.5 cursor-pointer hover:text-[#48a828]">
+                <input type="radio" name="priceFilter" value="all" checked onchange="filterByPrice(this.value)" class="accent-[#48a828]">
+                <span>Tất cả mức giá</span>
+              </label>
+              <label class="flex items-center gap-2.5 cursor-pointer hover:text-[#48a828]">
+                <input type="radio" name="priceFilter" value="under1m" onchange="filterByPrice(this.value)" class="accent-[#48a828]">
+                <span>Dưới 1.000.000đ</span>
+              </label>
+              <label class="flex items-center gap-2.5 cursor-pointer hover:text-[#48a828]">
+                <input type="radio" name="priceFilter" value="1mto5m" onchange="filterByPrice(this.value)" class="accent-[#48a828]">
+                <span>Từ 1.000.000đ – 5.000.000đ</span>
+              </label>
+              <label class="flex items-center gap-2.5 cursor-pointer hover:text-[#48a828]">
+                <input type="radio" name="priceFilter" value="over5m" onchange="filterByPrice(this.value)" class="accent-[#48a828]">
+                <span>Trên 5.000.000đ (Khóa học &amp; Máy)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 3. KHỐI 6 TIN TỨC MỚI NHẤT (LEFT MENU - REQ06) -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+            <div class="bg-[#2e7d18] text-white px-5 py-3.5 flex items-center justify-between">
+              <h2 class="font-extrabold text-xs md:text-sm uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>6 Tin Tức Mới Nhất</span>
+              </h2>
+              <a href="news.html" class="text-[11px] text-yellow-200 hover:underline font-semibold">Xem tất cả</a>
+            </div>
+
+            <div class="divide-y divide-gray-100 p-4 space-y-3.5">
+              <!-- Tin mới 1 -->
+              <article class="flex gap-3 pt-0 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/event_1.jpg" alt="09 công thức Marketing 0 đồng" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">Bí Quyết Ứng Dụng 09 Công Thức Marketing 0 Đồng Theo Tư Duy Do Thái</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>01/11/2026</span>
+                </div>
+              </article>
+
+              <!-- Tin mới 2 -->
+              <article class="flex gap-3 pt-3.5 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/course_spa.jpg" alt="Xây dựng sản phẩm ngôi sao" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">Chiến Lược Xây Dựng “Sản Phẩm Ngôi Sao” Tạo Đột Phá Doanh Thu Cho Spa</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>29/10/2026</span>
+                </div>
+              </article>
+
+              <!-- Tin mới 3 -->
+              <article class="flex gap-3 pt-3.5 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/spa_facial.jpg" alt="Phác đồ điều trị nám chân sâu" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">Xu Hướng Điều Trị Nám Chân Sâu Kết Hợp Tế Bào Gốc Sinh Học 2026</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>25/10/2026</span>
+                </div>
+              </article>
+
+              <!-- Tin mới 4 -->
+              <article class="flex gap-3 pt-3.5 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/instructor.jpg" alt="Đào tạo kỹ thuật viên chốt sale" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">Quy Trình Đào Tạo Kỹ Thuật Viên Trở Thành Cao Thủ Bán Hàng Cho Chủ Spa</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>21/10/2026</span>
+                </div>
+              </article>
+
+              <!-- Tin mới 5 -->
+              <article class="flex gap-3 pt-3.5 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/product_serum.jpg" alt="Phục hồi da nhiễm Corticoid" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">Phác Đồ Phục Hồi Da Mỏng Yếu Nhiễm Corticoid Chuẩn Y Khoa Tại Spa</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>18/10/2026</span>
+                </div>
+              </article>
+
+              <!-- Tin mới 6 -->
+              <article class="flex gap-3 pt-3.5 group">
+                <a href="post.html" class="w-16 h-16 rounded-xl overflow-hidden shrink-0 border border-gray-100">
+                  <img src="../assets/images/event_2.jpg" alt="Nhân bản chuỗi Spa nhượng quyền" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                </a>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xs font-bold text-gray-800 group-hover:text-[#48a828] transition-colors line-clamp-2 leading-snug">
+                    <a href="post.html">5 Bước Đóng Gói Quy Trình Tự Động Hóa Để Nhân Bản Chuỗi Nhượng Quyền Spa</a>
+                  </h3>
+                  <span class="text-[10px] text-gray-400 mt-1 block"><i class="fa-regular fa-calendar mr-1 text-[#48a828]"></i>14/10/2026</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 4. BANNER ĐĂNG KÝ NHẬN VÉ HỘI THẢO MIỄN PHÍ -->
+          <div class="bg-gradient-to-br from-[#2e7d18] to-[#48a828] rounded-2xl p-5 text-white shadow-lg relative overflow-hidden">
+            <div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-white/10"></div>
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-yellow-300 text-gray-900 text-[10px] font-extrabold uppercase mb-2">
+              Ưu Đãi Độc Quyền
+            </span>
+            <h3 class="text-base font-black uppercase leading-snug mb-2">
+              Đăng Ký Đại Lý Dược Mỹ Phẩm Ron International
+            </h3>
+            <p class="text-xs text-white/90 leading-relaxed mb-4">
+              Chiết khấu lên tới 55%, tặng khóa học Marketing 0 đồng và chuyển giao phác đồ điều trị da tận nơi.
+            </p>
+            <a href="contact.html" class="block w-full py-2.5 rounded-xl bg-white text-[#48a828] hover:bg-yellow-300 hover:text-gray-900 text-center text-xs font-extrabold uppercase tracking-wider transition-colors shadow">
+              Nhận Bảng Giá Sỉ Ngay
+            </a>
+          </div>
+        </aside>
+
+        <!-- =============================================================== -->
+        <!-- RIGHT MAIN COLUMN: TOOLBAR + 18 PRODUCTS & COURSES GRID         -->
+        <!-- =============================================================== -->
+        <div class="lg:col-span-9">
+
+          <!-- Top Filter & Search Bar -->
+          <div class="bg-white rounded-2xl border border-gray-100 p-4 shadow-sm mb-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-bold text-gray-700">
+                Hiển thị <strong id="productCountBadge" class="text-[#48a828]">18</strong> sản phẩm &amp; khóa học chính hãng
+              </span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="relative flex-1 sm:w-56">
+                <input type="text" id="mainSearchInput" oninput="filterProductsByKeyword(this.value)" placeholder="Nhập tên sản phẩm, khóa học..." class="w-full pl-3.5 pr-8 py-2 rounded-xl border border-gray-200 focus:border-[#48a828] text-xs outline-none">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xs absolute right-3 top-1/2 -translate-y-1/2"></i>
+              </div>
+              <select id="sortSelect" onchange="sortProducts(this.value)" class="px-3.5 py-2 rounded-xl border border-gray-200 focus:border-[#48a828] text-xs font-semibold text-gray-700 bg-white outline-none">
+                <option value="featured">Sắp xếp: Nổi bật nhất</option>
+                <option value="price-asc">Giá: Thấp đến Cao</option>
+                <option value="price-desc">Giá: Cao đến Thấp</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Product Grid: 18 Rich Products & Courses -->
+          <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+
+            <!-- Item 1: Khóa Học -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="khoa-hoc" data-price="15000000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Hot Nhất</span>
+                  <img src="../assets/images/course_spa.jpg" alt="Khóa Học Làm Chủ Spa Toàn Diện A-Z" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Khóa Học Đào Tạo</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (248)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Khóa Học Làm Chủ Spa Toàn Diện A-Z Theo Tư Duy Do Thái</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Làm chủ quy trình vận hành, nhân sự, tài chính và tự động hóa chuỗi Spa chuyên nghiệp.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">15.000.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">25.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Đăng ký</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Khóa Học -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="khoa-hoc" data-price="6800000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-red-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">Tặng Vé Hội Thảo</span>
+                  <img src="../assets/images/event_1.jpg" alt="Khóa Học 09 Công Thức Marketing 0 Đồng" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Khóa Học Đào Tạo</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (312)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Khóa Học 09 Công Thức Marketing 0 Đồng Bùng Nổ Khách Hàng Spa</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Xây dựng hệ thống thu hút khách hàng tự động Online &amp; Offline với chi phí quảng cáo tối ưu nhất.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">6.800.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">12.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Đăng ký</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Khóa Học -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="khoa-hoc" data-price="12500000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Chứng Chỉ Y Khoa</span>
+                  <img src="../assets/images/spa_facial.jpg" alt="Chuyển Giao Công Nghệ Điều Trị Bệnh Lý Da" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Khóa Học Đào Tạo</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (189)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Chuyển Giao Phác Đồ Điều Trị Bệnh Lý Da Nám Mụn Sẹo Chuẩn Y Khoa</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Thực hành lâm sàng 80% trên mẫu thật dưới sự hướng dẫn trực tiếp của Bác sĩ Da liễu.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">12.500.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">18.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Đăng ký</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Khóa Học -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="khoa-hoc" data-price="8900000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-amber-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">Đào Tạo Nhân Sự</span>
+                  <img src="../assets/images/event_2.jpg" alt="Đào Tạo Kỹ Thuật Viên Chốt Sale" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Khóa Học Đào Tạo</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (164)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Đào Tạo Kỹ Thuật Viên Trở Thành Cao Thủ Bán Hàng Tại Spa</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Biến đội ngũ kỹ thuật viên thành chuyên gia tư vấn chốt phác đồ VIP tự nhiên, không chèo kéo.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">8.900.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">15.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Đăng ký</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Dược Mỹ Phẩm -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="duoc-my-pham" data-price="1850000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Best Seller</span>
+                  <img src="../assets/images/product_serum.jpg" alt="Bộ Tinh Chất Tế Bào Gốc Candy Love" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Dược Mỹ Phẩm</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (420)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Bộ Tinh Chất Tế Bào Gốc Thực Vật Candy Love Ron International</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Tái tạo cấu trúc biểu bì, phục hồi da mỏng yếu, nhiễm độc tố và kích thích tăng sinh Collagen.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">1.850.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">2.400.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: Dược Mỹ Phẩm -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="duoc-my-pham" data-price="1450000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-red-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">-20%</span>
+                  <img src="../assets/images/product_cream.jpg" alt="Kem Đặc Trị Nám Melasma Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Dược Mỹ Phẩm</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (275)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Kem Đặc Trị Nám Mảng &amp; Đốm Nâu Sinh Học Melasma Pro Ron</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Ức chế hắc sắc tố Melanin tận gốc, làm đều màu da và dưỡng trắng hồng tự nhiên không bong tróc.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">1.450.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">1.800.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7: Dược Mỹ Phẩm -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="duoc-my-pham" data-price="980000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Chuẩn Y Khoa</span>
+                  <img src="../assets/images/hero_spa.jpg" alt="Tinh Chất Kháng Viêm Gom Cồi Mụn Bio Acne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Dược Mỹ Phẩm</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (198)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Tinh Chất Kháng Viêm Gom Cồi Mụn Cấp Tốc Bio Acne Clear</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Tiêu viêm, gom khô cồi mụn sau 24h, ngăn ngừa thâm sẹo và kiểm soát tuyến bã nhờn hiệu quả.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">980.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">1.250.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 8: Dược Mỹ Phẩm -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="duoc-my-pham" data-price="1190000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-emerald-700 text-white text-[10px] font-extrabold rounded-md uppercase z-10">Cỡ Salon</span>
+                  <img src="../assets/images/spa_facial.jpg" alt="Mặt Nạ Thủy Phân Tế Bào Gốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Dược Mỹ Phẩm</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (156)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Hộp Mặt Nạ Thủy Phân Tế Bào Gốc Làm Dịu Da Sau Laser &amp; Peel</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Hạ nhiệt tức thì, giảm đỏ rát sau xâm lấn, cấp ẩm sâu gấp 10 lần mặt nạ thông thường cho Spa.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">1.190.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">1.500.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9: Serum & Tế bào gốc -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="serum-te-bao-goc" data-price="2100000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">PDRN 99%</span>
+                  <img src="../assets/images/product_serum.jpg" alt="Ampoule DNA Cá Hồi PDRN" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Serum &amp; Tế Bào Gốc</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (284)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Ampoule Tinh Chất DNA Cá Hồi Căng Bóng Đa Tầng PDRN</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Phục hồi thương tổn vi điểm, lấp đầy sẹo đáy nhọn và trẻ hóa làn da căng bóng chuẩn Hàn.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">2.100.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">2.650.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10: Serum & Tế bào gốc -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="serum-te-bao-goc" data-price="890000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Phục Hồi Da</span>
+                  <img src="../assets/images/product_cream.jpg" alt="Serum Vitamin B5 + HA Pure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Serum &amp; Tế Bào Gốc</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (230)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Serum Siêu Cấp Ẩm Phục Hồi Da Nhiễm Corticoid B5 + HA Pure</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Làm dịu kích ứng tức thì, củng cố màng lipid tự nhiên cho da nhạy cảm và giãn mao mạch.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">890.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">1.150.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 11: Serum & Tế bào gốc -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="serum-te-bao-goc" data-price="1350000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-amber-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">Trắng Sáng</span>
+                  <img src="../assets/images/hero_spa.jpg" alt="Tinh Chất Điện Di Nano Glutathione" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Serum &amp; Tế Bào Gốc</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (178)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Tinh Chất Điện Di Trắng Sáng Da Đa Tầng Nano Glutathione 600</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Chống oxy hóa mạnh mẽ, bật tông da trắng hồng rạng rỡ chuyên dùng cho liệu trình điện di lạnh.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">1.350.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">1.790.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 12: Serum & Tế bào gốc -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="serum-te-bao-goc" data-price="2450000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Vi Kim Sinh Học</span>
+                  <img src="../assets/images/spa_facial.jpg" alt="Bộ Vi Kim Tảo Biển Sinh Học" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Serum &amp; Tế Bào Gốc</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (215)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Bộ Vi Kim Tảo Biển Sinh Học Thay Da Không Sưng Đỏ Candy Love</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Đào thải độc tố chì, thủy ngân dưới da, thu nhỏ lỗ chân lông và làm phẳng bề mặt da sần vỏ cam.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">2.450.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">3.100.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 13: Bộ Liệu Trình Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="lieu-trinh-spa" data-price="4500000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Combo 10 Buổi</span>
+                  <img src="../assets/images/spa_facial.jpg" alt="Trọn Bộ Liệu Trình Căng Bóng Mulwang" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Bộ Liệu Trình Spa</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (142)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Trọn Bộ Liệu Trình Căng Bóng Trẻ Hóa Mulwang Glass Skin 10 Buổi</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Combo 6 sản phẩm chuyên dụng tại cabin giúp tạo hiệu ứng da gương căng mướt ngay sau 60 phút.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">4.500.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">5.800.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 14: Bộ Liệu Trình Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="lieu-trinh-spa" data-price="680000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-red-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">SPF50+ PA++++</span>
+                  <img src="../assets/images/product_cream.jpg" alt="Kem Chống Nắng Sinh Học Tế Bào Gốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Bộ Liệu Trình Spa</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (510)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Kem Chống Nắng Sinh Học Phổ Rộng Tế Bào Gốc Ron SPF50+ PA++++</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Bảo vệ tuyệt đối cho da đang điều trị nám/laser, nâng tông tự nhiên và kiềm dầu suốt 12 giờ.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">680.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">890.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 15: Bộ Liệu Trình Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="lieu-trinh-spa" data-price="3200000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Đông Y Hoàng Cung</span>
+                  <img src="../assets/images/hero_spa.jpg" alt="Bộ Tinh Dược Đả Thông Kinh Lạc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Bộ Liệu Trình Spa</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (134)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Bộ Tinh Dược Đả Thông Kinh Lạc Cổ Vai Gáy &amp; Dưỡng Sinh Hoàng Cung</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Chiết xuất 36 vị thảo mộc quý giúp giải tỏa căng thẳng, trị mất ngủ và giữ chân khách hàng định kỳ.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">3.200.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">4.200.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 16: Thiết Bị Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="thiet-bi-spa" data-price="48000000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Bảo Hành 24T</span>
+                  <img src="../assets/images/tech_device.jpg" alt="Máy Nâng Cơ Trẻ Hóa HIFU Shurink Pro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Thiết Bị Công Nghệ Cao</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (88)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Máy Nâng Cơ Trẻ Hóa Đa Tầng HIFU Shurink Pro Hàn Quốc Chính Hãng</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Nâng cơ xóa nhăn không xâm lấn, thon gọn hàm V-line ngay sau 1 buổi điều trị duy nhất.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">48.000.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">62.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="contact.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors">Nhận báo giá</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 17: Thiết Bị Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="thiet-bi-spa" data-price="19500000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-amber-500 text-white text-[10px] font-extrabold rounded-md uppercase z-10">Chốt Sale 90%</span>
+                  <img src="../assets/images/course_spa.jpg" alt="Máy Soi Phân Tích Da Đa Quang Phổ AI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Thiết Bị Công Nghệ Cao</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 5.0 (112)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Máy Soi &amp; Phân Tích Da Đa Quang Phổ AI Bitmoji Thế Hệ Mới</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Trợ thủ đắc lực giúp chủ Spa chẩn đoán chính xác tầng da và tăng 90% tỷ lệ chốt phác đồ điều trị.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">19.500.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">25.000.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="contact.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors">Nhận báo giá</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 18: Thiết Bị Spa -->
+            <div class="product-card bg-white rounded-2xl border border-gray-100 p-4 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="thiet-bi-spa" data-price="8500000">
+              <div>
+                <a href="detail.html" class="block aspect-[4/3] rounded-xl overflow-hidden mb-3.5 bg-gray-50 relative">
+                  <span class="absolute top-2.5 left-2.5 px-2.5 py-1 bg-[#48a828] text-white text-[10px] font-extrabold rounded-md uppercase z-10">Chuyển Giao Kèm</span>
+                  <img src="../assets/images/tech_device.jpg" alt="Máy Điện Di Tinh Chất Nóng Lạnh Smart Cool" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </a>
+                <div class="flex items-center justify-between text-[11px] text-gray-400 mb-1">
+                  <span class="font-bold text-[#48a828] uppercase">Thiết Bị Công Nghệ Cao</span>
+                  <span class="text-amber-400"><i class="fa-solid fa-star"></i> 4.9 (145)</span>
+                </div>
+                <h3 class="font-extrabold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-[#48a828] transition-colors">
+                  <a href="detail.html">Máy Điện Di Tinh Chất Nóng Lạnh Ion Đa Chức Năng Smart Cool</a>
+                </h3>
+                <p class="text-xs text-gray-500 line-clamp-2 mb-3">
+                  Đẩy sâu dưỡng chất tế bào gốc vào lớp trung bì mà không cần kim tiêm, khóa ẩm tức thì ở -15°C.
+                </p>
+              </div>
+              <div class="pt-3 border-t border-gray-100">
+                <div class="flex items-baseline justify-between mb-3">
+                  <span class="text-base font-black text-[#48a828]">8.500.000đ</span>
+                  <span class="text-xs text-gray-400 line-through">11.200.000đ</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <a href="detail.html" class="py-2 rounded-lg border border-gray-200 hover:border-[#48a828] text-gray-700 hover:text-[#48a828] text-center text-xs font-bold transition-colors">Xem chi tiết</a>
+                  <a href="cart.html" class="py-2 rounded-lg bg-[#48a828] hover:bg-[#388e1c] text-white text-center text-xs font-bold transition-colors"><i class="fa-solid fa-cart-plus mr-1"></i>Thêm giỏ</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <div class="mt-10 flex items-center justify-center gap-2">
+            <button type="button" class="w-9 h-9 rounded-xl border border-gray-200 bg-white text-gray-500 hover:border-[#48a828] hover:text-[#48a828] flex items-center justify-center text-xs font-bold">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button type="button" class="w-9 h-9 rounded-xl bg-[#48a828] text-white flex items-center justify-center text-xs font-extrabold shadow">1</button>
+            <button type="button" onclick="window.scrollTo({top: 200, behavior: 'smooth'})" class="w-9 h-9 rounded-xl border border-gray-200 bg-white text-gray-700 hover:border-[#48a828] hover:text-[#48a828] flex items-center justify-center text-xs font-bold">2</button>
+            <button type="button" onclick="window.scrollTo({top: 200, behavior: 'smooth'})" class="w-9 h-9 rounded-xl border border-gray-200 bg-white text-gray-700 hover:border-[#48a828] hover:text-[#48a828] flex items-center justify-center text-xs font-bold">3</button>
+            <button type="button" onclick="window.scrollTo({top: 200, behavior: 'smooth'})" class="w-9 h-9 rounded-xl border border-gray-200 bg-white text-gray-500 hover:border-[#48a828] hover:text-[#48a828] flex items-center justify-center text-xs font-bold">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 text-sm mt-16 pt-12 pb-8 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 text-sm pt-14 pb-8 border-t-4 border-[#48a828] mt-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
       <div>
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white font-black flex items-center justify-center">G</div>
-          <span class="font-bold text-white text-base">THEME09 STORE</span>
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="flex flex-col items-start leading-none">
+            <span class="font-black text-3xl text-[#48a828] tracking-tighter">ron</span>
+            <span class="text-[11px] font-extrabold text-white tracking-widest uppercase mt-0.5">LÀM CHỦ SPA</span>
+          </div>
         </div>
-        <p class="text-xs leading-relaxed text-gray-400">
-          Làm chủ spa đẳng cấp, chuyển giao công nghệ làm đẹp và mỹ phẩm sinh học chuẩn y khoa.
+        <p class="text-xs leading-relaxed text-gray-400 mb-4">
+          <strong>LÀM CHỦ SPA</strong> – Nơi biến giấc mơ của bạn trở thành hiện thực. Đơn vị tiên phong đào tạo quản trị vận hành Spa bằng tư duy Do Thái và chuyển giao công nghệ điều trị bệnh lý da chuẩn Y khoa.
         </p>
+        <div class="flex items-center gap-2.5">
+          <a href="contact.html" aria-label="Facebook" class="w-8 h-8 rounded-full bg-gray-800 hover:bg-[#48a828] text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+          <a href="contact.html" aria-label="Youtube" class="w-8 h-8 rounded-full bg-gray-800 hover:bg-red-600 text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube text-xs"></i></a>
+          <a href="contact.html" aria-label="Tiktok" class="w-8 h-8 rounded-full bg-gray-800 hover:bg-[#48a828] text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-tiktok text-xs"></i></a>
+        </div>
       </div>
 
       <div>
-        <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Liên Kết Nhanh</h4>
-        <ul class="space-y-2 text-xs">
-          <li><a href="home.html" class="hover:text-white">Trang Chủ</a></li>
-          <li><a href="category.html" class="hover:text-white">Sản Phẩm Mới</a></li>
-          <li><a href="news.html" class="hover:text-white">Tin Tức Khuyến Mãi</a></li>
-          <li><a href="contact.html" class="hover:text-white">Liên Hệ & Showroom</a></li>
+        <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">Liên Kết Nhanh</h4>
+        <ul class="space-y-2.5 text-xs text-gray-400">
+          <li><a href="home.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Trang Chủ Làm Chủ Spa</a></li>
+          <li><a href="home.html#giang-vien" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Đội Ngũ Giảng Viên &amp; Chuyên Gia</a></li>
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Khóa Học &amp; Sản Phẩm Ngôi Sao</a></li>
+          <li><a href="news.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Tin Tức &amp; Kiến Thức Kinh Doanh</a></li>
+          <li><a href="home.html#dang-ky-dai-ly" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Chính Sách Đăng Ký Đại Lý</a></li>
+          <li><a href="contact.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-angle-right mr-1.5 text-[#48a828]"></i>Liên Hệ &amp; Bản Đồ Học Viện</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Chính Sách & Hỗ Trợ</h4>
-        <ul class="space-y-2 text-xs">
-          <li><a href="#" class="hover:text-white">Chính Sách Đổi Trả 7 Ngày</a></li>
-          <li><a href="#" class="hover:text-white">Bảo Hành Chính Hãng</a></li>
-          <li><a href="#" class="hover:text-white">Giao Hàng & Thanh Toán</a></li>
-          <li><a href="#" class="hover:text-white">Bảo Mật Thông Tin</a></li>
+        <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">Danh Mục Sản Phẩm</h4>
+        <ul class="space-y-2.5 text-xs text-gray-400">
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-check mr-1.5 text-[#48a828]"></i>Khóa Học Làm Chủ Spa Thực Chiến</a></li>
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-check mr-1.5 text-[#48a828]"></i>Dược Mỹ Phẩm Ron International</a></li>
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-check mr-1.5 text-[#48a828]"></i>Tinh Chất Tế Bào Gốc Candy Love</a></li>
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-check mr-1.5 text-[#48a828]"></i>Bộ Liệu Trình Trẻ Hóa Da Chuẩn Hàn</a></li>
+          <li><a href="category.html" class="hover:text-[#48a828] transition-colors"><i class="fa-solid fa-check mr-1.5 text-[#48a828]"></i>Thiết Bị Thẩm Mỹ Công Nghệ Cao</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Tổng Đài Hỗ Trợ</h4>
-        <p class="text-xs mb-2">Tư vấn bán hàng: <strong class="text-white">1900 6868</strong></p>
-        <p class="text-xs mb-4">Email: <strong class="text-white">contact@gozic.vn</strong></p>
-        <span class="px-3 py-1 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-full text-[11px] font-semibold">
-          ✓ Tích hợp hệ thống POS Gozic
-        </span>
+        <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">Thông Tin Liên Hệ</h4>
+        <ul class="space-y-3 text-xs text-gray-400">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-location-dot text-[#48a828] mt-1"></i>
+            <span>Học viện Khởi nghiệp Startup Pro Academy – Hệ thống Showroom Hà Nội &amp; TP.HCM</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-phone-volume text-[#48a828]"></i>
+            <span>Hotline 24/7: <strong class="text-white">0888.11.66.18</strong></span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-envelope text-[#48a828]"></i>
+            <span>Email: <strong class="text-white">startupprovn@gmail.com</strong></span>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="max-w-7xl mx-auto px-4 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
-      <p>© 2026 THEME09. Thiết kế & Đồng bộ hóa tự động bởi Gozic Multi-Agent Orchestrator.</p>
+      <p>© 2026 <strong>LÀM CHỦ SPA - RON INTERNATIONAL</strong>. Học viện Khởi nghiệp Startup Pro Academy. Bảo lưu mọi quyền.</p>
     </div>
   </footer>
+
+  <!-- Floating Quick Contact Buttons -->
+  <div class="fixed bottom-5 right-4 z-40 flex flex-col gap-2.5">
+    <a href="contact.html" title="Chat Zalo" class="w-11 h-11 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-black text-[11px] flex items-center justify-center shadow-lg border-2 border-white transition-transform hover:scale-110">
+      Zalo
+    </a>
+    <a href="contact.html" title="Chat Messenger" class="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 text-white flex items-center justify-center shadow-lg border-2 border-white transition-transform hover:scale-110">
+      <i class="fa-brands fa-facebook-messenger text-lg"></i>
+    </a>
+    <a href="tel:0888116618" title="Gọi Hotline 0888.11.66.18" class="w-11 h-11 rounded-full bg-[#48a828] hover:bg-[#388e1c] text-white flex items-center justify-center shadow-lg border-2 border-white transition-transform hover:scale-110">
+      <i class="fa-solid fa-phone-volume text-sm"></i>
+    </a>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileMenuDrawer');
+      const icon = document.getElementById('mobileMenuIcon');
+      if (!drawer) return;
+      drawer.classList.toggle('hidden');
+      if (icon) {
+        icon.className = drawer.classList.contains('hidden')
+          ? 'fa-solid fa-bars text-base'
+          : 'fa-solid fa-xmark text-lg';
+      }
+    }
+
+    let currentCategory = 'all';
+    let currentPriceRange = 'all';
+    let currentKeyword = '';
+
+    function applyProductFilters() {
+      const cards = document.querySelectorAll('#productGrid .product-card');
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const price = Number(card.getAttribute('data-price') || 0);
+        const text = card.innerText.toLowerCase();
+
+        const matchCat = currentCategory === 'all' || cat === currentCategory;
+        let matchPrice = true;
+        if (currentPriceRange === 'under1m') matchPrice = price < 1000000;
+        else if (currentPriceRange === '1mto5m') matchPrice = price >= 1000000 && price <= 5000000;
+        else if (currentPriceRange === 'over5m') matchPrice = price > 5000000;
+
+        const matchKeyword = !currentKeyword || text.includes(currentKeyword.toLowerCase());
+
+        if (matchCat && matchPrice && matchKeyword) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+      const badge = document.getElementById('productCountBadge');
+      if (badge) badge.textContent = String(visibleCount);
+    }
+
+    function filterByCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('#categoryMenu .cat-btn').forEach(el => {
+        el.classList.remove('bg-emerald-50', 'text-[#48a828]', 'font-extrabold');
+      });
+      if (btn) {
+        btn.classList.add('bg-emerald-50', 'text-[#48a828]', 'font-extrabold');
+      }
+      applyProductFilters();
+    }
+
+    function filterByPrice(range) {
+      currentPriceRange = range;
+      applyProductFilters();
+    }
+
+    function filterProductsByKeyword(val) {
+      currentKeyword = val.trim();
+      applyProductFilters();
+    }
+
+    function sortProducts(mode) {
+      const grid = document.getElementById('productGrid');
+      if (!grid) return;
+      const cards = Array.from(grid.querySelectorAll('.product-card'));
+      cards.sort((a, b) => {
+        const pa = Number(a.getAttribute('data-price') || 0);
+        const pb = Number(b.getAttribute('data-price') || 0);
+        if (mode === 'price-asc') return pa - pb;
+        if (mode === 'price-desc') return pb - pa;
+        return 0;
+      });
+      cards.forEach(c => grid.appendChild(c));
+    }
+  </script>
 </body>
 </html>
