@@ -93,34 +93,128 @@
   </header>
 
   <main class="flex-1 space-y-6">
-    <!-- MOBILE HERO + QUICK SEARCH PYS TRAVEL STYLE -->
-    <section class="bg-burgundy-gradient text-white px-4 pt-5 pb-8 relative overflow-hidden">
-      <div class="space-y-3 relative z-10">
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-e3-gold/40 text-e3-amber text-[10px] font-bold uppercase">
-          <i class="fa-solid fa-star"></i> Thành Viên HATA & UNESCO HUTC • GP: 01-0777/2026
-        </span>
-        <h1 class="font-royal text-2xl font-extrabold leading-snug">
-          Trọn Vẹn <span class="text-e3-amber italic">Mỗi Hành Trình</span> Cùng Công Ty Cổ Phần Giáo Dục E3
-        </h1>
-        <p class="text-xs text-stone-200 leading-relaxed">
-          Chuyên gia tư vấn, thiết kế & tổ chức Du lịch Trường học (Cấp 1-2-3-CĐ/ĐH & Giáo viên), Doanh nghiệp (MICE/Team Building) và Tour Bắc - Trung - Nam.
-        </p>
+    <!-- MOBILE HERO SLIDE BANNER + QUICK SEARCH ON BORDER-BOTTOM -->
+    <section class="bg-burgundy-gradient text-white relative border-b-4 border-e3-gold mb-8">
+      <!-- Slider Viewport -->
+      <div class="relative overflow-hidden px-4 pt-5 pb-14">
+        <!-- SLIDE 1: KHỐI HIỆN TẠI -->
+        <div data-m-hero-slide="0" class="m-hero-slide-item space-y-3 relative z-10">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-e3-gold/40 text-e3-amber text-[10px] font-bold uppercase">
+            <i class="fa-solid fa-star"></i> Thành Viên HATA & UNESCO HUTC • GP: 01-0777/2026
+          </span>
+          <h1 class="font-royal text-2xl font-extrabold leading-snug">
+            Trọn Vẹn <span class="text-e3-amber italic">Mỗi Hành Trình</span> Cùng Công Ty Cổ Phần Giáo Dục E3
+          </h1>
+          <p class="text-xs text-stone-200 leading-relaxed">
+            Chuyên gia tư vấn, thiết kế & tổ chức Du lịch Trường học (Cấp 1-2-3-CĐ/ĐH & Giáo viên), Doanh nghiệp (MICE/Team Building) và Tour Bắc - Trung - Nam.
+          </p>
 
-        <!-- Hero Visual Card -->
-        <div class="relative rounded-2xl overflow-hidden border-2 border-e3-gold shadow-lg h-44">
-          <img src="../assets/images/hero-halong-danang.jpg" alt="E3 Travel" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-e3-deep/90 via-transparent to-transparent"></div>
-          <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
-            <div>
-              <span class="px-2 py-0.5 rounded bg-e3-amber text-e3-deep text-[9px] font-extrabold uppercase">Bản Đồ Việt Nam 2026</span>
-              <div class="text-xs font-bold text-white mt-0.5">Sapa • Hạ Long • Ninh Bình • Đà Nẵng • Phú Quốc</div>
+          <!-- Hero Visual Card -->
+          <div class="relative rounded-2xl overflow-hidden border-2 border-e3-gold shadow-lg h-44">
+            <img src="../assets/images/hero-halong-danang.jpg" alt="E3 Travel" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-e3-deep/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-e3-amber text-e3-deep text-[9px] font-extrabold uppercase">Bản Đồ Việt Nam 2026</span>
+                <div class="text-xs font-bold text-white mt-0.5">Sapa • Hạ Long • Ninh Bình • Đà Nẵng • Phú Quốc</div>
+              </div>
+              <a href="category.html" class="px-2.5 py-1.5 rounded-lg bg-gold-gradient text-e3-deep font-extrabold text-[11px]">Khám Phá</a>
             </div>
-            <a href="category.html" class="px-2.5 py-1.5 rounded-lg bg-gold-gradient text-e3-deep font-extrabold text-[11px]">Khám Phá</a>
           </div>
         </div>
 
-        <!-- Mobile Quick Tour Search Box (Đơn giản: Ô tìm kiếm & Nút tìm kiếm) -->
-        <form action="category.html" method="get" class="bg-white text-stone-800 rounded-2xl p-2 shadow-xl border-2 border-e3-gold/60 flex items-center gap-2">
+        <!-- SLIDE 2: BANNER HÌNH ẢNH TUYẾN ĐIỂM DI SẢN VIỆT NAM -->
+        <div data-m-hero-slide="1" class="m-hero-slide-item hidden space-y-3 relative z-10">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-e3-gold/40 text-e3-amber text-[10px] font-bold uppercase">
+            <i class="fa-solid fa-compass"></i> Chùm Tour Di Sản Việt Nam • Khởi Hành Hàng Tuần
+          </span>
+          <h2 class="font-royal text-2xl font-extrabold leading-snug">
+            Khám Phá <span class="text-e3-amber italic">Cảnh Đẹp Bắc – Trung – Nam</span> Trọn Gói
+          </h2>
+          <p class="text-xs text-stone-200 leading-relaxed">
+            Trải nghiệm Sapa đỉnh Fansipan, Du thuyền Vịnh Hạ Long, Tràng An Ninh Bình, Đà Nẵng – Hội An & Đảo Ngọc Phú Quốc với chi phí tối ưu nhất.
+          </p>
+          <div class="relative rounded-2xl overflow-hidden border-2 border-e3-gold shadow-lg h-44">
+            <img src="../assets/images/hero-vietnam-scenic.jpg" alt="Cảnh đẹp Việt Nam" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-e3-deep/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-e3-amber text-e3-deep text-[9px] font-extrabold uppercase">Ưu Đãi Đoàn -20%</span>
+                <div class="text-xs font-bold text-white mt-0.5">Trải nghiệm dịch vụ chuẩn ISO & GSTC</div>
+              </div>
+              <a href="category.html" class="px-2.5 py-1.5 rounded-lg bg-gold-gradient text-e3-deep font-extrabold text-[11px]">Xem Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3: BANNER HÌNH ẢNH DU LỊCH TRƯỜNG HỌC -->
+        <div data-m-hero-slide="2" class="m-hero-slide-item hidden space-y-3 relative z-10">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-e3-gold/40 text-e3-amber text-[10px] font-bold uppercase">
+            <i class="fa-solid fa-graduation-cap"></i> Đồng Hành Cùng 500+ Trường Học Từ 2014
+          </span>
+          <h2 class="font-royal text-2xl font-extrabold leading-snug">
+            Du Lịch Trường Học & <span class="text-e3-amber italic">Giáo Dục Trải Nghiệm</span>
+          </h2>
+          <p class="text-xs text-stone-200 leading-relaxed">
+            Dã ngoại học tập di sản, Tiếng Anh ngoài trời, Kỹ năng sống cho Học sinh Cấp 1-2-3 & Hành trình tri ân, nghỉ hè Cán bộ Giáo viên.
+          </p>
+          <div class="relative rounded-2xl overflow-hidden border-2 border-e3-gold shadow-lg h-44">
+            <img src="../assets/images/school-students.jpg" alt="Du lịch Trường học E3 Travel" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-e3-deep/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-e3-amber text-e3-deep text-[9px] font-extrabold uppercase">An Toàn – Bổ Ích</span>
+                <div class="text-xs font-bold text-white mt-0.5">Học sinh Cấp 1-2-3-CĐ/ĐH & Giáo viên</div>
+              </div>
+              <a href="category.html#school-tours" class="px-2.5 py-1.5 rounded-lg bg-gold-gradient text-e3-deep font-extrabold text-[11px]">Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4: BANNER HÌNH ẢNH DOANH NGHIỆP MICE & TEAM BUILDING -->
+        <div data-m-hero-slide="3" class="m-hero-slide-item hidden space-y-3 relative z-10">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-e3-gold/40 text-e3-amber text-[10px] font-bold uppercase">
+            <i class="fa-solid fa-trophy"></i> Connecting People • Creating Value
+          </span>
+          <h2 class="font-royal text-2xl font-extrabold leading-snug">
+            Tổ Chức <span class="text-e3-amber italic">Team Building – MICE – Gala Dinner</span>
+          </h2>
+          <p class="text-xs text-stone-200 leading-relaxed">
+            Kịch bản gắn kết đội ngũ sáng tạo, Hội nghị khách hàng chuyên nghiệp và đêm tiệc Gala Dinner "Together We Grow Further".
+          </p>
+          <div class="relative rounded-2xl overflow-hidden border-2 border-e3-gold shadow-lg h-44">
+            <img src="../assets/images/corp-teambuilding.jpg" alt="Doanh nghiệp MICE & Team Building" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-e3-deep/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+              <div>
+                <span class="px-2 py-0.5 rounded bg-e3-amber text-e3-deep text-[9px] font-extrabold uppercase">Chuẩn GSTC MICE</span>
+                <div class="text-xs font-bold text-white mt-0.5">Company Trip • Hội Nghị • Gala Dinner</div>
+              </div>
+              <a href="category.html#mice-tours" class="px-2.5 py-1.5 rounded-lg bg-gold-gradient text-e3-deep font-extrabold text-[11px]">Báo Giá</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Slide Controls / Dots -->
+        <div class="mt-3.5 flex items-center justify-between gap-2 relative z-20">
+          <button type="button" onclick="changeMobileHeroSlide(-1)" aria-label="Slide trước" class="w-7 h-7 rounded-full bg-white/15 border border-e3-gold/50 text-e3-amber flex items-center justify-center text-[10px]">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="flex items-center gap-1.5">
+            <button type="button" onclick="goToMobileHeroSlide(0)" class="m-hero-dot px-2 py-0.5 rounded-full bg-e3-amber text-e3-deep text-[10px] font-extrabold">01. E3 Travel</button>
+            <button type="button" onclick="goToMobileHeroSlide(1)" class="m-hero-dot px-2 py-0.5 rounded-full bg-white/10 text-stone-200 border border-e3-gold/40 text-[10px] font-bold">02. Cảnh Đẹp</button>
+            <button type="button" onclick="goToMobileHeroSlide(2)" class="m-hero-dot px-2 py-0.5 rounded-full bg-white/10 text-stone-200 border border-e3-gold/40 text-[10px] font-bold">03. Trường Học</button>
+            <button type="button" onclick="goToMobileHeroSlide(3)" class="m-hero-dot px-2 py-0.5 rounded-full bg-white/10 text-stone-200 border border-e3-gold/40 text-[10px] font-bold">04. MICE</button>
+          </div>
+          <button type="button" onclick="changeMobileHeroSlide(1)" aria-label="Slide tiếp" class="w-7 h-7 rounded-full bg-white/15 border border-e3-gold/50 text-e3-amber flex items-center justify-center text-[10px]">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Quick Tour Search Box nằm đè trực tiếp trên border-bottom của Banner (Luôn xuất hiện khi chuyển slide) -->
+      <div class="absolute inset-x-0 bottom-0 translate-y-1/2 z-30 px-4">
+        <form action="category.html" method="get" class="bg-white text-stone-800 rounded-2xl p-2 shadow-[0_12px_30px_rgba(46,3,5,0.28)] border-2 border-e3-gold flex items-center gap-2">
           <div class="flex-1 flex items-center gap-2 px-3 py-2 rounded-xl bg-e3-cream/80 border border-e3-sand focus-within:border-e3-burgundy transition-all">
             <i class="fa-solid fa-location-dot text-e3-burgundy text-sm shrink-0"></i>
             <input
@@ -140,7 +234,7 @@
     </section>
 
     <!-- 3 TRỤ CỘT DỊCH VỤ (SWIPEABLE / STACKED CARDS) -->
-    <section class="px-3.5 space-y-3">
+    <section class="px-3.5 pt-4 space-y-3">
       <div class="flex items-center justify-between">
         <div>
           <span class="text-[10px] font-extrabold uppercase text-e3-gold">Hệ Sinh Thái E3 Travel</span>
@@ -397,6 +491,39 @@
     </div>
   </div>
   <script>
+    let currentMobileHeroSlide = 0;
+
+    function goToMobileHeroSlide(index) {
+      const slides = document.querySelectorAll('.m-hero-slide-item');
+      const dots = document.querySelectorAll('.m-hero-dot');
+      if (!slides.length) return;
+      currentMobileHeroSlide = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, i) => {
+        if (i === currentMobileHeroSlide) {
+          slide.classList.remove('hidden');
+        } else {
+          slide.classList.add('hidden');
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        if (i === currentMobileHeroSlide) {
+          dot.className = 'm-hero-dot px-2 py-0.5 rounded-full bg-e3-amber text-e3-deep text-[10px] font-extrabold';
+        } else {
+          dot.className = 'm-hero-dot px-2 py-0.5 rounded-full bg-white/10 text-stone-200 border border-e3-gold/40 text-[10px] font-bold';
+        }
+      });
+    }
+
+    function changeMobileHeroSlide(step) {
+      goToMobileHeroSlide(currentMobileHeroSlide + step);
+    }
+
+    setInterval(() => {
+      changeMobileHeroSlide(1);
+    }, 5500);
+
     function showLangNotice(lang) {
       const modal = document.getElementById('e3-lang-modal');
       const desc = document.getElementById('e3-lang-desc');
