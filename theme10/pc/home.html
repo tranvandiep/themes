@@ -135,8 +135,19 @@
         </a>
       </nav>
 
-      <!-- Right CTA & Booking Cart -->
-      <div class="flex items-center gap-2 shrink-0">
+      <!-- Right CTA, Language Icons & Booking Cart -->
+      <div class="flex items-center gap-2.5 shrink-0">
+        <div class="inline-flex items-center gap-1 p-1 rounded-xl bg-gold-50 border border-gold-200 shadow-inner" aria-label="Chọn ngôn ngữ">
+          <button type="button" onclick="showLangNotice('vi')" title="Tiếng Việt (Đang sử dụng)" class="inline-flex items-center gap-1.5 px-2 py-1 rounded-lg bg-crimson-700 text-white text-[11px] font-extrabold shadow-sm transition-all cursor-pointer">
+            <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-sm" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#da251d"/><polygon points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85" fill="#ffff00"/></svg>
+            <span>VI</span>
+          </button>
+          <button type="button" onclick="showLangNotice('en')" title="Switch to English" class="inline-flex items-center gap-1.5 px-2 py-1 rounded-lg text-gray-700 hover:bg-gold-200/70 hover:text-crimson-700 text-[11px] font-extrabold transition-all cursor-pointer">
+            <svg class="w-4 h-3 rounded-[2px] shrink-0 shadow-sm" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>
+            <span>EN</span>
+          </button>
+        </div>
+
         <a href="cart.html" class="relative inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold shadow-sm transition-all">
           <i class="fa-solid fa-suitcase-rolling text-gold-300"></i>
           <span>Giỏ Tour</span>
@@ -1253,6 +1264,25 @@
     <span id="e3-toast-msg">Đã ghi nhận thông tin!</span>
   </div>
 
+  <!-- Language Feature Demo Modal -->
+  <div id="e3-lang-modal" onclick="if(event.target===this)closeLangNotice()" class="fixed inset-0 z-[999] hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 border-2 border-gold-400 shadow-2xl text-center space-y-4">
+      <div class="w-14 h-14 mx-auto rounded-2xl bg-crimson-50 border border-gold-300 flex items-center justify-center text-crimson-700 text-2xl shadow-sm">
+        <i class="fa-solid fa-earth-americas"></i>
+      </div>
+      <div class="space-y-1.5">
+        <span class="inline-block px-3 py-0.5 rounded-full bg-gold-100 text-crimson-800 text-[11px] font-extrabold uppercase tracking-wider">Đa Ngôn Ngữ • Việt / Anh</span>
+        <h3 id="e3-lang-title" class="font-display font-extrabold text-xl text-crimson-800">Thông Báo Hệ Thống Đa Ngôn Ngữ</h3>
+        <p id="e3-lang-desc" class="text-sm text-gray-600 leading-relaxed">
+          Tính năng chuyển đổi ngôn ngữ <strong>Tiếng Anh (English)</strong> sẽ được kích hoạt trên hệ thống thật, bản Demo hiện tại chưa kích hoạt nhé!
+        </p>
+      </div>
+      <button type="button" onclick="closeLangNotice()" class="w-full py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white font-extrabold text-xs uppercase tracking-wider shadow transition-all cursor-pointer">
+        Đã hiểu
+      </button>
+    </div>
+  </div>
+
   <script>
     function showToast(msg) {
       const t = document.getElementById('e3-toast');
@@ -1262,6 +1292,18 @@
         t.classList.remove('hidden');
         setTimeout(() => t.classList.add('hidden'), 3500);
       }
+    }
+    function showLangNotice(lang) {
+      if (lang === 'vi') {
+        showToast('Đang hiển thị ngôn ngữ mặc định: Tiếng Việt (VI).');
+        return;
+      }
+      const modal = document.getElementById('e3-lang-modal');
+      if (modal) modal.classList.remove('hidden');
+    }
+    function closeLangNotice() {
+      const modal = document.getElementById('e3-lang-modal');
+      if (modal) modal.classList.add('hidden');
     }
   </script>
 </body>
