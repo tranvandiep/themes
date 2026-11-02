@@ -30,34 +30,50 @@
       }
     }
   </script>
-  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 Travel • CTCP Giáo Dục E3" defer></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 Travel" defer></script>
   <style>
     body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #FDF9F1; padding-bottom: 74px; }
     .font-royal { font-family: 'Playfair Display', serif; }
     .bg-burgundy-gradient { background: linear-gradient(135deg, #4A0609 0%, #7A0E12 55%, #961419 100%); }
     .gold-border-glow { box-shadow: 0 8px 24px -4px rgba(122, 14, 18, 0.12), 0 0 0 1px rgba(200, 146, 56, 0.35); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
   </style>
 </head>
 <body class="text-stone-800 antialiased min-h-screen flex flex-col">
 
   <!-- TOPBAR -->
   <div class="bg-e3-deep text-stone-200 text-[11px] py-1.5 px-3 border-b border-e3-gold/30 flex items-center justify-between">
-    <span class="truncate font-semibold">CTCP GIÁO DỤC E3 • MST: 0106637430</span>
-    <a href="tel:02462789777" class="text-e3-amber font-extrabold">024 62789777</a>
+    <span class="truncate font-semibold"><i class="fa-solid fa-certificate text-e3-amber mr-1"></i>E3 TRAVEL • GP: 01-0777/2026/SDL-GP</span>
+    <a href="tel:02462789777" class="text-e3-amber font-extrabold shrink-0 ml-2"><i class="fa-solid fa-phone-volume mr-1"></i>024 62789777</a>
   </div>
 
-  <!-- HEADER -->
-  <header class="bg-white/95 backdrop-blur-md border-b border-e3-sand sticky top-0 z-40 px-3 py-2.5 flex items-center justify-between shadow-sm">
-    <a href="home.html" class="flex items-center gap-2">
-      <img src="../assets/images/logo.jpg" alt="E3 Travel Logo" class="w-10 h-10 rounded-full border-2 border-e3-gold">
-      <div>
-        <span class="font-extrabold text-base text-e3-burgundy block leading-none">E3 TRAVEL</span>
-        <span class="text-[10px] text-e3-gold font-bold uppercase">Hồ Sơ Pháp Lý & Liên Hệ</span>
+  <!-- HEADER (Đồng nhất & Tinh gọn) -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-e3-sand sticky top-0 z-40 shadow-sm">
+    <div class="px-3 py-2 flex items-center justify-between">
+      <a href="home.html" class="flex items-center gap-2">
+        <img src="../assets/images/logo.jpg" alt="E3 Travel Logo" class="w-9 h-9 rounded-full object-cover border-2 border-e3-gold shadow-sm">
+        <div>
+          <span class="font-extrabold text-base text-e3-burgundy block leading-none">E3 TRAVEL</span>
+          <span class="block text-[9px] text-e3-gold font-bold uppercase tracking-wider mt-0.5">Explore • Experience • Enjoy</span>
+        </div>
+      </a>
+      <div class="flex items-center gap-1.5">
+        <a href="tel:0966388789" class="w-8 h-8 rounded-xl bg-e3-cream border border-e3-gold/40 text-e3-burgundy flex items-center justify-center text-xs">
+          <i class="fa-solid fa-headset"></i>
+        </a>
+        <a href="cart.html" class="relative w-8 h-8 rounded-xl bg-burgundy-gradient text-white flex items-center justify-center text-xs shadow">
+          <i class="fa-solid fa-suitcase-rolling text-e3-amber"></i>
+          <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-e3-amber text-e3-deep text-[9px] font-extrabold flex items-center justify-center">2</span>
+        </a>
       </div>
-    </a>
-    <a href="tel:02462789777" class="px-3 py-1.5 rounded-xl bg-burgundy-gradient text-white text-xs font-bold">
-      <i class="fa-solid fa-phone text-e3-amber mr-1"></i>Gọi Ngay
-    </a>
+    </div>
+    <nav class="px-3 py-1.5 bg-e3-cream/90 border-t border-e3-sand/70 flex items-center gap-1.5 overflow-x-auto no-scrollbar text-[11px] font-bold whitespace-nowrap">
+      <a href="home.html" class="px-2.5 py-1 rounded-lg text-stone-700 hover:text-e3-burgundy">Trang Chủ</a>
+      <a href="category.html" class="px-2.5 py-1 rounded-lg text-stone-700 hover:text-e3-burgundy">Tour Du Lịch</a>
+      <a href="category.html#school-tours" class="px-2.5 py-1 rounded-lg text-stone-700 hover:text-e3-burgundy">Tour Đoàn & MICE</a>
+      <a href="news.html" class="px-2.5 py-1 rounded-lg text-stone-700 hover:text-e3-burgundy">Cẩm Nang</a>
+      <a href="contact.html" class="px-2.5 py-1 rounded-lg bg-e3-burgundy text-white">Liên Hệ</a>
+    </nav>
   </header>
 
   <main class="flex-1 px-3.5 py-4 space-y-4">
@@ -67,25 +83,25 @@
       <span class="px-2.5 py-0.5 rounded bg-e3-sand text-e3-burgundy text-[10px] font-extrabold uppercase inline-block">Thông Tin Pháp Lý Chính Thức</span>
       <h1 class="font-royal text-lg font-extrabold text-e3-burgundy">CÔNG TY CỔ PHẦN GIÁO DỤC E3</h1>
       <div class="space-y-1.5 text-stone-700">
-        <div><strong>Đại diện là:</strong> Ông Đặng Hoàng Minh &nbsp;|&nbsp; <strong>Chức vụ:</strong> Giám đốc</div>
         <div><strong>Địa chỉ:</strong> Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</div>
         <div><strong>Điện thoại:</strong> <a href="tel:02462789777" class="text-e3-burgundy font-extrabold">024 62789777</a> &nbsp;|&nbsp; <strong>Hotline:</strong> <a href="tel:0966388789" class="text-e3-burgundy font-extrabold">0966 388 789</a></div>
         <div><strong>Mã số thuế:</strong> <strong class="text-e3-burgundy">0106637430</strong></div>
         <div><strong>Giấy phép LHND:</strong> 01-0777/2026/SDL-GP LHND</div>
+        <div><strong>Email:</strong> e3travel@e3edu.vn / info@e3edu.vn &nbsp;|&nbsp; <strong>Web:</strong> e3edu.vn</div>
       </div>
       <div class="p-3 rounded-xl bg-burgundy-gradient text-white space-y-1">
-        <div class="text-e3-amber font-bold"><i class="fa-solid fa-building-columns mr-1"></i>Tài Khoản Ngân Hàng Công Ty:</div>
-        <div class="text-base font-black text-e3-amber">Số TK: 77896789</div>
-        <div class="text-[11px]">Ngân hàng: <strong>TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô</strong></div>
+        <div class="text-e3-amber font-bold"><i class="fa-solid fa-award mr-1"></i>Chứng Nhận Chất Lượng & Hiệp Hội Quốc Tế:</div>
+        <div class="text-xs font-extrabold text-white">ISO 9001:2015 • ISO 14001:2015 • GSTC Standard</div>
+        <div class="text-[11px] text-stone-200">Thành viên chính thức: <strong>Chi hội Lữ hành Hà Nội (HATA) & UNESCO HUTC</strong></div>
       </div>
     </div>
 
-    <!-- Legal Certificates & Org Chart -->
+    <!-- Activity Showcase -->
     <div class="bg-white rounded-2xl p-3.5 gold-border-glow space-y-2">
-      <h2 class="font-extrabold text-xs text-e3-burgundy uppercase">Hồ Sơ Pháp Lý & Sơ Đồ Tổ Chức E3 Travel</h2>
+      <h2 class="font-extrabold text-xs text-e3-burgundy uppercase">Năng Lực Điều Hành Tour Đoàn & MICE Chuyên Nghiệp</h2>
       <div class="grid grid-cols-2 gap-2">
-        <img src="../assets/images/legal-certificates.jpg" alt="Giấy phép kinh doanh lữ hành" class="w-full h-36 object-cover rounded-xl border border-e3-sand">
-        <img src="../assets/images/org-chart-poster.jpg" alt="Sơ đồ tổ chức" class="w-full h-36 object-cover rounded-xl border border-e3-sand">
+        <img src="../assets/images/about-teamwork.jpg" alt="Hoạt động gắn kết E3 Travel" class="w-full h-36 object-cover rounded-xl border border-e3-sand">
+        <img src="../assets/images/about-planning.jpg" alt="Thiết kế lịch trình E3 Travel" class="w-full h-36 object-cover rounded-xl border border-e3-sand">
       </div>
     </div>
 
@@ -115,10 +131,10 @@
 
   <!-- FOOTER -->
   <footer class="bg-e3-deep text-stone-300 text-xs mt-4 px-4 pt-6 pb-6 border-t-4 border-e3-gold space-y-1">
-    <div class="font-extrabold text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3</div>
-    <div>Đại diện: Ông Đặng Hoàng Minh – Chức vụ: Giám đốc</div>
+    <div class="font-extrabold text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</div>
     <div>Địa chỉ: Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</div>
-    <div>ĐT: 024 62789777 | MST: 0106637430 | STK: 77896789 (Techcombank - CN Đông Đô)</div>
+    <div>ĐT: 024 62789777 | Hotline: 0966 388 789 | MST: 0106637430</div>
+    <div class="text-e3-amber font-bold">GP Lữ hành: 01-0777/2026/SDL-GP LHND • Tiêu chuẩn ISO 9001:2015 & GSTC</div>
   </footer>
 
   <!-- STICKY BOTTOM NAV -->

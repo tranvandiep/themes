@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 TRAVEL (CTCP Giáo Dục E3)" defer></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 Travel" defer></script>
   <script>
     tailwind.config = {
       theme: {
@@ -70,58 +70,49 @@
   </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-crimson-700 selection:text-white">
-  <!-- Topbar chuẩn PYS Travel + Thông tin pháp lý E3 Travel -->
-  <div class="bg-crimson-900 text-gold-100 text-xs py-2 px-4 border-b border-gold-500/30">
+  <!-- Topbar chuẩn PYS Travel -->
+  <div class="bg-crimson-900 text-gold-100 text-xs py-1.5 px-4 border-b border-gold-500/30">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex flex-wrap items-center gap-4">
         <span class="flex items-center gap-1.5">
-          <i class="fa-solid fa-building-shield text-gold-400"></i>
-          <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong> (MST: <strong class="text-white">0106637430</strong>)
-        </span>
-        <span class="hidden lg:inline text-gold-300/60">|</span>
-        <span class="hidden lg:flex items-center gap-1.5">
           <i class="fa-solid fa-certificate text-gold-400"></i>
-          GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong>
+          <span>E3 TRAVEL • GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong></span>
         </span>
-        <span class="hidden xl:inline text-gold-300/60">|</span>
-        <span class="hidden xl:flex items-center gap-1.5">
+        <span class="hidden lg:inline text-gold-300/50">|</span>
+        <span class="hidden lg:flex items-center gap-1.5">
           <i class="fa-solid fa-location-dot text-gold-400"></i>
-          Số 24 Liền kề 26 KĐT Văn Phú, P. Kiến Hưng, TP Hà Nội
+          <span>Số 24 Liền kề 26 KĐT Văn Phú, P. Kiến Hưng, TP Hà Nội</span>
         </span>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-3">
         <a href="tel:02462789777" class="hover:text-white transition-colors flex items-center gap-1.5">
-          <i class="fa-solid fa-phone-volume text-gold-400 animate-pulse"></i>
-          Điện thoại: <strong class="text-white">024 62789777</strong>
+          <i class="fa-solid fa-phone-volume text-gold-400"></i>
+          <span>ĐT: <strong class="text-white">024 62789777</strong></span>
         </a>
-        <span class="text-gold-300/60">|</span>
+        <span class="text-gold-300/50">|</span>
         <a href="tel:0966388789" class="px-2.5 py-0.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-200 font-bold hover:bg-gold-500 hover:text-crimson-950 transition-all">
-          Hotline 24/7: 0966 388 789
+          Hotline: 0966 388 789
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Main Sticky Header -->
+  <!-- Main Sticky Header (Menu đồng nhất & tinh gọn) -->
   <header class="bg-white/95 backdrop-blur-md border-b border-gold-200 sticky top-0 z-50 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-      <!-- Brand Logo -->
-      <a href="home.html" class="flex items-center gap-3 group">
-        <div class="w-14 h-14 rounded-full p-0.5 bg-gold-gradient shadow-md flex-shrink-0 overflow-hidden">
-          <img src="../assets/images/logo-e3.jpeg" alt="Logo Công Ty Cổ Phần Giáo Dục E3 - E3 Travel" class="w-full h-full object-cover rounded-full bg-white group-hover:scale-105 transition-transform">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-4">
+      <!-- Brand Logo (Tinh gọn, bỏ tên công ty dài) -->
+      <a href="home.html" class="flex items-center gap-2.5 group shrink-0">
+        <div class="w-10 h-10 rounded-full p-0.5 bg-gold-gradient shadow-sm flex-shrink-0 overflow-hidden">
+          <img src="../assets/images/logo-e3.jpeg" alt="E3 Travel Logo" class="w-full h-full object-cover rounded-full bg-white group-hover:scale-105 transition-transform">
         </div>
         <div>
-          <div class="flex items-center gap-2">
-            <span class="font-display font-extrabold text-2xl text-crimson-700 tracking-tight">E3 TRAVEL</span>
-            <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-gold-100 text-crimson-800 border border-gold-300 rounded-md">ISO 9001 & GSTC</span>
-          </div>
-          <span class="block text-[11px] font-bold text-gray-700 uppercase tracking-wider">Công Ty Cổ Phần Giáo Dục E3</span>
-          <span class="block text-[10px] italic text-gold-600 font-semibold">Explore – Experience – Enjoy • Trọn vẹn mỗi hành trình!</span>
+          <span class="font-display font-extrabold text-lg text-crimson-700 tracking-tight block leading-none">E3 TRAVEL</span>
+          <span class="block text-[10px] text-gold-600 font-bold uppercase tracking-wider mt-0.5">Explore – Experience – Enjoy</span>
         </div>
       </a>
 
-      <!-- Navigation Links (Phong cách PYS Travel) -->
-      <nav class="hidden lg:flex items-center gap-6 text-sm">
+      <!-- Navigation Links (Gọn gàng & đồng nhất 5 mục) -->
+      <nav class="hidden lg:flex items-center gap-6 text-[13px]">
         <a href="home.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
           <i class="fa-solid fa-house text-xs text-gold-600"></i>
           <span>Trang Chủ</span>
@@ -132,32 +123,24 @@
         </a>
         <a href="category.html#truong-hoc" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
           <i class="fa-solid fa-graduation-cap text-xs text-gold-600"></i>
-          <span>Tour Trường Học</span>
-        </a>
-        <a href="category.html#doanh-nghiep" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
-          <i class="fa-solid fa-people-group text-xs text-gold-600"></i>
-          <span>MICE & Team Building</span>
+          <span>Tour Đoàn & MICE</span>
         </a>
         <a href="news.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
           <i class="fa-solid fa-newspaper text-xs text-gold-600"></i>
           <span>Cẩm Nang</span>
         </a>
         <a href="contact.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
-          <i class="fa-solid fa-id-card-clip text-xs text-gold-600"></i>
-          <span>Hồ Sơ Năng Lực & Liên Hệ</span>
+          <i class="fa-solid fa-phone text-xs text-gold-600"></i>
+          <span>Liên Hệ</span>
         </a>
       </nav>
 
       <!-- Right CTA & Booking Cart -->
-      <div class="flex items-center gap-3">
-        <a href="contact.html#yeu-cau-bao-gia" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-100 hover:bg-gold-200 text-crimson-800 border border-gold-300 text-xs font-extrabold transition-all">
-          <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i>
-          <span>Thiết Kế Tour Riêng</span>
-        </a>
-        <a href="cart.html" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold shadow-md shadow-crimson-700/20 transition-all">
+      <div class="flex items-center gap-2 shrink-0">
+        <a href="cart.html" class="relative inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold shadow-sm transition-all">
           <i class="fa-solid fa-suitcase-rolling text-gold-300"></i>
           <span>Giỏ Tour</span>
-          <span class="w-5 h-5 rounded-full bg-gold-400 text-crimson-950 text-[11px] flex items-center justify-center font-black">2</span>
+          <span class="w-4 h-4 rounded-full bg-gold-400 text-crimson-950 text-[10px] flex items-center justify-center font-black">2</span>
         </a>
       </div>
     </div>
@@ -246,7 +229,7 @@
                 <i class="fa-solid fa-circle-check text-crimson-700 text-base mt-0.5"></i>
                 <div>
                   <strong class="text-crimson-900 block">Pháp Lý & Hóa Đơn VAT Đầy Đủ</strong>
-                  Ký hợp đồng trực tiếp với Công Ty Cổ Phần Giáo Dục E3 (MST: 0106637430), thanh toán qua TK Techcombank 77896789.
+                  Ký hợp đồng lữ hành trực tiếp (MST: 0106637430), bảo hiểm du lịch trọn gói và xuất hóa đơn VAT theo quy định.
                 </div>
               </div>
             </div>
@@ -345,13 +328,13 @@
               </a>
             </form>
 
-            <!-- Thông tin tài khoản công ty -->
+            <!-- Quyền lợi & Cam kết dịch vụ -->
             <div class="mt-5 pt-4 border-t border-gold-200 text-[11px] text-gray-600 space-y-1.5">
-              <div class="font-extrabold text-crimson-800 uppercase">Thông Tin Thanh Toán Chính Thức:</div>
-              <div>• Đơn vị: <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong></div>
-              <div>• Đại diện: <strong>Ông Đặng Hoàng Minh (Giám đốc)</strong></div>
-              <div>• MST: <strong>0106637430</strong> | ĐT: <strong>024 62789777</strong></div>
-              <div>• Số TK: <strong class="text-crimson-700">77896789</strong> — <strong>Techcombank CN Đông Đô</strong></div>
+              <div class="font-extrabold text-crimson-800 uppercase">Cam Kết Dịch Vụ E3 Travel:</div>
+              <div>• Bảo hiểm du lịch trọn gói theo quy định</div>
+              <div>• Kịch bản chương trình & thực đơn thiết kế riêng</div>
+              <div>• MST: <strong>0106637430</strong> | GP LHND: <strong>01-0777/2026</strong></div>
+              <div>• Hotline tư vấn 24/7: <strong class="text-crimson-700">0966 388 789</strong> — <strong>024 62789777</strong></div>
             </div>
           </div>
         </div>
@@ -389,10 +372,6 @@
 
           <div class="bg-crimson-950/70 border border-gold-500/30 rounded-2xl p-4 space-y-2 text-xs">
             <div class="flex items-start gap-2.5">
-              <i class="fa-solid fa-user-tie text-gold-400 mt-0.5 w-4"></i>
-              <span>Đại diện là: <strong class="text-white">Ông Đặng Hoàng Minh</strong> — Chức vụ: <strong class="text-gold-300">Giám đốc</strong></span>
-            </div>
-            <div class="flex items-start gap-2.5">
               <i class="fa-solid fa-location-dot text-gold-400 mt-0.5 w-4"></i>
               <span>Địa chỉ: <strong class="text-white">Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</strong></span>
             </div>
@@ -428,28 +407,28 @@
           </ul>
         </div>
 
-        <!-- Col 3: Thông tin Tài khoản Ngân hàng & Chứng chỉ (4 cols) -->
+        <!-- Col 3: Tổng Đài Điều Hành & Chứng chỉ Quốc tế (4 cols) -->
         <div class="lg:col-span-4 space-y-4">
           <h4 class="font-display font-bold text-base text-gold-300 uppercase tracking-wider border-b border-gold-500/30 pb-2">
-            Tài Khoản Thanh Toán Chính Thức
+            Tổng Đài Tư Vấn & Điều Hành Đoàn
           </h4>
           <div class="bg-gradient-to-br from-gold-500/20 to-crimson-950/90 border-2 border-gold-400/60 rounded-2xl p-4 shadow-lg">
             <div class="flex items-center justify-between mb-2">
-              <span class="text-[11px] uppercase tracking-wider font-extrabold text-gold-300">Ngân hàng thụ hưởng</span>
-              <span class="px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[10px] font-black">TECHCOMBANK</span>
+              <span class="text-[11px] uppercase tracking-wider font-extrabold text-gold-300">Hỗ Trợ Khách Hàng 24/7</span>
+              <span class="px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[10px] font-black">E3 TRAVEL</span>
             </div>
             <p class="text-xs text-white font-bold mb-3">
-              Ngân hàng: TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô
+              Tư vấn lịch trình, khảo sát tuyến điểm & báo giá đoàn Trường học – Doanh nghiệp – Gia đình
             </p>
             <div class="bg-crimson-950/80 rounded-xl p-3 border border-gold-400/30 flex items-center justify-between">
               <div>
-                <span class="text-[10px] text-gold-300 block">Số TK:</span>
-                <span class="text-xl font-black text-gold-300 tracking-wider">77896789</span>
-                <span class="block text-[11px] text-white font-semibold mt-0.5">Chủ TK: CÔNG TY CỔ PHẦN GIÁO DỤC E3</span>
+                <span class="text-[10px] text-gold-300 block">Hotline Điều Hành & Kinh Doanh:</span>
+                <span class="text-lg font-black text-gold-300 tracking-wider">0966 388 789</span>
+                <span class="block text-[11px] text-white font-semibold mt-0.5">Điện thoại bàn: 024 62789777</span>
               </div>
-              <button onclick="navigator.clipboard?.writeText('77896789'); showToast('Đã sao chép Số TK 77896789 - Ngân hàng TMCP Kỹ thương Việt Nam (CN Đông Đô)!')" class="px-3 py-2 rounded-lg bg-gold-400 hover:bg-gold-300 text-crimson-950 text-xs font-extrabold transition-colors">
-                <i class="fa-regular fa-copy mr-1"></i>Copy
-              </button>
+              <a href="contact.html" class="px-3 py-2 rounded-lg bg-gold-400 hover:bg-gold-300 text-crimson-950 text-xs font-extrabold transition-colors">
+                <i class="fa-solid fa-paper-plane mr-1"></i>Báo Giá
+              </a>
             </div>
           </div>
 
@@ -478,7 +457,7 @@
 
       <!-- Bottom Copyright -->
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gold-200/80">
-        <p>© 2014 – 2026 <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</strong>. Đại diện là: Ông Đặng Hoàng Minh (Giám đốc). MST: 0106637430.</p>
+        <p>© 2014 – 2026 <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</strong> • MST: 0106637430 • GP Lữ hành: 01-0777/2026/SDL-GP LHND.</p>
         <div class="flex items-center gap-4">
           <a href="home.html" class="hover:text-white">Trang chủ</a>
           <span>•</span>
