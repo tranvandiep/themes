@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cẩm Nang Du Lịch & Tin Tức Hoạt Động • E3 Travel (PC)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            e3: {
+              burgundy: '#7A0E12',
+              crimson: '#961419',
+              dark: '#4A0609',
+              deep: '#2E0305',
+              gold: '#C89238',
+              goldlight: '#E5B968',
+              amber: '#F3B43F',
+              cream: '#FDF9F1',
+              sand: '#F5EBD6'
+            }
+          },
+          fontFamily: {
+            sans: ['Be Vietnam Pro', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 Travel • CTCP Giáo Dục E3" defer></script>
+  <style>
+    body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #FDF9F1; }
+    .font-royal { font-family: 'Playfair Display', serif; }
+    .bg-burgundy-gradient { background: linear-gradient(135deg, #4A0609 0%, #7A0E12 55%, #961419 100%); }
+    .gold-border-glow { box-shadow: 0 10px 30px -5px rgba(122, 14, 18, 0.12), 0 0 0 1px rgba(200, 146, 56, 0.35); }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); }
+  </style>
+</head>
+<body class="text-stone-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOPBAR -->
+  <div class="bg-e3-deep text-stone-200 text-xs py-2 px-4 border-b border-e3-gold/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div><strong class="text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong> • Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội</div>
+      <div>ĐT: <strong>024 62789777</strong> &nbsp;|&nbsp; Hotline: <strong class="text-e3-amber">0966 388 789 / 09 3883 5898</strong></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-e3-sand sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-4">
+      <a href="home.html" class="flex items-center gap-3">
+        <img src="../assets/images/logo.jpg" alt="E3 Travel Logo" class="w-14 h-14 rounded-full object-cover border-2 border-e3-gold shadow-md">
+        <div>
+          <span class="font-extrabold text-2xl tracking-tight text-e3-burgundy block leading-none">E3 TRAVEL</span>
+          <span class="text-[11px] font-semibold text-e3-gold tracking-wider uppercase">Explore – Experience – Enjoy</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-bold text-stone-700">
+        <a href="home.html" class="hover:text-e3-burgundy"><i class="fa-solid fa-house text-xs text-e3-gold mr-1"></i>Trang Chủ</a>
+        <a href="category.html" class="hover:text-e3-burgundy"><i class="fa-solid fa-compass text-xs text-e3-gold mr-1"></i>Tour & Chương Trình</a>
+        <a href="category.html#school-tours" class="hover:text-e3-burgundy"><i class="fa-solid fa-graduation-cap text-xs text-e3-gold mr-1"></i>Du Lịch Trường Học</a>
+        <a href="category.html#mice-tours" class="hover:text-e3-burgundy"><i class="fa-solid fa-people-group text-xs text-e3-gold mr-1"></i>MICE & Team Building</a>
+        <a href="news.html" class="text-e3-burgundy border-b-2 border-e3-burgundy pb-1"><i class="fa-solid fa-newspaper text-xs text-e3-gold mr-1"></i>Cẩm Nang Du Lịch</a>
+        <a href="contact.html" class="hover:text-e3-burgundy"><i class="fa-solid fa-id-card-clip text-xs text-e3-gold mr-1"></i>Liên Hệ</a>
+      </nav>
+
+      <a href="cart.html" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-e3-cream text-e3-burgundy border border-e3-gold/40 text-xs font-bold">
+        <i class="fa-solid fa-suitcase-rolling"></i> <span>Giỏ Tour (2)</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl mx-auto px-4 py-10 w-full">
+    <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <span class="px-3.5 py-1 rounded-full bg-e3-sand text-e3-burgundy text-xs font-extrabold uppercase border border-e3-gold/40">
+          Góc Chia Sẻ & Cẩm Nang E3 Travel
+        </span>
+        <h1 class="font-royal text-3xl sm:text-4xl font-extrabold text-e3-burgundy mt-2">
+          Cẩm Nang Du Lịch Việt Nam & Kinh Nghiệm Tổ Chức Đoàn
+        </h1>
+      </div>
+      <div class="flex flex-wrap gap-2 text-xs font-bold">
+        <a href="news.html" class="px-3.5 py-2 rounded-xl bg-e3-burgundy text-white">Tất Cả Bài Viết</a>
+        <a href="post.html" class="px-3.5 py-2 rounded-xl bg-white border border-e3-gold/30 text-stone-700 hover:text-e3-burgundy">Ngoại Khóa Học Đường</a>
+        <a href="post.html" class="px-3.5 py-2 rounded-xl bg-white border border-e3-gold/30 text-stone-700 hover:text-e3-burgundy">Kinh Nghiệm MICE</a>
+        <a href="post.html" class="px-3.5 py-2 rounded-xl bg-white border border-e3-gold/30 text-stone-700 hover:text-e3-burgundy">Điểm Đến Bắc - Trung - Nam</a>
+      </div>
+    </div>
+
+    <!-- Featured Article -->
+    <div class="bg-white rounded-3xl overflow-hidden gold-border-glow grid grid-cols-1 lg:grid-cols-12 mb-10">
+      <div class="lg:col-span-7 h-72 lg:h-auto overflow-hidden">
+        <img src="../assets/images/hero-vietnam-scenic.jpg" alt="Cẩm nang khám phá Việt Nam cùng E3 Travel" class="w-full h-full object-cover">
+      </div>
+      <div class="lg:col-span-5 p-6 sm:p-8 flex flex-col justify-center space-y-4">
+        <div class="flex items-center gap-2 text-xs font-bold text-e3-burgundy">
+          <span class="px-2.5 py-0.5 rounded bg-e3-sand">Tiêu Điểm 2026</span>
+          <span class="text-stone-400">• 02/11/2026</span>
+        </div>
+        <h2 class="font-royal text-2xl sm:text-3xl font-extrabold text-stone-900 hover:text-e3-burgundy leading-snug">
+          <a href="post.html">Bí Quyết Tổ Chức Chương Trình Dã Ngoại Học Tập & Trải Nghiệm Kỹ Năng Sống An Toàn, Hiệu Quả Cho Trường Học</a>
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+          Đúc kết từ hơn 12 năm đồng hành cùng hơn 150 trường Mầm non, Tiểu học, THCS, THPT tại Hà Nội từ năm 2014 của Công ty Cổ phần Giáo dục E3 (E3 Travel) theo tiêu chuẩn quốc tế ISO 9001:2015 & GSTC.
+        </p>
+        <div class="pt-2">
+          <a href="post.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-burgundy-gradient text-white font-bold text-xs shadow">
+            <span>Đọc Bài Viết Chi Tiết</span>
+            <i class="fa-solid fa-arrow-right text-e3-amber"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- News Grid (6 Articles) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/school-students.jpg" alt="Hoạt động trải nghiệm học sinh" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Du Lịch Trường Học</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">Top 10 Địa Điểm Dã Ngoại Học Tập & Tiếng Anh Ngoài Trời Quanh Hà Nội Hấp Dẫn Nhất Cho Học Sinh</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Gợi ý chi tiết lịch trình Văn Miếu Quốc Tử Giám, Hoàng Thành Thăng Long, Làng gốm Bát Tràng và các khu trải nghiệm giáo dục xanh đạt chuẩn an toàn.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/corp-mice.jpg" alt="Tổ chức MICE Hội nghị khách hàng" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Doanh Nghiệp • MICE</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">Xu Hướng Du Lịch MICE & Hội Nghị Khách Hàng Bền Vững Theo Khung Tiêu Chuẩn Quốc Tế GSTC 2026</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Cách thiết kế chương trình MICE "Connecting People – Creating Value" tối ưu ngân sách và nâng tầm thương hiệu doanh nghiệp.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/school-teachers-fansipan.jpg" alt="Tour Cán bộ Giáo viên Sapa" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Cán Bộ - Giáo Viên</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">Gợi Ý Lịch Trình Du Xuân Đầu Năm & Nghỉ Hè Gắn Kết Dành Cho Hội Đồng Sư Phạm Các Nhà Trường</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Tổng hợp các tuyến Sapa – Fansipan, Ninh Bình – Bái Đính – Tràng An, Hạ Long và Đà Nẵng – Hội An được các trường yêu thích nhất.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/corp-galadinner.jpg" alt="Kịch bản Gala Dinner" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Gala Dinner & Sự Kiện</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">5 Kịch Bản Gala Dinner "Together We Grow Further" & Vinh Danh Khen Thưởng Nhân Sự Giàu Cảm Xúc</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Bí quyết kết hợp vinh danh khen thưởng nhân sự xuất sắc và đêm tiệc Gala bùng nổ tinh thần đồng đội.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/dest-halong-cruise.jpg" alt="Cẩm nang du lịch Hạ Long Ninh Bình" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Cẩm Nang Điểm Đến</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">Cẩm Nang Du Lịch Vịnh Hạ Long & Ninh Bình Tràng An 2026: Lịch Trình, Ẩm Thực & Chi Phí Tiết Kiệm</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Kinh nghiệm chọn du thuyền nghỉ đêm, chèo thuyền Kayak và khám phá tuyệt tác Tràng An – Hang Múa từ A đến Z.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+
+      <article class="bg-white rounded-2xl overflow-hidden gold-border-glow card-hover flex flex-col">
+        <a href="post.html" class="h-48 overflow-hidden block">
+          <img src="../assets/images/e3-headquarters.jpg" alt="Trụ sở E3 Travel Văn Phú Hà Nội" class="w-full h-full object-cover">
+        </a>
+        <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+          <div>
+            <span class="text-[11px] font-bold text-e3-gold uppercase">Tin Tức E3 Travel</span>
+            <h3 class="font-extrabold text-base text-stone-900 hover:text-e3-burgundy mt-1">
+              <a href="post.html">Công Ty Cổ Phần Giáo Dục E3 Đẩy Mạnh Chuyển Đổi Số & AI Trong Điều Hành Lữ Hành Nội Địa & Quốc Tế</a>
+            </h3>
+            <p class="text-xs text-stone-600 mt-2 line-clamp-3">Dưới sự dẫn dắt của Chủ tịch HĐQT/TGĐ Đặng Hoàng Minh và PGĐ Chuyển đổi số & AI Đặng Hoàng Việt, E3 Travel nâng cao trải nghiệm khách hàng toàn diện.</p>
+          </div>
+          <a href="post.html" class="text-xs font-extrabold text-e3-burgundy hover:underline flex items-center gap-1">Xem chi tiết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-e3-deep text-stone-300 text-sm mt-14 pt-12 pb-8 border-t-4 border-e3-gold">
+    <div class="max-w-7xl mx-auto px-4 text-center space-y-2 text-xs">
+      <p class="font-extrabold text-white text-sm">CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</p>
+      <p>Đại diện là: <strong>Ông Đặng Hoàng Minh</strong> – Chức vụ: <strong>Giám đốc</strong> | Địa chỉ: Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</p>
+      <p>Điện thoại: <strong>024 62789777</strong> | Mã số thuế: <strong>0106637430</strong> | Số TK: <strong class="text-e3-amber">77896789</strong> – Ngân hàng TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô</p>
+    </div>
+  </footer>
+
+</body>
+</html>

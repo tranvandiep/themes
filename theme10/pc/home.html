@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ Du Lịch Lữ Hành | E3 TRAVEL - Công Ty Cổ Phần Giáo Dục E3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 TRAVEL (CTCP Giáo Dục E3)" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              50: '#fdf3f3',
+              100: '#fbe4e4',
+              200: '#f7cece',
+              500: '#a81818',
+              600: '#8b0d11',
+              700: '#780909',
+              800: '#5e0606',
+              900: '#450404',
+              950: '#2b0202'
+            },
+            gold: {
+              50: '#fcf9f2',
+              100: '#f8f0dc',
+              200: '#efe0b9',
+              300: '#e5c98b',
+              400: '#d9b061',
+              500: '#c6923a',
+              600: '#ad792b',
+              700: '#8c5e23'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcf9f2; color: #1f2937; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .bg-royal-gradient { background: linear-gradient(135deg, #780909 0%, #450404 60%, #2b0202 100%); }
+    .bg-crimson-gold { background: linear-gradient(90deg, #780909 0%, #991313 50%, #780909 100%); }
+    .bg-gold-gradient { background: linear-gradient(135deg, #f3c66f 0%, #c6923a 50%, #9e6f23 100%); }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #f7d78a 0%, #d49e42 50%, #b57e24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-luxury {
+      background: #ffffff;
+      border: 1px solid #efe0b9;
+      box-shadow: 0 10px 30px -10px rgba(120, 9, 9, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-luxury:hover {
+      border-color: #c6923a;
+      box-shadow: 0 20px 40px -12px rgba(120, 9, 9, 0.16);
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-crimson-700 selection:text-white">
+  <!-- Topbar chuẩn PYS Travel + Thông tin pháp lý E3 Travel -->
+  <div class="bg-crimson-900 text-gold-100 text-xs py-2 px-4 border-b border-gold-500/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-building-shield text-gold-400"></i>
+          <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong> (MST: <strong class="text-white">0106637430</strong>)
+        </span>
+        <span class="hidden lg:inline text-gold-300/60">|</span>
+        <span class="hidden lg:flex items-center gap-1.5">
+          <i class="fa-solid fa-certificate text-gold-400"></i>
+          GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong>
+        </span>
+        <span class="hidden xl:inline text-gold-300/60">|</span>
+        <span class="hidden xl:flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-gold-400"></i>
+          Số 24 Liền kề 26 KĐT Văn Phú, P. Kiến Hưng, TP Hà Nội
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:02462789777" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-phone-volume text-gold-400 animate-pulse"></i>
+          Điện thoại: <strong class="text-white">024 62789777</strong>
+        </a>
+        <span class="text-gold-300/60">|</span>
+        <a href="tel:0966388789" class="px-2.5 py-0.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-200 font-bold hover:bg-gold-500 hover:text-crimson-950 transition-all">
+          Hotline 24/7: 0966 388 789
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-gold-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a href="home.html" class="flex items-center gap-3 group">
+        <div class="w-14 h-14 rounded-full p-0.5 bg-gold-gradient shadow-md flex-shrink-0 overflow-hidden">
+          <img src="../assets/images/logo-e3.jpeg" alt="Logo Công Ty Cổ Phần Giáo Dục E3 - E3 Travel" class="w-full h-full object-cover rounded-full bg-white group-hover:scale-105 transition-transform">
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-2xl text-crimson-700 tracking-tight">E3 TRAVEL</span>
+            <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-gold-100 text-crimson-800 border border-gold-300 rounded-md">ISO 9001 & GSTC</span>
+          </div>
+          <span class="block text-[11px] font-bold text-gray-700 uppercase tracking-wider">Công Ty Cổ Phần Giáo Dục E3</span>
+          <span class="block text-[10px] italic text-gold-600 font-semibold">Explore – Experience – Enjoy • Trọn vẹn mỗi hành trình!</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links (Phong cách PYS Travel) -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm">
+        <a href="home.html" class="text-crimson-700 font-extrabold border-b-2 border-crimson-700 pb-1 flex items-center gap-1.5">
+          <i class="fa-solid fa-house text-xs text-gold-600"></i>
+          <span>Trang Chủ</span>
+        </a>
+        <a href="category.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-compass text-xs text-gold-600"></i>
+          <span>Tour Du Lịch</span>
+        </a>
+        <a href="category.html#truong-hoc" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-graduation-cap text-xs text-gold-600"></i>
+          <span>Tour Trường Học</span>
+        </a>
+        <a href="category.html#doanh-nghiep" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-people-group text-xs text-gold-600"></i>
+          <span>MICE & Team Building</span>
+        </a>
+        <a href="news.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-newspaper text-xs text-gold-600"></i>
+          <span>Cẩm Nang</span>
+        </a>
+        <a href="contact.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-id-card-clip text-xs text-gold-600"></i>
+          <span>Hồ Sơ Năng Lực & Liên Hệ</span>
+        </a>
+      </nav>
+
+      <!-- Right CTA & Booking Cart -->
+      <div class="flex items-center gap-3">
+        <a href="contact.html#yeu-cau-bao-gia" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-100 hover:bg-gold-200 text-crimson-800 border border-gold-300 text-xs font-extrabold transition-all">
+          <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i>
+          <span>Thiết Kế Tour Riêng</span>
+        </a>
+        <a href="cart.html" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold shadow-md shadow-crimson-700/20 transition-all">
+          <i class="fa-solid fa-suitcase-rolling text-gold-300"></i>
+          <span>Giỏ Tour</span>
+          <span class="w-5 h-5 rounded-full bg-gold-400 text-crimson-950 text-[11px] flex items-center justify-center font-black">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Hero Banner + Bộ tìm kiếm Tour chuẩn PYS Travel -->
+    <section class="relative bg-royal-gradient text-white overflow-hidden border-b-4 border-gold-500">
+      <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f3c66f_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      <div class="max-w-7xl mx-auto px-4 pt-10 pb-16 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Left Hero Copy -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/20 border border-gold-400/50 text-gold-200 text-xs font-extrabold uppercase tracking-wider">
+              <i class="fa-solid fa-crown text-gold-400"></i>
+              <span>Thương Hiệu Lữ Hành Uy Tín Từ Năm 2014 • GP: 01-0777/2026/SDL-GP LHND</span>
+            </div>
+
+            <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-tight">
+              Trọn Vẹn Mỗi Hành Trình <br>
+              <span class="text-gold-gradient">Khám Phá Việt Nam & Thế Giới</span>
+            </h1>
+
+            <p class="text-gold-100/90 text-sm sm:text-base leading-relaxed max-w-2xl">
+              <strong>E3 TRAVEL (Công Ty Cổ Phần Giáo Dục E3)</strong> là đơn vị tư vấn, thiết kế và tổ chức các chương trình du lịch trong nước & quốc tế chuyên nghiệp dành cho <strong>Trường học</strong>, <strong>Doanh nghiệp (MICE & Team Building)</strong> và <strong>Khách hàng cá nhân</strong> với chi phí tối ưu nhất.
+            </p>
+
+            <!-- 4 Trust Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="bg-crimson-950/60 border border-gold-400/30 rounded-xl p-3 flex items-center gap-2.5">
+                <i class="fa-solid fa-medal text-gold-400 text-xl"></i>
+                <div>
+                  <div class="text-xs font-extrabold text-white">ISO 9001 & 14001</div>
+                  <div class="text-[10px] text-gold-300">Quản lý chất lượng QT</div>
+                </div>
+              </div>
+              <div class="bg-crimson-950/60 border border-gold-400/30 rounded-xl p-3 flex items-center gap-2.5">
+                <i class="fa-solid fa-earth-asia text-gold-400 text-xl"></i>
+                <div>
+                  <div class="text-xs font-extrabold text-white">Chuẩn GSTC</div>
+                  <div class="text-[10px] text-gold-300">Tour & MICE Bền vững</div>
+                </div>
+              </div>
+              <div class="bg-crimson-950/60 border border-gold-400/30 rounded-xl p-3 flex items-center gap-2.5">
+                <i class="fa-solid fa-handshake-angle text-gold-400 text-xl"></i>
+                <div>
+                  <div class="text-xs font-extrabold text-white">HATA & UNESCO</div>
+                  <div class="text-[10px] text-gold-300">Thành viên chính thức</div>
+                </div>
+              </div>
+              <div class="bg-crimson-950/60 border border-gold-400/30 rounded-xl p-3 flex items-center gap-2.5">
+                <i class="fa-solid fa-school-flag text-gold-400 text-xl"></i>
+                <div>
+                  <div class="text-xs font-extrabold text-white">500+ Đối Tác</div>
+                  <div class="text-[10px] text-gold-300">Trường học & Tập đoàn</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Visual Collage -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative rounded-3xl overflow-hidden border-2 border-gold-400 shadow-2xl">
+              <img src="../assets/images/hero-vietnam.jpg" alt="Khám phá Việt Nam cùng E3 Travel" class="w-full h-80 object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-crimson-950/90 via-transparent to-transparent flex items-end p-5">
+                <div class="flex items-center justify-between w-full">
+                  <div>
+                    <span class="text-[11px] uppercase tracking-widest text-gold-300 font-bold block">Explore – Experience – Enjoy</span>
+                    <h3 class="font-display font-bold text-lg text-white">Khám Phá Việt Nam Từ Bắc Vào Nam</h3>
+                  </div>
+                  <img src="../assets/images/logo-e3.jpeg" alt="E3 Logo" class="w-12 h-12 rounded-full border-2 border-gold-400 bg-white p-0.5">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PYS Travel Style Smart Search Box -->
+        <div class="mt-8 bg-white text-gray-800 rounded-3xl p-5 sm:p-6 shadow-2xl border-2 border-gold-300">
+          <!-- Tabs -->
+          <div class="flex flex-wrap items-center gap-2 pb-4 mb-4 border-b border-gray-100">
+            <button onclick="switchSearchTab(this, 'Khách Hàng Cá Nhân (Tour Ghép / Đoàn Riêng)')" class="search-tab px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-suitcase"></i>
+              <span>Tour Trong Nước & Quốc Tế</span>
+            </button>
+            <button onclick="switchSearchTab(this, 'Du Lịch Trường Học (Học Sinh Cấp 1-2-3 & Giáo Viên)')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-graduation-cap text-gold-600"></i>
+              <span>Tour Học Sinh & Trường Học</span>
+            </button>
+            <button onclick="switchSearchTab(this, 'Doanh Nghiệp (Team Building / MICE / Gala Dinner)')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-people-group text-gold-600"></i>
+              <span>MICE & Team Building Doanh Nghiệp</span>
+            </button>
+            <button onclick="switchSearchTab(this, 'Thiết Kế Tour Theo Yêu Cầu Riêng')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-compass-drafting text-gold-600"></i>
+              <span>Tour Theo Yêu Cầu Riêng</span>
+            </button>
+            <span id="active-search-label" class="ml-auto text-[11px] font-bold text-crimson-700 hidden md:inline">
+              Đang chọn: Khách Hàng Cá Nhân (Tour Ghép / Đoàn Riêng)
+            </span>
+          </div>
+
+          <!-- Search Inputs -->
+          <form action="category.html" method="get" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
+              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Điểm khởi hành</label>
+              <div class="flex items-center gap-2 mt-1">
+                <i class="fa-solid fa-plane-departure text-crimson-700 text-xs"></i>
+                <select name="from" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
+                  <option value="hanoi">TP. Hà Nội (24LK26 Văn Phú)</option>
+                  <option value="hcm">TP. Hồ Chí Minh</option>
+                  <option value="danang">TP. Đà Nẵng</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
+              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Điểm đến yêu thích</label>
+              <div class="flex items-center gap-2 mt-1">
+                <i class="fa-solid fa-location-dot text-crimson-700 text-xs"></i>
+                <select name="dest" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
+                  <option value="all">Tất cả 12+ Điểm đến Bắc - Nam</option>
+                  <option value="sapa-hagiang">Sapa – Fansipan / Hà Giang</option>
+                  <option value="halong-ninhbinh">Vịnh Hạ Long – Ninh Bình Tràng An</option>
+                  <option value="danang-hoian-hue">Đà Nẵng – Hội An – Cố đô Huế</option>
+                  <option value="nhatrang-dalat-muine">Nha Trang – Đà Lạt – Mũi Né</option>
+                  <option value="phuquoc-mientay">Phú Quốc – TP.HCM – Miền Tây</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
+              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Đối tượng & Quy mô</label>
+              <div class="flex items-center gap-2 mt-1">
+                <i class="fa-solid fa-users text-crimson-700 text-xs"></i>
+                <select name="type" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
+                  <option value="all">Tất cả loại hình Tour</option>
+                  <option value="canhan">Khách lẻ (Tour ghép / Gia đình)</option>
+                  <option value="truonghoc">Trường học (Học sinh / Giáo viên)</option>
+                  <option value="doanhnghiep">Doanh nghiệp (MICE / Team Building)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
+              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Ngân sách dự kiến</label>
+              <div class="flex items-center gap-2 mt-1">
+                <i class="fa-solid fa-coins text-gold-600 text-xs"></i>
+                <select name="budget" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
+                  <option value="all">Tối ưu theo yêu cầu</option>
+                  <option value="under1m">Dưới 1.000.000đ (Dã ngoại 1 ngày)</option>
+                  <option value="1m-3m">1.500.000đ – 3.500.000đ</option>
+                  <option value="above3m">Trên 3.500.000đ (Tour trọn gói)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="bg-crimson-700 hover:bg-crimson-800 text-white rounded-2xl px-5 py-3 font-extrabold text-sm shadow-lg shadow-crimson-700/30 flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-magnifying-glass text-gold-300"></i>
+              <span>Tìm Tour Ngay</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sứ Mệnh 4 Giá Trị Cốt Lõi E3 Travel (Trang 3 Hồ Sơ Năng Lực) -->
+    <section class="max-w-7xl mx-auto px-4 py-12">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson-700 bg-crimson-50 border border-crimson-200 px-3.5 py-1 rounded-full">
+          Sứ Mệnh E3 Travel • Explore – Experience – Enjoy
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-crimson-800 mt-3">
+          4 Cam Kết Vàng Kiến Tạo Hành Trình Đáng Nhớ
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Chúng tôi tin rằng mỗi chuyến đi đều mang một mục tiêu riêng. E3 Travel tập trung kiến tạo những hành trình phù hợp ngân sách, mong muốn và giá trị mà khách hàng hướng tới.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="card-luxury rounded-2xl p-5 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-3">
+            <span class="w-11 h-11 rounded-full bg-crimson-700 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center border-2 border-gold-400 shadow">01</span>
+            <i class="fa-solid fa-bullseye text-3xl text-gold-400/40"></i>
+          </div>
+          <h3 class="font-bold text-base text-crimson-800 mb-1.5">Hành Trình Ý Nghĩa & An Toàn</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Mang đến những hành trình ý nghĩa, an toàn tuyệt đối và giàu trải nghiệm thực tế cho mọi lứa tuổi.
+          </p>
+        </div>
+
+        <div class="card-luxury rounded-2xl p-5 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-3">
+            <span class="w-11 h-11 rounded-full bg-crimson-700 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center border-2 border-gold-400 shadow">02</span>
+            <i class="fa-solid fa-chart-line text-3xl text-gold-400/40"></i>
+          </div>
+          <h3 class="font-bold text-base text-crimson-800 mb-1.5">Tối Ưu Ngân Sách Vượt Trội</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Giúp khách hàng, nhà trường và doanh nghiệp tối ưu ngân sách nhưng vẫn nhận được giá trị vượt mong đợi.
+          </p>
+        </div>
+
+        <div class="card-luxury rounded-2xl p-5 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-3">
+            <span class="w-11 h-11 rounded-full bg-crimson-700 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center border-2 border-gold-400 shadow">03</span>
+            <i class="fa-solid fa-puzzle-piece text-3xl text-gold-400/40"></i>
+          </div>
+          <h3 class="font-bold text-base text-crimson-800 mb-1.5">Kết Nối Thiên Nhiên & Văn Hóa</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Kết nối con người với thiên nhiên hùng vĩ, di sản văn hóa lịch sử và những trải nghiệm mới mẻ.
+          </p>
+        </div>
+
+        <div class="card-luxury rounded-2xl p-5 relative overflow-hidden">
+          <div class="flex items-center justify-between mb-3">
+            <span class="w-11 h-11 rounded-full bg-crimson-700 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center border-2 border-gold-400 shadow">04</span>
+            <i class="fa-solid fa-handshake text-3xl text-gold-400/40"></i>
+          </div>
+          <h3 class="font-bold text-base text-crimson-800 mb-1.5">Đồng Hành Tận Tâm 24/7</h3>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Đồng hành cùng khách hàng từ khâu lên ý tưởng kịch bản, điều hành tour đến khi kết thúc hành trình.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 Trụ Cột Dịch Vụ E3 Travel (Trang 8, 9, 10 Hồ Sơ Năng Lực) -->
+    <section class="bg-gradient-to-b from-gold-100/60 to-gold-50 py-14 border-y border-gold-200">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-widest text-gold-700">3 Lĩnh Vực Chuyên Sâu Của E3 Travel</span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-crimson-800 mt-1">
+              Giải Pháp Du Lịch Chuyên Biệt Cho Từng Nhóm Khách Hàng
+            </h2>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <a href="#block-truong-hoc" class="px-3.5 py-2 rounded-xl bg-crimson-700 text-white text-xs font-bold shadow">1. Trường Học</a>
+            <a href="#block-doanh-nghiep" class="px-3.5 py-2 rounded-xl bg-white border border-gold-300 text-crimson-800 text-xs font-bold hover:bg-gold-100">2. Doanh Nghiệp (MICE)</a>
+            <a href="#block-ca-nhan" class="px-3.5 py-2 rounded-xl bg-white border border-gold-300 text-crimson-800 text-xs font-bold hover:bg-gold-100">3. Khách Cá Nhân</a>
+          </div>
+        </div>
+
+        <!-- Khối 1: TRƯỜNG HỌC (Trang 9 PDF) -->
+        <div id="block-truong-hoc" class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-gold-300 shadow-xl mb-10">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 border-b border-gold-200">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-crimson-700 text-gold-300 flex items-center justify-center text-xl shadow-md">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-widest text-gold-600">Thế mạnh cốt lõi của CTCP Giáo Dục E3</span>
+                <h3 class="font-display font-extrabold text-2xl text-crimson-800">DU LỊCH TRƯỜNG HỌC & GIÁO DỤC TRẢI NGHIỆM</h3>
+              </div>
+            </div>
+            <a href="category.html#truong-hoc" class="px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold flex items-center gap-2">
+              <span>Xem Các Tour Trường Học</span>
+              <i class="fa-solid fa-arrow-right text-gold-300"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-gold-200 bg-gold-50/50 overflow-hidden flex flex-col">
+              <img src="../assets/images/school-students.jpg" alt="Học sinh cấp 1-2-3-CĐ/ĐH" class="w-full h-48 object-cover">
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-0.5 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded uppercase">Học Sinh Cấp 1 - 2 - 3 - CĐ/ĐH</span>
+                  <h4 class="font-extrabold text-base text-crimson-900 mt-2 mb-3">Chương Trình Học Tập & Trải Nghiệm</h4>
+                  <ul class="space-y-1.5 text-xs text-gray-700">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Dã ngoại học tập & Tham quan di tích</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Hoạt động trải nghiệm sáng tạo</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Chương trình Tiếng Anh ngoài trời</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Hướng nghiệp & Trại hè trong nước/quốc tế</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Chương trình rèn luyện kỹ năng sống</li>
+                  </ul>
+                </div>
+                <a href="detail.html" class="mt-4 inline-flex items-center gap-1.5 text-xs font-extrabold text-crimson-700 hover:underline">Xem lịch trình mẫu →</a>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-gold-200 bg-gold-50/50 overflow-hidden flex flex-col">
+              <img src="../assets/images/school-teachers.jpg" alt="Cán bộ - Giáo viên" class="w-full h-48 object-cover">
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-0.5 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded uppercase">Cán Bộ - Giáo Viên Nhà Trường</span>
+                  <h4 class="font-extrabold text-base text-crimson-900 mt-2 mb-3">Hành Trình Tri Ân & Giao Lưu</h4>
+                  <ul class="space-y-1.5 text-xs text-gray-700">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Du xuân lễ hội đầu năm trang trọng</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Nghỉ dưỡng mùa hè cho Hội đồng Sư phạm</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Tham quan học tập & Giao lưu các trường</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-600"></i> Chương trình Đào tạo bồi dưỡng Giáo viên</li>
+                  </ul>
+                </div>
+                <a href="detail.html" class="mt-4 inline-flex items-center gap-1.5 text-xs font-extrabold text-crimson-700 hover:underline">Xem lịch trình mẫu →</a>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-gold-200 bg-gold-50/50 overflow-hidden flex flex-col">
+              <img src="../assets/images/school-teambuilding.jpg" alt="Cam kết trường học" class="w-full h-48 object-cover">
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="px-2.5 py-0.5 bg-gold-500 text-crimson-950 text-[10px] font-extrabold rounded uppercase">Cam Kết Vàng Cho Nhà Trường</span>
+                  <h4 class="font-extrabold text-base text-crimson-900 mt-2 mb-3">An Toàn – Giáo Dục – Tối Ưu</h4>
+                  <ul class="space-y-1.5 text-xs text-gray-700">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-crimson-700"></i> Thiết kế riêng theo nhu cầu từng trường</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-crimson-700"></i> Tối ưu ngân sách quỹ Hội phụ huynh & Trường</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-crimson-700"></i> Nội dung phù hợp tâm sinh lý từng độ tuổi</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-shield-heart text-crimson-700"></i> Hoạt động thuyết minh & hoạt náo phong phú</li>
+                  </ul>
+                </div>
+                <a href="contact.html#yeu-cau-bao-gia" class="mt-4 inline-flex items-center gap-1.5 text-xs font-extrabold text-crimson-700 hover:underline">Nhận báo giá đoàn trường →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khối 2: DOANH NGHIỆP MICE & TEAM BUILDING (Trang 10 PDF) -->
+        <div id="block-doanh-nghiep" class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-gold-300 shadow-xl mb-10">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 border-b border-gold-200">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-crimson-700 text-gold-300 flex items-center justify-center text-xl shadow-md">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-widest text-gold-600">Connecting People • Creating Value</span>
+                <h3 class="font-display font-extrabold text-2xl text-crimson-800">DU LỊCH DOANH NGHIỆP: TEAM BUILDING – MICE – GALA DINNER</h3>
+              </div>
+            </div>
+            <a href="category.html#doanh-nghiep" class="px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold flex items-center gap-2">
+              <span>Khám Phá Giải Pháp MICE</span>
+              <i class="fa-solid fa-arrow-right text-gold-300"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="rounded-2xl border border-gold-200 overflow-hidden bg-gold-50/40">
+              <img src="../assets/images/corp-teambuilding.jpg" alt="Team Building E3 Travel" class="w-full h-44 object-cover">
+              <div class="p-4">
+                <h4 class="font-extrabold text-sm text-crimson-800 mb-1.5">TEAM BUILDING & COMPANY TRIP</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Tổ chức Team Building bãi biển, resort, kịch bản gắn kết đội ngũ sáng tạo, hệ thống game tools hiện đại.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-gold-200 overflow-hidden bg-gold-50/40">
+              <img src="../assets/images/corp-mice.jpg" alt="MICE Hội nghị khách hàng" class="w-full h-44 object-cover">
+              <div class="p-4">
+                <h4 class="font-extrabold text-sm text-crimson-800 mb-1.5">MICE – HỘI NGHỊ KHÁCH HÀNG</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Thiết kế riêng theo văn hóa doanh nghiệp, kịch bản sáng tạo, tối ưu ngân sách, vận hành chuẩn GSTC MICE.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-gold-200 overflow-hidden bg-gold-50/40">
+              <img src="../assets/images/corp-galadinner.jpg" alt="Gala Dinner E3 Travel" class="w-full h-44 object-cover">
+              <div class="p-4">
+                <h4 class="font-extrabold text-sm text-crimson-800 mb-1.5">GALA DINNER HOÀNH TRÁNG</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">"Together We Grow Further" — Đêm tiệc âm thanh ánh sáng LED chuyên nghiệp, MC & nghệ sĩ biểu diễn ấn tượng.</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-gold-200 overflow-hidden bg-gold-50/40">
+              <img src="../assets/images/corp-awards.jpg" alt="Khen thưởng nhân sự" class="w-full h-44 object-cover">
+              <div class="p-4">
+                <h4 class="font-extrabold text-sm text-crimson-800 mb-1.5">TOUR KHEN THƯỞNG NHÂN SỰ</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Hành trình vinh danh cá nhân & tập thể xuất sắc tại các điểm nghỉ dưỡng 4-5 sao trong nước & quốc tế.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khối 3: KHÁCH HÀNG CÁ NHÂN (Trang 8 PDF) -->
+        <div id="block-ca-nhan" class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-gold-300 shadow-xl">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 border-b border-gold-200">
+            <div class="flex items-center gap-3.5">
+              <div class="w-12 h-12 rounded-2xl bg-crimson-700 text-gold-300 flex items-center justify-center text-xl shadow-md">
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div>
+                <span class="text-[11px] font-extrabold uppercase tracking-widest text-gold-600">Khám Phá Thế Giới Theo Cách Của Bạn</span>
+                <h3 class="font-display font-extrabold text-2xl text-crimson-800">DỊCH VỤ KHÁCH HÀNG CÁ NHÂN & GIA ĐÌNH</h3>
+              </div>
+            </div>
+            <a href="category.html#ca-nhan" class="px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold flex items-center gap-2">
+              <span>Xem Lịch Khởi Hành</span>
+              <i class="fa-solid fa-arrow-right text-gold-300"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-gold-200 overflow-hidden flex flex-col">
+              <img src="../assets/images/tour-ghep.jpg" alt="Tour Ghép" class="w-full h-44 object-cover">
+              <div class="p-5">
+                <h4 class="font-extrabold text-base text-crimson-800 mb-2"><i class="fa-solid fa-user-group text-gold-600 mr-1.5"></i>TOUR GHÉP KHỞI HÀNH THƯỜNG XUYÊN</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Lịch khởi hành thường xuyên hàng tuần, linh hoạt, phù hợp cho khách lẻ yêu thích trải nghiệm và kết nối bạn bè mới.</p>
+              </div>
+            </div>
+            <div class="rounded-2xl border border-gold-200 overflow-hidden flex flex-col">
+              <img src="../assets/images/tour-doan.jpg" alt="Tour Đoàn Riêng" class="w-full h-44 object-cover">
+              <div class="p-5">
+                <h4 class="font-extrabold text-base text-crimson-800 mb-2"><i class="fa-solid fa-people-roof text-gold-600 mr-1.5"></i>TOUR ĐOÀN RIÊNG GIA ĐÌNH / NHÓM BẠN</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Dành cho gia đình, nhóm bạn, đồng nghiệp... Chủ động thời gian, lịch trình và trải nghiệm theo đúng mong muốn của đoàn.</p>
+              </div>
+            </div>
+            <div class="rounded-2xl border border-gold-200 overflow-hidden flex flex-col">
+              <img src="../assets/images/tour-yeu-cau.jpg" alt="Tour Theo Yêu Cầu" class="w-full h-44 object-cover">
+              <div class="p-5">
+                <h4 class="font-extrabold text-base text-crimson-800 mb-2"><i class="fa-solid fa-map-location-dot text-gold-600 mr-1.5"></i>TOUR THIẾT KẾ THEO YÊU CẦU</h4>
+                <p class="text-xs text-gray-600 leading-relaxed">Tour được thiết kế riêng theo yêu cầu của nhóm, đoàn. Điều chỉnh lịch trình linh hoạt, tối ưu ngân sách cho khách.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Danh Sách Tour Tiêu Biểu Chuẩn Phong Cách PYS Travel -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="px-3 py-1 rounded-full bg-crimson-100 text-crimson-800 text-xs font-extrabold uppercase tracking-wider">
+            <i class="fa-solid fa-fire text-crimson-600 mr-1"></i>Lịch Khởi Hành Mới Nhất 2026
+          </span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-crimson-800 mt-2">
+            Hành Trình Du Lịch & Trải Nghiệm Nổi Bật
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterHomeTours('all', this)" class="tour-filter-btn px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold">Tất Cả (8)</button>
+          <button onclick="filterHomeTours('mien-bac', this)" class="tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700">Miền Bắc</button>
+          <button onclick="filterHomeTours('mien-trung-nam', this)" class="tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700">Miền Trung & Nam</button>
+          <button onclick="filterHomeTours('truong-hoc', this)" class="tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700">Trường Học</button>
+          <button onclick="filterHomeTours('mice', this)" class="tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700">Doanh Nghiệp MICE</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Tour Card 1 -->
+        <div data-cat="mien-bac" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded-lg shadow">HOT DEAL -18%</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>3 Ngày 2 Đêm</span>
+              <img src="../assets/images/dest-sapa.jpg" alt="Tour Sapa Fansipan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-SP01</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9 (128)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Sapa – Đỉnh Fansipan – Bản Cát Cát – Thung Lũng Mường Hoa</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-location-dot text-crimson-700 w-4"></i>Khởi hành: <strong>Hà Nội (Thứ 6 hàng tuần)</strong></div>
+                <div><i class="fa-solid fa-bus text-gold-600 w-4"></i>Phương tiện: <strong>Xe Limousine / Cáp treo</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">3.490.000 đ</span>
+              <span class="text-base font-black text-crimson-700">2.850.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Tour
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 2 -->
+        <div data-cat="mien-bac" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-gold-500 text-crimson-950 text-[10px] font-extrabold rounded-lg shadow">BÁN CHẠY NHẤT</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>2 Ngày 1 Đêm</span>
+              <img src="../assets/images/dest-trang-an.jpg" alt="Tour Hạ Long Ninh Bình" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-NB02</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0 (215)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Ninh Bình Di Sản Thế Giới: Tràng An – Bái Đính – Hang Múa – Hạ Long</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-location-dot text-crimson-700 w-4"></i>Khởi hành: <strong>Hà Nội (Hàng ngày)</strong></div>
+                <div><i class="fa-solid fa-ship text-gold-600 w-4"></i>Trải nghiệm: <strong>Du thuyền 5* & Thuyền Tràng An</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">2.950.000 đ</span>
+              <span class="text-base font-black text-crimson-700">2.390.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Tour
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 3 -->
+        <div data-cat="truong-hoc" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded-lg shadow">CHUYÊN BIỆT TRƯỜNG HỌC</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>1 Ngày</span>
+              <img src="../assets/images/school-students.jpg" alt="Tour Dã Ngoại Học Sinh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-EDU01</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0 (340 trường)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Học Tập Trải Nghiệm: Văn Miếu Quốc Tử Giám – Hoàng Thành – Kỹ Năng Sống</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-user-graduate text-crimson-700 w-4"></i>Dành cho: <strong>Học sinh Cấp 1 - 2 - 3</strong></div>
+                <div><i class="fa-solid fa-language text-gold-600 w-4"></i>Tích hợp: <strong>Tiếng Anh ngoài trời & Team Game</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">590.000 đ/HS</span>
+              <span class="text-base font-black text-crimson-700">450.000 đ/HS</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Đoàn
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 4 -->
+        <div data-cat="mice" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-gold-500 text-crimson-950 text-[10px] font-extrabold rounded-lg shadow">DOANH NGHIỆP MICE</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>3 Ngày 2 Đêm</span>
+              <img src="../assets/images/corp-teambuilding.jpg" alt="Tour MICE Team Building" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-MICE01</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0 (180 DN)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Combo Company Trip Hạ Long / Đà Nẵng: Team Building Bãi Biển + Hội Nghị + Gala Dinner</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-building text-crimson-700 w-4"></i>Quy mô: <strong>Đoàn từ 30 – 1.000+ nhân sự</strong></div>
+                <div><i class="fa-solid fa-microphone-lines text-gold-600 w-4"></i>Trọn gói: <strong>Sân khấu LED, MC, Flycam, Kịch bản</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">4.200.000 đ</span>
+              <span class="text-base font-black text-crimson-700">3.450.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Báo Giá
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 5 -->
+        <div data-cat="mien-trung-nam" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded-lg shadow">TRỌN GÓI VÉ MÁY BAY</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>4 Ngày 3 Đêm</span>
+              <img src="../assets/images/dest-phu-quoc.jpg" alt="Tour Phú Quốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-PQ05</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9 (164)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Phú Quốc Thiên Đường Đảo Ngọc: Bãi Sao – Cáp Treo Hòn Thơm – Thị Trấn Hoàng Hôn</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-plane text-crimson-700 w-4"></i>Khởi hành: <strong>Hà Nội / TP.HCM (Thứ 5, CN)</strong></div>
+                <div><i class="fa-solid fa-hotel text-gold-600 w-4"></i>Lưu trú: <strong>Resort/Khách sạn 4-5 sao biển</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">7.290.000 đ</span>
+              <span class="text-base font-black text-crimson-700">5.990.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Tour
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 6 -->
+        <div data-cat="mien-trung-nam" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-gold-500 text-crimson-950 text-[10px] font-extrabold rounded-lg shadow">ĐẶC SẮC MIỀN TÂY</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>4 Ngày 3 Đêm</span>
+              <img src="../assets/images/dest-mien-tay.jpg" alt="Tour Miền Tây Sông Nước" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-MT06</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 4.9 (95)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Hành Trình TP.HCM – Miền Tây Sông Nước: Chợ Nổi Cái Răng – Miệt Vườn Trái Cây</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-plane text-crimson-700 w-4"></i>Khởi hành: <strong>Hà Nội / TP.HCM</strong></div>
+                <div><i class="fa-solid fa-utensils text-gold-600 w-4"></i>Đặc sản: <strong>Ẩm thực miệt vườn & Đờn ca tài tử</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">6.150.000 đ</span>
+              <span class="text-base font-black text-crimson-700">4.990.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Tour
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 7 -->
+        <div data-cat="truong-hoc" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-crimson-700 text-gold-200 text-[10px] font-extrabold rounded-lg shadow">CÁN BỘ - GIÁO VIÊN</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>3 Ngày 2 Đêm</span>
+              <img src="../assets/images/school-teachers.jpg" alt="Tour Cán bộ Giáo viên" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-GV07</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0 (142)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Nghỉ Hè & Giao Lưu Các Trường Dành Cho Cán Bộ Giáo Viên: Sapa – Hà Giang</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-chalkboard-user text-crimson-700 w-4"></i>Dành cho: <strong>Hội đồng Sư phạm & Công đoàn</strong></div>
+                <div><i class="fa-solid fa-champagne-glasses text-gold-600 w-4"></i>Tặng kèm: <strong>Gala Tri Ân Nhà Giáo & Banner đoàn</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">3.200.000 đ</span>
+              <span class="text-base font-black text-crimson-700">2.650.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Đặt Đoàn
+            </a>
+          </div>
+        </div>
+
+        <!-- Tour Card 8 -->
+        <div data-cat="mice" class="home-tour-card card-luxury rounded-2xl overflow-hidden flex flex-col justify-between group">
+          <div>
+            <a href="detail.html" class="block relative h-48 overflow-hidden">
+              <span class="absolute top-3 left-3 z-10 px-2.5 py-1 bg-gold-500 text-crimson-950 text-[10px] font-extrabold rounded-lg shadow">GALA & VINH DANH</span>
+              <span class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-black/70 text-white text-[10px] font-semibold rounded"><i class="fa-regular fa-clock text-gold-400 mr-1"></i>4 Ngày 3 Đêm</span>
+              <img src="../assets/images/corp-galadinner.jpg" alt="Tour Khen Thưởng Nhân Sự" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <div class="p-4">
+              <div class="flex items-center justify-between text-[11px] text-gray-500 mb-1.5">
+                <span><i class="fa-solid fa-barcode text-gold-600 mr-1"></i>Mã: <strong>E3-MICE08</strong></span>
+                <span class="text-amber-500 font-bold"><i class="fa-solid fa-star"></i> 5.0 (110 DN)</span>
+              </div>
+              <h3 class="font-extrabold text-sm text-gray-900 group-hover:text-crimson-700 transition-colors line-clamp-2 mb-2">
+                <a href="detail.html">Tour Khen Thưởng Nhân Sự & Hội Nghị Khách Hàng: Đà Nẵng – Hội An – Bà Nà Hills 5*</a>
+              </h3>
+              <div class="space-y-1 text-xs text-gray-600">
+                <div><i class="fa-solid fa-trophy text-crimson-700 w-4"></i>Tiêu chuẩn: <strong>Resort 5* + Phòng Hội Nghị Quốc Tế</strong></div>
+                <div><i class="fa-solid fa-video text-gold-600 w-4"></i>Media: <strong>Quay dựng Highlight & Kỷ niệm chương</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 pt-3 border-t border-gold-100 bg-gold-50/40 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] text-gray-400 line-through block">6.800.000 đ</span>
+              <span class="text-base font-black text-crimson-700">5.490.000 đ</span>
+            </div>
+            <a href="cart.html" class="px-3.5 py-2 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold transition-colors">
+              Báo Giá
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bản Đồ "Khám Phá Việt Nam - Trải Nghiệm Trọn Vẹn Từ Bắc Vào Nam" (Trang 7 PDF) -->
+    <section class="bg-royal-gradient text-white py-16 border-y-4 border-gold-500">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Left Map Poster from PDF Page 7 -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl overflow-hidden border-2 border-gold-400 shadow-2xl bg-white p-1.5">
+              <img src="../assets/images/vietnam-map.jpg" alt="Bản đồ Khám phá Việt Nam E3 Travel" class="w-full h-auto rounded-2xl object-contain">
+            </div>
+          </div>
+
+          <!-- Right 12 Điểm Đến Việt Nam -->
+          <div class="lg:col-span-7 space-y-5">
+            <span class="px-3.5 py-1 rounded-full bg-gold-500/20 border border-gold-400/50 text-gold-300 text-xs font-extrabold uppercase tracking-wider inline-block">
+              Bản Đồ Tuyến Điểm Quốc Gia • E3 Travel
+            </span>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">
+              Khám Phá Việt Nam <br>
+              <span class="text-gold-gradient">Trải Nghiệm Trọn Vẹn Từ Bắc Vào Nam</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-gold-100/90 leading-relaxed">
+              Hệ thống tuyến điểm đa dạng được E3 Travel khảo sát kỹ lưỡng trên khắp 3 miền Bắc – Trung – Nam, kết nối di sản thiên nhiên, văn hóa lịch sử hào hùng và chủ quyền biển đảo thiêng liêng (Quần đảo Hoàng Sa & Quần đảo Trường Sa của Việt Nam).
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>1. SAPA & HÀ GIANG</div>
+                <p class="text-[11px] text-gold-100/80">Đỉnh Fansipan, Bản Cát Cát, Cao nguyên đá Đồng Văn, Sông Nho Quế</p>
+              </a>
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>2. HÀ NỘI & HẠ LONG</div>
+                <p class="text-[11px] text-gold-100/80">Phố cổ Hà Nội, Văn Miếu, Lăng Bác, Vịnh Hạ Long, Du thuyền 5*</p>
+              </a>
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>3. NINH BÌNH & PHONG NHA</div>
+                <p class="text-[11px] text-gold-100/80">Tràng An, Tam Cốc, Hang Múa, Bái Đính, Động Phong Nha - Thiên Đường</p>
+              </a>
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>4. HUẾ – ĐÀ NẴNG – HỘI AN</div>
+                <p class="text-[11px] text-gold-100/80">Đại Nội Huế, Bà Nà Hills, Cầu Rồng, Biển Mỹ Khê, Phố cổ Hội An</p>
+              </a>
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>5. NHA TRANG – ĐÀ LẠT – MŨI NÉ</div>
+                <p class="text-[11px] text-gold-100/80">VinWonders, Hồ Xuân Hương, Langbiang, Đồi cát bay Mũi Né</p>
+              </a>
+              <a href="category.html" class="bg-crimson-950/70 hover:bg-crimson-800 border border-gold-400/30 rounded-xl p-3 transition-all">
+                <div class="font-extrabold text-gold-300 mb-1"><i class="fa-solid fa-location-dot mr-1"></i>6. PHÚ QUỐC – TP.HCM – MIỀN TÂY</div>
+                <p class="text-[11px] text-gold-100/80">Hòn Thơm, Dinh Độc Lập, Địa đạo Củ Chi, Chợ nổi Cái Răng</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sơ Đồ Tổ Chức & Đội Ngũ Lãnh Đạo E3 Travel (Trang 6 PDF) -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-crimson-700 bg-crimson-50 border border-crimson-200 px-3.5 py-1 rounded-full">
+          Sơ Đồ Tổ Chức E3 Travel • Nhân Sự Chuyên Nghiệp
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-crimson-800 mt-3">
+          Ban Lãnh Đạo & Đội Ngũ Điều Hành Giàu Kinh Nghiệm
+        </h2>
+        <p class="text-xs sm:text-sm text-gray-600 mt-2">
+          Với đội ngũ tư vấn tận tâm, ban lãnh đạo giàu kinh nghiệm và quy trình vận hành chuyên nghiệp, Công Ty Cổ Phần Giáo Dục E3 (E3 Travel) cam kết mang đến chất lượng dịch vụ chuẩn mực nhất.
+        </p>
+      </div>
+
+      <!-- Cấp 1: Chủ tịch HĐQT/TGĐ & Trưởng Ban Cố Vấn -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
+        <div class="card-luxury rounded-2xl overflow-hidden border-2 border-gold-400">
+          <div class="bg-crimson-700 text-white text-center py-2.5 px-4 font-extrabold text-xs uppercase tracking-wider">
+            Chủ Tịch Hội Đồng Quản Trị – Tổng Giám Đốc
+          </div>
+          <div class="p-5 flex items-center gap-4">
+            <img src="../assets/images/team-02.png" alt="Mr. Đặng Hoàng Minh" class="w-20 h-24 rounded-xl object-cover border-2 border-gold-400 flex-shrink-0 bg-gold-50">
+            <div>
+              <h3 class="font-display font-extrabold text-lg text-crimson-800">Ông Đặng Hoàng Minh</h3>
+              <p class="text-xs font-bold text-gold-700 mb-1">Người đại diện pháp luật • Giám đốc Công ty CP Giáo Dục E3</p>
+              <p class="text-[11px] text-gray-600">Định hướng chiến lược phát triển hệ sinh thái Giáo dục & Lữ hành E3 Travel từ năm 2014.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-luxury rounded-2xl overflow-hidden border-2 border-gold-400">
+          <div class="bg-crimson-700 text-white text-center py-2.5 px-4 font-extrabold text-xs uppercase tracking-wider">
+            Trưởng Ban Cố Vấn
+          </div>
+          <div class="p-5 flex items-center gap-4">
+            <img src="../assets/images/team-01.png" alt="Mrs. Phạm Thị Hồng Nga" class="w-20 h-24 rounded-xl object-cover border-2 border-gold-400 flex-shrink-0 bg-gold-50">
+            <div>
+              <h3 class="font-display font-extrabold text-lg text-crimson-800">Bà Phạm Thị Hồng Nga</h3>
+              <p class="text-xs font-bold text-gold-700 mb-1">Trưởng Ban Cố Vấn Cấp Cao</p>
+              <p class="text-[11px] text-gray-600">Cố vấn chuyên môn chương trình trải nghiệm giáo dục trường học & tiêu chuẩn chất lượng dịch vụ.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cấp 2: Ban Phó Giám Đốc & Kế Toán Trưởng + Các Trưởng Phòng -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-4">
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-crimson-800 text-gold-200 py-2 px-2 text-[11px] font-extrabold uppercase">PGĐ Chuyển Đổi Số & AI</div>
+          <div class="p-4">
+            <img src="../assets/images/team-03.png" alt="Mr. Đặng Hoàng Việt" class="w-16 h-20 mx-auto rounded-xl object-cover border border-gold-300 mb-2">
+            <h4 class="font-extrabold text-xs text-gray-900">Mr. Đặng Hoàng Việt</h4>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-crimson-800 text-gold-200 py-2 px-2 text-[11px] font-extrabold uppercase">Phó Giám Đốc Điều Hành</div>
+          <div class="p-4">
+            <img src="../assets/images/team-05.jpeg" alt="Mrs. Nguyễn Thùy Dung" class="w-16 h-20 mx-auto rounded-xl object-cover border border-gold-300 mb-2">
+            <h4 class="font-extrabold text-xs text-gray-900">Mrs. Nguyễn Thùy Dung</h4>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-crimson-800 text-gold-200 py-2 px-2 text-[11px] font-extrabold uppercase">Phó Giám Đốc Kinh Doanh</div>
+          <div class="p-4">
+            <img src="../assets/images/team-04.png" alt="Mrs. Văn Thị Tâm" class="w-16 h-20 mx-auto rounded-xl object-cover border border-gold-300 mb-2">
+            <h4 class="font-extrabold text-xs text-gray-900">Mrs. Văn Thị Tâm</h4>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-crimson-800 text-gold-200 py-2 px-2 text-[11px] font-extrabold uppercase">Kế Toán Trưởng</div>
+          <div class="p-4">
+            <img src="../assets/images/team-06.png" alt="Mrs. Nguyễn Thị Oanh" class="w-16 h-20 mx-auto rounded-xl object-cover border border-gold-300 mb-2">
+            <h4 class="font-extrabold text-xs text-gray-900">Mrs. Nguyễn Thị Oanh</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-gold-100 text-crimson-800 py-1.5 px-2 text-[10px] font-extrabold uppercase">Phòng Điều Hành</div>
+          <div class="p-3.5">
+            <img src="../assets/images/team-07.png" alt="Mrs. Lê Thị Thắng" class="w-14 h-18 mx-auto rounded-xl object-cover border border-gold-300 mb-1.5">
+            <h4 class="font-bold text-xs text-gray-900">TP. Lê Thị Thắng</h4>
+            <p class="text-[10px] text-gray-500">Tour ghép • Tour đoàn • HDV</p>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-gold-100 text-crimson-800 py-1.5 px-2 text-[10px] font-extrabold uppercase">Phòng Quản Trị</div>
+          <div class="p-3.5">
+            <img src="../assets/images/team-08.png" alt="Mrs. Bùi Thị Thanh Dung" class="w-14 h-18 mx-auto rounded-xl object-cover border border-gold-300 mb-1.5">
+            <h4 class="font-bold text-xs text-gray-900">TP. Bùi Thị Thanh Dung</h4>
+            <p class="text-[10px] text-gray-500">Sản phẩm & Kiểm soát chất lượng</p>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-gold-100 text-crimson-800 py-1.5 px-2 text-[10px] font-extrabold uppercase">Phòng Kinh Doanh</div>
+          <div class="p-3.5">
+            <img src="../assets/images/team-09.png" alt="Mrs. Nguyễn Thị Kiều" class="w-14 h-18 mx-auto rounded-xl object-cover border border-gold-300 mb-1.5">
+            <h4 class="font-bold text-xs text-gray-900">TP. Nguyễn Thị Kiều</h4>
+            <p class="text-[10px] text-gray-500">Khách lẻ • Đoàn trường • MICE</p>
+          </div>
+        </div>
+        <div class="card-luxury rounded-2xl overflow-hidden text-center">
+          <div class="bg-gold-100 text-crimson-800 py-1.5 px-2 text-[10px] font-extrabold uppercase">Phòng Marketing</div>
+          <div class="p-3.5">
+            <img src="../assets/images/team-10.png" alt="Mrs. Nguyễn Thị Chinh" class="w-14 h-18 mx-auto rounded-xl object-cover border border-gold-300 mb-1.5">
+            <h4 class="font-bold text-xs text-gray-900">TP. Nguyễn Thị Chinh</h4>
+            <p class="text-[10px] text-gray-500">Truyền thông • Đại lý & Đối tác</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đối Tác Tiêu Biểu Công Ty CP Giáo Dục E3 (Trang 11 PDF) -->
+    <section class="bg-white py-12 border-y border-gold-200">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-8">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-gold-700">Đồng Hành Cùng Hơn 500+ Trường Học & Cơ Quan Từ Năm 2014</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-crimson-800 mt-1">
+            Đối Tác Công Ty Cổ Phần Giáo Dục E3
+          </h2>
+          <p class="text-xs text-gray-500 mt-1 italic">
+            "Xin trân trọng cảm ơn các quý đối tác đã đồng hành cùng Công ty E3 từ năm 2014 tới nay."
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 items-center">
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-01.jpeg" alt="TH Dương Nội B" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">TH Dương Nội B</span>
+          </div>
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-02.jpeg" alt="TH Đoàn Kết" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">TH Đoàn Kết Hà Đông</span>
+          </div>
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-03.jpeg" alt="TH Lê Hồng Phong" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">TH Lê Hồng Phong</span>
+          </div>
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-04.jpeg" alt="TH Phú La" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">Tiểu Học Phú La</span>
+          </div>
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-05.png" alt="TH Nguyễn Trãi" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">TH Nguyễn Trãi</span>
+          </div>
+          <div class="p-3 rounded-2xl border border-gold-200 bg-gold-50/30 flex flex-col items-center justify-center h-28 hover:border-crimson-700 transition-colors">
+            <img src="../assets/images/partner-09.jpeg" alt="MN Ban Mai Xanh" class="h-14 w-auto object-contain mb-1">
+            <span class="text-[10px] font-bold text-gray-700 text-center">MN Ban Mai Xanh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Đăng Ký Tư Vấn Thiết Kế Tour & Hồ Sơ Pháp Lý -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <div class="bg-royal-gradient rounded-3xl p-6 sm:p-10 text-white border-2 border-gold-400 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-gold-400 text-crimson-950 text-xs font-extrabold uppercase">
+            Tư Vấn Lịch Trình & Báo Giá Trong 15 Phút
+          </span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-4xl">
+            Bạn Cần Thiết Kế Tour Riêng Cho Trường Học, Công Ty Hay Gia Đình?
+          </h2>
+          <p class="text-xs sm:text-sm text-gold-100/90 leading-relaxed">
+            Để lại thông tin yêu cầu, chuyên viên điều hành của <strong>Công Ty Cổ Phần Giáo Dục E3</strong> sẽ gửi ngay kịch bản chương trình, thực đơn và bảng báo giá tối ưu nhất!
+          </p>
+          <div class="bg-crimson-950/70 border border-gold-400/40 rounded-2xl p-4 space-y-2 text-xs">
+            <div><i class="fa-solid fa-building text-gold-400 mr-2"></i><strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong> — Đại diện: <strong>Ông Đặng Hoàng Minh (Giám đốc)</strong></div>
+            <div><i class="fa-solid fa-location-dot text-gold-400 mr-2"></i>Địa chỉ: <strong>Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội</strong></div>
+            <div><i class="fa-solid fa-phone text-gold-400 mr-2"></i>Điện thoại: <strong>024 62789777</strong> | Hotline: <strong>0966 388 789 – 09 3883 5898</strong></div>
+            <div><i class="fa-solid fa-credit-card text-gold-400 mr-2"></i>Số TK: <strong>77896789</strong> — Ngân hàng <strong>TMCP Kỹ thương Việt Nam - CN Đông Đô</strong></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <form onsubmit="event.preventDefault(); showToast('Cảm ơn Quý khách! Phòng Kinh doanh E3 Travel sẽ liên hệ tư vấn ngay.'); this.reset();" class="bg-white text-gray-900 rounded-2xl p-6 space-y-3.5 shadow-xl border border-gold-300">
+            <h3 class="font-display font-extrabold text-lg text-crimson-800 border-b border-gray-100 pb-2">
+              Đăng Ký Nhận Báo Giá & Lịch Trình Mẫu
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="text-xs font-bold text-gray-700 block mb-1">Họ và tên người liên hệ *</label>
+                <input type="text" required placeholder="VD: Cô Nguyễn Thu Hà / Anh Minh" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs focus:border-crimson-700 focus:outline-none">
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gray-700 block mb-1">Số điện thoại / Zalo *</label>
+                <input type="tel" required placeholder="Nhập SĐT nhận báo giá" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs focus:border-crimson-700 focus:outline-none">
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="text-xs font-bold text-gray-700 block mb-1">Đơn vị / Trường học / Công ty</label>
+                <input type="text" placeholder="Tên Trường học / Doanh nghiệp / Gia đình" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs focus:border-crimson-700 focus:outline-none">
+              </div>
+              <div>
+                <label class="text-xs font-bold text-gray-700 block mb-1">Loại hình dịch vụ quan tâm</label>
+                <select class="w-full px-3.5 py-2.5 rounded-xl border border-gray-200 text-xs font-semibold focus:border-crimson-700 focus:outline-none">
+                  <option>Tour Trường Học (Học sinh / Giáo viên)</option>
+                  <option>Doanh Nghiệp (Team Building / MICE / Gala)</option>
+                  <option>Khách Cá Nhân (Tour Ghép / Đoàn Riêng)</option>
+                  <option>Thiết Kế Tour Theo Yêu Cầu</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="text-xs font-bold text-gray-700 block mb-1">Ghi chú điểm đến & Số lượng khách dự kiến</label>
+              <textarea rows="2" placeholder="VD: Đoàn 120 học sinh đi Ninh Bình 1 ngày vào tháng 11..." class="w-full px-3.5 py-2 rounded-xl border border-gray-200 text-xs focus:border-crimson-700 focus:outline-none"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white font-extrabold text-xs uppercase tracking-wider shadow-lg shadow-crimson-700/30 transition-all">
+              <i class="fa-solid fa-paper-plane text-gold-300 mr-1.5"></i>Gửi Yêu Cầu Tư Vấn Miễn Phí
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function switchSearchTab(btn, label) {
+      document.querySelectorAll('.search-tab').forEach(b => {
+        b.className = 'search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all';
+      });
+      btn.className = 'search-tab px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all';
+      const lbl = document.getElementById('active-search-label');
+      if (lbl) lbl.textContent = 'Đang chọn: ' + label;
+    }
+
+    function filterHomeTours(cat, btn) {
+      document.querySelectorAll('.tour-filter-btn').forEach(b => {
+        b.className = 'tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700';
+      });
+      btn.className = 'tour-filter-btn px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold';
+      document.querySelectorAll('.home-tour-card').forEach(card => {
+        if (cat === 'all' || card.dataset.cat === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+  <!-- Footer chuẩn Hồ sơ năng lực Công Ty Cổ Phần Giáo Dục E3 -->
+  <footer class="bg-royal-gradient text-gold-100 mt-16 border-t-4 border-gold-500 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 pt-14 pb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-gold-500/20">
+        <!-- Col 1: Thông tin Pháp nhân Công ty (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <img src="../assets/images/logo-e3.jpeg" alt="E3 Travel Logo" class="w-16 h-16 rounded-full border-2 border-gold-400 bg-white p-0.5 object-cover shadow-lg">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block">Thương Hiệu Lữ Hành Uy Tín</span>
+              <h3 class="font-display font-extrabold text-xl text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3</h3>
+              <p class="text-xs text-gold-300 italic">E3 EDUCATION JOINT STOCK COMPANY LIMITED (E3.,JSC)</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-gold-100/90 leading-relaxed">
+            Đơn vị tư vấn, thiết kế và tổ chức các chương trình du lịch trong nước & quốc tế chuyên nghiệp dành cho Trường học (Học sinh - Giáo viên), Doanh nghiệp (MICE, Team Building, Gala Dinner) và Khách hàng cá nhân từ năm 2014.
+          </p>
+
+          <div class="bg-crimson-950/70 border border-gold-500/30 rounded-2xl p-4 space-y-2 text-xs">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-user-tie text-gold-400 mt-0.5 w-4"></i>
+              <span>Đại diện là: <strong class="text-white">Ông Đặng Hoàng Minh</strong> — Chức vụ: <strong class="text-gold-300">Giám đốc</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-gold-400 mt-0.5 w-4"></i>
+              <span>Địa chỉ: <strong class="text-white">Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-phone text-gold-400 mt-0.5 w-4"></i>
+              <span>Điện thoại: <strong class="text-white">024 62789777</strong> | Hotline: <strong class="text-gold-300">0966 388 789 – 09 3883 5898</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-file-shield text-gold-400 mt-0.5 w-4"></i>
+              <span>Mã số thuế: <strong class="text-white">0106637430</strong> | GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-envelope text-gold-400 mt-0.5 w-4"></i>
+              <span>Email: <strong class="text-white">e3travel@e3edu.vn / info@e3edu.vn</strong> | Website: <strong class="text-white">e3edu.vn</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Dịch vụ & Giải pháp Du lịch (3 cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-display font-bold text-base text-gold-300 uppercase tracking-wider border-b border-gold-500/30 pb-2">
+            Hệ Sinh Thái Dịch Vụ
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="category.html#ca-nhan" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Ghép Khởi Hành Thường Xuyên</a></li>
+            <li><a href="category.html#ca-nhan" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Đoàn Riêng & Thiết Kế Theo Yêu Cầu</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Du Lịch Trải Nghiệm Học Sinh Cấp 1-2-3</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Trại Hè Quốc Tế & Tiếng Anh Ngoài Trời</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Du Xuân & Nghỉ Hè Cán Bộ Giáo Viên</a></li>
+            <li><a href="category.html#doanh-nghiep" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tổ Chức Team Building & Company Trip</a></li>
+            <li><a href="category.html#doanh-nghiep" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> MICE - Hội Nghị Khách Hàng & Gala Dinner</a></li>
+            <li><a href="news.html" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Cẩm Nang Khám Phá Việt Nam Bắc - Nam</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Thông tin Tài khoản Ngân hàng & Chứng chỉ (4 cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <h4 class="font-display font-bold text-base text-gold-300 uppercase tracking-wider border-b border-gold-500/30 pb-2">
+            Tài Khoản Thanh Toán Chính Thức
+          </h4>
+          <div class="bg-gradient-to-br from-gold-500/20 to-crimson-950/90 border-2 border-gold-400/60 rounded-2xl p-4 shadow-lg">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[11px] uppercase tracking-wider font-extrabold text-gold-300">Ngân hàng thụ hưởng</span>
+              <span class="px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[10px] font-black">TECHCOMBANK</span>
+            </div>
+            <p class="text-xs text-white font-bold mb-3">
+              Ngân hàng: TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô
+            </p>
+            <div class="bg-crimson-950/80 rounded-xl p-3 border border-gold-400/30 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-gold-300 block">Số TK:</span>
+                <span class="text-xl font-black text-gold-300 tracking-wider">77896789</span>
+                <span class="block text-[11px] text-white font-semibold mt-0.5">Chủ TK: CÔNG TY CỔ PHẦN GIÁO DỤC E3</span>
+              </div>
+              <button onclick="navigator.clipboard?.writeText('77896789'); showToast('Đã sao chép Số TK 77896789 - Ngân hàng TMCP Kỹ thương Việt Nam (CN Đông Đô)!')" class="px-3 py-2 rounded-lg bg-gold-400 hover:bg-gold-300 text-crimson-950 text-xs font-extrabold transition-colors">
+                <i class="fa-regular fa-copy mr-1"></i>Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Hội viên & Chứng chỉ -->
+          <div>
+            <span class="text-xs font-bold text-gold-300 block mb-2">Hội Viên & Chứng Chỉ Quốc Tế:</span>
+            <div class="grid grid-cols-2 gap-2 text-[11px]">
+              <div class="bg-white/95 text-gray-900 rounded-xl p-2 flex items-center gap-2">
+                <img src="../assets/images/cert-hata.png" alt="HATA" class="h-7 w-auto object-contain">
+                <span class="font-bold leading-tight text-[10px]">Chi Hội Lữ Hành Hà Nội (HATA)</span>
+              </div>
+              <div class="bg-white/95 text-gray-900 rounded-xl p-2 flex items-center gap-2">
+                <img src="../assets/images/cert-unesco.png" alt="HUTC" class="h-7 w-auto object-contain">
+                <span class="font-bold leading-tight text-[10px]">Hanoi UNESCO Travel Club</span>
+              </div>
+              <div class="bg-crimson-950/70 border border-gold-400/30 rounded-xl p-2 text-gold-200 font-semibold">
+                <i class="fa-solid fa-award text-gold-400 mr-1"></i>ISO 9001:2015 & ISO 14001:2015
+              </div>
+              <div class="bg-crimson-950/70 border border-gold-400/30 rounded-xl p-2 text-gold-200 font-semibold">
+                <i class="fa-solid fa-leaf text-gold-400 mr-1"></i>GSTC Tour & MICE Standard
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gold-200/80">
+        <p>© 2014 – 2026 <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</strong>. Đại diện là: Ông Đặng Hoàng Minh (Giám đốc). MST: 0106637430.</p>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="hover:text-white">Trang chủ</a>
+          <span>•</span>
+          <a href="category.html" class="hover:text-white">Danh mục Tour</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:text-white">Hồ sơ pháp lý</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="e3-toast" class="fixed bottom-6 right-6 z-50 hidden bg-crimson-900 text-white border-2 border-gold-400 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-bold">
+    <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+    <span id="e3-toast-msg">Đã ghi nhận thông tin!</span>
+  </div>
+
+  <script>
+    function showToast(msg) {
+      const t = document.getElementById('e3-toast');
+      const m = document.getElementById('e3-toast-msg');
+      if (t && m) {
+        m.textContent = msg;
+        t.classList.remove('hidden');
+        setTimeout(() => t.classList.add('hidden'), 3500);
+      }
+    }
+  </script>
+</body>
+</html>

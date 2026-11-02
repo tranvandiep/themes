@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Cẩm Nang Du Lịch | E3 TRAVEL - Công Ty Cổ Phần Giáo Dục E3 (Mobile)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 TRAVEL (CTCP Giáo Dục E3)" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              50: '#fdf3f3',
+              100: '#fbe4e4',
+              200: '#f7cece',
+              500: '#a81818',
+              600: '#8b0d11',
+              700: '#780909',
+              800: '#5e0606',
+              900: '#450404',
+              950: '#2b0202'
+            },
+            gold: {
+              50: '#fcf9f2',
+              100: '#f8f0dc',
+              200: '#efe0b9',
+              300: '#e5c98b',
+              400: '#d9b061',
+              500: '#c6923a',
+              600: '#ad792b',
+              700: '#8c5e23'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcf9f2; color: #1f2937; padding-bottom: 72px; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .bg-royal-gradient { background: linear-gradient(135deg, #780909 0%, #450404 65%, #2b0202 100%); }
+    .bg-gold-gradient { background: linear-gradient(135deg, #f3c66f 0%, #c6923a 50%, #9e6f23 100%); }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #f7d78a 0%, #d49e42 50%, #b57e24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-mob {
+      background: #ffffff;
+      border: 1px solid #efe0b9;
+      box-shadow: 0 6px 20px -6px rgba(120, 9, 9, 0.08);
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-crimson-700 selection:text-white">
+  <!-- Mobile Top Legal Strip -->
+  <div class="bg-crimson-900 text-gold-100 text-[10px] py-1.5 px-3 border-b border-gold-500/30 flex items-center justify-between">
+    <span class="truncate font-semibold"><i class="fa-solid fa-shield-halved text-gold-400 mr-1"></i>CTCP GIÁO DỤC E3 • MST: <strong class="text-white">0106637430</strong></span>
+    <a href="tel:02462789777" class="font-extrabold text-gold-300 flex-shrink-0 ml-2"><i class="fa-solid fa-phone mr-1"></i>024 62789777</a>
+  </div>
+
+  <!-- Sticky Mobile App Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-gold-200 sticky top-0 z-40 px-3 py-2.5 flex items-center justify-between shadow-sm">
+    <a href="home.html" class="flex items-center gap-2.5">
+      <div class="w-11 h-11 rounded-full p-0.5 bg-gold-gradient shadow flex-shrink-0">
+        <img src="../assets/images/logo-e3.jpeg" alt="Logo E3 Travel" class="w-full h-full object-cover rounded-full bg-white">
+      </div>
+      <div>
+        <div class="flex items-center gap-1.5">
+          <span class="font-display font-extrabold text-lg text-crimson-700 leading-none">E3 TRAVEL</span>
+          <span class="px-1.5 py-0.5 bg-gold-100 text-crimson-800 border border-gold-300 rounded text-[9px] font-extrabold">ISO & GSTC</span>
+        </div>
+        <span class="block text-[10px] font-bold text-gray-700 uppercase tracking-tight mt-0.5">Công Ty Cổ Phần Giáo Dục E3</span>
+        <span class="block text-[9px] italic text-gold-600 font-semibold">Explore – Experience – Enjoy</span>
+      </div>
+    </a>
+
+    <div class="flex items-center gap-2">
+      <a href="tel:0966388789" class="w-9 h-9 rounded-xl bg-gold-100 text-crimson-800 border border-gold-300 flex items-center justify-center text-xs">
+        <i class="fa-solid fa-phone-volume"></i>
+      </a>
+      <a href="cart.html" class="relative px-3 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold flex items-center gap-1.5 shadow">
+        <i class="fa-solid fa-suitcase-rolling text-gold-300"></i>
+        <span class="w-4 h-4 rounded-full bg-gold-400 text-crimson-950 text-[10px] flex items-center justify-center font-black">2</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-1 px-4 py-5 space-y-4">
+    <h1 class="font-display font-extrabold text-xl text-crimson-800">Cẩm Nang Du Lịch E3 Travel</h1>
+
+    <article class="card-mob rounded-2xl overflow-hidden">
+      <img src="../assets/images/hero-vietnam.jpg" alt="Khám phá Việt Nam" class="w-full h-44 object-cover">
+      <div class="p-4">
+        <span class="text-[10px] font-extrabold text-crimson-700 uppercase">Cẩm Nang Bắc - Nam</span>
+        <h2 class="font-display font-bold text-base text-gray-900 mt-1 mb-1.5">
+          <a href="post.html">Khám Phá Việt Nam Trọn Vẹn Từ Bắc Vào Nam Cùng E3 Travel</a>
+        </h2>
+        <p class="text-xs text-gray-600">Hành trình kết nối 12+ điểm đến Sapa, Hà Giang, Hạ Long, Ninh Bình, Đà Nẵng, Hội An, Phú Quốc, Miền Tây.</p>
+        <a href="post.html" class="mt-2 inline-block text-xs font-extrabold text-crimson-700">Đọc bài viết →</a>
+      </div>
+    </article>
+
+    <article class="card-mob rounded-2xl overflow-hidden">
+      <img src="../assets/images/school-students.jpg" alt="Tour Trường học" class="w-full h-40 object-cover">
+      <div class="p-4">
+        <span class="text-[10px] font-extrabold text-crimson-700 uppercase">Du Lịch Trường Học</span>
+        <h2 class="font-display font-bold text-base text-gray-900 mt-1 mb-1.5">
+          <a href="post.html">Kinh Nghiệm Tổ Chức Dã Ngoại Học Tập & Kỹ Năng Sống Cho Học Sinh</a>
+        </h2>
+        <a href="post.html" class="mt-1 inline-block text-xs font-extrabold text-crimson-700">Đọc bài viết →</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Mobile Footer chuẩn Hồ Sơ Năng Lực CTCP Giáo Dục E3 -->
+  <footer class="bg-royal-gradient text-gold-100 mt-10 pt-8 pb-8 px-4 border-t-4 border-gold-500">
+    <div class="flex items-center gap-3 mb-4">
+      <img src="../assets/images/logo-e3.jpeg" alt="E3 Logo" class="w-14 h-14 rounded-full border-2 border-gold-400 bg-white p-0.5 object-cover">
+      <div>
+        <span class="text-[10px] uppercase tracking-widest text-gold-400 font-bold block">Trọn Vẹn Mỗi Hành Trình!</span>
+        <h3 class="font-display font-extrabold text-base text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3</h3>
+        <span class="text-[10px] text-gold-300 italic">E3 EDUCATION JOINT STOCK COMPANY LIMITED</span>
+      </div>
+    </div>
+
+    <div class="bg-crimson-950/80 border border-gold-400/30 rounded-2xl p-3.5 space-y-2 text-xs mb-4">
+      <div><i class="fa-solid fa-user-tie text-gold-400 w-4"></i>Đại diện là: <strong class="text-white">Ông Đặng Hoàng Minh</strong> — Chức vụ: <strong class="text-gold-300">Giám đốc</strong></div>
+      <div><i class="fa-solid fa-location-dot text-gold-400 w-4"></i>Địa chỉ: <strong class="text-white">Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</strong></div>
+      <div><i class="fa-solid fa-phone text-gold-400 w-4"></i>Điện thoại: <strong class="text-white">024 62789777</strong> | Hotline: <strong class="text-gold-300">0966 388 789</strong></div>
+      <div><i class="fa-solid fa-hashtag text-gold-400 w-4"></i>Mã số thuế: <strong class="text-white">0106637430</strong> | GP: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong></div>
+    </div>
+
+    <!-- Bank Account Card -->
+    <div class="bg-gradient-to-r from-gold-500/20 to-crimson-950 border border-gold-400 rounded-2xl p-3.5 mb-4">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-[10px] font-extrabold uppercase text-gold-300">Tài Khoản Ngân Hàng Công Ty</span>
+        <span class="px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[9px] font-black">TECHCOMBANK</span>
+      </div>
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="text-xs text-white">Số TK: <strong class="text-lg font-black text-gold-300">77896789</strong></div>
+          <div class="text-[11px] text-gold-100">Ngân hàng: TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô</div>
+        </div>
+        <button onclick="navigator.clipboard?.writeText('77896789'); showToast('Đã sao chép Số TK 77896789!')" class="px-2.5 py-1.5 rounded-lg bg-gold-400 text-crimson-950 text-[10px] font-extrabold">
+          Copy
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-2 mb-4">
+      <div class="bg-white rounded-xl p-2 flex items-center gap-2 text-gray-900">
+        <img src="../assets/images/cert-hata.png" alt="HATA" class="h-6 w-auto object-contain">
+        <span class="text-[10px] font-bold leading-tight">Thành viên HATA Hà Nội</span>
+      </div>
+      <div class="bg-white rounded-xl p-2 flex items-center gap-2 text-gray-900">
+        <img src="../assets/images/cert-unesco.png" alt="UNESCO" class="h-6 w-auto object-contain">
+        <span class="text-[10px] font-bold leading-tight">Hanoi UNESCO Travel Club</span>
+      </div>
+    </div>
+
+    <p class="text-[10px] text-center text-gold-200/70 pt-3 border-t border-gold-500/20">
+      © 2014 – 2026 CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL). MST: 0106637430.
+    </p>
+  </footer>
+
+  <!-- Fixed Bottom App Navigation Bar -->
+  <nav class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-gold-300 h-16 px-2 grid grid-cols-5 shadow-2xl">
+    <a href="home.html" class="flex flex-col items-center justify-center text-gray-500 hover:text-crimson-700 font-semibold text-[10px]">
+      <i class="fa-solid fa-house text-sm mb-0.5"></i>
+      <span>Trang Chủ</span>
+    </a>
+    <a href="category.html" class="flex flex-col items-center justify-center text-gray-500 hover:text-crimson-700 font-semibold text-[10px]">
+      <i class="fa-solid fa-compass text-sm mb-0.5"></i>
+      <span>Danh Mục</span>
+    </a>
+    <a href="cart.html" class="flex flex-col items-center justify-center text-gray-500 hover:text-crimson-700 font-semibold text-[10px]">
+      <div class="w-9 h-9 -mt-4 rounded-full bg-crimson-700 text-gold-300 border-2 border-gold-400 flex items-center justify-center shadow-md">
+        <i class="fa-solid fa-suitcase-rolling text-xs"></i>
+      </div>
+      <span class="mt-0.5">Giỏ Tour</span>
+    </a>
+    <a href="news.html" class="flex flex-col items-center justify-center text-crimson-700 font-extrabold text-[10px]">
+      <i class="fa-solid fa-newspaper text-sm mb-0.5"></i>
+      <span>Cẩm Nang</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center justify-center text-gray-500 hover:text-crimson-700 font-semibold text-[10px]">
+      <i class="fa-solid fa-id-card-clip text-sm mb-0.5"></i>
+      <span>Hồ Sơ E3</span>
+    </a>
+  </nav>
+
+  <!-- Toast -->
+  <div id="e3-toast" class="fixed bottom-20 inset-x-4 z-50 hidden bg-crimson-900 text-white border-2 border-gold-400 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2.5 text-xs font-bold">
+    <i class="fa-solid fa-circle-check text-gold-400 text-base"></i>
+    <span id="e3-toast-msg">Đã ghi nhận thông tin!</span>
+  </div>
+
+  <script>
+    function showToast(msg) {
+      const t = document.getElementById('e3-toast');
+      const m = document.getElementById('e3-toast-msg');
+      if (t && m) {
+        m.textContent = msg;
+        t.classList.remove('hidden');
+        setTimeout(() => t.classList.add('hidden'), 3000);
+      }
+    }
+  </script>
+</body>
+</html>

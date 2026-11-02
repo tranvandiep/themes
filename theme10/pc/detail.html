@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi Tiết Chương Trình Tour | E3 TRAVEL - Công Ty Cổ Phần Giáo Dục E3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 TRAVEL (CTCP Giáo Dục E3)" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: {
+              50: '#fdf3f3',
+              100: '#fbe4e4',
+              200: '#f7cece',
+              500: '#a81818',
+              600: '#8b0d11',
+              700: '#780909',
+              800: '#5e0606',
+              900: '#450404',
+              950: '#2b0202'
+            },
+            gold: {
+              50: '#fcf9f2',
+              100: '#f8f0dc',
+              200: '#efe0b9',
+              300: '#e5c98b',
+              400: '#d9b061',
+              500: '#c6923a',
+              600: '#ad792b',
+              700: '#8c5e23'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcf9f2; color: #1f2937; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .bg-royal-gradient { background: linear-gradient(135deg, #780909 0%, #450404 60%, #2b0202 100%); }
+    .bg-crimson-gold { background: linear-gradient(90deg, #780909 0%, #991313 50%, #780909 100%); }
+    .bg-gold-gradient { background: linear-gradient(135deg, #f3c66f 0%, #c6923a 50%, #9e6f23 100%); }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #f7d78a 0%, #d49e42 50%, #b57e24 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card-luxury {
+      background: #ffffff;
+      border: 1px solid #efe0b9;
+      box-shadow: 0 10px 30px -10px rgba(120, 9, 9, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-luxury:hover {
+      border-color: #c6923a;
+      box-shadow: 0 20px 40px -12px rgba(120, 9, 9, 0.16);
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-crimson-700 selection:text-white">
+  <!-- Topbar chuẩn PYS Travel + Thông tin pháp lý E3 Travel -->
+  <div class="bg-crimson-900 text-gold-100 text-xs py-2 px-4 border-b border-gold-500/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-building-shield text-gold-400"></i>
+          <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong> (MST: <strong class="text-white">0106637430</strong>)
+        </span>
+        <span class="hidden lg:inline text-gold-300/60">|</span>
+        <span class="hidden lg:flex items-center gap-1.5">
+          <i class="fa-solid fa-certificate text-gold-400"></i>
+          GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong>
+        </span>
+        <span class="hidden xl:inline text-gold-300/60">|</span>
+        <span class="hidden xl:flex items-center gap-1.5">
+          <i class="fa-solid fa-location-dot text-gold-400"></i>
+          Số 24 Liền kề 26 KĐT Văn Phú, P. Kiến Hưng, TP Hà Nội
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:02462789777" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-phone-volume text-gold-400 animate-pulse"></i>
+          Điện thoại: <strong class="text-white">024 62789777</strong>
+        </a>
+        <span class="text-gold-300/60">|</span>
+        <a href="tel:0966388789" class="px-2.5 py-0.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-200 font-bold hover:bg-gold-500 hover:text-crimson-950 transition-all">
+          Hotline 24/7: 0966 388 789
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-gold-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a href="home.html" class="flex items-center gap-3 group">
+        <div class="w-14 h-14 rounded-full p-0.5 bg-gold-gradient shadow-md flex-shrink-0 overflow-hidden">
+          <img src="../assets/images/logo-e3.jpeg" alt="Logo Công Ty Cổ Phần Giáo Dục E3 - E3 Travel" class="w-full h-full object-cover rounded-full bg-white group-hover:scale-105 transition-transform">
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-extrabold text-2xl text-crimson-700 tracking-tight">E3 TRAVEL</span>
+            <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-gold-100 text-crimson-800 border border-gold-300 rounded-md">ISO 9001 & GSTC</span>
+          </div>
+          <span class="block text-[11px] font-bold text-gray-700 uppercase tracking-wider">Công Ty Cổ Phần Giáo Dục E3</span>
+          <span class="block text-[10px] italic text-gold-600 font-semibold">Explore – Experience – Enjoy • Trọn vẹn mỗi hành trình!</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links (Phong cách PYS Travel) -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm">
+        <a href="home.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-house text-xs text-gold-600"></i>
+          <span>Trang Chủ</span>
+        </a>
+        <a href="category.html" class="text-crimson-700 font-extrabold border-b-2 border-crimson-700 pb-1 flex items-center gap-1.5">
+          <i class="fa-solid fa-compass text-xs text-gold-600"></i>
+          <span>Tour Du Lịch</span>
+        </a>
+        <a href="category.html#truong-hoc" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-graduation-cap text-xs text-gold-600"></i>
+          <span>Tour Trường Học</span>
+        </a>
+        <a href="category.html#doanh-nghiep" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-people-group text-xs text-gold-600"></i>
+          <span>MICE & Team Building</span>
+        </a>
+        <a href="news.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-newspaper text-xs text-gold-600"></i>
+          <span>Cẩm Nang</span>
+        </a>
+        <a href="contact.html" class="text-gray-700 hover:text-crimson-700 font-semibold transition-colors flex items-center gap-1.5 pb-1">
+          <i class="fa-solid fa-id-card-clip text-xs text-gold-600"></i>
+          <span>Hồ Sơ Năng Lực & Liên Hệ</span>
+        </a>
+      </nav>
+
+      <!-- Right CTA & Booking Cart -->
+      <div class="flex items-center gap-3">
+        <a href="contact.html#yeu-cau-bao-gia" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-100 hover:bg-gold-200 text-crimson-800 border border-gold-300 text-xs font-extrabold transition-all">
+          <i class="fa-solid fa-wand-magic-sparkles text-gold-600"></i>
+          <span>Thiết Kế Tour Riêng</span>
+        </a>
+        <a href="cart.html" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white text-xs font-extrabold shadow-md shadow-crimson-700/20 transition-all">
+          <i class="fa-solid fa-suitcase-rolling text-gold-300"></i>
+          <span>Giỏ Tour</span>
+          <span class="w-5 h-5 rounded-full bg-gold-400 text-crimson-950 text-[11px] flex items-center justify-center font-black">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="max-w-7xl mx-auto px-4 py-8">
+      <!-- Breadcrumb -->
+      <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-2">
+        <a href="home.html" class="hover:text-crimson-700 font-semibold">Trang Chủ</a>
+        <span>/</span>
+        <a href="category.html" class="hover:text-crimson-700 font-semibold">Tour Du Lịch</a>
+        <span>/</span>
+        <span class="text-crimson-700 font-bold">Tour Sapa – Fansipan – Hạ Long – Ninh Bình & Chuyên Đề Trải Nghiệm E3 Travel</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left Gallery & Itinerary Details (8 cols) -->
+        <div class="lg:col-span-8 space-y-6">
+          <div class="card-luxury rounded-3xl p-5 sm:p-6">
+            <div class="flex flex-wrap items-center gap-2 mb-3">
+              <span class="px-3 py-1 rounded-full bg-crimson-700 text-gold-200 text-xs font-extrabold">MÃ TOUR: E3-VN2026</span>
+              <span class="px-3 py-1 rounded-full bg-gold-100 text-crimson-800 border border-gold-300 text-xs font-extrabold"><i class="fa-solid fa-certificate text-gold-600 mr-1"></i>Chuẩn ISO 9001 & GSTC</span>
+              <span class="text-xs text-amber-500 font-extrabold ml-auto"><i class="fa-solid fa-star"></i> 4.9/5 (248 đánh giá)</span>
+            </div>
+
+            <h1 class="font-display font-extrabold text-2xl sm:text-3xl text-crimson-900 leading-snug mb-4">
+              Hành Trình Khám Phá Di Sản Bắc Bộ: Hà Nội – Ninh Bình Tràng An – Vịnh Hạ Long – Sapa Đỉnh Fansipan (Tích Hợp Team Building & Gala Dinner)
+            </h1>
+
+            <!-- Main Image Gallery -->
+            <div class="rounded-2xl overflow-hidden border-2 border-gold-300 mb-3 relative">
+              <img id="main-tour-img" src="../assets/images/dest-trang-an.jpg" alt="Tour E3 Travel" class="w-full h-80 sm:h-96 object-cover">
+              <div class="absolute bottom-3 left-3 bg-crimson-950/85 text-gold-200 px-3.5 py-1.5 rounded-xl text-xs font-bold border border-gold-400/40">
+                <i class="fa-solid fa-camera-retro text-gold-400 mr-1.5"></i>Hình ảnh thực tế từ Hồ sơ năng lực E3 Travel 2026
+              </div>
+            </div>
+
+            <div class="grid grid-cols-5 gap-2.5">
+              <button onclick="document.getElementById('main-tour-img').src='../assets/images/dest-trang-an.jpg'" class="rounded-xl overflow-hidden border-2 border-crimson-700 h-16">
+                <img src="../assets/images/dest-trang-an.jpg" alt="Thumb 1" class="w-full h-full object-cover">
+              </button>
+              <button onclick="document.getElementById('main-tour-img').src='../assets/images/dest-sapa.jpg'" class="rounded-xl overflow-hidden border-2 border-gold-200 hover:border-crimson-700 h-16">
+                <img src="../assets/images/dest-sapa.jpg" alt="Thumb 2" class="w-full h-full object-cover">
+              </button>
+              <button onclick="document.getElementById('main-tour-img').src='../assets/images/school-students.jpg'" class="rounded-xl overflow-hidden border-2 border-gold-200 hover:border-crimson-700 h-16">
+                <img src="../assets/images/school-students.jpg" alt="Thumb 3" class="w-full h-full object-cover">
+              </button>
+              <button onclick="document.getElementById('main-tour-img').src='../assets/images/corp-teambuilding.jpg'" class="rounded-xl overflow-hidden border-2 border-gold-200 hover:border-crimson-700 h-16">
+                <img src="../assets/images/corp-teambuilding.jpg" alt="Thumb 4" class="w-full h-full object-cover">
+              </button>
+              <button onclick="document.getElementById('main-tour-img').src='../assets/images/corp-galadinner.jpg'" class="rounded-xl overflow-hidden border-2 border-gold-200 hover:border-crimson-700 h-16">
+                <img src="../assets/images/corp-galadinner.jpg" alt="Thumb 5" class="w-full h-full object-cover">
+              </button>
+            </div>
+          </div>
+
+          <!-- Điểm nhấn hành trình -->
+          <div class="card-luxury rounded-3xl p-6">
+            <h2 class="font-display font-extrabold text-xl text-crimson-800 border-b border-gold-200 pb-3 mb-4">
+              <i class="fa-solid fa-wand-magic-sparkles text-gold-600 mr-2"></i>Điểm Nhấn Đặc Biệt Của Chương Trình
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-gray-700">
+              <div class="flex items-start gap-2.5 p-3 rounded-xl bg-gold-50 border border-gold-200">
+                <i class="fa-solid fa-circle-check text-crimson-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="text-crimson-900 block">Thiết Kế Linh Hoạt Đa Đối Tượng</strong>
+                  Phù hợp cho Khách lẻ ghép đoàn, Đoàn riêng Gia đình, Học sinh/Giáo viên nhà trường hoặc Công ty MICE.
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-xl bg-gold-50 border border-gold-200">
+                <i class="fa-solid fa-circle-check text-crimson-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="text-crimson-900 block">Vận Hành Chuẩn ISO 9001:2015 & GSTC</strong>
+                  Xe du lịch đời mới, Khách sạn/Resort 3-5 sao, Hướng dẫn viên chuyên nghiệp trực thuộc Phòng Điều hành E3 Travel.
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-xl bg-gold-50 border border-gold-200">
+                <i class="fa-solid fa-circle-check text-crimson-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="text-crimson-900 block">Kịch Bản Team Building & Gala Sáng Tạo</strong>
+                  Tích hợp chương trình hoạt náo, kỹ năng sống học đường hoặc đêm tiệc Gala Dinner "Together We Grow Further".
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-xl bg-gold-50 border border-gold-200">
+                <i class="fa-solid fa-circle-check text-crimson-700 text-base mt-0.5"></i>
+                <div>
+                  <strong class="text-crimson-900 block">Pháp Lý & Hóa Đơn VAT Đầy Đủ</strong>
+                  Ký hợp đồng trực tiếp với Công Ty Cổ Phần Giáo Dục E3 (MST: 0106637430), thanh toán qua TK Techcombank 77896789.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lịch trình chi tiết -->
+          <div class="card-luxury rounded-3xl p-6 space-y-4">
+            <h2 class="font-display font-extrabold text-xl text-crimson-800 border-b border-gold-200 pb-3">
+              <i class="fa-solid fa-route text-gold-600 mr-2"></i>Lịch Trình Chi Tiết (3 Ngày 2 Đêm)
+            </h2>
+
+            <div class="border border-gold-300 rounded-2xl overflow-hidden">
+              <div class="bg-crimson-700 text-white px-4 py-3 font-extrabold text-xs flex items-center justify-between">
+                <span>NGÀY 01: HÀ NỘI – NINH BÌNH DI SẢN TRÀNG AN – CHÙA BÁI ĐÍNH – HANG MÚA (Ăn Trưa, Tối)</span>
+                <span class="text-gold-300">Ngày 1</span>
+              </div>
+              <div class="p-4 text-xs text-gray-700 space-y-2 leading-relaxed bg-white">
+                <p><strong>07h00:</strong> Xe và Hướng dẫn viên <strong>E3 Travel</strong> đón Quý khách tại điểm hẹn (hoặc tại trụ sở <strong>Số 24 Liền kề 26 KĐT Văn Phú, P. Kiến Hưng, TP Hà Nội</strong>) khởi hành đi Ninh Bình.</p>
+                <p><strong>09h30:</strong> Tham quan <strong>Chùa Bái Đính</strong> – quần thể chùa lớn nhất Đông Nam Á, dâng hương và tìm hiểu giá trị văn hóa tâm linh.</p>
+                <p><strong>12h00:</strong> Thưởng thức đặc sản Dê núi – Cơm cháy Ninh Bình. Chiều ngồi thuyền khám phá <strong>Quần thể danh thắng Tràng An</strong> (Di sản Văn hóa & Thiên nhiên Thế giới UNESCO).</p>
+              </div>
+            </div>
+
+            <div class="border border-gold-300 rounded-2xl overflow-hidden">
+              <div class="bg-crimson-700 text-white px-4 py-3 font-extrabold text-xs flex items-center justify-between">
+                <span>NGÀY 02: VỊNH HẠ LONG KỲ QUAN – TEAM BUILDING BÃI BIỂN – GALA DINNER (Ăn Sáng, Trưa, Tối)</span>
+                <span class="text-gold-300">Ngày 2</span>
+              </div>
+              <div class="p-4 text-xs text-gray-700 space-y-2 leading-relaxed bg-white">
+                <p><strong>08h30:</strong> Đoàn di chuyển tới <strong>Vịnh Hạ Long</strong>, lên du thuyền tham quan Động Thiên Cung, Hòn Đỉnh Hương, Hòn Trống Mái, trải nghiệm chèo Kayak.</p>
+                <p><strong>15h30:</strong> Tham gia chương trình <strong>Team Building Bãi Biển / Hoạt Động Trải Nghiệm Kỹ Năng</strong> do đội ngũ E3 Travel tổ chức.</p>
+                <p><strong>19h00:</strong> Dự đêm tiệc <strong>Gala Dinner "Together We Grow Further"</strong> ấm cúng, giao lưu văn nghệ và vinh danh các thành viên xuất sắc.</p>
+              </div>
+            </div>
+
+            <div class="border border-gold-300 rounded-2xl overflow-hidden">
+              <div class="bg-crimson-700 text-white px-4 py-3 font-extrabold text-xs flex items-center justify-between">
+                <span>NGÀY 03: BẢO TÀNG QUẢNG NINH – MUA SẮM ĐẶC SẢN – TRỞ VỀ HÀ NỘI (Ăn Sáng, Trưa)</span>
+                <span class="text-gold-300">Ngày 3</span>
+              </div>
+              <div class="p-4 text-xs text-gray-700 space-y-2 leading-relaxed bg-white">
+                <p><strong>08h30:</strong> Tham quan Bảo tàng Quảng Ninh, tự do dạo biển và mua sắm đặc sản chả mực Hạ Long làm quà.</p>
+                <p><strong>16h30:</strong> Xe đưa đoàn về lại Hà Nội, kết thúc hành trình trọn vẹn cùng <strong>E3 Travel</strong>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Sticky Booking Widget (4 cols) -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="card-luxury rounded-3xl p-6 border-2 border-gold-400 sticky top-24">
+            <div class="bg-royal-gradient text-white rounded-2xl p-4 mb-4">
+              <span class="text-[11px] text-gold-300 font-bold uppercase tracking-wider block">Giá Ưu Đãi Trọn Gói Từ</span>
+              <div class="flex items-baseline gap-2 mt-1">
+                <span class="text-2xl font-black text-gold-300">2.850.000 đ</span>
+                <span class="text-xs text-gold-100/70 line-through">3.490.000 đ</span>
+                <span class="ml-auto px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[10px] font-black">-18%</span>
+              </div>
+            </div>
+
+            <form action="cart.html" class="space-y-3.5 text-xs">
+              <div>
+                <label class="font-bold text-gray-700 block mb-1">Chọn hình thức đăng ký</label>
+                <select id="pkg-type" onchange="calcDetailTotal()" class="w-full px-3.5 py-2.5 rounded-xl border border-gold-300 bg-gold-50 font-bold text-crimson-900">
+                  <option value="2850000">Tour Khách Lẻ / Gia Đình (2.850.000đ/khách)</option>
+                  <option value="2450000">Đoàn Cán Bộ - Giáo Viên (2.450.000đ/khách)</option>
+                  <option value="3250000">Đoàn Doanh Nghiệp MICE + Gala (3.250.000đ/khách)</option>
+                  <option value="450000">Tour Học Sinh Trải Nghiệm 1 Ngày (450.000đ/HS)</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="font-bold text-gray-700 block mb-1">Ngày khởi hành</label>
+                  <input type="date" value="2026-11-15" class="w-full px-3 py-2 rounded-xl border border-gray-200 font-semibold">
+                </div>
+                <div>
+                  <label class="font-bold text-gray-700 block mb-1">Số lượng khách</label>
+                  <input id="pkg-qty" type="number" min="1" value="2" onchange="calcDetailTotal()" class="w-full px-3 py-2 rounded-xl border border-gray-200 font-bold text-crimson-800">
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-gold-50 border border-gold-200 flex items-center justify-between">
+                <span class="font-bold text-gray-700">Tạm tính tổng cộng:</span>
+                <span id="pkg-total" class="text-base font-black text-crimson-700">5.700.000 đ</span>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-xl bg-crimson-700 hover:bg-crimson-800 text-white font-extrabold text-sm shadow-lg shadow-crimson-700/30 flex items-center justify-center gap-2 transition-all">
+                <i class="fa-solid fa-cart-plus text-gold-300"></i>
+                <span>Đặt Tour Ngay / Giữ Chỗ</span>
+              </button>
+
+              <a href="contact.html#yeu-cau-bao-gia" class="w-full py-3 rounded-xl bg-gold-100 hover:bg-gold-200 text-crimson-900 border border-gold-400 font-extrabold text-xs flex items-center justify-center gap-2 transition-all">
+                <i class="fa-solid fa-file-contract text-gold-600"></i>
+                <span>Yêu Cầu Hợp Đồng & Báo Giá Đoàn</span>
+              </a>
+            </form>
+
+            <!-- Thông tin tài khoản công ty -->
+            <div class="mt-5 pt-4 border-t border-gold-200 text-[11px] text-gray-600 space-y-1.5">
+              <div class="font-extrabold text-crimson-800 uppercase">Thông Tin Thanh Toán Chính Thức:</div>
+              <div>• Đơn vị: <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong></div>
+              <div>• Đại diện: <strong>Ông Đặng Hoàng Minh (Giám đốc)</strong></div>
+              <div>• MST: <strong>0106637430</strong> | ĐT: <strong>024 62789777</strong></div>
+              <div>• Số TK: <strong class="text-crimson-700">77896789</strong> — <strong>Techcombank CN Đông Đô</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function calcDetailTotal() {
+      const price = parseInt(document.getElementById('pkg-type').value || 2850000, 10);
+      const qty = Math.max(1, parseInt(document.getElementById('pkg-qty').value || 1, 10));
+      const total = price * qty;
+      document.getElementById('pkg-total').textContent = total.toLocaleString('vi-VN') + ' đ';
+    }
+  </script>
+
+  <!-- Footer chuẩn Hồ sơ năng lực Công Ty Cổ Phần Giáo Dục E3 -->
+  <footer class="bg-royal-gradient text-gold-100 mt-16 border-t-4 border-gold-500 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 pt-14 pb-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-gold-500/20">
+        <!-- Col 1: Thông tin Pháp nhân Công ty (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <img src="../assets/images/logo-e3.jpeg" alt="E3 Travel Logo" class="w-16 h-16 rounded-full border-2 border-gold-400 bg-white p-0.5 object-cover shadow-lg">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block">Thương Hiệu Lữ Hành Uy Tín</span>
+              <h3 class="font-display font-extrabold text-xl text-white">CÔNG TY CỔ PHẦN GIÁO DỤC E3</h3>
+              <p class="text-xs text-gold-300 italic">E3 EDUCATION JOINT STOCK COMPANY LIMITED (E3.,JSC)</p>
+            </div>
+          </div>
+
+          <p class="text-xs text-gold-100/90 leading-relaxed">
+            Đơn vị tư vấn, thiết kế và tổ chức các chương trình du lịch trong nước & quốc tế chuyên nghiệp dành cho Trường học (Học sinh - Giáo viên), Doanh nghiệp (MICE, Team Building, Gala Dinner) và Khách hàng cá nhân từ năm 2014.
+          </p>
+
+          <div class="bg-crimson-950/70 border border-gold-500/30 rounded-2xl p-4 space-y-2 text-xs">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-user-tie text-gold-400 mt-0.5 w-4"></i>
+              <span>Đại diện là: <strong class="text-white">Ông Đặng Hoàng Minh</strong> — Chức vụ: <strong class="text-gold-300">Giám đốc</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-gold-400 mt-0.5 w-4"></i>
+              <span>Địa chỉ: <strong class="text-white">Số 24 Liền kề 26 KĐT Văn Phú, Phường Kiến Hưng, TP Hà Nội.</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-phone text-gold-400 mt-0.5 w-4"></i>
+              <span>Điện thoại: <strong class="text-white">024 62789777</strong> | Hotline: <strong class="text-gold-300">0966 388 789 – 09 3883 5898</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-file-shield text-gold-400 mt-0.5 w-4"></i>
+              <span>Mã số thuế: <strong class="text-white">0106637430</strong> | GP Lữ hành: <strong class="text-white">01-0777/2026/SDL-GP LHND</strong></span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-envelope text-gold-400 mt-0.5 w-4"></i>
+              <span>Email: <strong class="text-white">e3travel@e3edu.vn / info@e3edu.vn</strong> | Website: <strong class="text-white">e3edu.vn</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Dịch vụ & Giải pháp Du lịch (3 cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-display font-bold text-base text-gold-300 uppercase tracking-wider border-b border-gold-500/30 pb-2">
+            Hệ Sinh Thái Dịch Vụ
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="category.html#ca-nhan" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Ghép Khởi Hành Thường Xuyên</a></li>
+            <li><a href="category.html#ca-nhan" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Đoàn Riêng & Thiết Kế Theo Yêu Cầu</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Du Lịch Trải Nghiệm Học Sinh Cấp 1-2-3</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Trại Hè Quốc Tế & Tiếng Anh Ngoài Trời</a></li>
+            <li><a href="category.html#truong-hoc" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tour Du Xuân & Nghỉ Hè Cán Bộ Giáo Viên</a></li>
+            <li><a href="category.html#doanh-nghiep" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Tổ Chức Team Building & Company Trip</a></li>
+            <li><a href="category.html#doanh-nghiep" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> MICE - Hội Nghị Khách Hàng & Gala Dinner</a></li>
+            <li><a href="news.html" class="hover:text-gold-300 transition-colors flex items-center gap-2"><i class="fa-solid fa-angle-right text-gold-400"></i> Cẩm Nang Khám Phá Việt Nam Bắc - Nam</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Thông tin Tài khoản Ngân hàng & Chứng chỉ (4 cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <h4 class="font-display font-bold text-base text-gold-300 uppercase tracking-wider border-b border-gold-500/30 pb-2">
+            Tài Khoản Thanh Toán Chính Thức
+          </h4>
+          <div class="bg-gradient-to-br from-gold-500/20 to-crimson-950/90 border-2 border-gold-400/60 rounded-2xl p-4 shadow-lg">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-[11px] uppercase tracking-wider font-extrabold text-gold-300">Ngân hàng thụ hưởng</span>
+              <span class="px-2 py-0.5 bg-gold-400 text-crimson-950 rounded text-[10px] font-black">TECHCOMBANK</span>
+            </div>
+            <p class="text-xs text-white font-bold mb-3">
+              Ngân hàng: TMCP Kỹ thương Việt Nam - Chi nhánh Đông Đô
+            </p>
+            <div class="bg-crimson-950/80 rounded-xl p-3 border border-gold-400/30 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-gold-300 block">Số TK:</span>
+                <span class="text-xl font-black text-gold-300 tracking-wider">77896789</span>
+                <span class="block text-[11px] text-white font-semibold mt-0.5">Chủ TK: CÔNG TY CỔ PHẦN GIÁO DỤC E3</span>
+              </div>
+              <button onclick="navigator.clipboard?.writeText('77896789'); showToast('Đã sao chép Số TK 77896789 - Ngân hàng TMCP Kỹ thương Việt Nam (CN Đông Đô)!')" class="px-3 py-2 rounded-lg bg-gold-400 hover:bg-gold-300 text-crimson-950 text-xs font-extrabold transition-colors">
+                <i class="fa-regular fa-copy mr-1"></i>Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Hội viên & Chứng chỉ -->
+          <div>
+            <span class="text-xs font-bold text-gold-300 block mb-2">Hội Viên & Chứng Chỉ Quốc Tế:</span>
+            <div class="grid grid-cols-2 gap-2 text-[11px]">
+              <div class="bg-white/95 text-gray-900 rounded-xl p-2 flex items-center gap-2">
+                <img src="../assets/images/cert-hata.png" alt="HATA" class="h-7 w-auto object-contain">
+                <span class="font-bold leading-tight text-[10px]">Chi Hội Lữ Hành Hà Nội (HATA)</span>
+              </div>
+              <div class="bg-white/95 text-gray-900 rounded-xl p-2 flex items-center gap-2">
+                <img src="../assets/images/cert-unesco.png" alt="HUTC" class="h-7 w-auto object-contain">
+                <span class="font-bold leading-tight text-[10px]">Hanoi UNESCO Travel Club</span>
+              </div>
+              <div class="bg-crimson-950/70 border border-gold-400/30 rounded-xl p-2 text-gold-200 font-semibold">
+                <i class="fa-solid fa-award text-gold-400 mr-1"></i>ISO 9001:2015 & ISO 14001:2015
+              </div>
+              <div class="bg-crimson-950/70 border border-gold-400/30 rounded-xl p-2 text-gold-200 font-semibold">
+                <i class="fa-solid fa-leaf text-gold-400 mr-1"></i>GSTC Tour & MICE Standard
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gold-200/80">
+        <p>© 2014 – 2026 <strong>CÔNG TY CỔ PHẦN GIÁO DỤC E3 (E3 TRAVEL)</strong>. Đại diện là: Ông Đặng Hoàng Minh (Giám đốc). MST: 0106637430.</p>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="hover:text-white">Trang chủ</a>
+          <span>•</span>
+          <a href="category.html" class="hover:text-white">Danh mục Tour</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:text-white">Hồ sơ pháp lý</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="e3-toast" class="fixed bottom-6 right-6 z-50 hidden bg-crimson-900 text-white border-2 border-gold-400 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-bold">
+    <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+    <span id="e3-toast-msg">Đã ghi nhận thông tin!</span>
+  </div>
+
+  <script>
+    function showToast(msg) {
+      const t = document.getElementById('e3-toast');
+      const m = document.getElementById('e3-toast-msg');
+      if (t && m) {
+        m.textContent = msg;
+        t.classList.remove('hidden');
+        setTimeout(() => t.classList.add('hidden'), 3500);
+      }
+    }
+  </script>
+</body>
+</html>
