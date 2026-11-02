@@ -229,89 +229,22 @@
           </div>
         </div>
 
-        <!-- PYS Travel Style Smart Search Box -->
-        <div class="mt-8 bg-white text-gray-800 rounded-3xl p-5 sm:p-6 shadow-2xl border-2 border-gold-300">
-          <!-- Tabs -->
-          <div class="flex flex-wrap items-center gap-2 pb-4 mb-4 border-b border-gray-100">
-            <button onclick="switchSearchTab(this, 'Khách Hàng Cá Nhân (Tour Ghép / Đoàn Riêng)')" class="search-tab px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all">
-              <i class="fa-solid fa-suitcase"></i>
-              <span>Tour Trong Nước & Quốc Tế</span>
-            </button>
-            <button onclick="switchSearchTab(this, 'Du Lịch Trường Học (Học Sinh Cấp 1-2-3 & Giáo Viên)')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
-              <i class="fa-solid fa-graduation-cap text-gold-600"></i>
-              <span>Tour Học Sinh & Trường Học</span>
-            </button>
-            <button onclick="switchSearchTab(this, 'Doanh Nghiệp (Team Building / MICE / Gala Dinner)')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
-              <i class="fa-solid fa-people-group text-gold-600"></i>
-              <span>MICE & Team Building Doanh Nghiệp</span>
-            </button>
-            <button onclick="switchSearchTab(this, 'Thiết Kế Tour Theo Yêu Cầu Riêng')" class="search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all">
-              <i class="fa-solid fa-compass-drafting text-gold-600"></i>
-              <span>Tour Theo Yêu Cầu Riêng</span>
-            </button>
-            <span id="active-search-label" class="ml-auto text-[11px] font-bold text-crimson-700 hidden md:inline">
-              Đang chọn: Khách Hàng Cá Nhân (Tour Ghép / Đoàn Riêng)
-            </span>
-          </div>
-
-          <!-- Search Inputs -->
-          <form action="category.html" method="get" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
-            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
-              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Điểm khởi hành</label>
-              <div class="flex items-center gap-2 mt-1">
-                <i class="fa-solid fa-plane-departure text-crimson-700 text-xs"></i>
-                <select name="from" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
-                  <option value="hanoi">TP. Hà Nội (24LK26 Văn Phú)</option>
-                  <option value="hcm">TP. Hồ Chí Minh</option>
-                  <option value="danang">TP. Đà Nẵng</option>
-                </select>
-              </div>
+        <!-- Thanh tìm kiếm đơn giản theo yêu cầu -->
+        <div class="mt-8 max-w-3xl mx-auto">
+          <form action="category.html" method="get" class="bg-white text-gray-800 rounded-2xl p-2 sm:p-2.5 shadow-2xl border-2 border-gold-300 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+            <div class="flex-1 flex items-center gap-3 px-4 py-2.5 rounded-xl bg-gold-50/60 border border-gold-200/80 focus-within:border-crimson-700 focus-within:bg-white transition-all">
+              <i class="fa-solid fa-location-dot text-crimson-700 text-lg shrink-0"></i>
+              <input
+                type="text"
+                name="q"
+                placeholder="Bạn muốn đi đâu?"
+                aria-label="Bạn muốn đi đâu?"
+                class="w-full bg-transparent text-sm sm:text-base font-semibold text-gray-900 placeholder-gray-500 focus:outline-none"
+              >
             </div>
-
-            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
-              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Điểm đến yêu thích</label>
-              <div class="flex items-center gap-2 mt-1">
-                <i class="fa-solid fa-location-dot text-crimson-700 text-xs"></i>
-                <select name="dest" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
-                  <option value="all">Tất cả 12+ Điểm đến Bắc - Nam</option>
-                  <option value="sapa-hagiang">Sapa – Fansipan / Hà Giang</option>
-                  <option value="halong-ninhbinh">Vịnh Hạ Long – Ninh Bình Tràng An</option>
-                  <option value="danang-hoian-hue">Đà Nẵng – Hội An – Cố đô Huế</option>
-                  <option value="nhatrang-dalat-muine">Nha Trang – Đà Lạt – Mũi Né</option>
-                  <option value="phuquoc-mientay">Phú Quốc – TP.HCM – Miền Tây</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
-              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Đối tượng & Quy mô</label>
-              <div class="flex items-center gap-2 mt-1">
-                <i class="fa-solid fa-users text-crimson-700 text-xs"></i>
-                <select name="type" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
-                  <option value="all">Tất cả loại hình Tour</option>
-                  <option value="canhan">Khách lẻ (Tour ghép / Gia đình)</option>
-                  <option value="truonghoc">Trường học (Học sinh / Giáo viên)</option>
-                  <option value="doanhnghiep">Doanh nghiệp (MICE / Team Building)</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="bg-gold-50/70 border border-gold-200 rounded-2xl px-3.5 py-2.5">
-              <label class="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block">Ngân sách dự kiến</label>
-              <div class="flex items-center gap-2 mt-1">
-                <i class="fa-solid fa-coins text-gold-600 text-xs"></i>
-                <select name="budget" class="w-full bg-transparent text-xs font-bold text-gray-900 focus:outline-none">
-                  <option value="all">Tối ưu theo yêu cầu</option>
-                  <option value="under1m">Dưới 1.000.000đ (Dã ngoại 1 ngày)</option>
-                  <option value="1m-3m">1.500.000đ – 3.500.000đ</option>
-                  <option value="above3m">Trên 3.500.000đ (Tour trọn gói)</option>
-                </select>
-              </div>
-            </div>
-
-            <button type="submit" class="bg-crimson-700 hover:bg-crimson-800 text-white rounded-2xl px-5 py-3 font-extrabold text-sm shadow-lg shadow-crimson-700/30 flex items-center justify-center gap-2 transition-all">
+            <button type="submit" class="bg-crimson-700 hover:bg-crimson-800 text-white rounded-xl px-7 py-3.5 font-extrabold text-sm sm:text-base shadow-lg shadow-crimson-700/30 flex items-center justify-center gap-2 shrink-0 transition-all cursor-pointer">
               <i class="fa-solid fa-magnifying-glass text-gold-300"></i>
-              <span>Tìm Tour Ngay</span>
+              <span>Tìm kiếm</span>
             </button>
           </form>
         </div>
@@ -1116,15 +1049,6 @@
   </main>
 
   <script>
-    function switchSearchTab(btn, label) {
-      document.querySelectorAll('.search-tab').forEach(b => {
-        b.className = 'search-tab px-4 py-2 rounded-xl bg-gold-50 hover:bg-gold-100 text-crimson-800 text-xs font-bold flex items-center gap-2 transition-all';
-      });
-      btn.className = 'search-tab px-4 py-2 rounded-xl bg-crimson-700 text-white text-xs font-extrabold flex items-center gap-2 transition-all';
-      const lbl = document.getElementById('active-search-label');
-      if (lbl) lbl.textContent = 'Đang chọn: ' + label;
-    }
-
     function filterHomeTours(cat, btn) {
       document.querySelectorAll('.tour-filter-btn').forEach(b => {
         b.className = 'tour-filter-btn px-4 py-2 rounded-xl bg-white border border-gold-300 text-gray-700 text-xs font-bold hover:border-crimson-700';
