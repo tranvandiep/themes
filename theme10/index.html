@@ -1,16 +1,431 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THEME10 - E3 Travel • Công Ty Cổ Phần Giáo Dục E3 | Device Simulator</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME10 - E3 Travel" defer></script>
-</head>
-<body style="margin: 0; background-color: #2b0507;">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E3 TRAVEL (Công Ty Cổ Phần Giáo Dục E3) - Cổng Giới Thiệu & Demo Theme 10 | Gozic Platform</title>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Tự động chuyển hướng vào bản Smartphone simulator của Toolbar
-    window.location.href = 'mobile/home.html';
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'e3-blue': '#1e40af',
+            'e3-primary': '#2563eb',
+            'e3-sky': '#0284c7',
+            'e3-cyan': '#06b6d4',
+            'e3-orange': '#f97316',
+            'e3-amber': '#f59e0b',
+            'e3-dark': '#0b1329',
+            'e3-card': '#111d3d',
+            'e3-border': '#1e2e5c',
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
   </script>
+  <script src="../libs/theme-toolbar.js" data-theme-name="E3 TRAVEL - Công Ty Cổ Phần Giáo Dục E3" defer></script>
+  <script src="https://gozic.vn/chatbot/widget.js?v=1793459656" defer></script>
+</head>
+<body class="bg-[#070d1e] text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-e3-border bg-[#0b1329]/90 backdrop-blur-md px-6 py-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-blue-600 text-slate-300 hover:text-white transition-all flex items-center justify-center border border-slate-700/60" title="Quay lại Kho Theme Gozic">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo-e3.jpeg" alt="Logo E3 Travel" class="w-10 h-10 rounded-xl object-cover shadow-lg border border-blue-500/30" />
+          <div>
+            <div class="font-heading font-bold text-lg tracking-tight flex items-center gap-2">
+              <span class="text-white">E3 TRAVEL &amp; EDUCATION</span>
+              <span class="text-xs font-mono font-bold text-blue-300 px-2.5 py-0.5 rounded-full bg-blue-950/90 border border-blue-600/50">THEME 10</span>
+            </div>
+            <p class="text-xs text-slate-400 hidden sm:block">Công Ty Cổ Phần Giáo Dục E3 &bull; Tour Học Đường, Trải Nghiệm &amp; Du Lịch MICE</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="pc/home.html" class="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all flex items-center gap-2 shadow-lg shadow-blue-900/40">
+          <i class="fa-solid fa-desktop"></i>
+          <span>Xem Bản PC</span>
+        </a>
+        <a href="mobile/home.html" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-blue-300 hover:text-white text-xs font-bold transition-all flex items-center gap-2 border border-blue-800/60">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Xem Bản Mobile</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Showcase -->
+  <section class="relative overflow-hidden border-b border-e3-border py-14 px-6 bg-gradient-to-b from-[#0c1a40] via-[#070d1e] to-[#070d1e]">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/90 border border-blue-700/60 text-blue-300 text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+          <span>Trọn Bộ 14 Trang Giao Diện Chuẩn SEO (7 PC &amp; 7 Mobile)</span>
+        </div>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+          E3 TRAVEL &amp; EDUCATION <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-amber-400">Hành Trình Khám Phá Tri Thức &amp; Kết Nối Tương Lai</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Giao diện chuyên biệt dành cho Doanh nghiệp Lữ hành, Du lịch Giáo dục Trải nghiệm, Hoạt động Ngoại khóa Học đường, Teambuilding &amp; Sự kiện MICE Doanh nghiệp. Bố cục hiện đại kết hợp sắc Xanh Đại Dương – Cam Năng Động, tích hợp bộ tìm kiếm tour đa tiêu chí, lịch trình theo ngày chi tiết, giỏ hàng giữ chỗ và chứng nhận năng lực chuẩn UNESCO &amp; HATA.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="pc/home.html" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold text-sm shadow-xl shadow-blue-900/50 flex items-center gap-2 transition-all">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Khởi Chạy Bản PC Demo</span>
+          </a>
+          <a href="mobile/home.html" class="px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-cyan-300 font-bold text-sm border border-cyan-700/50 flex items-center gap-2 transition-all">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Khởi Chạy Smartphone Simulator</span>
+          </a>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 pt-2 text-xs text-slate-400">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-blue-400"></i>
+            <span>Đầy đủ 14 trang PC &amp; Mobile</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-cyan-400"></i>
+            <span>Chuẩn SEO &amp; Mobile-First</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span>Tích hợp Gozic AI Chatbot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview Mockup Card -->
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl overflow-hidden border border-blue-800/50 shadow-2xl bg-e3-card relative group">
+          <div class="relative overflow-hidden h-72">
+            <img src="assets/images/banner_mockup.jpg" alt="E3 Travel Mockup Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b1329] via-transparent to-transparent opacity-80"></div>
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-blue-600/90 text-white shadow-md">
+                <i class="fa-solid fa-award mr-1"></i> UNESCO &amp; HATA
+              </span>
+            </div>
+          </div>
+          <div class="p-5 bg-e3-card border-t border-e3-border flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Chủ đề thiết kế</div>
+              <div class="text-sm font-bold text-white mt-0.5">Du Lịch Học Đường, Lữ Hành &amp; Sự Kiện MICE</div>
+              <div class="text-xs text-slate-400 mt-0.5">Tone Xanh Đại Dương &bull; Cam Năng Động</div>
+            </div>
+            <a href="pc/home.html" class="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition-all shadow-md group-hover:translate-x-1" title="Khám phá ngay">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-7xl mx-auto px-6 py-12 w-full space-y-12">
+
+    <!-- 2 Platform Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- PC Card -->
+      <div class="bg-e3-card border border-e3-border rounded-2xl p-8 hover:border-blue-500/60 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-desktop text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="font-heading text-xl font-bold text-white">Giao Diện Máy Tính (PC View)</h2>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-blue-900/60 text-blue-300 border border-blue-700/40 font-bold">1920 &times; 1080</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Bố cục Panorama toàn cảnh tráng lệ: Banner video/slider, bộ tìm kiếm tour đa tiêu chí (điểm đến, ngày khởi hành, khoảng giá), 3 nhóm tour chủ lực (Tour học đường trải nghiệm, Tour ghép chất lượng cao, Tour đoàn theo yêu cầu), bản đồ điểm đến Việt Nam, thư viện ảnh HD, chứng chỉ đối tác UNESCO &amp; HATA.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <a href="pc/home.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">home.html</a>
+            <a href="pc/category.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">category.html</a>
+            <a href="pc/detail.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">detail.html</a>
+            <a href="pc/cart.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">cart.html</a>
+            <a href="pc/news.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">news.html</a>
+            <a href="pc/post.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">post.html</a>
+            <a href="pc/contact.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-blue-700 text-slate-300 hover:text-white transition-colors border border-slate-700/50">contact.html</a>
+          </div>
+        </div>
+        <a href="pc/home.html" class="mt-8 block w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-center rounded-xl transition-all text-sm shadow-lg shadow-blue-900/40">
+          <i class="fa-solid fa-play mr-1.5"></i> Mở Bản PC Demo
+        </a>
+      </div>
+
+      <!-- Mobile Card -->
+      <div class="bg-e3-card border border-e3-border rounded-2xl p-8 hover:border-amber-500/60 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="font-heading text-xl font-bold text-white">Giao Diện Di Động (Mobile View)</h2>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-amber-900/60 text-amber-300 border border-amber-700/40 font-bold">390 &times; 844</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Tối ưu thao tác vuốt chạm 100% trên điện thoại di động: Menu Drawer trượt mượt mà, bộ lọc tour dạng thẻ ngang, bảng giá trọn gói và lịch trình tour co giãn thông minh, nút gọi Hotline / Chat Zalo / Messenger gắn cố định và nút đặt tour nhanh 1 chạm.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <a href="mobile/home.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">home.html</a>
+            <a href="mobile/category.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">category.html</a>
+            <a href="mobile/detail.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">detail.html</a>
+            <a href="mobile/cart.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">cart.html</a>
+            <a href="mobile/news.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">news.html</a>
+            <a href="mobile/post.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">post.html</a>
+            <a href="mobile/contact.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-amber-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">contact.html</a>
+          </div>
+        </div>
+        <a href="mobile/home.html" class="mt-8 block w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-cyan-300 font-bold text-center rounded-xl transition-all text-sm border border-cyan-700/50">
+          <i class="fa-solid fa-mobile-screen mr-1.5"></i> Mở Bản Smartphone Simulator
+        </a>
+      </div>
+    </div>
+
+    <!-- 7 Pages Directory Matrix -->
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 class="font-heading text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-cyan-400"></i>
+            <span>Danh Mục 7 Trang Chức Năng Tiêu Chuẩn (PC &amp; Mobile)</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-1">Đầy đủ 14 file HTML độc lập sẵn sàng chuyển giao hoặc tích hợp vào hệ thống CMS</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- 01 / HOME -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">01 / HOME</span>
+              <i class="fa-solid fa-house text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Trang Chủ E3 Travel</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Hero slider, thanh lọc tour nhanh, 3 nhóm tour trải nghiệm, hồ sơ năng lực UNESCO &amp; HATA, đối tác trường học &amp; doanh nghiệp.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/home.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/home.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 02 / CATEGORY -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">02 / CATEGORY</span>
+              <i class="fa-solid fa-compass text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Danh Mục Tour &amp; Điểm Đến</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Lưới tour Hạ Long, Sapa, Tràng An, Miền Tây, Phú Quốc, Huế... kèm bộ lọc đa tiêu chí (thời lượng 2N1Đ, 3N2Đ, mức giá và loại hình).
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/category.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/category.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 03 / DETAIL -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">03 / DETAIL</span>
+              <i class="fa-solid fa-map-location-dot text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Chi Tiết Lịch Trình Tour</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Timeline lịch trình từng ngày, bảng giá trọn gói, chính sách bao gồm &amp; không bao gồm, thư viện ảnh điểm đến và form giữ chỗ.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/detail.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/detail.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 04 / CART -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">04 / CART</span>
+              <i class="fa-solid fa-cart-shopping text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Giỏ Hàng &amp; Đặt Giữ Chỗ</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Danh sách tour đã chọn, tính tổng chi phí tự động theo số lượng người lớn/trẻ em, áp mã voucher ưu đãi học đường và thanh toán.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/cart.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/cart.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 05 / NEWS -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">05 / NEWS</span>
+              <i class="fa-solid fa-newspaper text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Cẩm Nang &amp; Giáo Dục</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Cẩm nang du lịch học đường an toàn, kinh nghiệm dã ngoại, kiến thức lịch sử điểm đến, văn hóa vùng miền và hoạt động ngoại khóa.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/news.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/news.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 06 / POST -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">06 / POST</span>
+              <i class="fa-solid fa-file-lines text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Chi Tiết Bài Viết Chuẩn SEO</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Mục lục bài viết tự động, nội dung cẩm nang chuyên sâu, hình ảnh thực tế chất lượng cao, chia sẻ mạng xã hội và tour liên quan.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/post.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/post.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 07 / CONTACT -->
+        <div class="p-5 rounded-2xl bg-e3-card border border-e3-border flex flex-col justify-between hover:border-blue-500/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-blue-400 font-mono font-bold text-xs">07 / CONTACT</span>
+              <i class="fa-solid fa-headset text-blue-400/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">Liên Hệ &amp; Báo Giá Đoàn</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Thông tin trụ sở E3 Travel Hà Nội &amp; chi nhánh, số hotline tư vấn 24/7, bản đồ Google Maps và form gửi yêu cầu báo giá tour đoàn.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-e3-border">
+            <a href="pc/contact.html" class="py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/contact.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-cyan-300 text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 08 / ARCHITECTURE -->
+        <div class="p-5 rounded-2xl bg-gradient-to-br from-blue-950 to-slate-900 border border-blue-700/60 flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-amber-400 font-mono font-bold text-xs">CẤU TRÚC THEME</span>
+              <i class="fa-solid fa-folder-tree text-amber-400"></i>
+            </div>
+            <h4 class="font-heading font-bold text-base text-white">14 File HTML Độc Lập</h4>
+            <div class="font-mono text-[11px] text-cyan-300/90 space-y-1 bg-black/40 p-2.5 rounded-xl mt-2">
+              <div>📁 mobile/ &bull; 7 trang</div>
+              <div>📁 pc/ &bull; 7 trang</div>
+              <div>📁 assets/images/ &bull; 80+ ảnh HD</div>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-blue-800/60 text-[11px] text-slate-400">
+            Chạy độc lập trên mọi trình duyệt, không cần môi trường backend phức tạp.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Highlights & Specifications -->
+    <div class="p-8 rounded-2xl bg-e3-card border border-e3-border">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center flex-shrink-0 text-lg">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm">Responsive Tuyệt Đối</h5>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Tách biệt 2 phiên bản PC &amp; Mobile chuyên nghiệp, tối ưu hóa giao diện cho từng trải nghiệm người dùng riêng biệt.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center flex-shrink-0 text-lg">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm">Tối Ưu Tốc Độ &amp; SEO</h5>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Cấu trúc HTML5 ngữ nghĩa, thẻ Meta OpenGraph đầy đủ, hình ảnh nén chuẩn Web, sẵn sàng đạt điểm Google PageSpeed 95+.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center flex-shrink-0 text-lg">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h5 class="font-bold text-white text-sm">Tích Hợp Gozic AI Chatbot</h5>
+            <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+              Sẵn sàng trợ lý AI tư vấn lịch trình tour, báo giá tour đoàn tự động 24/7 và thu thập thông tin khách hàng tiềm năng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-e3-border bg-[#050914] text-center py-6 px-6 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        &copy; 2026 <strong class="text-white">E3 TRAVEL &bull; CÔNG TY CỔ PHẦN GIÁO DỤC E3</strong>. All rights reserved.
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="pc/home.html" class="hover:text-blue-400 transition-colors">Bản PC</a>
+        <span>&bull;</span>
+        <a href="mobile/home.html" class="hover:text-cyan-400 transition-colors">Bản Mobile</a>
+        <span>&bull;</span>
+        <a href="../index.html" class="hover:text-amber-400 transition-colors">Kho Theme Gozic</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
