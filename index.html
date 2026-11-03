@@ -2041,6 +2041,13 @@
                   <div class="dropdown-desc">Đào tạo trực tuyến, Thi trắc nghiệm</div>
                 </div>
               </a>
+              <a href="#themes" class="dropdown-item" onclick="filterByCategory('travel')">
+                <div class="dropdown-icon-box"><i class="bi bi-airplane"></i></div>
+                <div>
+                  <div class="dropdown-title">Du Lịch, Tour & Khách Sạn</div>
+                  <div class="dropdown-desc">Công ty lữ hành, Tour ghép, MICE</div>
+                </div>
+              </a>
             </div>
           </li>
           <li class="nav-item has-dropdown">
@@ -2149,7 +2156,7 @@
                 <i class="bi bi-grid-fill"></i>
                 <span>Tất Cả Giao Diện</span>
               </span>
-              <span class="tab-count">9</span>
+              <span class="tab-count">10</span>
             </button>
 
             <button type="button" class="category-menu-item tab-btn" data-category="ecommerce">
@@ -2212,6 +2219,14 @@
               <span class="item-left">
                 <i class="bi bi-hospital-fill"></i>
                 <span>Y Tế & Nha Khoa</span>
+              </span>
+              <span class="tab-count">1</span>
+            </button>
+
+            <button type="button" class="category-menu-item tab-btn" data-category="travel">
+              <span class="item-left">
+                <i class="bi bi-airplane-fill"></i>
+                <span>Du Lịch, Tour & Khách Sạn</span>
               </span>
               <span class="tab-count">1</span>
             </button>
@@ -2828,6 +2843,68 @@
             </div>
           </article>
 
+          <!-- THEME 10: E3 TRAVEL (Công Ty Cổ Phần Giáo Dục E3) -->
+          <article class="theme-card" data-id="theme10" data-category="travel" data-status="ready"
+            data-title="E3 Travel - Công Ty Cổ Phần Giáo Dục & Du Lịch E3">
+            <div class="card-preview">
+              <img src="theme10/assets/images/banner_mockup.jpg"
+                alt="E3 Travel - Công Ty Cổ Phần Giáo Dục E3" loading="lazy" />
+
+              <div class="preview-badges">
+                <span class="badge-status ready"><i class="bi bi-check-circle-fill"></i> Sẵn Sàng Trải Nghiệm</span>
+                <span class="badge-status hot"><i class="bi bi-stars"></i> Du Lịch &amp; MICE</span>
+              </div>
+
+              <div class="preview-device-badge">
+                <i class="bi bi-display"></i> PC &amp; Mobile
+              </div>
+
+              <div class="preview-overlay">
+                <a href="theme10/index.html" class="btn-preview-action primary">
+                  <i class="bi bi-eye-fill"></i> Xem Trọn Bộ Demo
+                </a>
+                <button type="button" class="btn-preview-action secondary" onclick="openPreviewModal('theme10')">
+                  <i class="bi bi-laptop"></i> Xem Thử Nhanh
+                </button>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="card-category">Du Lịch, Tour &amp; Khách Sạn</span>
+                <span class="card-version"><i class="bi bi-shield-check"></i> v2.5 Chuẩn SEO</span>
+              </div>
+
+              <h2 class="card-title">E3 Travel - Lữ Hành &amp; Giáo Dục</h2>
+              <p class="card-desc">
+                Website công ty lữ hành và tổ chức sự kiện học tập trải nghiệm MICE. Tích hợp bộ tìm kiếm tour thông minh, lịch trình tour theo ngày, đặt chỗ online, hồ sơ đối tác vận tải - khách sạn.
+              </p>
+
+              <div class="card-tags">
+                <span class="tag-item">Du lịch Lữ hành</span>
+                <span class="tag-item">Tour ghép &amp; Tour đoàn</span>
+                <span class="tag-item">Sự kiện MICE</span>
+                <span class="tag-item">Lịch trình chuyên nghiệp</span>
+              </div>
+
+              <div class="card-footer">
+                <div class="card-links">
+                  <a href="theme10/pc/home.html" target="_self" class="btn-link-sm" title="Khám phá bản PC">
+                    <i class="bi bi-laptop"></i> PC Demo
+                  </a>
+                  <a href="theme10/mobile/home.html" target="_self" class="btn-link-sm" title="Khám phá bản Mobile">
+                    <i class="bi bi-phone"></i> Mobile Demo
+                  </a>
+                </div>
+
+                <a href="theme10/index.html" class="btn-launch-demo">
+                  <span>Trải Nghiệm</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </main>
     </div>
@@ -3195,6 +3272,21 @@
           'Hồ sơ đội ngũ chuyên gia, sự kiện chuyển giao và đăng ký đại lý',
           'Giao diện bộ đôi hoàn chỉnh PC & Mobile (14 trang chuẩn SEO)'
         ]
+      },
+      theme10: {
+        title: 'E3 TRAVEL - Công Ty Cổ Phần Giáo Dục & Du Lịch E3',
+        category: 'Du Lịch, Tour & Khách Sạn',
+        pcUrl: 'theme10/pc/home.html',
+        mobileUrl: 'theme10/mobile/home.html',
+        fullUrl: 'theme10/index.html',
+        status: 'ready',
+        features: [
+          'Website du lịch lữ hành, tour ghép, tour đoàn và sự kiện học tập MICE',
+          'Khối tìm kiếm tour thông minh theo điểm đến, thời gian và mức giá',
+          'Trang chi tiết tour hoàn chỉnh: lịch trình theo ngày, bảng giá và đặt chỗ',
+          'Hồ sơ năng lực doanh nghiệp, đối tác vận tải, khách sạn và bảo hiểm du lịch',
+          'Giao diện bộ đôi hoàn chỉnh chuẩn Responsive trên cả PC & Mobile (14 trang chuẩn SEO)'
+        ]
       }
     };
 
@@ -3431,6 +3523,9 @@
       window.open('https://gozic.vn/lien-he', '_self');
     }
   </script>
+
+  <!-- Gozic AI Chatbot Widget -->
+  <script src="https://gozic.vn/chatbot/widget.js?v=1793459656" defer></script>
 </body>
 
 </html>
