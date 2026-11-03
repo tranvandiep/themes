@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tin Tức & Xu Hướng Thời Trang • ND Style | THEME11 (PC)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
+  <style>
+    body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; }
+    .bg-coral { background-color: #eb5b38; }
+    .text-coral { color: #eb5b38; }
+    .border-coral { border-color: #eb5b38; }
+    .hover-bg-coral:hover { background-color: #d94a27; }
+    .hover-text-coral:hover { color: #eb5b38; }
+    .topbar-bg { background: linear-gradient(90deg, #e95936 0%, #f36f4d 50%, #e95936 100%); }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col bg-white">
+
+  <div class="topbar-bg text-white text-xs md:text-sm py-2.5 px-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-left text-[10px]"></i></span>
+      <div class="font-bold tracking-wide uppercase text-center">CHÀO ĐÓN BỘ SƯU TẬP THU ĐÔNG 2024</div>
+      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+    </div>
+  </div>
+
+  <header class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-8">
+      <a href="home.html" class="flex items-center shrink-0">
+        <img src="../assets/images/logo.png" alt="ND Style" class="h-10 md:h-11 object-contain">
+      </a>
+      <form action="category.html" class="flex-1 max-w-2xl relative">
+        <input type="text" placeholder="Tìm kiếm bài viết, xu hướng phối đồ..." class="w-full pl-5 pr-12 py-2.5 rounded-full bg-[#f8f3f0] text-sm outline-none">
+        <button type="submit" class="w-8 h-8 rounded-full bg-coral text-white flex items-center justify-center absolute right-1.5 top-1/2 -translate-y-1/2">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </button>
+      </form>
+      <div class="flex items-center gap-6 shrink-0">
+        <a href="category.html" class="flex flex-col items-center gap-1 relative">
+          <div class="relative"><i class="fa-regular fa-heart text-xl text-coral"></i><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">3</span></div>
+          <span class="text-xs font-medium text-gray-700">Yêu thích</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center gap-1">
+          <i class="fa-regular fa-circle-user text-xl text-coral"></i>
+          <span class="text-xs font-medium text-gray-700">Tài khoản</span>
+        </a>
+        <a href="cart.html" class="flex flex-col items-center gap-1 relative">
+          <div class="relative"><i class="fa-solid fa-bag-shopping text-xl text-coral"></i><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">2</span></div>
+          <span class="text-xs font-medium text-gray-700">Giỏ hàng</span>
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-gray-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <nav class="flex items-center justify-center gap-8 text-sm font-semibold text-gray-800 py-3">
+          <a href="home.html" class="hover-text-coral">Trang chủ</a>
+          <a href="category.html" class="hover-text-coral">Nữ</a>
+          <a href="category.html" class="hover-text-coral">Nam</a>
+          <a href="news.html" class="text-coral font-bold">Tin tức</a>
+          <a href="contact.html" class="hover-text-coral">Liên hệ</a>
+          <a href="contact.html#showroom" class="hover-text-coral">Hệ thống cửa hàng</a>
+          <a href="cart.html" class="hover-text-coral">Kiểm tra đơn hàng</a>
+          <a href="detail.html" class="hover-text-coral">Chi tiết sản phẩm</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <div class="bg-[#faf4f0] py-6 border-b border-[#f3e5dc]">
+      <div class="max-w-7xl mx-auto px-4">
+        <nav class="text-xs text-gray-500 mb-1">
+          <a href="home.html" class="hover-text-coral">Trang chủ</a> / <span class="text-coral font-bold">Tin tức & Cẩm nang phối đồ</span>
+        </nav>
+        <h1 class="text-2xl font-extrabold text-gray-900 uppercase">TIN TỨC & CẨM NANG THỜI TRANG ND STYLE</h1>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <!-- Featured Post -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#faf4f0] rounded-3xl p-6 md:p-8 mb-12">
+        <div class="lg:col-span-7 rounded-2xl overflow-hidden aspect-[16/10]">
+          <a href="post.html"><img src="../assets/images/blog_1.jpg" alt="4 món đồ họa tiết đáng sắm" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"></a>
+        </div>
+        <div class="lg:col-span-5 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-coral text-white text-xs font-extrabold uppercase">Tiêu điểm Thu Đông</span>
+          <h2 class="text-2xl font-extrabold text-gray-900 leading-snug">
+            <a href="post.html" class="hover-text-coral">4 món đồ họa tiết đáng sắm để phong cách trẻ trung hơn trong mùa Thu Đông</a>
+          </h2>
+          <div class="text-xs text-gray-500 flex items-center gap-4">
+            <span><i class="fa-regular fa-calendar text-coral mr-1"></i>18/11/2024</span>
+            <span><i class="fa-regular fa-user text-coral mr-1"></i>Nguyễn Anh Dũng</span>
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            Thời trang mùa lạnh không nên chỉ giới hạn với những món đồ trơn màu. Khi bổ sung cho tủ đồ các item họa tiết kẻ sọc, hoa nhí hay răng sói, phong cách của chị em sẽ trở nên đa dạng và cuốn hút hơn...
+          </p>
+          <a href="post.html" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-coral text-white text-xs font-bold uppercase">
+            Đọc tiếp bài viết <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+          <a href="post.html" class="block aspect-[16/10] overflow-hidden">
+            <img src="../assets/images/blog_2.jpg" alt="5 món thời trang tối giản" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </a>
+          <div class="p-5">
+            <span class="text-xs text-coral font-bold">18/11/2024 • Bí quyết mặc đẹp</span>
+            <h3 class="font-extrabold text-base text-gray-900 mt-1 mb-2 group-hover:text-coral">
+              <a href="post.html">5 món thời trang tối giản được phụ nữ Pháp diện mãi không chán</a>
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Áo blazer dáng suông, quần jeans ống đứng và áo len cổ tim luôn là bảo chứng cho vẻ ngoài thanh lịch vượt thời gian...
+            </p>
+            <a href="post.html" class="text-xs font-extrabold text-coral hover:underline">Xem chi tiết →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+          <a href="post.html" class="block aspect-[16/10] overflow-hidden">
+            <img src="../assets/images/blog_3.jpg" alt="4 kiểu áo tối giản" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </a>
+          <div class="p-5">
+            <span class="text-xs text-coral font-bold">18/11/2024 • Xu hướng Á Đông</span>
+            <h3 class="font-extrabold text-base text-gray-900 mt-1 mb-2 group-hover:text-coral">
+              <a href="post.html">4 kiểu áo tối giản được phụ nữ Nhật Bản yêu thích trong mùa thu</a>
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Sự tinh giản trong đường cắt may và gam màu trung tính ấm áp giúp phái đẹp Nhật Bản luôn ghi điểm thanh lịch nơi công sở...
+            </p>
+            <a href="post.html" class="text-xs font-extrabold text-coral hover:underline">Xem chi tiết →</a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+          <a href="post.html" class="block aspect-[16/10] overflow-hidden">
+            <img src="../assets/images/blog_home.jpg" alt="Lookbook Enchanting Dress" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </a>
+          <div class="p-5">
+            <span class="text-xs text-coral font-bold">15/11/2024 • Bộ sưu tập mới</span>
+            <h3 class="font-extrabold text-base text-gray-900 mt-1 mb-2 group-hover:text-coral">
+              <a href="post.html">Cách phối áo khoác da lộn và chân váy dài chuẩn gu Hàn Quốc</a>
+            </h3>
+            <p class="text-xs text-gray-500 leading-relaxed mb-4">
+              Gợi ý công thức mix & match giữ ấm hiệu quả mà vẫn tôn dáng cao ráo cho những ngày giao mùa se lạnh...
+            </p>
+            <a href="post.html" class="text-xs font-extrabold text-coral hover:underline">Xem chi tiết →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-[#1b1b1b] text-gray-300 text-sm pt-14 pb-8 border-t border-gray-800 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-400">
+      <img src="../assets/images/logo-footer.png" alt="ND Style" class="h-9 mx-auto mb-3 object-contain">
+      <p>CÔNG TY ND THEME • Địa chỉ: 266 Đội Cấn, Ba Đình, Hà Nội • Hotline: 1900 6750</p>
+      <p class="mt-2 text-gray-500">© Bản quyền thuộc về ND Style (THEME11) | Cung cấp bởi Gozic Studio.</p>
+    </div>
+  </footer>
+</body>
+</html>

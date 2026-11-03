@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Mục Thời Trang & Bộ Sưu Tập • ND Style | THEME11 (PC)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
+  <style>
+    body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; }
+    .font-serif-brand { font-family: 'Playfair Display', serif; }
+    .bg-coral { background-color: #eb5b38; }
+    .text-coral { color: #eb5b38; }
+    .border-coral { border-color: #eb5b38; }
+    .hover-bg-coral:hover { background-color: #d94a27; }
+    .hover-text-coral:hover { color: #eb5b38; }
+    .topbar-bg { background: linear-gradient(90deg, #e95936 0%, #f36f4d 50%, #e95936 100%); }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col bg-white">
+
+  <!-- Topbar -->
+  <div class="topbar-bg text-white text-xs md:text-sm py-2.5 px-4">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-left text-[10px]"></i></span>
+      <div class="font-bold tracking-wide uppercase text-center">CHÀO ĐÓN BỘ SƯU TẬP THU ĐÔNG 2024 • GIẢM ĐẾN 50%</div>
+      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-8">
+      <a href="home.html" class="flex items-center shrink-0">
+        <img src="../assets/images/logo.png" alt="ND Style" class="h-10 md:h-11 object-contain">
+      </a>
+      <form action="category.html" class="flex-1 max-w-2xl relative">
+        <input type="text" placeholder="Tìm kiếm áo khoác, váy thu đông, sơ mi..." class="w-full pl-5 pr-12 py-2.5 rounded-full bg-[#f8f3f0] border border-transparent focus:border-[#eb5b38] focus:bg-white text-sm text-gray-800 outline-none transition-all">
+        <button type="submit" class="w-8 h-8 rounded-full bg-coral hover-bg-coral text-white flex items-center justify-center absolute right-1.5 top-1/2 -translate-y-1/2">
+          <i class="fa-solid fa-magnifying-glass text-xs"></i>
+        </button>
+      </form>
+      <div class="flex items-center gap-6 shrink-0">
+        <a href="category.html" class="flex flex-col items-center gap-1 group relative">
+          <div class="relative">
+            <i class="fa-regular fa-heart text-xl text-coral"></i>
+            <span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">3</span>
+          </div>
+          <span class="text-xs font-medium text-gray-700 group-hover:text-coral">Yêu thích</span>
+        </a>
+        <a href="contact.html" class="flex flex-col items-center gap-1 group">
+          <i class="fa-regular fa-circle-user text-xl text-coral"></i>
+          <span class="text-xs font-medium text-gray-700 group-hover:text-coral">Tài khoản</span>
+        </a>
+        <a href="cart.html" class="flex flex-col items-center gap-1 group relative">
+          <div class="relative">
+            <i class="fa-solid fa-bag-shopping text-xl text-coral"></i>
+            <span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">2</span>
+          </div>
+          <span class="text-xs font-medium text-gray-700 group-hover:text-coral">Giỏ hàng</span>
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-gray-100 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <nav class="flex items-center justify-center gap-8 text-sm font-semibold text-gray-800 py-3">
+          <a href="home.html" class="hover-text-coral">Trang chủ</a>
+          <a href="category.html" class="text-coral font-bold flex items-center gap-1"><span>Nữ</span> <i class="fa-solid fa-caret-down text-xs"></i></a>
+          <a href="category.html" class="hover-text-coral flex items-center gap-1"><span>Nam</span> <i class="fa-solid fa-caret-down text-xs"></i></a>
+          <a href="news.html" class="hover-text-coral">Tin tức</a>
+          <a href="contact.html" class="hover-text-coral">Liên hệ</a>
+          <a href="contact.html#showroom" class="hover-text-coral">Hệ thống cửa hàng</a>
+          <a href="cart.html" class="hover-text-coral">Kiểm tra đơn hàng</a>
+          <a href="detail.html" class="hover-text-coral flex items-center gap-1"><span>Chi tiết sản phẩm</span> <i class="fa-solid fa-caret-down text-xs"></i></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Breadcrumb Banner -->
+    <div class="bg-[#faf4f0] py-6 border-b border-[#f3e5dc]">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div>
+          <nav class="text-xs text-gray-500 mb-1">
+            <a href="home.html" class="hover-text-coral">Trang chủ</a>
+            <span class="mx-2">/</span>
+            <span class="text-coral font-bold">Tất cả sản phẩm Thu Đông 2024</span>
+          </nav>
+          <h1 class="text-2xl font-extrabold text-gray-900 uppercase tracking-tight">BỘ SƯU TẬP THỜI TRANG ND STYLE</h1>
+        </div>
+        <div class="flex items-center gap-2 text-xs">
+          <span class="px-3 py-1.5 rounded-full bg-white border border-[#f3d6ca] font-bold text-coral">
+            <i class="fa-solid fa-ticket mr-1"></i>Mã NDSTYLE25: Giảm 25% ĐH từ 1.049k
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+      <!-- Quick Circle Categories -->
+      <div class="grid grid-cols-4 md:grid-cols-8 gap-4 mb-10 pb-8 border-b border-gray-100">
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_1.png" alt="Áo nữ" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Áo nữ</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_2.png" alt="Váy" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Váy</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_3.png" alt="Áo nam" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Áo nam</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_4.png" alt="Sơ mi" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Sơ mi</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_5.png" alt="Quần" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Quần</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_6.png" alt="Áo khoác" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Áo khoác</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_7.png" alt="Giày dép" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Giày dép</span>
+        </a>
+        <a href="category.html" class="flex flex-col items-center gap-2 group">
+          <div class="w-20 h-20 rounded-full bg-[#faf4f0] group-hover:bg-[#ffe2d9] p-3 flex items-center justify-center transition-all">
+            <img src="../assets/images/cate_8.png" alt="Phụ kiện" class="max-h-14 object-contain">
+          </div>
+          <span class="text-xs font-extrabold uppercase text-gray-800 group-hover:text-coral">Phụ kiện</span>
+        </a>
+      </div>
+
+      <!-- Main Layout: Sidebar Filter + Product Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Sidebar Filter -->
+        <aside class="lg:col-span-3 space-y-6">
+          <div class="bg-[#faf4f0] rounded-2xl p-5 border border-[#f3e5dc]">
+            <h3 class="font-extrabold text-sm uppercase text-gray-900 mb-4 flex items-center justify-between">
+              <span>Danh Mục Sản Phẩm</span>
+              <i class="fa-solid fa-layer-group text-coral"></i>
+            </h3>
+            <ul class="space-y-2.5 text-xs font-semibold text-gray-700">
+              <li><a href="category.html" class="flex items-center justify-between text-coral font-bold"><span>Thời trang Nữ</span> <span>(48)</span></a></li>
+              <li><a href="category.html" class="flex items-center justify-between hover-text-coral"><span>Thời trang Nam</span> <span>(36)</span></a></li>
+              <li><a href="category.html" class="flex items-center justify-between hover-text-coral"><span>Áo Khoác Da & Bomber</span> <span>(18)</span></a></li>
+              <li><a href="category.html" class="flex items-center justify-between hover-text-coral"><span>Đầm & Váy Thiết Kế</span> <span>(24)</span></a></li>
+              <li><a href="category.html" class="flex items-center justify-between hover-text-coral"><span>Quần Jeans & Quần Âu</span> <span>(30)</span></a></li>
+              <li><a href="category.html" class="flex items-center justify-between hover-text-coral"><span>Túi Xách & Phụ Kiện</span> <span>(22)</span></a></li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <h3 class="font-extrabold text-sm uppercase text-gray-900 mb-4">Khoảng Giá</h3>
+            <div class="space-y-2.5 text-xs text-gray-700">
+              <label class="flex items-center gap-2.5 cursor-pointer"><input type="checkbox" class="accent-[#eb5b38]" checked> <span>Tất cả mức giá</span></label>
+              <label class="flex items-center gap-2.5 cursor-pointer"><input type="checkbox" class="accent-[#eb5b38]"> <span>Dưới 300.000₫</span></label>
+              <label class="flex items-center gap-2.5 cursor-pointer"><input type="checkbox" class="accent-[#eb5b38]"> <span>300.000₫ - 600.000₫</span></label>
+              <label class="flex items-center gap-2.5 cursor-pointer"><input type="checkbox" class="accent-[#eb5b38]"> <span>600.000₫ - 1.000.000₫</span></label>
+              <label class="flex items-center gap-2.5 cursor-pointer"><input type="checkbox" class="accent-[#eb5b38]"> <span>Trên 1.000.000₫</span></label>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <h3 class="font-extrabold text-sm uppercase text-gray-900 mb-4">Kích Cỡ (Size)</h3>
+            <div class="grid grid-cols-4 gap-2 text-xs font-bold">
+              <button class="py-2 rounded-lg border border-coral bg-coral text-white">S</button>
+              <button class="py-2 rounded-lg border border-gray-200 hover:border-coral">M</button>
+              <button class="py-2 rounded-lg border border-gray-200 hover:border-coral">L</button>
+              <button class="py-2 rounded-lg border border-gray-200 hover:border-coral">XL</button>
+            </div>
+          </div>
+
+          <a href="detail.html" class="block rounded-2xl overflow-hidden shadow-sm">
+            <img src="../assets/images/product_banner_2.jpg" alt="Lookbook Banner" class="w-full h-auto object-cover">
+          </a>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="lg:col-span-9">
+          <!-- Sort Bar -->
+          <div class="flex flex-wrap items-center justify-between gap-4 bg-[#faf4f0] px-5 py-3.5 rounded-2xl mb-6 text-xs">
+            <div class="flex items-center gap-2 font-bold text-gray-700">
+              <span>Sắp xếp theo:</span>
+              <button class="px-3.5 py-1.5 rounded-full bg-coral text-white">Mặc định</button>
+              <button class="px-3.5 py-1.5 rounded-full bg-white hover:bg-[#ffe2d9]">Mới nhất</button>
+              <button class="px-3.5 py-1.5 rounded-full bg-white hover:bg-[#ffe2d9]">Giá tăng dần</button>
+              <button class="px-3.5 py-1.5 rounded-full bg-white hover:bg-[#ffe2d9]">Khuyến mãi sâu</button>
+            </div>
+            <span class="text-gray-500 font-semibold">Hiển thị <strong>12</strong> / 84 sản phẩm</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 7%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_1.jpg" alt="Áo Khoác Da Lộn Nam 2 Lớp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Áo Khoác Da Lộn Nam 2 Lớp Cao Cấp</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">1.860.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">2.000.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 25%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_2.jpg" alt="Áo polo nam phối màu ND008" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Áo polo nam phối màu ND008</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">450.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">600.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 28%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_3.jpg" alt="Váy liền nữ dáng dài, phối màu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Váy liền nữ dáng dài, phối màu thanh lịch</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">628.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">868.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 17%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_4.jpg" alt="Áo Nỉ Nữ Phối Lá Cổ Dáng Relax" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Áo Nỉ Nữ Phối Lá Cổ Dáng Relax</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">568.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">686.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 44%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_5.jpg" alt="Áo Nỉ Nữ Oversize Cắt Bổ Tinh Tế" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Áo Nỉ Nữ Oversize Cắt Bổ Tinh Tế</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">486.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">868.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 21%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_6.jpg" alt="Quần Jeans Nam Slim Denim Like Cơ Bản ND006" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Quần Jeans Nam Slim Denim Like Cơ Bản ND006</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">680.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">860.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <span class="absolute top-2.5 left-2.5 z-10 px-2.5 py-1 bg-coral text-white text-[11px] font-extrabold rounded-md">- 22%</span>
+                  <a href="detail.html"><img src="../assets/images/prod_10.jpg" alt="Áo len polo nam cộc tay ND004" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Áo len polo nam cộc tay ND004</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">699.000₫</span>
+                  <span class="text-xs text-gray-400 line-through">899.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <a href="detail.html"><img src="../assets/images/prod_14.jpg" alt="Đầm Liền Nữ Dáng A Cổ Sơ Mi Dài Tay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Đầm Liền Nữ Dáng A Cổ Sơ Mi Dài Tay Xếp Ly</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">868.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all flex flex-col justify-between">
+              <div>
+                <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+                  <a href="detail.html"><img src="../assets/images/prod_22.jpg" alt="Túi Xách Nữ Công Sở Da PU Cao Cấp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+                </div>
+                <h3 class="font-bold text-sm text-gray-900 line-clamp-2 mb-1.5 group-hover:text-coral"><a href="detail.html">Túi Xách Nữ Công Sở Da PU Cao Cấp</a></h3>
+              </div>
+              <div class="pt-2 border-t border-gray-100 flex items-center justify-between">
+                <div>
+                  <span class="text-base font-extrabold text-coral block">1.800.000₫</span>
+                </div>
+                <a href="cart.html" class="px-3.5 py-2 bg-coral hover-bg-coral text-white rounded-xl text-xs font-bold">+ Giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="mt-10 flex items-center justify-center gap-2 text-xs font-extrabold">
+            <span class="w-9 h-9 rounded-xl bg-coral text-white flex items-center justify-center">1</span>
+            <a href="category.html" class="w-9 h-9 rounded-xl bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 flex items-center justify-center">2</a>
+            <a href="category.html" class="w-9 h-9 rounded-xl bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 flex items-center justify-center">3</a>
+            <a href="category.html" class="w-9 h-9 rounded-xl bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 flex items-center justify-center"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1b1b1b] text-gray-300 text-sm pt-14 pb-8 border-t border-gray-800 mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-gray-800">
+        <div class="md:col-span-5 space-y-3">
+          <a href="home.html" class="inline-block mb-2">
+            <img src="../assets/images/logo-footer.png" alt="ND Style" class="h-10 object-contain">
+          </a>
+          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider">CÔNG TY ND THEME</h4>
+          <p class="text-xs text-gray-400">Số ĐKKD 0135792468 cấp ngày 30/05/2023 tại Sở Kế hoạch Đầu tư TP. Hà Nội</p>
+          <ul class="space-y-2 text-xs text-gray-300 pt-1">
+            <li><i class="fa-solid fa-location-dot text-coral mr-2"></i><strong>Địa chỉ:</strong> 266 Đội Cấn, Ba Đình, Hà Nội</li>
+            <li><i class="fa-solid fa-envelope text-coral mr-2"></i><strong>Email:</strong> support@ndstyle.vn</li>
+            <li><i class="fa-solid fa-phone-volume text-coral mr-2"></i><strong>Hotline:</strong> <span class="text-coral font-extrabold text-sm">1900 6750</span></li>
+          </ul>
+        </div>
+        <div class="md:col-span-3">
+          <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">VỀ CHÚNG TÔI</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="home.html" class="hover:text-white">Trang chủ</a></li>
+            <li><a href="category.html" class="hover:text-white">Sản phẩm mới</a></li>
+            <li><a href="news.html" class="hover:text-white">Tin tức thời trang</a></li>
+            <li><a href="contact.html" class="hover:text-white">Hệ thống cửa hàng</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-4">
+          <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">DỊCH VỤ KHÁCH HÀNG</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="cart.html" class="hover:text-white">Kiểm tra đơn hàng</a></li>
+            <li><a href="contact.html" class="hover:text-white">Chính sách vận chuyển</a></li>
+            <li><a href="contact.html" class="hover:text-white">Chính sách đổi trả 7 ngày</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs text-gray-500">
+        <p>© Bản quyền thuộc về ND Style (THEME11) | Cung cấp bởi Gozic Studio.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ & Showroom • ND Style | THEME11 (MOBILE)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
+  <style>
+    body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; padding-bottom: 68px; }
+    .bg-coral { background-color: #eb5b38; }
+    .text-coral { color: #eb5b38; }
+    .topbar-bg { background: linear-gradient(90deg, #e95936 0%, #f36f4d 50%, #e95936 100%); }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col bg-white">
+
+  <div class="topbar-bg text-white text-[11px] py-2 px-3 text-center font-extrabold uppercase">
+    HỆ THỐNG 15 SHOWROOM ND STYLE TOÀN QUỐC
+  </div>
+
+  <header class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm px-3.5 py-2.5 flex items-center justify-between">
+    <a href="home.html" class="w-8 h-8 rounded-xl bg-[#faf4f0] flex items-center justify-center text-gray-800">
+      <i class="fa-solid fa-arrow-left text-xs"></i>
+    </a>
+    <a href="home.html"><img src="../assets/images/logo.png" alt="ND Style" class="h-7 object-contain"></a>
+    <a href="cart.html" class="text-coral"><i class="fa-solid fa-bag-shopping text-lg"></i></a>
+  </header>
+
+  <main class="flex-1 p-3.5 space-y-4">
+    <div class="bg-[#faf4f0] rounded-2xl p-4 border border-[#f3d6ca] space-y-2.5 text-xs">
+      <span class="px-2.5 py-0.5 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase">CÔNG TY ND THEME</span>
+      <h1 class="text-base font-extrabold text-gray-900">HỆ THỐNG SHOWROOM ND STYLE</h1>
+      <p><i class="fa-solid fa-location-dot text-coral mr-1.5"></i><strong>Hà Nội:</strong> 266 Đội Cấn, Quận Ba Đình, Hà Nội</p>
+      <p><i class="fa-solid fa-store text-coral mr-1.5"></i><strong>TP.HCM:</strong> 188 Nguyễn Trãi, Quận 1, TP.HCM</p>
+      <p><i class="fa-solid fa-phone-volume text-coral mr-1.5"></i><strong>Hotline:</strong> <strong class="text-coral">1900 6750</strong> (08:30 - 22:00)</p>
+      <p><i class="fa-solid fa-envelope text-coral mr-1.5"></i><strong>Email:</strong> support@ndstyle.vn</p>
+    </div>
+
+    <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Chuyên viên ND Style sẽ liên hệ tư vấn ngay.');" class="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 space-y-3 text-xs">
+      <h2 class="font-extrabold text-sm text-gray-900 uppercase">Gửi Yêu Cầu Tư Vấn & Đặt Lịch Thử Đồ</h2>
+      <input type="text" required placeholder="Họ và tên của bạn *" class="w-full p-3 rounded-xl bg-[#faf4f0] outline-none">
+      <input type="tel" required placeholder="Số điện thoại *" class="w-full p-3 rounded-xl bg-[#faf4f0] outline-none">
+      <textarea rows="3" required placeholder="Nội dung cần tư vấn (chọn size, kiểm tra hàng tại showroom...)" class="w-full p-3 rounded-xl bg-[#faf4f0] outline-none"></textarea>
+      <button type="submit" class="w-full py-3 rounded-xl bg-coral text-white font-extrabold text-xs uppercase shadow-md">
+        Gửi Yêu Cầu Ngay
+      </button>
+    </form>
+  </main>
+
+  <nav class="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-200 py-2 px-4 grid grid-cols-5 text-[10px] font-bold text-gray-500">
+    <a href="home.html" class="flex flex-col items-center gap-1"><i class="fa-solid fa-house text-base"></i><span>Trang chủ</span></a>
+    <a href="category.html" class="flex flex-col items-center gap-1"><i class="fa-solid fa-table-cells-large text-base"></i><span>Danh mục</span></a>
+    <a href="cart.html" class="flex flex-col items-center gap-1"><i class="fa-solid fa-bag-shopping text-base"></i><span>Giỏ hàng</span></a>
+    <a href="news.html" class="flex flex-col items-center gap-1"><i class="fa-regular fa-newspaper text-base"></i><span>Tin tức</span></a>
+    <a href="contact.html" class="flex flex-col items-center gap-1 text-coral"><i class="fa-solid fa-headset text-base"></i><span>Liên hệ</span></a>
+  </nav>
+</body>
+</html>
