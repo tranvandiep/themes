@@ -1,15 +1,370 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THEME11 - ND Style | Device Simulator</title>
-  <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
-</head>
-<body style="margin: 0; background-color: #0b0f19;">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ND STYLE - Thời Trang Nữ & Phụ Kiện Cao Cấp - Cổng Giới Thiệu & Demo Theme 11 | Gozic Platform</title>
+  <link rel="icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="shortcut icon" href="https://gozic.vn/uploads/stores/49/2026/03/icon-gozic.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Tự động chuyển hướng vào bản Smartphone simulator của Toolbar
-    window.location.href = 'mobile/home.html';
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            'coral': '#eb5b38',
+            'coral-hover': '#d94a27',
+            'nd-dark': '#1b1b1b',
+            'nd-card': '#242424',
+            'nd-border': '#333333',
+            'nd-bg': '#121212',
+          },
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
   </script>
+  <script src="../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
+  <script src="https://gozic.vn/chatbot/widget.js?v=1793459656" defer></script>
+  <style>
+    .diamond-line { display: flex; align-items: center; gap: 6px; }
+    .diamond-line .line { width: 56px; height: 1.5px; background-color: #eb5b38; }
+    .diamond-line .diamond { width: 7px; height: 7px; background-color: #eb5b38; transform: rotate(45deg); }
+  </style>
+</head>
+<body class="bg-nd-bg text-slate-100 font-sans min-h-screen flex flex-col antialiased selection:bg-coral selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-nd-border bg-[#181818]/90 backdrop-blur-md px-6 py-4 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="w-10 h-10 rounded-xl bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-all flex items-center justify-center border border-slate-700/60" title="Quay lại Kho Theme Gozic">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.png" alt="Logo ND Style" class="h-9 object-contain bg-white/95 px-2 py-1 rounded-lg shadow-lg border border-coral/30" />
+          <div>
+            <div class="font-bold text-lg tracking-tight flex items-center gap-2">
+              <span class="text-white">ND STYLE BOUTIQUE</span>
+              <span class="text-xs font-mono font-bold text-coral px-2.5 py-0.5 rounded-full bg-coral/10 border border-coral/40">THEME 11</span>
+            </div>
+            <p class="text-xs text-slate-400 hidden sm:block">Thời Trang Nữ Thiết Kế &bull; Xu Hướng Thu Đông &bull; Bán Lẻ Đa Kênh</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="pc/home.html" class="px-4 py-2.5 rounded-xl bg-coral hover:bg-coral-hover text-white text-xs font-bold transition-all flex items-center gap-2 shadow-lg shadow-coral/30">
+          <i class="fa-solid fa-desktop"></i>
+          <span>Xem Bản PC</span>
+        </a>
+        <a href="mobile/home.html" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-coral hover:text-white text-xs font-bold transition-all flex items-center gap-2 border border-coral/40">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Xem Bản Mobile</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Showcase -->
+  <section class="relative overflow-hidden border-b border-nd-border py-14 px-6 bg-gradient-to-b from-[#1e1410] via-nd-bg to-nd-bg">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#eb5b38_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-coral/10 border border-coral/40 text-coral text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-coral animate-pulse"></span>
+          <span>Trọn Bộ 14 Trang Giao Diện Chuẩn SEO (7 PC &amp; 7 Mobile)</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">
+          ND STYLE BOUTIQUE <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-coral via-orange-400 to-amber-300">Đẳng Cấp Thời Trang Nữ Hiện Đại &amp; Thanh Lịch</span>
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Giao diện thương mại điện tử chuyên biệt cho Thương hiệu Thời trang Nữ, Đồ thiết kế cao cấp, Phụ kiện túi xách và Giày dép. Tông màu Coral trẻ trung nổi bật trên nền trắng tinh tế, phong cách Sapo/Shopify hiện đại với bộ lọc kích cỡ, màu sắc thông minh, giỏ hàng nhanh, tạp chí phong cách và trải nghiệm mua sắm tối ưu cảm ứng di động.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="pc/home.html" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-coral to-orange-500 hover:from-coral-hover hover:to-orange-600 text-white font-bold text-sm shadow-xl shadow-coral/30 flex items-center gap-2 transition-all">
+            <i class="fa-solid fa-laptop"></i>
+            <span>Khởi Chạy Bản PC Demo</span>
+          </a>
+          <a href="mobile/home.html" class="px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 text-coral font-bold text-sm border border-coral/40 flex items-center gap-2 transition-all">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Khởi Chạy Smartphone Simulator</span>
+          </a>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 pt-2 text-xs text-slate-400">
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-coral"></i>
+            <span>Đầy đủ 14 trang PC &amp; Mobile</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-orange-400"></i>
+            <span>Chuẩn SEO &amp; Mobile-First</span>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-check text-amber-400"></i>
+            <span>Tích hợp Gozic AI Chatbot</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview Mockup Card -->
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl overflow-hidden border border-coral/30 shadow-2xl bg-nd-card relative group">
+          <div class="relative overflow-hidden h-72">
+            <img src="assets/images/banner_1.png" alt="ND Style Mockup Preview" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-nd-dark via-transparent to-transparent opacity-80"></div>
+            <div class="absolute top-3 right-3 flex gap-2">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-coral text-white shadow-md">
+                <i class="fa-solid fa-fire mr-1"></i> Xu Hướng Thu Đông
+              </span>
+            </div>
+          </div>
+          <div class="p-5 bg-nd-card border-t border-nd-border flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-coral uppercase tracking-wider">Chủ đề thiết kế</div>
+              <div class="text-sm font-bold text-white mt-0.5">Thời Trang Nữ &bull; Phụ Kiện &bull; E-Commerce</div>
+              <div class="text-xs text-slate-400 mt-0.5">Tone Coral Năng Động &bull; Trắng Thanh Lịch</div>
+            </div>
+            <a href="pc/home.html" class="w-10 h-10 rounded-full bg-coral hover:bg-coral-hover text-white flex items-center justify-center transition-all shadow-md group-hover:translate-x-1" title="Khám phá ngay">
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="flex-1 max-w-7xl mx-auto px-6 py-12 w-full space-y-12">
+
+    <!-- 2 Platform Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- PC Card -->
+      <div class="bg-nd-card border border-nd-border rounded-2xl p-8 hover:border-coral/60 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-coral/10 text-coral flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-desktop text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="text-xl font-bold text-white">Giao Diện Máy Tính (PC View)</h2>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-coral/20 text-coral border border-coral/30 font-bold">1920 &times; 1080</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Bố cục thời trang toàn cảnh: Banner lookbook đôi, bộ sưu tập danh mục tròn, Flash Sale đếm ngược thời gian thực, 4 tab danh mục sản phẩm nổi bật, bảng chọn size/màu trực quan, blog cẩm nang phong cách và chân trang thương hiệu đa cột.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <a href="pc/home.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">home.html</a>
+            <a href="pc/category.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">category.html</a>
+            <a href="pc/detail.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">detail.html</a>
+            <a href="pc/cart.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">cart.html</a>
+            <a href="pc/news.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">news.html</a>
+            <a href="pc/post.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">post.html</a>
+            <a href="pc/contact.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-coral text-slate-300 hover:text-white transition-colors border border-slate-700/50">contact.html</a>
+          </div>
+        </div>
+        <a href="pc/home.html" class="mt-8 block w-full py-3.5 bg-coral hover:bg-coral-hover text-white font-bold text-center rounded-xl transition-all text-sm shadow-lg shadow-coral/30">
+          <i class="fa-solid fa-play mr-1.5"></i> Mở Bản PC Demo
+        </a>
+      </div>
+
+      <!-- Mobile Card -->
+      <div class="bg-nd-card border border-nd-border rounded-2xl p-8 hover:border-orange-500/60 transition-all flex flex-col justify-between group shadow-xl">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="text-xl font-bold text-white">Giao Diện Di Động (Mobile View)</h2>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-orange-950/60 text-orange-400 border border-orange-700/40 font-bold">390 &times; 844</span>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Tối ưu thao tác vuốt chạm 100% trên điện thoại di động: Thanh thông báo ưu đãi trượt mượt mà, bộ sưu tập dạng Story tròn, danh sách sản phẩm lưới 2 cột co giãn chuẩn xác, sticky bottom bar mua ngay kèm chọn biến thể tức thì.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <a href="mobile/home.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">home.html</a>
+            <a href="mobile/category.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">category.html</a>
+            <a href="mobile/detail.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">detail.html</a>
+            <a href="mobile/cart.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">cart.html</a>
+            <a href="mobile/news.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">news.html</a>
+            <a href="mobile/post.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">post.html</a>
+            <a href="mobile/contact.html" class="text-[11px] font-mono px-2.5 py-1 rounded bg-slate-800/80 hover:bg-orange-600 text-slate-300 hover:text-white transition-colors border border-slate-700/50">contact.html</a>
+          </div>
+        </div>
+        <a href="mobile/home.html" class="mt-8 block w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-coral font-bold text-center rounded-xl transition-all text-sm border border-coral/40">
+          <i class="fa-solid fa-mobile-screen mr-1.5"></i> Mở Bản Smartphone Simulator
+        </a>
+      </div>
+    </div>
+
+    <!-- 7 Pages Directory Matrix -->
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-layer-group text-coral"></i>
+            <span>Danh Mục 7 Trang Chức Năng Tiêu Chuẩn (PC &amp; Mobile)</span>
+          </h3>
+          <p class="text-xs text-slate-400 mt-1">Đầy đủ 14 file HTML độc lập sẵn sàng chuyển giao hoặc tích hợp vào hệ thống CMS</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- 01 / HOME -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">01 / HOME</span>
+              <i class="fa-solid fa-house text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Trang Chủ ND Style</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Hero banner đôi, bộ sưu tập danh mục tròn, đếm ngược Flash Sale, 4 nhóm sản phẩm nổi bật, tạp chí thời trang và footer.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/home.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/home.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 02 / CATEGORY -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">02 / CATEGORY</span>
+              <i class="fa-solid fa-tags text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Danh Mục Sản Phẩm</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Bộ lọc đa tầng theo khoảng giá, màu sắc, kích cỡ (S/M/L/XL), sắp xếp mới nhất / giá tốt và phân trang mượt mà.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/category.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/category.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 03 / DETAIL -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">03 / DETAIL</span>
+              <i class="fa-solid fa-bag-shopping text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Chi Tiết Sản Phẩm</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Gallery ảnh zoom HD, bảng thông số kỹ thuật, hướng dẫn chọn size, đánh giá khách hàng và khối sản phẩm liên quan.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/detail.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/detail.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 04 / CART -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">04 / CART</span>
+              <i class="fa-solid fa-cart-shopping text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Giỏ Hàng &amp; Thanh Toán</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Quản lý số lượng món hàng, áp mã giảm giá voucher, thanh toán nhanh và chính sách freeship đơn đầu tiên.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/cart.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/cart.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 05 / NEWS -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">05 / NEWS</span>
+              <i class="fa-solid fa-newspaper text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Chuyên Mục Tin Tức</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Tạp chí xu hướng Thu Đông, cẩm nang phối đồ stylist, bộ lọc chuyên đề và danh sách 12 bài viết phong phú.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/news.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/news.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 06 / POST -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">06 / POST</span>
+              <i class="fa-solid fa-book-open text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Chi Tiết Bài Viết</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Nội dung biên tập chuẩn SEO, mục lục bài viết tự động, hộp thông tin stylist, thẻ tags và carousel gợi ý món đồ.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/post.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/post.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+        <!-- 07 / CONTACT -->
+        <div class="p-5 rounded-2xl bg-nd-card border border-nd-border flex flex-col justify-between hover:border-coral/50 transition-all shadow-md group">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-coral font-mono font-bold text-xs">07 / CONTACT</span>
+              <i class="fa-solid fa-location-dot text-coral/80 group-hover:scale-110 transition-transform"></i>
+            </div>
+            <h4 class="font-bold text-base text-white">Trang Liên Hệ Showroom</h4>
+            <p class="text-xs text-slate-400 mt-1.5 mb-4 leading-relaxed">
+              Hệ thống showroom thời trang, bản đồ Google Maps, form gửi tin nhắn tư vấn và liên kết mạng xã hội chính thức.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-3 border-t border-nd-border">
+            <a href="pc/contact.html" class="py-2 bg-coral hover:bg-coral-hover text-white text-xs font-bold rounded-lg text-center transition-colors">Bản PC</a>
+            <a href="mobile/contact.html" class="py-2 bg-slate-800 hover:bg-slate-700 text-coral text-xs font-bold rounded-lg text-center transition-colors">Mobile</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-nd-border bg-[#111111] py-8 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-slate-300">ND STYLE BOUTIQUE</span>
+        <span>&bull; Theme 11 Gozic Platform</span>
+      </div>
+      <div>
+        <span>Nền tảng khởi tạo &amp; phát triển website chuyên nghiệp Gozic Cloud &copy; 2026</span>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
