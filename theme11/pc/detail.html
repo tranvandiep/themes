@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Áo Khoác Da Lộn Nam 2 Lớp • ND Style | THEME11 (PC)</title>
+  <title>Áo Khoác Da Lộn Nam 2 Lớp Phong Cách Hàn Quốc • ND Style | THEME11 (PC)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -12,12 +12,16 @@
   <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
   <style>
     body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; }
+    .font-serif-brand { font-family: 'Playfair Display', serif; }
     .bg-coral { background-color: #eb5b38; }
     .text-coral { color: #eb5b38; }
     .border-coral { border-color: #eb5b38; }
     .hover-bg-coral:hover { background-color: #d94a27; }
     .hover-text-coral:hover { color: #eb5b38; }
     .topbar-bg { background: linear-gradient(90deg, #e95936 0%, #f36f4d 50%, #e95936 100%); }
+    .diamond-line { display: flex; align-items: center; gap: 6px; }
+    .diamond-line .line { width: 56px; height: 1.5px; background-color: #eb5b38; }
+    .diamond-line .diamond { width: 7px; height: 7px; background-color: #eb5b38; transform: rotate(45deg); }
   </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-white">
@@ -25,9 +29,9 @@
   <!-- Topbar -->
   <div class="topbar-bg text-white text-xs md:text-sm py-2.5 px-4">
     <div class="max-w-5xl mx-auto flex items-center justify-between">
-      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-left text-[10px]"></i></span>
-      <div class="font-bold tracking-wide uppercase text-center">CHÀO ĐÓN BỘ SƯU TẬP THU ĐÔNG 2024 • FREESHIP ĐƠN ĐẦU TIÊN</div>
-      <span class="w-6 h-6 rounded-full bg-white/25 flex items-center justify-center"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+      <button onclick="prevTopbar()" class="w-6 h-6 rounded-full bg-white/25 hover:bg-white/40 flex items-center justify-center transition-colors"><i class="fa-solid fa-chevron-left text-[10px]"></i></button>
+      <div id="topbarText" class="font-bold tracking-wide uppercase text-center">CHÀO ĐÓN BỘ SƯU TẬP THU ĐÔNG 2024 • FREESHIP ĐƠN ĐẦU TIÊN</div>
+      <button onclick="nextTopbar()" class="w-6 h-6 rounded-full bg-white/25 hover:bg-white/40 flex items-center justify-center transition-colors"><i class="fa-solid fa-chevron-right text-[10px]"></i></button>
     </div>
   </div>
 
@@ -38,7 +42,7 @@
         <img src="../assets/images/logo.png" alt="ND Style" class="h-10 md:h-11 object-contain">
       </a>
       <form action="category.html" class="flex-1 max-w-2xl relative">
-        <input type="text" placeholder="Tìm kiếm..." class="w-full pl-5 pr-12 py-2.5 rounded-full bg-[#f8f3f0] border border-transparent focus:border-[#eb5b38] focus:bg-white text-sm text-gray-800 outline-none">
+        <input type="text" placeholder="Tìm kiếm áo khoác da lộn, sơ mi, đầm thu đông..." class="w-full pl-5 pr-12 py-2.5 rounded-full bg-[#f8f3f0] border border-transparent focus:border-[#eb5b38] focus:bg-white text-sm text-gray-800 outline-none">
         <button type="submit" class="w-8 h-8 rounded-full bg-coral hover-bg-coral text-white flex items-center justify-center absolute right-1.5 top-1/2 -translate-y-1/2">
           <i class="fa-solid fa-magnifying-glass text-xs"></i>
         </button>
@@ -53,7 +57,7 @@
           <span class="text-xs font-medium text-gray-700">Tài khoản</span>
         </a>
         <a href="cart.html" class="flex flex-col items-center gap-1 group relative">
-          <div class="relative"><i class="fa-solid fa-bag-shopping text-xl text-coral"></i><span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">2</span></div>
+          <div class="relative"><i class="fa-solid fa-bag-shopping text-xl text-coral"></i><span id="headerCartBadge" class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[10px] font-bold flex items-center justify-center">2</span></div>
           <span class="text-xs font-medium text-gray-700">Giỏ hàng</span>
         </a>
       </div>
@@ -75,169 +79,709 @@
   </header>
 
   <main class="flex-1">
-    <div class="bg-[#faf4f0] py-4 border-b border-[#f3e5dc]">
-      <div class="max-w-7xl mx-auto px-4 text-xs text-gray-500">
-        <a href="home.html" class="hover-text-coral">Trang chủ</a> /
-        <a href="category.html" class="hover-text-coral">Bộ sưu tập Thu Đông</a> /
-        <span class="text-gray-900 font-bold">Áo Khoác Da Lộn Nam 2 Lớp Cao Cấp</span>
+    <!-- Breadcrumb -->
+    <div class="bg-[#faf4f0] py-3.5 border-b border-[#f3e5dc]">
+      <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-500">
+        <div>
+          <a href="home.html" class="hover-text-coral">Trang chủ</a>
+          <span class="mx-1.5">/</span>
+          <a href="category.html" class="hover-text-coral">Thời trang Nam</a>
+          <span class="mx-1.5">/</span>
+          <a href="category.html" class="hover-text-coral">Áo khoác Thu Đông 2024</a>
+          <span class="mx-1.5">/</span>
+          <span class="text-gray-900 font-bold">Áo Khoác Da Lộn Nam 2 Lớp Phong Cách Hàn Quốc</span>
+        </div>
+        <div class="flex items-center gap-4 text-[11px] font-bold text-coral">
+          <span><i class="fa-solid fa-shield-halved mr-1"></i>Chính hãng 100% ND Style</span>
+          <span><i class="fa-solid fa-rotate mr-1"></i>Đổi size miễn phí 7 ngày</span>
+        </div>
       </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 py-10">
+    <!-- MAIN PRODUCT SECTION -->
+    <section class="max-w-7xl mx-auto px-4 py-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-        <!-- Product Gallery -->
+        <!-- Left: Product Gallery + Highlights -->
         <div class="lg:col-span-6">
-          <div class="aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100 border border-gray-100 mb-4 relative">
-            <span class="absolute top-4 left-4 px-3 py-1 bg-coral text-white text-xs font-extrabold rounded-full">- 7% OFF</span>
-            <img id="mainProdImg" src="../assets/images/prod_1.jpg" alt="Áo Khoác Da Lộn Nam 2 Lớp" class="w-full h-full object-cover">
-          </div>
-          <div class="grid grid-cols-4 gap-3">
-            <button onclick="document.getElementById('mainProdImg').src='../assets/images/prod_1.jpg'" class="aspect-square rounded-2xl overflow-hidden border-2 border-coral">
-              <img src="../assets/images/prod_1.jpg" alt="Thumb 1" class="w-full h-full object-cover">
-            </button>
-            <button onclick="document.getElementById('mainProdImg').src='../assets/images/prod_2.jpg'" class="aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral">
-              <img src="../assets/images/prod_2.jpg" alt="Thumb 2" class="w-full h-full object-cover">
-            </button>
-            <button onclick="document.getElementById('mainProdImg').src='../assets/images/prod_10.jpg'" class="aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral">
-              <img src="../assets/images/prod_10.jpg" alt="Thumb 3" class="w-full h-full object-cover">
-            </button>
-            <button onclick="document.getElementById('mainProdImg').src='../assets/images/prod_11.jpg'" class="aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral">
-              <img src="../assets/images/prod_11.jpg" alt="Thumb 4" class="w-full h-full object-cover">
-            </button>
+          <div class="sticky top-28 space-y-4">
+            <div class="aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100 border border-gray-100 relative group">
+              <div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+                <span class="px-3.5 py-1 bg-coral text-white text-xs font-extrabold rounded-full shadow">- 7% OFF</span>
+                <span class="px-3 py-1 bg-gray-900/85 backdrop-blur text-white text-[11px] font-bold rounded-full"><i class="fa-solid fa-fire text-amber-400 mr-1"></i>Best Seller Thu Đông</span>
+              </div>
+              <button onclick="showToast('Đã thêm sản phẩm vào Danh sách Yêu thích!')" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-coral hover:text-white text-gray-700 flex items-center justify-center shadow transition-colors">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img id="mainProdImg" src="../assets/images/prod_1.jpg" alt="Áo Khoác Da Lộn Nam 2 Lớp" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute bottom-4 inset-x-4 flex items-center justify-between bg-black/65 backdrop-blur-sm text-white px-4 py-2.5 rounded-2xl text-xs">
+                <span><i class="fa-solid fa-camera mr-1.5 text-coral"></i>Ảnh chụp thật tại Studio ND Style</span>
+                <span id="imgCounter" class="font-bold">1 / 6</span>
+              </div>
+            </div>
+
+            <!-- 6 Thumbnails -->
+            <div class="grid grid-cols-6 gap-2.5">
+              <button onclick="selectGallery(this, '../assets/images/prod_1.jpg', '1 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border-2 border-coral p-0.5 transition-all">
+                <img src="../assets/images/prod_1.jpg" alt="Thumb 1" class="w-full h-full object-cover rounded-xl">
+              </button>
+              <button onclick="selectGallery(this, '../assets/images/prod_2.jpg', '2 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all">
+                <img src="../assets/images/prod_2.jpg" alt="Thumb 2" class="w-full h-full object-cover rounded-xl">
+              </button>
+              <button onclick="selectGallery(this, '../assets/images/prod_10.jpg', '3 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all">
+                <img src="../assets/images/prod_10.jpg" alt="Thumb 3" class="w-full h-full object-cover rounded-xl">
+              </button>
+              <button onclick="selectGallery(this, '../assets/images/prod_11.jpg', '4 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all">
+                <img src="../assets/images/prod_11.jpg" alt="Thumb 4" class="w-full h-full object-cover rounded-xl">
+              </button>
+              <button onclick="selectGallery(this, '../assets/images/lookbook_1.jpg', '5 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all">
+                <img src="../assets/images/lookbook_1.jpg" alt="Thumb 5" class="w-full h-full object-cover rounded-xl">
+              </button>
+              <button onclick="selectGallery(this, '../assets/images/lookbook_2.jpg', '6 / 6')" class="thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all">
+                <img src="../assets/images/lookbook_2.jpg" alt="Thumb 6" class="w-full h-full object-cover rounded-xl">
+              </button>
+            </div>
+
+            <!-- Quick Key Features Under Gallery -->
+            <div class="bg-[#faf4f0] rounded-2xl p-4 border border-[#f3e5dc] grid grid-cols-3 gap-3 text-center text-xs">
+              <div class="bg-white rounded-xl p-3 border border-gray-100">
+                <i class="fa-solid fa-wind text-coral text-base mb-1"></i>
+                <div class="font-extrabold text-gray-900">Cản gió 2 lớp</div>
+                <div class="text-[11px] text-gray-500">Giữ ấm 10°C - 22°C</div>
+              </div>
+              <div class="bg-white rounded-xl p-3 border border-gray-100">
+                <i class="fa-solid fa-feather-pointed text-coral text-base mb-1"></i>
+                <div class="font-extrabold text-gray-900">Da lộn Microfiber</div>
+                <div class="text-[11px] text-gray-500">Mềm mịn, không bong nổ</div>
+              </div>
+              <div class="bg-white rounded-xl p-3 border border-gray-100">
+                <i class="fa-solid fa-shirt text-coral text-base mb-1"></i>
+                <div class="font-extrabold text-gray-900">Phom Regular Fit</div>
+                <div class="text-[11px] text-gray-500">Chuẩn dáng Á Đông</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Product Info & CTA -->
+        <!-- Right: Product Info, Variants, Bundle & Store Stock -->
         <div class="lg:col-span-6 space-y-6">
           <div>
-            <div class="flex items-center gap-3 text-xs mb-2">
+            <div class="flex flex-wrap items-center gap-2.5 text-xs mb-2.5">
               <span class="px-2.5 py-1 rounded-md bg-[#ffe2d9] text-coral font-extrabold uppercase">Thương hiệu: ND Style</span>
-              <span class="text-gray-500">Mã SP: <strong>NDS-AK2024</strong></span>
-              <span class="text-emerald-600 font-bold"><i class="fa-solid fa-check-circle mr-1"></i>Còn hàng</span>
+              <span class="text-gray-500">Mã SP: <strong class="text-gray-800">NDS-AK2024-DL</strong></span>
+              <span class="text-emerald-600 font-bold bg-emerald-50 px-2.5 py-1 rounded-md"><i class="fa-solid fa-check-circle mr-1"></i>Còn hàng tại 15 Showroom</span>
             </div>
-            <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900">Áo Khoác Da Lộn Nam 2 Lớp Phong Cách Hàn Quốc</h1>
+            <h1 class="text-2xl md:text-3xl font-extrabold text-gray-900 leading-tight">Áo Khoác Da Lộn Nam 2 Lớp Phong Cách Hàn Quốc</h1>
+
+            <!-- Rating & Sold Summary -->
+            <div class="flex flex-wrap items-center gap-4 mt-3 text-xs text-gray-600">
+              <a href="#reviews-section" class="flex items-center gap-1.5 font-bold text-gray-900 hover:text-coral">
+                <span class="flex text-amber-400">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </span>
+                <span class="underline">4.9/5</span>
+                <span class="text-gray-500 font-normal">(186 đánh giá thực tế)</span>
+              </a>
+              <span>•</span>
+              <span>Đã bán: <strong class="text-gray-900">1.248</strong> sản phẩm</span>
+              <span>•</span>
+              <span class="text-coral font-bold"><i class="fa-solid fa-eye mr-1"></i>28 khách đang xem</span>
+            </div>
           </div>
 
-          <div class="bg-[#faf4f0] p-5 rounded-2xl flex items-baseline gap-4">
-            <span class="text-3xl font-black text-coral">1.860.000₫</span>
-            <span class="text-base text-gray-400 line-through">2.000.000₫</span>
-            <span class="ml-auto text-xs font-bold text-coral bg-white px-3 py-1 rounded-full border border-[#f3d6ca]">Tiết kiệm 140.000₫</span>
+          <!-- Flash Deal & Price Box -->
+          <div class="rounded-2xl overflow-hidden border border-[#f3d6ca]">
+            <div class="topbar-bg text-white px-5 py-2.5 flex items-center justify-between text-xs">
+              <span class="font-extrabold uppercase tracking-wider"><i class="fa-solid fa-bolt-lightning mr-1.5"></i>ƯU ĐÃI MỞ BÁN BST THU ĐÔNG</span>
+              <div class="flex items-center gap-1.5 font-bold">
+                <span>Kết thúc sau:</span>
+                <span class="bg-white text-coral px-2 py-0.5 rounded font-black">05</span>:
+                <span class="bg-white text-coral px-2 py-0.5 rounded font-black">42</span>:
+                <span class="bg-white text-coral px-2 py-0.5 rounded font-black">19</span>
+              </div>
+            </div>
+            <div class="bg-[#faf4f0] p-5 flex flex-wrap items-baseline gap-4">
+              <span id="productPriceDisplay" class="text-3xl font-black text-coral">1.860.000₫</span>
+              <span class="text-base text-gray-400 line-through">2.000.000₫</span>
+              <span class="text-xs font-extrabold text-coral bg-white px-3 py-1 rounded-full border border-[#f3d6ca]">Tiết kiệm 140.000₫ (-7%)</span>
+              <span class="ml-auto text-xs font-semibold text-gray-600"><i class="fa-solid fa-truck-fast text-coral mr-1"></i>Freeship toàn quốc</span>
+            </div>
           </div>
 
-          <!-- Vouchers Box -->
+          <!-- Quick Copy Vouchers -->
           <div class="border border-dashed border-coral rounded-2xl p-4 bg-[#fff9f7]">
-            <h4 class="text-xs font-extrabold uppercase text-coral mb-2.5"><i class="fa-solid fa-gift mr-1.5"></i>Khuyến mãi & Ưu đãi độc quyền</h4>
-            <ul class="space-y-1.5 text-xs text-gray-700">
-              <li>• Nhập mã <strong class="text-coral">FREESHIP</strong> miễn phí vận chuyển đơn đầu tiên</li>
-              <li>• Nhập mã <strong class="text-coral">NDSTYLE15</strong> giảm 15% cho đơn từ 699K</li>
-              <li>• Nhập mã <strong class="text-coral">NDSTYLE25</strong> giảm 25% cho đơn từ 1.049K</li>
-            </ul>
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="text-xs font-extrabold uppercase text-coral"><i class="fa-solid fa-gift mr-1.5"></i>Mã giảm giá áp dụng ngay cho sản phẩm này</h4>
+              <span class="text-[11px] text-gray-500">Bấm để sao chép</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <button onclick="showToast('Đã sao chép mã FREESHIP - Miễn phí vận chuyển!')" class="flex items-center justify-between bg-white border border-[#f3d6ca] hover:border-coral rounded-xl p-2.5 text-left transition-all">
+                <div>
+                  <div class="text-xs font-black text-coral">FREESHIP</div>
+                  <div class="text-[10px] text-gray-500">Miễn phí ship đơn từ 0đ</div>
+                </div>
+                <span class="px-2 py-1 rounded bg-coral text-white text-[10px] font-bold">Chép</span>
+              </button>
+              <button onclick="showToast('Đã sao chép mã NDSTYLE15 - Giảm 15% đơn từ 699K!')" class="flex items-center justify-between bg-white border border-[#f3d6ca] hover:border-coral rounded-xl p-2.5 text-left transition-all">
+                <div>
+                  <div class="text-xs font-black text-coral">NDSTYLE15</div>
+                  <div class="text-[10px] text-gray-500">Giảm 15% đơn từ 699K</div>
+                </div>
+                <span class="px-2 py-1 rounded bg-coral text-white text-[10px] font-bold">Chép</span>
+              </button>
+              <button onclick="showToast('Đã sao chép mã NDSTYLE25 - Giảm 25% đơn từ 1.049K!')" class="flex items-center justify-between bg-white border border-[#f3d6ca] hover:border-coral rounded-xl p-2.5 text-left transition-all">
+                <div>
+                  <div class="text-xs font-black text-coral">NDSTYLE25</div>
+                  <div class="text-[10px] text-gray-500">Giảm 25% đơn từ 1.049K</div>
+                </div>
+                <span class="px-2 py-1 rounded bg-coral text-white text-[10px] font-bold">Chép</span>
+              </button>
+            </div>
           </div>
 
           <!-- Color & Size Selectors -->
           <div class="space-y-4">
             <div>
-              <label class="block text-xs font-extrabold uppercase text-gray-700 mb-2">Màu sắc: <span class="text-coral">Nâu Da Lộn</span></label>
-              <div class="flex items-center gap-3">
-                <button class="px-4 py-2 rounded-xl border-2 border-coral bg-[#faf4f0] text-xs font-bold text-gray-900">Nâu Da Lộn</button>
-                <button class="px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700">Đen Tuyền</button>
-                <button class="px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700">Kem Be</button>
+              <label class="block text-xs font-extrabold uppercase text-gray-700 mb-2">
+                Màu sắc: <span id="selectedColorName" class="text-coral">Nâu Da Lộn (Best Seller)</span>
+              </label>
+              <div class="flex flex-wrap items-center gap-3">
+                <button onclick="selectColor(this, 'Nâu Da Lộn (Best Seller)', '../assets/images/prod_1.jpg')" class="color-btn px-4 py-2 rounded-xl border-2 border-coral bg-[#faf4f0] text-xs font-extrabold text-gray-900 flex items-center gap-2">
+                  <span class="w-4 h-4 rounded-full bg-[#8c583a] border border-white shadow-sm"></span> Nâu Da Lộn
+                </button>
+                <button onclick="selectColor(this, 'Đen Tuyền Lịch Lãm', '../assets/images/prod_10.jpg')" class="color-btn px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700 flex items-center gap-2">
+                  <span class="w-4 h-4 rounded-full bg-[#1f1f1f] border border-white shadow-sm"></span> Đen Tuyền
+                </button>
+                <button onclick="selectColor(this, 'Kem Be Hàn Quốc', '../assets/images/prod_2.jpg')" class="color-btn px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700 flex items-center gap-2">
+                  <span class="w-4 h-4 rounded-full bg-[#dfcfb9] border border-gray-300 shadow-sm"></span> Kem Be
+                </button>
+                <button onclick="selectColor(this, 'Xanh Rêu Phong Trần', '../assets/images/prod_11.jpg')" class="color-btn px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700 flex items-center gap-2">
+                  <span class="w-4 h-4 rounded-full bg-[#4a5944] border border-white shadow-sm"></span> Xanh Rêu
+                </button>
               </div>
             </div>
 
             <div>
               <div class="flex items-center justify-between text-xs mb-2">
-                <span class="font-extrabold uppercase text-gray-700">Kích thước: <span class="text-coral">L (65 - 73kg)</span></span>
-                <a href="#size-guide" class="text-coral font-bold hover:underline"><i class="fa-solid fa-ruler-horizontal mr-1"></i>Bảng quy đổi kích cỡ</a>
+                <span class="font-extrabold uppercase text-gray-700">Kích thước: <span id="selectedSizeName" class="text-coral">L (65 - 73kg • 1m68 - 1m75)</span></span>
+                <a href="#product-tabs" onclick="switchDetailTab('tab-size')" class="text-coral font-bold hover:underline"><i class="fa-solid fa-ruler-horizontal mr-1"></i>Bảng quy đổi kích cỡ & Tư vấn size</a>
               </div>
-              <div class="flex items-center gap-2.5">
-                <button class="w-12 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">M</button>
-                <button class="w-12 h-10 rounded-xl border-2 border-coral bg-coral text-white text-xs font-extrabold">L</button>
-                <button class="w-12 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">XL</button>
-                <button class="w-12 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">2XL</button>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <button onclick="selectSize(this, 'S (50 - 57kg • 1m58 - 1m65)')" class="size-btn px-4 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">S (50-57kg)</button>
+                <button onclick="selectSize(this, 'M (58 - 64kg • 1m64 - 1m70)')" class="size-btn px-4 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">M (58-64kg)</button>
+                <button onclick="selectSize(this, 'L (65 - 73kg • 1m68 - 1m75)')" class="size-btn px-4 h-10 rounded-xl border-2 border-coral bg-coral text-white text-xs font-extrabold">L (65-73kg)</button>
+                <button onclick="selectSize(this, 'XL (74 - 80kg • 1m72 - 1m80)')" class="size-btn px-4 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">XL (74-80kg)</button>
+                <button onclick="selectSize(this, '2XL (81 - 88kg • 1m75 - 1m85)')" class="size-btn px-4 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral">2XL (81-88kg)</button>
               </div>
             </div>
           </div>
 
           <!-- Quantity & CTA Buttons -->
-          <div class="flex flex-wrap items-center gap-4 pt-2">
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
             <div class="flex items-center border border-gray-200 rounded-xl bg-gray-50">
               <button onclick="const q=document.getElementById('qtyInput'); if(q.value>1)q.value--;" class="w-10 h-12 font-bold text-gray-600 hover:text-coral">-</button>
               <input id="qtyInput" type="number" value="1" min="1" class="w-12 h-12 text-center bg-transparent font-extrabold text-sm outline-none">
               <button onclick="const q=document.getElementById('qtyInput'); q.value++;" class="w-10 h-12 font-bold text-gray-600 hover:text-coral">+</button>
             </div>
-            <a href="cart.html" class="flex-1 py-3.5 px-6 rounded-xl bg-coral hover-bg-coral text-white font-extrabold text-sm uppercase tracking-wider text-center shadow-lg transition-all">
+            <button onclick="addToCartAction()" class="flex-1 py-3.5 px-6 rounded-xl bg-coral hover-bg-coral text-white font-extrabold text-sm uppercase tracking-wider text-center shadow-lg transition-all">
               <i class="fa-solid fa-bag-shopping mr-2"></i>Thêm Vào Giỏ Hàng
-            </a>
-            <a href="cart.html" class="py-3.5 px-6 rounded-xl bg-gray-900 hover:bg-black text-white font-extrabold text-sm uppercase tracking-wider text-center transition-all">
+            </button>
+            <a href="cart.html" class="py-3.5 px-7 rounded-xl bg-gray-900 hover:bg-black text-white font-extrabold text-sm uppercase tracking-wider text-center transition-all">
               Mua Ngay
             </a>
           </div>
 
+          <!-- Bundle / Mix & Match Set (Mua kèm Deal Sốc) -->
+          <div class="bg-[#faf4f0] rounded-2xl p-4 border border-[#f3d6ca] space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="text-xs font-extrabold uppercase text-gray-900"><i class="fa-solid fa-wand-magic-sparkles text-coral mr-1.5"></i>Gợi ý phối nguyên Set chuẩn Stylist (Mua kèm giảm thêm 20%)</h4>
+              <span class="text-[11px] font-bold text-coral">Tiết kiệm 410.000₫</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="flex items-center gap-3 bg-white p-2.5 rounded-xl border border-gray-100">
+                <img src="../assets/images/prod_3.jpg" alt="Áo sơ mi nam cotton dài tay" class="w-14 h-16 rounded-lg object-cover shrink-0">
+                <div class="text-xs">
+                  <div class="font-bold text-gray-900 line-clamp-1">Áo sơ mi nam cotton dài tay</div>
+                  <div class="text-gray-400 text-[11px]">Size L • Trắng Kem</div>
+                  <div class="mt-0.5"><span class="font-extrabold text-coral">990.000₫</span> <span class="text-[10px] text-gray-400 line-through">1.260.000₫</span></div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 bg-white p-2.5 rounded-xl border border-gray-100">
+                <img src="../assets/images/prod_7.jpg" alt="Quần âu nam Sorona" class="w-14 h-16 rounded-lg object-cover shrink-0">
+                <div class="text-xs">
+                  <div class="font-bold text-gray-900 line-clamp-1">Quần âu nam vải Sorona chống nhăn</div>
+                  <div class="text-gray-400 text-[11px]">Size 31 • Đen Charcoal</div>
+                  <div class="mt-0.5"><span class="font-extrabold text-coral">410.000₫</span> <span class="text-[10px] text-gray-400 line-through">550.000₫</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-1">
+              <div class="text-xs text-gray-600">Trọn bộ 3 món: <strong class="text-coral text-sm">3.260.000₫</strong> <span class="line-through text-gray-400">3.810.000₫</span></div>
+              <a href="cart.html" class="px-4 py-2 rounded-lg bg-gray-900 hover:bg-coral text-white text-xs font-extrabold transition-colors">+ Thêm Cả Set Vào Giỏ</a>
+            </div>
+          </div>
+
+          <!-- Showroom Stock Availability -->
+          <div class="border border-gray-200 rounded-2xl p-4 text-xs space-y-2.5">
+            <div class="flex items-center justify-between font-extrabold text-gray-900">
+              <span><i class="fa-solid fa-store text-coral mr-1.5"></i>Hệ thống cửa hàng còn sẵn size L</span>
+              <a href="contact.html#showroom" class="text-coral hover:underline">Xem bản đồ 15 Showroom →</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600">
+              <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span><strong>Ba Đình, HN:</strong> 266 Đội Cấn (Còn 8 SP)</span></div>
+              <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span><strong>Hai Bà Trưng, HN:</strong> Vincom Bà Triệu (Còn 5 SP)</span></div>
+              <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span><strong>Quận 1, TP.HCM:</strong> 142 Nguyễn Trãi (Còn 11 SP)</span></div>
+              <div class="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span><strong>Hải Châu, ĐN:</strong> 88 Lê Duẩn (Còn 6 SP)</span></div>
+            </div>
+          </div>
+
           <!-- Policy Commitments -->
-          <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gray-100 text-xs">
-            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_1.png" class="w-7 h-7" alt=""><span>Giao hàng toàn quốc COD</span></div>
+          <div class="grid grid-cols-2 gap-3 pt-2 border-t border-gray-100 text-xs">
+            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_1.png" class="w-7 h-7" alt=""><span>Giao hàng toàn quốc • Đồng kiểm COD</span></div>
             <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_2.png" class="w-7 h-7" alt=""><span>Miễn phí giao hàng đơn từ 499K</span></div>
-            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_3.png" class="w-7 h-7" alt=""><span>Đổi trả dễ dàng trong 7 ngày</span></div>
-            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_4.png" class="w-7 h-7" alt=""><span>Tư vấn Stylist hỗ trợ 24/7</span></div>
+            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_3.png" class="w-7 h-7" alt=""><span>Đổi trả tận nhà trong 7 ngày</span></div>
+            <div class="flex items-center gap-2.5"><img src="../assets/images/icon_policy_4.png" class="w-7 h-7" alt=""><span>Bảo hành đường may & khóa kéo 12 tháng</span></div>
           </div>
         </div>
       </div>
 
-      <!-- Product Description & Styling Guide -->
-      <div id="size-guide" class="mt-14 bg-[#faf4f0] rounded-3xl p-8 border border-[#f3e5dc]">
-        <h2 class="text-xl font-extrabold text-gray-900 uppercase mb-4">Mô Tả Chi Tiết & Hướng Dẫn Phối Đồ (Styling Guide)</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-gray-700 leading-relaxed">
-          <div class="space-y-3">
-            <h3 class="font-extrabold text-base text-coral">1. Đặc điểm nổi bật của Áo Khoác Da Lộn Nam 2 Lớp</h3>
+      <!-- TABBED PRODUCT DETAILS, SIZE CHART & POLICIES -->
+      <div id="product-tabs" class="mt-16">
+        <div class="flex flex-wrap items-center justify-center gap-3 border-b border-gray-200 pb-4 mb-8">
+          <button onclick="switchDetailTab('tab-desc')" id="btn-tab-desc" class="detail-tab-btn px-7 py-3 rounded-full bg-coral text-white text-xs md:text-sm font-extrabold uppercase tracking-wider shadow-sm transition-all">
+            1. Chi Tiết Sản Phẩm & Thiết Kế
+          </button>
+          <button onclick="switchDetailTab('tab-size')" id="btn-tab-size" class="detail-tab-btn px-7 py-3 rounded-full bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 text-xs md:text-sm font-extrabold uppercase tracking-wider transition-all">
+            2. Bảng Quy Đổi Kích Cỡ & Phối Đồ
+          </button>
+          <button onclick="switchDetailTab('tab-policy')" id="btn-tab-policy" class="detail-tab-btn px-7 py-3 rounded-full bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 text-xs md:text-sm font-extrabold uppercase tracking-wider transition-all">
+            3. Hướng Dẫn Bảo Quản & Chính Sách Đổi Trả
+          </button>
+        </div>
+
+        <!-- TAB 1: DESCRIPTION & SPECS -->
+        <div id="tab-desc" class="detail-tab-pane grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-7 space-y-5 text-sm text-gray-700 leading-relaxed">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#ffe2d9] text-coral text-xs font-extrabold uppercase">Tuyệt tác Thu Đông 2024</span>
+            <h2 class="text-2xl font-extrabold text-gray-900">Áo Khoác Da Lộn Nam 2 Lớp ND Style – Đỉnh Cao Phong Thái Lịch Lãm & Ấm Áp</h2>
             <p>
-              Thiết kế thuộc Bộ Sưu Tập Thu Đông 2024 của ND Style, sử dụng bề mặt da lộn microfiber cao cấp mềm mịn, cản gió tốt kết hợp lớp lót lụa thoáng khí bên trong. Phom dáng Regular Fit vừa vặn, tôn vai và dễ dàng kết hợp cùng áo thun, áo sơ mi hoặc áo len cổ lọ.
+              Nằm trong Bộ Sưu Tập Thu Đông chủ đạo của <strong>ND Style</strong>, mẫu <strong>Áo Khoác Da Lộn Nam 2 Lớp (Mã SP: NDS-AK2024-DL)</strong> được nghiên cứu và phát triển riêng cho phom dáng nam giới Việt Nam. Sự kết hợp hoàn hảo giữa bề mặt da lộn Microfiber mịn màng như nhung cùng lớp lót lụa Habutai chần bông mỏng nhẹ bên trong giúp giữ nhiệt tối ưu mà vẫn đảm bảo sự thoải mái, linh hoạt suốt cả ngày dài.
             </p>
-            <ul class="list-disc pl-5 space-y-1 text-xs font-semibold">
-              <li>Chất liệu: 92% Suede Poly cao cấp, 8% Spandex co giãn nhẹ</li>
-              <li>Khóa kéo hợp kim chống gỉ mượt mà, túi trong tiện lợi</li>
-              <li>Giữ phom chuẩn sau nhiều lần giặt khô / giặt nhẹ</li>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+              <div class="rounded-2xl overflow-hidden border border-gray-100">
+                <img src="../assets/images/lookbook_1.jpg" alt="Chi tiết phom dáng" class="w-full h-64 object-cover">
+                <div class="p-3 bg-[#faf4f0] text-xs font-bold text-gray-700 text-center">Phom dáng Regular Fit tôn vai, che khuyết điểm</div>
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-gray-100">
+                <img src="../assets/images/lookbook_2.jpg" alt="Chi tiết chất liệu" class="w-full h-64 object-cover">
+                <div class="p-3 bg-[#faf4f0] text-xs font-bold text-gray-700 text-center">Bề mặt da lộn Microfiber trượt nước nhẹ & cản gió</div>
+              </div>
+            </div>
+            <h3 class="text-lg font-extrabold text-gray-900">Điểm nhấn công nghệ & Cắt may độc quyền:</h3>
+            <ul class="space-y-2.5 text-sm">
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-coral mt-1"></i><span><strong>Chất liệu Suede Microfiber thế hệ mới:</strong> Không bong tróc, không nổ da sau nhiều mùa sử dụng, hạn chế bám bụi và trượt nước mưa phùn nhẹ hiệu quả.</span></li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-coral mt-1"></i><span><strong>Lớp lót lụa chống tĩnh điện:</strong> Giúp việc mặc vào hoặc cởi ra ngoài áo sơ mi/áo len không bị dính hay tích điện trong tiết trời hanh khô mùa đông.</span></li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-coral mt-1"></i><span><strong>Phụ kiện khóa kéo YKK hợp kim nguyên khối:</strong> Kéo mượt mà 50.000 lần, đi kèm 2 túi sườn có khóa ẩn và 1 túi ngực sâu bên trong đựng ví/điện thoại an toàn.</span></li>
+              <li class="flex items-start gap-2.5"><i class="fa-solid fa-circle-check text-coral mt-1"></i><span><strong>Bo tay và gấu áo dệt kim đàn hồi:</strong> Ôm gọn cổ tay, ngăn gió lùa tuyệt đối khi di chuyển ngoài trời hoặc đi xe máy.</span></li>
             </ul>
           </div>
-          <div class="space-y-3">
-            <h3 class="font-extrabold text-base text-coral">2. Cẩm nang phối đồ từ Chuyên Gia Stylist ND Style</h3>
-            <p>
-              • <strong>Phong cách Smart Casual công sở:</strong> Phối cùng Áo sơ mi nam cotton dài tay ND003 và Quần âu Sorona tối màu.<br>
-              • <strong>Phong cách Streetwear cuối tuần:</strong> Phối cùng Áo polo ND008 và Quần Jeans Slim Denim ND006.
-            </p>
+
+          <!-- Technical Specifications Table -->
+          <div class="lg:col-span-5 bg-[#faf4f0] rounded-3xl p-6 md:p-8 border border-[#f3e5dc] space-y-5">
+            <h3 class="text-lg font-extrabold text-gray-900 uppercase border-b border-[#e9d7cb] pb-3">
+              <i class="fa-solid fa-clipboard-list text-coral mr-2"></i>Thông Số Kỹ Thuật Chi Tiết
+            </h3>
+            <div class="divide-y divide-[#e9d7cb] text-xs md:text-sm">
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Thương hiệu</span><strong class="text-gray-900">ND Style Vietnam</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Mã sản phẩm</span><strong class="text-gray-900">NDS-AK2024-DL</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Bộ sưu tập</span><strong class="text-coral">Autumn Winter 2024</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Chất liệu lớp ngoài</span><strong class="text-gray-900">92% Microfiber Suede, 8% Spandex</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Chất liệu lớp lót</span><strong class="text-gray-900">100% Lụa Habutai chống tĩnh điện</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Kiểu dáng (Fit)</span><strong class="text-gray-900">Regular Fit (Suông vừa tôn dáng)</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Màu sắc</span><strong class="text-gray-900">Nâu Da Lộn / Đen / Kem Be / Xanh Rêu</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Kích cỡ</span><strong class="text-gray-900">S • M • L • XL • 2XL (50 - 88kg)</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Trọng lượng</span><strong class="text-gray-900">680 gram (Nhẹ & giữ ấm cao)</strong></div>
+              <div class="py-3 flex justify-between"><span class="text-gray-500">Sản xuất tại</span><strong class="text-gray-900">Nhà máy ND Style (Việt Nam)</strong></div>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-[#f3d6ca] flex items-center gap-3.5">
+              <img src="../assets/images/review_1.jpg" alt="Stylist" class="w-12 h-12 rounded-full object-cover shrink-0">
+              <div class="text-xs">
+                <div class="font-extrabold text-gray-900">Cần tư vấn chọn size chuẩn nhất?</div>
+                <div class="text-gray-500">Gọi ngay <strong class="text-coral">1900 6750</strong> để Stylist hỗ trợ 1-1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: SIZE GUIDE & STYLING -->
+        <div id="tab-size" class="detail-tab-pane hidden space-y-8">
+          <div class="bg-[#faf4f0] rounded-3xl p-6 md:p-8 border border-[#f3e5dc]">
+            <h3 class="text-xl font-extrabold text-gray-900 uppercase mb-2">Bảng Quy Đổi Kích Cỡ Áo Khoác Nam ND Style</h3>
+            <p class="text-xs text-gray-600 mb-5">Thông số đo thực tế trên mặt phẳng (sai số +/- 1cm). Nếu bạn thích mặc rộng rãi để layer áo len dày bên trong, hãy ưu tiên nhích lên 1 size.</p>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs md:text-sm text-left bg-white rounded-2xl overflow-hidden border border-gray-200">
+                <thead class="bg-gray-900 text-white uppercase text-xs">
+                  <tr>
+                    <th class="py-3.5 px-4">Kích cỡ (Size)</th>
+                    <th class="py-3.5 px-4">Chiều cao gợi ý</th>
+                    <th class="py-3.5 px-4">Cân nặng gợi ý</th>
+                    <th class="py-3.5 px-4">Rộng vai (cm)</th>
+                    <th class="py-3.5 px-4">Vòng ngực (cm)</th>
+                    <th class="py-3.5 px-4">Dài áo (cm)</th>
+                    <th class="py-3.5 px-4">Dài tay (cm)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100 font-medium text-gray-700">
+                  <tr class="hover:bg-[#fff9f7]"><td class="py-3 px-4 font-extrabold text-coral">Size S</td><td class="py-3 px-4">1m58 - 1m65</td><td class="py-3 px-4">50 - 57 kg</td><td class="py-3 px-4">43.5</td><td class="py-3 px-4">100</td><td class="py-3 px-4">64</td><td class="py-3 px-4">60</td></tr>
+                  <tr class="hover:bg-[#fff9f7]"><td class="py-3 px-4 font-extrabold text-coral">Size M</td><td class="py-3 px-4">1m64 - 1m70</td><td class="py-3 px-4">58 - 64 kg</td><td class="py-3 px-4">45.0</td><td class="py-3 px-4">104</td><td class="py-3 px-4">66</td><td class="py-3 px-4">61.5</td></tr>
+                  <tr class="bg-[#fff4ef] font-bold"><td class="py-3 px-4 font-extrabold text-coral">Size L (Phổ biến)</td><td class="py-3 px-4">1m68 - 1m75</td><td class="py-3 px-4">65 - 73 kg</td><td class="py-3 px-4">46.5</td><td class="py-3 px-4">108</td><td class="py-3 px-4">68</td><td class="py-3 px-4">63</td></tr>
+                  <tr class="hover:bg-[#fff9f7]"><td class="py-3 px-4 font-extrabold text-coral">Size XL</td><td class="py-3 px-4">1m72 - 1m80</td><td class="py-3 px-4">74 - 80 kg</td><td class="py-3 px-4">48.0</td><td class="py-3 px-4">112</td><td class="py-3 px-4">70</td><td class="py-3 px-4">64.5</td></tr>
+                  <tr class="hover:bg-[#fff9f7]"><td class="py-3 px-4 font-extrabold text-coral">Size 2XL</td><td class="py-3 px-4">1m75 - 1m85</td><td class="py-3 px-4">81 - 88 kg</td><td class="py-3 px-4">49.5</td><td class="py-3 px-4">116</td><td class="py-3 px-4">72</td><td class="py-3 px-4">66</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <span class="text-xs font-extrabold text-coral uppercase">Công thức 01</span>
+              <h4 class="font-extrabold text-base text-gray-900 mt-1 mb-2">Smart Casual Lịch Lãm Nơi Công Sở</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Phối Áo khoác da lộn màu Nâu cùng Áo sơ mi trắng/xanh nhạt và Quần âu vải Sorona đen. Hoàn thiện bằng đôi giày Loafer da để tạo diện mạo chỉn chu khi gặp đối tác.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <span class="text-xs font-extrabold text-coral uppercase">Công thức 02</span>
+              <h4 class="font-extrabold text-base text-gray-900 mt-1 mb-2">Streetwear Năng Động Dạo Phố Cuối Tuần</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Kết hợp cùng Áo thun trắng trơn hoặc Áo Polo phối bo và Quần Jeans Slim Denim xanh đậm, đi cùng Sneaker trắng và mũ lưỡi trai ND Style trẻ trung.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+              <span class="text-xs font-extrabold text-coral uppercase">Công thức 03</span>
+              <h4 class="font-extrabold text-base text-gray-900 mt-1 mb-2">Layering Hàn Quốc Ngày Đại Hàn</h4>
+              <p class="text-xs text-gray-600 leading-relaxed">Mặc ngoài Áo len cổ lọ màu kem be hoặc đen tuyền, phối cùng quần âu ống đứng và Chelsea Boots. Vừa ấm áp tuyệt đối vừa chuẩn khí chất điện ảnh Hàn Quốc.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: CARE & RETURN POLICY -->
+        <div id="tab-policy" class="detail-tab-pane hidden grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-[#faf4f0] rounded-3xl p-6 md:p-8 border border-[#f3e5dc] space-y-4">
+            <h3 class="text-lg font-extrabold text-gray-900 uppercase"><i class="fa-solid fa-soap text-coral mr-2"></i>Hướng Dẫn Giặt Ủi & Bảo Quản Da Lộn</h3>
+            <ul class="space-y-2.5 text-xs md:text-sm text-gray-700">
+              <li>• <strong>Ưu tiên giặt khô (Dry Clean)</strong> hoặc giặt tay nhẹ nhàng với nước lạnh dưới 30°C và dung dịch giặt dịu nhẹ.</li>
+              <li>• Không sử dụng thuốc tẩy mạnh hoặc vắt xoắn mạnh bằng máy giặt tốc độ cao.</li>
+              <li>• Phơi sản phẩm ở nơi thoáng gió, có bóng râm, tránh ánh nắng gắt trực tiếp chiếu vào bề mặt da lộn.</li>
+              <li>• Sử dụng bàn là hơi nước đứng ở nhiệt độ thấp và treo bằng móc vai bản to để giữ phom vai luôn đứng chuẩn.</li>
+            </ul>
+          </div>
+          <div class="bg-[#faf4f0] rounded-3xl p-6 md:p-8 border border-[#f3e5dc] space-y-4">
+            <h3 class="text-lg font-extrabold text-gray-900 uppercase"><i class="fa-solid fa-shield-heart text-coral mr-2"></i>Chính Sách Đổi Trả & Bảo Hành Tại ND Style</h3>
+            <ul class="space-y-2.5 text-xs md:text-sm text-gray-700">
+              <li>• <strong>Đổi size / Đổi mẫu trong 7 ngày:</strong> Hỗ trợ đổi tận nhà qua bưu tá hoặc đổi trực tiếp tại toàn bộ 15 Showroom trên toàn quốc.</li>
+              <li>• <strong>Miễn phí 100% chi phí vận chuyển 2 chiều</strong> nếu sản phẩm có lỗi từ nhà sản xuất hoặc giao nhầm size.</li>
+              <li>• <strong>Bảo hành 12 tháng:</strong> Miễn phí bảo hành đường chỉ may, khóa kéo YKK và cúc bấm tại mọi cửa hàng ND Style.</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- CUSTOMER REVIEWS & PHOTO FEEDBACK -->
+      <div id="reviews-section" class="mt-16 pt-12 border-t border-gray-100">
+        <div class="flex items-center justify-center gap-5 mb-8">
+          <div class="diamond-line"><div class="line"></div><div class="diamond"></div></div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-coral uppercase tracking-wide shrink-0">ĐÁNH GIÁ TỪ KHÁCH HÀNG ĐÃ MUA (186)</h2>
+          <div class="diamond-line"><div class="diamond"></div><div class="line"></div></div>
+        </div>
+
+        <!-- Rating Overview Dashboard -->
+        <div class="bg-[#faf4f0] rounded-3xl p-6 md:p-8 border border-[#f3e5dc] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8">
+          <div class="lg:col-span-4 text-center lg:border-r border-[#e9d7cb] lg:pr-6">
+            <div class="text-5xl font-black text-coral">4.9 <span class="text-2xl text-gray-400 font-bold">/ 5</span></div>
+            <div class="flex justify-center text-amber-400 text-base gap-1 my-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs text-gray-600">Dựa trên <strong>186 đánh giá xác thực</strong> từ khách hàng đã mua tại Website & Showroom</p>
+            <div class="mt-3 inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-extrabold">98% khách hàng hài lòng & giới thiệu</div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-2 text-xs">
+            <div class="flex items-center gap-3">
+              <span class="w-12 font-bold">5 Sao</span>
+              <div class="flex-1 h-2.5 bg-white rounded-full overflow-hidden"><div class="h-full bg-coral rounded-full" style="width: 92%"></div></div>
+              <span class="w-10 text-right text-gray-600 font-bold">172</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-12 font-bold">4 Sao</span>
+              <div class="flex-1 h-2.5 bg-white rounded-full overflow-hidden"><div class="h-full bg-coral rounded-full" style="width: 7%"></div></div>
+              <span class="w-10 text-right text-gray-600 font-bold">12</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-12 font-bold">3 Sao</span>
+              <div class="flex-1 h-2.5 bg-white rounded-full overflow-hidden"><div class="h-full bg-amber-400 rounded-full" style="width: 1%"></div></div>
+              <span class="w-10 text-right text-gray-600 font-bold">2</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-12 font-bold">2 Sao</span>
+              <div class="flex-1 h-2.5 bg-white rounded-full overflow-hidden"><div class="h-full bg-gray-300 rounded-full" style="width: 0%"></div></div>
+              <span class="w-10 text-right text-gray-400">0</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-12 font-bold">1 Sao</span>
+              <div class="flex-1 h-2.5 bg-white rounded-full overflow-hidden"><div class="h-full bg-gray-300 rounded-full" style="width: 0%"></div></div>
+              <span class="w-10 text-right text-gray-400">0</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3 flex flex-col gap-2.5">
+            <span class="text-xs font-extrabold text-gray-800 uppercase">Lọc đánh giá nhanh:</span>
+            <div class="flex flex-wrap gap-2">
+              <button class="px-3 py-1.5 rounded-full bg-coral text-white text-xs font-bold">Tất cả (186)</button>
+              <button class="px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-coral text-xs font-semibold">Có hình ảnh (64)</button>
+              <button class="px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-coral text-xs font-semibold">5 Sao (172)</button>
+              <button class="px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-coral text-xs font-semibold">Chuẩn form (154)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review List -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <!-- Review Item 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="../assets/images/review_1.jpg" alt="Minh Hoàng" class="w-11 h-11 rounded-full object-cover">
+                <div>
+                  <div class="font-extrabold text-sm text-gray-900">Trần Minh Hoàng <span class="text-[11px] font-bold text-emerald-600 ml-1"><i class="fa-solid fa-circle-check"></i> Đã mua hàng</span></div>
+                  <div class="text-[11px] text-gray-400">20/11/2024 • Phân loại: Nâu Da Lộn | Size L (1m72, 68kg)</div>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-700 leading-relaxed">
+              "Áo cầm lên nặng tay, lớp da lộn bên ngoài cực kỳ mịn, sờ mát và sang hơn trong ảnh rất nhiều. Mình cao 1m72 nặng 68kg mặc size L vừa in như may đo. Khóa kéo mượt, bên trong có túi ngực để vừa ví dài. Chắc chắn sẽ ủng hộ thêm màu Đen!"
+            </p>
+            <div class="flex gap-2.5 pt-1">
+              <img src="../assets/images/prod_1.jpg" alt="Review photo" class="w-16 h-16 rounded-xl object-cover border border-gray-200">
+              <img src="../assets/images/lookbook_1.jpg" alt="Review photo" class="w-16 h-16 rounded-xl object-cover border border-gray-200">
+            </div>
+            <div class="bg-[#faf4f0] p-3 rounded-xl text-xs text-gray-600 border-l-4 border-coral">
+              <strong class="text-gray-900">Phản hồi từ ND Style:</strong> Cảm ơn anh Minh Hoàng đã tin chọn BST Thu Đông 2024 của ND Style. Chúc anh luôn lịch lãm và phong độ!
+            </div>
+          </div>
+
+          <!-- Review Item 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="../assets/images/review_2.jpg" alt="Phương Ly" class="w-11 h-11 rounded-full object-cover">
+                <div>
+                  <div class="font-extrabold text-sm text-gray-900">Nguyễn Phương Ly <span class="text-[11px] font-bold text-emerald-600 ml-1"><i class="fa-solid fa-circle-check"></i> Đã mua hàng</span></div>
+                  <div class="text-[11px] text-gray-400">18/11/2024 • Phân loại: Kem Be | Size XL (Mua tặng chồng)</div>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-700 leading-relaxed">
+              "Mình đặt mua tặng sinh nhật ông xã kèm 1 chiếc quần âu Sorona theo combo gợi ý trên web. Đóng gói hộp cứng thơm phức, có kèm thiệp viết tay rất tinh tế. Chồng mình mặc lên trẻ ra mấy tuổi, đi làm ai cũng hỏi mua ở đâu."
+            </p>
+            <div class="flex gap-2.5 pt-1">
+              <img src="../assets/images/prod_2.jpg" alt="Review photo" class="w-16 h-16 rounded-xl object-cover border border-gray-200">
+              <img src="../assets/images/prod_10.jpg" alt="Review photo" class="w-16 h-16 rounded-xl object-cover border border-gray-200">
+            </div>
+            <div class="bg-[#faf4f0] p-3 rounded-xl text-xs text-gray-600 border-l-4 border-coral">
+              <strong class="text-gray-900">Phản hồi từ ND Style:</strong> ND Style rất vui vì món quà đã mang lại niềm vui cho gia đình chị Phương Ly ạ!
+            </div>
+          </div>
+
+          <!-- Review Item 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="../assets/images/review_3.jpg" alt="Đức Anh" class="w-11 h-11 rounded-full object-cover">
+                <div>
+                  <div class="font-extrabold text-sm text-gray-900">Lê Đức Anh <span class="text-[11px] font-bold text-emerald-600 ml-1"><i class="fa-solid fa-circle-check"></i> Đã mua hàng</span></div>
+                  <div class="text-[11px] text-gray-400">15/11/2024 • Phân loại: Đen Tuyền | Size M (1m66, 61kg)</div>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs gap-0.5"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-700 leading-relaxed">
+              "Điểm cộng lớn nhất là lớp lót lụa bên trong cực êm, mặc ngoài áo sơ mi không bị cộm hay nhăn áo trong. Đi sáng sớm Hà Nội 15 độ cản gió cực tốt. Áp mã NDSTYLE25 tiết kiệm được kha khá."
+            </p>
+          </div>
+
+          <!-- Write a Review Box -->
+          <form onsubmit="event.preventDefault(); showToast('Cảm ơn bạn đã gửi đánh giá sản phẩm!'); this.reset();" class="bg-[#faf4f0] rounded-2xl p-6 border border-[#f3d6ca] space-y-3">
+            <h4 class="font-extrabold text-sm text-gray-900 uppercase"><i class="fa-regular fa-pen-to-square text-coral mr-1.5"></i>Gửi đánh giá của bạn về sản phẩm</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <input type="text" required placeholder="Họ và tên của bạn *" class="px-3.5 py-2.5 rounded-xl bg-white border border-gray-200 text-xs outline-none focus:border-coral">
+              <input type="tel" required placeholder="Số điện thoại mua hàng *" class="px-3.5 py-2.5 rounded-xl bg-white border border-gray-200 text-xs outline-none focus:border-coral">
+            </div>
+            <textarea rows="3" required placeholder="Chia sẻ cảm nhận về chất liệu, phom dáng, chiều cao/cân nặng của bạn..." class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-gray-200 text-xs outline-none focus:border-coral"></textarea>
+            <button type="submit" class="px-6 py-2.5 rounded-xl bg-coral hover-bg-coral text-white text-xs font-extrabold uppercase">Gửi Đánh Giá Ngay</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- RELATED PRODUCTS (SẢN PHẨM CÙNG BỘ SƯU TẬP) -->
+      <div class="mt-14 pt-10 border-t border-gray-100">
+        <div class="flex items-center justify-center gap-5 mb-8">
+          <div class="diamond-line"><div class="line"></div><div class="diamond"></div></div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-coral uppercase tracking-wide shrink-0">SẢN PHẨM CÙNG BỘ SƯU TẬP</h2>
+          <div class="diamond-line"><div class="diamond"></div><div class="line"></div></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 bg-coral text-white text-[11px] font-bold rounded-full">- 50%</span>
+              <a href="detail.html"><img src="../assets/images/prod_2.jpg" alt="Áo khoác nam 2 lớp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+            </div>
+            <h3 class="font-bold text-sm text-gray-900 line-clamp-1 mb-1 group-hover:text-coral"><a href="detail.html">Áo Khoác Nam 2 Lớp Chống Gió</a></h3>
+            <div class="flex items-center justify-between">
+              <div><span class="text-base font-extrabold text-coral">1.000.000₫</span> <span class="text-xs text-gray-400 line-through">2.000.000₫</span></div>
+              <a href="cart.html" class="text-xs font-bold text-gray-700 hover-text-coral">+ Giỏ hàng</a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 bg-coral text-white text-[11px] font-bold rounded-full">- 22%</span>
+              <a href="detail.html"><img src="../assets/images/prod_3.jpg" alt="Áo sơ mi nam cotton dài tay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+            </div>
+            <h3 class="font-bold text-sm text-gray-900 line-clamp-1 mb-1 group-hover:text-coral"><a href="detail.html">Áo Sơ Mi Nam Cotton Dài Tay</a></h3>
+            <div class="flex items-center justify-between">
+              <div><span class="text-base font-extrabold text-coral">1.260.000₫</span> <span class="text-xs text-gray-400 line-through">1.620.000₫</span></div>
+              <a href="cart.html" class="text-xs font-bold text-gray-700 hover-text-coral">+ Giỏ hàng</a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 bg-coral text-white text-[11px] font-bold rounded-full">- 15%</span>
+              <a href="detail.html"><img src="../assets/images/prod_7.jpg" alt="Quần âu nam vải Sorona" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+            </div>
+            <h3 class="font-bold text-sm text-gray-900 line-clamp-1 mb-1 group-hover:text-coral"><a href="detail.html">Quần Âu Nam Vải Sorona Cao Cấp</a></h3>
+            <div class="flex items-center justify-between">
+              <div><span class="text-base font-extrabold text-coral">550.000₫</span> <span class="text-xs text-gray-400 line-through">650.000₫</span></div>
+              <a href="cart.html" class="text-xs font-bold text-gray-700 hover-text-coral">+ Giỏ hàng</a>
+            </div>
+          </div>
+
+          <div class="group bg-white rounded-2xl border border-gray-100 p-3.5 hover:shadow-xl transition-all">
+            <div class="relative aspect-[3/4] rounded-xl overflow-hidden bg-gray-100 mb-3">
+              <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 bg-coral text-white text-[11px] font-bold rounded-full">Hot</span>
+              <a href="detail.html"><img src="../assets/images/prod_8.jpg" alt="Áo polo phối bo cổ" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></a>
+            </div>
+            <h3 class="font-bold text-sm text-gray-900 line-clamp-1 mb-1 group-hover:text-coral"><a href="detail.html">Áo Polo Nam Phối Bo Cổ Lịch Lãm</a></h3>
+            <div class="flex items-center justify-between">
+              <div><span class="text-base font-extrabold text-coral">450.000₫</span> <span class="text-xs text-gray-400 line-through">520.000₫</span></div>
+              <a href="cart.html" class="text-xs font-bold text-gray-700 hover-text-coral">+ Giỏ hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Toast Notification -->
+  <div id="detailToast" class="fixed bottom-6 right-6 z-50 hidden bg-gray-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-gray-700 flex items-center gap-3 text-xs">
+    <i class="fa-solid fa-circle-check text-coral text-lg"></i>
+    <div id="detailToastText" class="font-extrabold">Đã thêm sản phẩm vào giỏ hàng!</div>
+  </div>
+
+  <!-- Full Footer -->
   <footer class="bg-[#1b1b1b] text-gray-300 text-sm pt-14 pb-8 border-t border-gray-800 mt-12">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-gray-800">
         <div class="md:col-span-5 space-y-3">
           <a href="home.html" class="inline-block mb-2"><img src="../assets/images/logo-footer.png" alt="ND Style" class="h-10 object-contain"></a>
-          <h4 class="text-white font-extrabold text-sm uppercase">CÔNG TY ND THEME</h4>
-          <p class="text-xs text-gray-400">Địa chỉ: 266 Đội Cấn, Ba Đình, Hà Nội • Hotline: 1900 6750</p>
+          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider">CÔNG TY ND THEME</h4>
+          <p class="text-xs text-gray-400">Số ĐKKD 0135792468 cấp ngày 30/05/2023 tại Sở Kế hoạch Đầu tư TP. Hà Nội</p>
+          <ul class="space-y-2 text-xs text-gray-300 pt-1">
+            <li><i class="fa-solid fa-location-dot text-coral mr-2"></i><strong>Địa chỉ:</strong> 266 Đội Cấn, Ba Đình, Hà Nội</li>
+            <li><i class="fa-solid fa-envelope text-coral mr-2"></i><strong>Email:</strong> support@ndstyle.vn</li>
+            <li><i class="fa-solid fa-phone-volume text-coral mr-2"></i><strong>Hotline:</strong> <span class="text-coral font-extrabold text-sm">1900 6750</span></li>
+          </ul>
         </div>
         <div class="md:col-span-3">
-          <h4 class="text-white font-extrabold text-xs uppercase mb-4">VỀ CHÚNG TÔI</h4>
-          <ul class="space-y-2 text-xs text-gray-400">
+          <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">VỀ CHÚNG TÔI</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
             <li><a href="home.html" class="hover:text-white">Trang chủ</a></li>
-            <li><a href="category.html" class="hover:text-white">Sản phẩm</a></li>
-            <li><a href="news.html" class="hover:text-white">Tin tức</a></li>
+            <li><a href="category.html" class="hover:text-white">Bộ sưu tập Thu Đông</a></li>
+            <li><a href="news.html" class="hover:text-white">Tin tức & Cẩm nang phối đồ</a></li>
+            <li><a href="contact.html#showroom" class="hover:text-white">Hệ thống 15 Showroom</a></li>
           </ul>
         </div>
         <div class="md:col-span-4">
-          <h4 class="text-white font-extrabold text-xs uppercase mb-4">DỊCH VỤ KHÁCH HÀNG</h4>
-          <ul class="space-y-2 text-xs text-gray-400">
+          <h4 class="text-white font-extrabold text-xs uppercase tracking-wider mb-4">DỊCH VỤ KHÁCH HÀNG</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
             <li><a href="cart.html" class="hover:text-white">Kiểm tra đơn hàng</a></li>
-            <li><a href="contact.html" class="hover:text-white">Hệ thống cửa hàng</a></li>
+            <li><a href="contact.html" class="hover:text-white">Chính sách đổi trả 7 ngày</a></li>
+            <li><a href="contact.html" class="hover:text-white">Tư vấn chọn size cùng Stylist</a></li>
           </ul>
         </div>
       </div>
       <div class="pt-6 text-center text-xs text-gray-500">© Bản quyền thuộc về ND Style (THEME11) | Cung cấp bởi Gozic Studio.</div>
     </div>
   </footer>
+
+  <script>
+    const announcements = [
+      "CHÀO ĐÓN BỘ SƯU TẬP THU ĐÔNG 2024 • FREESHIP ĐƠN ĐẦU TIÊN",
+      "NHẬP MÃ NDSTYLE25 GIẢM NGAY 25% CHO ĐƠN HÀNG TỪ 1.049K",
+      "ĐỔI SIZE TẬN NHÀ TRONG 7 NGÀY • BẢO HÀNH ĐƯỜNG MAY 12 THÁNG"
+    ];
+    let annIdx = 0;
+    function nextTopbar() { annIdx = (annIdx + 1) % announcements.length; document.getElementById('topbarText').textContent = announcements[annIdx]; }
+    function prevTopbar() { annIdx = (annIdx - 1 + announcements.length) % announcements.length; document.getElementById('topbarText').textContent = announcements[annIdx]; }
+
+    function selectGallery(btn, src, countText) {
+      document.getElementById('mainProdImg').src = src;
+      document.getElementById('imgCounter').textContent = countText;
+      document.querySelectorAll('.thumb-btn').forEach(b => {
+        b.className = 'thumb-btn aspect-square rounded-2xl overflow-hidden border border-gray-200 hover:border-coral p-0.5 transition-all';
+      });
+      btn.className = 'thumb-btn aspect-square rounded-2xl overflow-hidden border-2 border-coral p-0.5 transition-all';
+    }
+
+    function selectColor(btn, name, imgSrc) {
+      document.getElementById('selectedColorName').textContent = name;
+      document.getElementById('mainProdImg').src = imgSrc;
+      document.querySelectorAll('.color-btn').forEach(b => {
+        b.className = 'color-btn px-4 py-2 rounded-xl border border-gray-200 hover:border-coral text-xs font-semibold text-gray-700 flex items-center gap-2';
+      });
+      btn.className = 'color-btn px-4 py-2 rounded-xl border-2 border-coral bg-[#faf4f0] text-xs font-extrabold text-gray-900 flex items-center gap-2';
+    }
+
+    function selectSize(btn, label) {
+      document.getElementById('selectedSizeName').textContent = label;
+      document.querySelectorAll('.size-btn').forEach(b => {
+        b.className = 'size-btn px-4 h-10 rounded-xl border border-gray-200 text-xs font-bold hover:border-coral';
+      });
+      btn.className = 'size-btn px-4 h-10 rounded-xl border-2 border-coral bg-coral text-white text-xs font-extrabold';
+    }
+
+    function switchDetailTab(tabId) {
+      document.querySelectorAll('.detail-tab-pane').forEach(p => p.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+      document.querySelectorAll('.detail-tab-btn').forEach(b => {
+        b.className = 'detail-tab-btn px-7 py-3 rounded-full bg-[#faf4f0] hover:bg-[#ffe2d9] text-gray-800 text-xs md:text-sm font-extrabold uppercase tracking-wider transition-all';
+      });
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) activeBtn.className = 'detail-tab-btn px-7 py-3 rounded-full bg-coral text-white text-xs md:text-sm font-extrabold uppercase tracking-wider shadow-sm transition-all';
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('detailToast');
+      document.getElementById('detailToastText').textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 3200);
+    }
+
+    function addToCartAction() {
+      const qty = parseInt(document.getElementById('qtyInput').value || '1', 10);
+      const badge = document.getElementById('headerCartBadge');
+      badge.textContent = parseInt(badge.textContent || '2', 10) + qty;
+      showToast('Đã thêm ' + qty + ' Áo Khoác Da Lộn Nam vào Giỏ hàng!');
+    }
+  </script>
 </body>
 </html>

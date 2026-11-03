@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tin Tức Thời Trang • ND Style | THEME11 (MOBILE)</title>
+  <title>Tin Tức & Cẩm Nang Thời Trang • ND Style | THEME11 (MOBILE)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -11,55 +11,237 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="../../libs/theme-toolbar.js" data-theme-name="THEME11 - ND Style Thời Trang Hiện Đại" defer></script>
   <style>
-    body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; padding-bottom: 68px; }
+    body { font-family: 'Mulish', sans-serif; color: #222222; background-color: #ffffff; padding-bottom: 72px; }
     .bg-coral { background-color: #eb5b38; }
     .text-coral { color: #eb5b38; }
+    .border-coral { border-color: #eb5b38; }
     .topbar-bg { background: linear-gradient(90deg, #e95936 0%, #f36f4d 50%, #e95936 100%); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
 <body class="antialiased min-h-screen flex flex-col bg-white">
 
   <div class="topbar-bg text-white text-[11px] py-2 px-3 text-center font-extrabold uppercase">
-    TIN TỨC & XU HƯỚNG THỜI TRANG THU ĐÔNG 2024
+    TẠP CHÍ THỜI TRANG & XU HƯỚNG THU ĐÔNG 2024
   </div>
 
-  <header class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm px-3.5 py-2.5 flex items-center justify-between">
-    <a href="home.html" class="w-8 h-8 rounded-xl bg-[#faf4f0] flex items-center justify-center text-gray-800">
-      <i class="fa-solid fa-arrow-left text-xs"></i>
-    </a>
-    <a href="home.html"><img src="../assets/images/logo.png" alt="ND Style" class="h-7 object-contain"></a>
-    <a href="cart.html" class="relative text-coral"><i class="fa-solid fa-bag-shopping text-lg"></i></a>
+  <header class="bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm px-3.5 py-2.5 space-y-2">
+    <div class="flex items-center justify-between">
+      <a href="home.html" class="w-8 h-8 rounded-xl bg-[#faf4f0] flex items-center justify-center text-gray-800">
+        <i class="fa-solid fa-arrow-left text-xs"></i>
+      </a>
+      <a href="home.html"><img src="../assets/images/logo.png" alt="ND Style" class="h-7 object-contain"></a>
+      <a href="cart.html" class="relative text-coral">
+        <i class="fa-solid fa-bag-shopping text-lg"></i>
+        <span class="absolute -top-1.5 -right-2 w-4 h-4 rounded-full bg-coral text-white text-[9px] font-bold flex items-center justify-center">2</span>
+      </a>
+    </div>
+
+    <!-- Category Filter Strip -->
+    <div class="flex gap-2 overflow-x-auto no-scrollbar pt-0.5">
+      <button onclick="filterMobNews('all', this)" class="mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-coral text-white text-[11px] font-extrabold uppercase">Tất cả (13)</button>
+      <button onclick="filterMobNews('xuhuong', this)" class="mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-[#faf4f0] text-gray-700 text-[11px] font-bold">Xu hướng Thu Đông</button>
+      <button onclick="filterMobNews('phoido', this)" class="mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-[#faf4f0] text-gray-700 text-[11px] font-bold">Bí quyết phối đồ</button>
+      <button onclick="filterMobNews('lookbook', this)" class="mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-[#faf4f0] text-gray-700 text-[11px] font-bold">Lookbook & Chất liệu</button>
+    </div>
   </header>
 
-  <main class="flex-1 p-3.5 space-y-4">
-    <h1 class="text-lg font-extrabold text-gray-900 uppercase">CẨM NANG MẶC ĐẸP ND STYLE</h1>
-
-    <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
-      <a href="post.html"><img src="../assets/images/blog_1.jpg" alt="4 món đồ họa tiết" class="w-full h-44 object-cover"></a>
-      <div class="p-3.5">
-        <span class="text-[10px] font-bold text-coral">18/11/2024 • Nguyễn Anh Dũng</span>
-        <h2 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">4 món đồ họa tiết đáng sắm để phong cách trẻ trung hơn</a></h2>
-        <p class="text-xs text-gray-500 line-clamp-2">Thời trang mùa lạnh không nên chỉ giới hạn với những món đồ trơn màu. Khi bổ sung các item họa tiết, phong cách của bạn sẽ tươi mới hơn...</p>
+  <main class="flex-1 p-3.5 space-y-5">
+    <!-- Hero Featured Article -->
+    <article class="bg-[#faf4f0] rounded-3xl border border-[#f3e5dc] overflow-hidden shadow-sm">
+      <a href="post.html" class="block relative aspect-[16/10]">
+        <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase shadow">Tiêu điểm Thu Đông</span>
+        <img src="../assets/images/blog_1.jpg" alt="4 món đồ họa tiết" class="w-full h-full object-cover">
+      </a>
+      <div class="p-4 space-y-2">
+        <div class="flex items-center gap-3 text-[11px] text-gray-500">
+          <span><i class="fa-regular fa-calendar text-coral mr-1"></i>18/11/2024</span>
+          <span><i class="fa-regular fa-user text-coral mr-1"></i>Nguyễn Anh Dũng</span>
+          <span><i class="fa-regular fa-eye text-coral mr-1"></i>3.4k</span>
+        </div>
+        <h1 class="font-extrabold text-base text-gray-900 leading-snug">
+          <a href="post.html">4 món đồ họa tiết đáng sắm để phong cách trẻ trung và cuốn hút hơn trong mùa Thu Đông</a>
+        </h1>
+        <p class="text-xs text-gray-600 line-clamp-2 leading-relaxed">
+          Thời trang mùa lạnh không nên chỉ giới hạn với những món đồ trơn màu. Khi bổ sung các item họa tiết kẻ sọc, răng sói hay đầm phối cổ, phong cách của bạn sẽ tươi mới hơn...
+        </p>
+        <a href="post.html" class="inline-flex items-center gap-1.5 text-xs font-extrabold text-coral pt-1">Đọc trọn bài viết <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
       </div>
     </article>
 
-    <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
-      <a href="post.html"><img src="../assets/images/blog_2.jpg" alt="5 món thời trang tối giản" class="w-full h-44 object-cover"></a>
-      <div class="p-3.5">
-        <span class="text-[10px] font-bold text-coral">18/11/2024 • Nguyễn Anh Dũng</span>
-        <h2 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">5 món thời trang tối giản được phụ nữ Pháp diện mãi không chán</a></h2>
-        <p class="text-xs text-gray-500 line-clamp-2">Phụ nữ Pháp nổi tiếng với gu ăn mặc thanh lịch, tinh tế nhờ 5 món đồ cơ bản luôn có mặt trong tủ đồ thu đông...</p>
+    <!-- 12 Articles List -->
+    <div class="space-y-3.5">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-extrabold text-gray-900 uppercase"><i class="fa-regular fa-newspaper text-coral mr-1.5"></i>Bài viết mới cập nhật (12)</h2>
+        <span class="text-[11px] text-gray-400">Trang 1 / 3</span>
       </div>
-    </article>
 
-    <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
-      <a href="post.html"><img src="../assets/images/blog_3.jpg" alt="4 kiểu áo tối giản" class="w-full h-44 object-cover"></a>
-      <div class="p-3.5">
-        <span class="text-[10px] font-bold text-coral">18/11/2024 • Nguyễn Anh Dũng</span>
-        <h2 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">4 kiểu áo tối giản được phụ nữ Nhật Bản yêu thích trong mùa thu</a></h2>
-        <p class="text-xs text-gray-500 line-clamp-2">Phong cách tối giản kiểu Nhật chú trọng vào chất liệu và phom dáng thoải mái, dễ dàng phối nhiều lớp layer ấm áp...</p>
-      </div>
-    </article>
+      <!-- Post 1 -->
+      <article data-cat="phoido" class="mob-news-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <a href="post.html" class="block relative h-44">
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase">Bí quyết mặc đẹp</span>
+          <img src="../assets/images/blog_2.jpg" alt="5 món thời trang tối giản" class="w-full h-full object-cover">
+        </a>
+        <div class="p-3.5">
+          <span class="text-[10px] font-bold text-gray-400">18/11/2024 • Nguyễn Anh Dũng • 2.180 lượt xem</span>
+          <h3 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">5 món thời trang tối giản được phụ nữ Pháp diện mãi không chán</a></h3>
+          <p class="text-xs text-gray-500 line-clamp-2">Áo blazer dáng suông, quần jeans ống đứng và áo len cổ tim luôn là bảo chứng cho vẻ ngoài thanh lịch vượt thời gian...</p>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article data-cat="xuhuong" class="mob-news-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <a href="post.html" class="block relative h-44">
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase">Xu hướng Á Đông</span>
+          <img src="../assets/images/blog_3.jpg" alt="4 kiểu áo tối giản" class="w-full h-full object-cover">
+        </a>
+        <div class="p-3.5">
+          <span class="text-[10px] font-bold text-gray-400">17/11/2024 • Lê Minh Thư • 1.940 lượt xem</span>
+          <h3 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">4 kiểu áo tối giản được phụ nữ Nhật Bản yêu thích trong mùa thu</a></h3>
+          <p class="text-xs text-gray-500 line-clamp-2">Phong cách tối giản kiểu Nhật chú trọng vào chất liệu và phom dáng thoải mái, dễ dàng phối nhiều lớp layer ấm áp...</p>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article data-cat="lookbook" class="mob-news-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
+        <a href="post.html" class="block relative h-44">
+          <span class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase">Lookbook Mới</span>
+          <img src="../assets/images/blog_home.jpg" alt="Lookbook Enchanting Dress" class="w-full h-full object-cover">
+        </a>
+        <div class="p-3.5">
+          <span class="text-[10px] font-bold text-gray-400">17/11/2024 • Ban Biên Tập • 2.650 lượt xem</span>
+          <h3 class="font-extrabold text-sm text-gray-900 mt-1 mb-1.5"><a href="post.html">Lookbook Enchanting Dress: Bản giao hưởng thanh lịch cho quý cô hiện đại</a></h3>
+          <p class="text-xs text-gray-500 line-clamp-2">Khám phá những thiết kế đầm suông và chân váy xếp ly tôn dáng vừa ra mắt tại 15 Showroom ND Style...</p>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article data-cat="phoido" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/lookbook_1.jpg" alt="Layering Nam" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Phối đồ Nam • 16/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Bí quyết diện đồ Layering ấm áp với Áo Khoác Da Lộn 2 Lớp</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">3 công thức kết hợp áo khoác da lộn, sơ mi cotton và quần âu Sorona chuẩn Hàn Quốc.</p>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article data-cat="xuhuong" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/lookbook_2.jpg" alt="Bảng màu Thu Đông" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Bảng màu 2024 • 15/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Bảng màu Thu Đông 2024: Sự lên ngôi của Nâu Caramel & Kem Be</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Cập nhật 5 gam màu chủ đạo thống trị sàn diễn thời trang quốc tế mùa lạnh năm nay.</p>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article data-cat="lookbook" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/lookbook_3.jpg" alt="Bảo quản da lộn" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Bảo quản • 14/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Bí quyết giặt và bảo quản áo khoác da lộn, đồ len Cashmere bền đẹp</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Tránh ngay 4 sai lầm phổ biến khi giặt đồ mùa đông tại nhà để giữ phom áo chuẩn như mới.</p>
+        </div>
+      </article>
+
+      <!-- Post 7 -->
+      <article data-cat="phoido" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_1.jpg" alt="7 set đồ công sở" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Công sở • 12/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Gợi ý 7 set đồ công sở thanh lịch từ Thứ Hai đến Chủ Nhật</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Không còn nỗi lo "Hôm nay mặc gì?" mỗi buổi sáng với 7 công thức mix & match từ ND Style.</p>
+        </div>
+      </article>
+
+      <!-- Post 8 -->
+      <article data-cat="lookbook" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_2.jpg" alt="Chất liệu Sorona" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Chất liệu • 10/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Chất liệu sợi Sorona sinh học là gì? Vì sao quần âu Sorona chống nhăn?</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Tìm hiểu công nghệ sợi thực vật co giãn 4 chiều đang được phái mạnh công sở yêu thích.</p>
+        </div>
+      </article>
+
+      <!-- Post 9 -->
+      <article data-cat="phoido" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_3.jpg" alt="Chọn chân váy chữ A" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Hack dáng • 08/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">5 quy tắc chọn chân váy chữ A và đầm liền giúp "ăn gian" 5cm chiều cao</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Bí quyết chọn tỷ lệ hạ eo và độ dài chân váy giúp đôi chân trông thon dài hơn hẳn.</p>
+        </div>
+      </article>
+
+      <!-- Post 10 -->
+      <article data-cat="xuhuong" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_4.jpg" alt="Smart Casual" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Smart Casual • 06/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Xu hướng Smart Casual 2024: Khi áo Polo dệt kim và Blazer lên ngôi</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Sự kết hợp lịch sự mà vẫn phóng khoáng dành cho doanh nhân và giới văn phòng hiện đại.</p>
+        </div>
+      </article>
+
+      <!-- Post 11 -->
+      <article data-cat="phoido" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_5.jpg" alt="Phụ kiện túi da" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Phụ kiện • 04/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Phụ kiện túi đeo chéo nắp nam châm & mũ lưỡi trai nâng tầm set đồ</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Cách chọn túi xách và mũ đồng điệu màu sắc với giày tạo điểm nhấn thời thượng.</p>
+        </div>
+      </article>
+
+      <!-- Post 12 -->
+      <article data-cat="lookbook" class="mob-news-card bg-white rounded-2xl border border-gray-100 p-3 shadow-sm flex gap-3 items-center">
+        <a href="post.html" class="w-24 h-24 rounded-xl overflow-hidden shrink-0 block">
+          <img src="../assets/images/album_6.jpg" alt="Du lịch mùa lạnh" class="w-full h-full object-cover">
+        </a>
+        <div class="space-y-1">
+          <span class="text-[10px] font-extrabold text-coral uppercase">Du lịch • 02/11/2024</span>
+          <h3 class="font-extrabold text-xs text-gray-900 leading-snug"><a href="post.html">Checklist hành lý gọn nhẹ mà vẫn có 10 set đồ sống ảo khi đi Đà Lạt</a></h3>
+          <p class="text-[11px] text-gray-500 line-clamp-2">Mẹo xếp vali thông minh với các item dễ mix-match từ BST Thu Đông 2024.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex items-center justify-center gap-2 pt-2">
+      <a href="news.html" class="w-9 h-9 rounded-xl bg-coral text-white font-extrabold text-xs flex items-center justify-center">1</a>
+      <a href="news.html" class="w-9 h-9 rounded-xl bg-[#faf4f0] text-gray-700 font-bold text-xs flex items-center justify-center">2</a>
+      <a href="news.html" class="w-9 h-9 rounded-xl bg-[#faf4f0] text-gray-700 font-bold text-xs flex items-center justify-center">3</a>
+      <a href="news.html" class="px-3.5 h-9 rounded-xl bg-[#faf4f0] text-gray-700 font-bold text-xs flex items-center justify-center">Tiếp →</a>
+    </div>
+
+    <!-- Newsletter Box -->
+    <div class="bg-gray-900 text-white rounded-3xl p-5 space-y-2.5">
+      <span class="px-2.5 py-0.5 rounded-full bg-coral text-white text-[10px] font-extrabold uppercase">Cẩm nang VIP</span>
+      <h3 class="text-base font-extrabold">Đăng ký nhận Cẩm nang phối đồ & Voucher giảm 25%</h3>
+      <form onsubmit="event.preventDefault(); alert('Đăng ký nhận bản tin thành công! Mã giảm 25%: NDSTYLE25');" class="flex gap-2 pt-1">
+        <input type="email" required placeholder="Nhập email của bạn..." class="flex-1 px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-xs outline-none">
+        <button type="submit" class="px-4 py-2.5 rounded-xl bg-coral text-white font-extrabold text-xs uppercase shrink-0">Đăng ký</button>
+      </form>
+    </div>
   </main>
 
   <nav class="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-200 py-2 px-4 grid grid-cols-5 text-[10px] font-bold text-gray-500">
@@ -69,5 +251,21 @@
     <a href="news.html" class="flex flex-col items-center gap-1 text-coral"><i class="fa-regular fa-newspaper text-base"></i><span>Tin tức</span></a>
     <a href="contact.html" class="flex flex-col items-center gap-1"><i class="fa-solid fa-headset text-base"></i><span>Liên hệ</span></a>
   </nav>
+
+  <script>
+    function filterMobNews(cat, btn) {
+      document.querySelectorAll('.mob-news-btn').forEach(b => {
+        b.className = 'mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-[#faf4f0] text-gray-700 text-[11px] font-bold';
+      });
+      btn.className = 'mob-news-btn shrink-0 px-3.5 py-1.5 rounded-full bg-coral text-white text-[11px] font-extrabold uppercase';
+      document.querySelectorAll('.mob-news-card').forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
